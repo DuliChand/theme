@@ -1,0 +1,360 @@
+.evnet-listing-share, .event-info-timer:before, .event-facebook, .event-twitter, .event-google, .event-gplus, .event-pintrest, .event-mail, .listing-share1, .shippingtype:before, .sharing:before, .favorite-icon, .remove-favorites, .event-info-panel .closebutton, .video-event-name:after {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+.event-info-panel {
+	float:left;
+	width:100%;
+	position:relative;
+	padding:8px;
+	height:auto;
+	margin:10px 0 0;
+	background:#fff;
+	box-shadow: 0 4px 4px #d0d0d0;
+	border:1px solid #d8d8d8
+}
+.event-info-panel .closebutton {
+	background-position: -395px -123px;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 20px;
+    z-index: 99;
+}
+.event-info-image {
+	position:relative;
+	float:left;
+	width:19%;
+	margin-right:2%;
+	border:1px solid #d8d8d8;
+	height:104px;
+	overflow:hidden
+}
+.event-info-image img {
+	float:left;
+	width:100%;
+	height:auto
+}
+.event-info-details {
+	float:left;
+	width:75%
+}
+.event-des {
+	float:left;
+	font-size:14px;
+	line-height:20px;
+	color:#666;
+	height:70px;
+	width:100%;
+}
+.event-info-timer {
+	position:relative;
+	float:left;
+	margin-top:15px;
+	margin-right:10px;
+	margin-left:25px;
+	font-size:12px;
+	color:#666
+}
+.event-info-timer:before {
+	position:absolute;
+	width:18px;
+	height:18px;
+	margin-left:-25px;
+	background-position:-92px -216px;
+	content:''
+}
+.event-facebook {
+	display:block;
+	float:left;
+	width:24px;
+	height:25px;
+	margin-top:11px;
+	margin-right:8px;
+	background-position:-1px -2px
+}
+.event-twitter {
+	display:block;
+	float:left;
+	width:25px;
+	height:25px;
+	margin-right:8px;
+	margin-top:11px;
+	background-position:0px -33px
+}
+.event-mail {
+	display:block;
+	float:left;
+	width:25px;
+	height:25px;
+	margin-right:8px;
+	margin-top:11px;
+	background-position:-399px -154px
+}
+.event-google {
+	display:block;
+	float:left;
+	width:19px;
+	height:16px;
+	margin-top:15px;
+	background-position:-189px -3px
+}
+.event-gplus {
+	display:block;
+	float:left;
+	width:25px;
+	height:25px;
+	margin-right:8px;
+	margin-top:10px;
+	background-position: -0px -97px;
+}
+.event-pintrest {
+	display:block;
+	float:left;
+	width:25px;
+	height:25px;
+	margin-right:8px;
+	margin-top:10px;
+	background-position: -25px -416px;
+	}
+	
+.evnet-listing-share {
+float: left;
+width: 15px;
+height: 25px;
+margin-right: 6px;
+margin-top: 11px;
+background-position: -61px -378px;
+cursor: pointer;
+}
+.like-boxout {
+	position:relative;
+	float:left;
+	width:auto;
+	height:auto;
+	margin:15px 10px 0 7px
+}
+.like-boxout .like-box {
+	position:relative;
+	float:left;
+	width:20px;
+	height:18px;
+	padding:0 2px;
+	margin:0;
+	font-size:12px;
+	line-height:12px;
+	border:1px solid #ccc;
+	border-radius:3px
+}
+.like-boxout:before {
+	position:absolute;
+	top:25%;
+	left:-7px;
+	width:0;
+	height:0;
+	border-top:0 solid transparent;
+	border-right:10px solid #ccc;
+	border-bottom:10px solid transparent;
+	content:"";
+	-webkit-transform:rotate(10deg);
+	transform:rotate(10deg)
+}
+.shipping-details {
+	float:left;
+	width:100%;
+	height:auto
+}
+.shipping-details .shippingtype {
+	position:relative;
+	float:left;
+	margin-top:10px;
+	font-size:12px;
+	color:#666;
+	text-indent:23px
+}
+.shipping-details .shippingtype:before {
+	position:absolute;
+	margin-left:-20px;
+	content:''
+}
+.shipping-details .shippingtype a {
+	margin-left:5px;
+	color:#68a0e6
+}
+.shipping-details .shippingtype.international:before {
+	background-position:-92px -301px;
+	width:16px;
+	height:16px
+}
+.shipping-details .shippingtype.express {
+	text-indent:30px
+}
+.shipping-details .shippingtype.express:before {
+	background-position:-269px -190px;
+	margin-left:-30px;
+	width:30px;
+	height:16px;
+	top:2px
+}
+.shipping-details .shippingtype.regular:before {
+	background-position:-280px -252px;
+	width:16px;
+	height:16px;
+	top:2px
+}
+.shipping-details .shippingtype .detail-tooltip {
+	display:inline;
+	position:relative
+}
+.shipping-details .shippingtype .detail-tooltip .detailtxt {
+	position:absolute;
+	z-index:99;
+	border:2px solid #CCC;
+	background:#fff;
+	padding:10px;
+	display:none;
+	min-width:400px
+}
+.shipping-details .shippingtype .detail-tooltip:hover .detailtxt {
+	display:block
+}
+.shipping-details .shippingtype .detail-tooltip .detailtxt p {
+	font-size:12px;
+	margin:0 0 12px;
+	text-indent:0
+}
+.shipping-popup {
+	display:none;
+	width:470px;
+	padding:15px;
+	background:#fff;
+	border:10px solid transparent;
+	border-radius:5px;
+	background-clip:padding-box
+}
+.shipping-popup h2 {
+	padding-bottom:5px;
+	font-size:18px;
+	line-height:28px;
+	color:#333;
+	text-align:center;
+	text-indent:5px;
+	text-transform:capitalize
+}
+.shipping-popup p {
+	text-align:center;
+	font-size:13px;
+	margin:0 0 12px
+}
+.video-event {
+	float:right;
+	width:28%;
+	height:auto;
+	margin-right:1%
+}
+.video-event-name {
+	position:relative;
+	float:left;
+	width:100%;
+	padding:0 0 7px;
+	font-size:14px;
+	color:#666
+}
+.video-area iframe {
+	width:100%;
+	height:160px
+}
+.video-event .sharearea1 {
+	width:100px;
+	height:15px;
+	white-space:nowrap;
+	overflow:hidden;
+	position:relative;
+	transition:all 1s linear
+}
+.video-event .sharearea1 .sharetxt {
+	font-size:13px;
+	line-height:13px;
+	display:block;
+	float:left
+}
+.video-event .sharearea1 .listing-share1 {
+	float:left;
+	width:15px;
+	height:15px;
+	margin-right:6px;
+	background-position:-3px -328px;
+	cursor:pointer
+}
+.video-event .sharearea1 .listing-share1:hover {
+	background-position:-61px -383px
+}
+.video-event .sharearea1:hover {
+	width:175px!important
+}
+.video-event .sharearea1:hover .shareslide1 {
+transition:all .5s linear;
+	left:60px;
+	visibility:visible;
+	opacity:1
+}
+.video-event .sharearea1 .shareslide1 {
+	position:absolute;
+	width:55px;
+	left:-150px;
+	visibility:hidden;
+	opacity:0;
+transition:all .5s linear
+}
+.video-event .sharearea1 a.ifacebook, .video-event .sharearea1 a.itwitter, .video-event .sharearea1 a.iemail {
+	display:block;
+	float:left;
+	margin:0 3px 0 0;
+	height:14px;
+	background:url(http://static.fashionandyou.com/app-images/sprite1.png) no-repeat
+}
+.video-event .sharearea1 a.ifacebook {
+	width:14px;
+	background-position:-88px -11px
+}
+.video-event .sharearea1 a.itwitter {
+	width:13px;
+	background-position:-88px -33px
+}
+.video-event .sharearea1 a.iemail {
+	width:18px;
+	background-position:-88px -55px
+}
+.tagimage-right {
+	position:absolute;
+	top:5px;
+	right:5px;
+	width:auto;
+	font-size:11px;
+	line-height:14px;
+	font-weight:700;
+	color:#fff;
+	text-align:center;
+	border:1px dashed #ED1967
+}
+.tagimage-right span {
+	display:block;
+	background:#d22573;
+	padding:3px 8px;
+	white-space:nowrap;
+	border:1px solid #fff;
+}
+.favorite-icon {
+	float:left;
+	width:18px;
+	height:18px;
+	margin:13px 10px 0 0;
+	background-position:-93px -384px
+}
+.favorite-icon:hover, .favorite-icon.remove-favorites {
+	background-position:-92px -362px
+}
+.eventname {
+	cursor:pointer
+}

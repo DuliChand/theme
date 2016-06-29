@@ -1,0 +1,55 @@
+
+{{#if orderLines}}
+	{{#if orderLines.length}}
+		{{#each orderLines}}
+		<tr>
+			<td>{{add @index}}</td>
+			<td>{{productName}}</td>
+			<td>{{erpSku}}</td>
+			<td><img src={{thumbnailUrl}}></td>
+
+			{{#retrnablechk status 'RT'}}
+			<td>{{returnstatus status}}<br>
+			<a data-order-id={{../../orderId}} name={{orderLineId}} id="returnMyOrder" class="fancybox" href="#ordernum1">Return</a></td>
+			{{/retrnablechk}}
+			{{#retrnablechk status 'NR'}}
+			<td>{{returnstatus status}}<br>
+			<span data-orderline-id={{orderLineId}} >Non Returnable</span></td>
+			{{/retrnablechk}}
+			{{#retrnablechk status 'RI'}}
+			<td>{{returnstatus status}}<br>
+			<a id="returnMyOrder" name={{orderLineId}} value="status" href="#ordernum1">Return Status</a></td>
+			{{/retrnablechk}}
+
+			<td>{{actualAmountPaid}}</td>
+			<td>{{quantity}}</td>
+			<td>{{actualAmountPaid}}</td>
+			<td>0</td><td>{{actualAmountPaid}}</td>
+		</tr>
+		{{/each}}
+	{{else}}
+		<tr>
+			<td>1</td>
+			<td>{{orderLines.productName}}</td>
+			<td>{{orderLines.erpSku}}</td>
+			<td><img src={{orderLines.thumbnailUrl}}></td>
+			{{#retrnablechk orderLines.status 'RT'}}
+			<td>{{returnstatus orderLines.status}}<br>
+			<a name={{orderLines.orderLineId}} id="returnMyOrder" class="fancybox" href="#ordernum1">Return</a></td>
+			{{/retrnablechk}}
+			{{#retrnablechk orderLines.status 'NR'}}
+			<td>{{returnstatus orderLines.status}}<br>
+			<span data-orderline-id={{orderLines.orderLineId}} >Non Returnable</span></td>
+			{{/retrnablechk}}
+			{{#retrnablechk orderLines.status 'RI'}}
+			<td>{{returnstatus orderLines.status}}<br>
+			<a name={{orderLines.orderLineId}}  id="returnMyOrder" value="status" href="#ordernum1">Return Status</a></td>
+			{{/retrnablechk}}
+			<td>{{orderLines.actualAmountPaid}}</td>
+			<td>{{orderLines.quantity}}</td>
+			<td>{{orderLines.actualAmountPaid}}</td>
+			<td>0</td><td>{{orderLines.actualAmountPaid}}</td>
+		</tr>
+	{{/if}}
+{{/if}}
+			

@@ -1,0 +1,183 @@
+<div class="quickproduct">
+    <div class="product-gallery">
+      <!-- product gallery thumb nails starts here -->
+      <!-- <div id="product-gallery-thumbnails" class="gallery-thumbnails">
+        <div class="slide">
+          <a href="#" class="thumbnail-image" data-image-detail=""  data-image-original="">
+            <img src="" data-src="" alt="" title="" />
+          </a>
+        </div>
+      </div> -->
+      <!-- product gallery thumb nails ends here -->
+
+      <!-- product gallery large image starts here -->
+      <a href="#" class="large-image zoom" id="ex1" data-zoom-image="">
+        <img src="" alt="" title="" id="product-gallery-detail" />
+      </a>
+      <!-- product gallery large image ends here -->
+    </div>
+    
+    <div class="product-popup-info" data-event-id="{{product.productVariants.0.sellerSKUs.0.event.eventId}}" data-product-id="{{product.webShopId}}">
+      <h2 class="product-name">{{product.title}}</h2>
+      <div class="code-area">
+        <span class="product-code">Product Code: {{product.vendorStyleCode}}</span>
+        {{#each product.productVariants}}
+            {{#if selected}}
+              {{#each sellerSKUs}}
+                {{#if selected}}
+
+        <!-- <span class="product-timer" id="productEventTimer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' product.productVariants.0.sellerSKUs.0.event.eventEndDateInMillis}}">0 DAYS 00:00:00 LEFT</span> -->
+
+      <!--  <span class="product-timer" id="productEventTimer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' event.eventEndDateInMillis}}">0 DAYS 00:00:00 LEFT</span>-->
+
+                {{/if}}
+              {{/each}}
+
+            {{/if}}
+        {{/each}}
+
+      </div>
+      
+          <div class="productdetail-holder">
+        <div class="productdetail-left">
+      <div class="pricing-area">
+        {{#each product.productVariants}}
+          {{#if selected}}
+            {{#each sellerSKUs}}
+          {{#if selected}}
+                  <span class="old-pricing">INR
+                   {{mrp}}</span> 
+                   <span class="new-pricing">INR
+                    <span id="newPrice">{{offerPrice}}</span>
+                    </span> 
+                  {{/if}}
+        {{/each}}
+            {{/if}}  
+        {{/each}}
+      </div>
+      
+      <div class="selection-area" id="variantCode">
+            <div class="select-choice size" data-attribute-id="{{product.productVariants.0.webShopVariantId}}" data-attribute-name="{{product.productVariants.0.event.eventName}}">
+             
+              <label class="label">Select Size</label>
+              <ul>
+                {{#each product.productVariants}}
+                      
+                {{#if variantCode}}
+                    
+                    <li class="tiles" id="variant-{{variantCode}}" data-attribute-value="{{variantCode}}" data-attribute-value-id="{{sellerSKUs.0.sKUId}}" data-attribute-erpsku-id="{{webShopVariantId}}">
+                      
+                      {{#each sellerSKUs}}      
+                        {{#equal  inventory '0'}}
+                           <span class="sold">{{../../variantCode}}</span>
+                         {{else}}
+                           <a href="#">{{../../variantCode}}</a>
+                         {{/equal}}   
+                      {{/each}}
+                   
+                    </li> 
+               {{else}}
+
+                {{/if}}
+
+        
+              {{/each}}                  
+              </ul>
+            
+            </div>
+          </div>
+          
+   
+    <div class="selection-area" >
+      <div class="select-quantity quantity">
+        <label class="label">Select Quantity</label>
+        <div class="select-wrapper">
+          <select class="select">
+            <option value="0">0</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div class="check-avalible">
+        <p>Check product availability at your location</p>
+        <div class="checkservice" id="checkservice">
+          <input type="text" id="pincode" value="" /> <a href="#" class="go">Check</a>
+          <span class="statusmsg"><span class="icon"></span><span
+            class="text"></span></span>
+        </div>
+        <div class="clear"></div>
+      </div> -->
+      <div class="clear"></div>
+      <p class="error-message">&nbsp;</p>
+    </div>
+
+    <!-- Promotion will come from liferay WCM Start -->
+    <!-- <div class="offer-area">
+      <div class="offer-box">
+        <span class="offer-tag">Offer</span> <span
+          class="offer-info">Save like never before! Get additional <span class="highlighted-text">10% off</span> on your coupon!</span>
+      </div>
+    </div> -->
+    <!-- Promotion will come from liferay WCM Start -->
+    
+    <a href="#" class="button-big" id="addToCart"><i class="icon-basket"></i>Buy Now</a>
+       </div>
+
+      <div class="productdetail-right">
+      <div class="check-avalible">
+        <p>Check product availability at your location</p>
+        <div class="checkservice" id="checkservice">
+          <input type="text" id="pincode" value="" maxlength="6" /> <a href="#" class="go">Check</a>
+          <span class="statusmsg"><span class="icon"></span><span
+            class="text"></span></span>
+        </div>
+      </div>
+            
+            <div class="delivered-days"><p>Delivered in 3 to 4 working days</p></div>
+            <div class="clickoffer">
+              <p><a href="#" class="offertoggle">Click here for offer</a></p>
+                     <div class="currentoffer">
+                      <div class="couponCode">
+                        <ul>
+
+                        {{#if offers}}
+							  {{#each offers}}
+								<li class="textCoupon"><span>Coupon Code : </span>{{source.code}}</li>
+								<li><span>{{source.detail}}</span></li>
+								{{/each}}
+						{{else}}
+								<li><span>The product is already at its best price.</span></li>
+						{{/if}}
+                        </ul>
+                      </div>
+                  </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <div class="action-area">
+      
+      <div class="clearfix visible-xs"></div>
+      <a href="#" class="add-favorites">Add to Favourites</a>
+      <div class="product-share">
+        <div class="sharearea1">
+          <span class="listing-share1" title="Share"></span>
+          <!--span class="sharetxt">Share</span-->
+          <div class="shareslide1">
+            <a title="Facebook" class="ifacebook facebook social-share-link" href="#"></a>
+            <a title="Twitter" class="itwitter twitter social-share-link" href="#"></a>
+            <a title="gplus" class="igplus googleplus social-share-link" href="#"></a>
+            <a title="pintrest" class="ipintrest pinterest social-share-link" href="#"></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="action-veiw-more">
+    <a href="/products/d/{{#specialCharReplace product.title}}{{/specialCharReplace}}/{{product.webShopId}}">
+        <span>View More Details</span></a>
+    </div>
+    
+    </div>
+  </div>
+  <div class="clear"></div>

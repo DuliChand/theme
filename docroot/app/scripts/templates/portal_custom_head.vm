@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="/app-theme/dist/styles/bootstrap.css">
+<link rel="stylesheet" href="/app-theme/dist/styles/main.css">
+<link rel="stylesheet" href="/app-theme/dist/styles/layout.css">
+<link rel="stylesheet" href="/app-theme/dist/styles/home.css">
+
+#if($Pagename=="product-listing")
+<link rel="stylesheet" href="/app-theme/dist/styles/product-listing.css">
+#end
+
+#if($Pagename=="cir")
+<link rel="stylesheet" href="/app-theme/dist/styles/order-history.css">
+#end
+
+#if($Pagename=="return")
+<link rel="stylesheet" href="/app-theme/dist/styles/order-history.css">
+#end
+
+#if($Pagename=="product-detail")
+<link rel="stylesheet" href="/app-theme/dist/styles/product-detail.css">
+#end
+
+#if($Pagename=="cart")
+<link rel="stylesheet" href="/app-theme/dist/styles/cart.css">
+#end
+
+#if($Pagename=="billing")
+<link rel="stylesheet" href="/app-theme/dist/styles/billing.css">
+#end
+
+#if($Pagename=="payment")
+<link rel="stylesheet" href="/app-theme/dist/styles/payment.css">
+#end
+
+#if($Pagename=="login")
+<link rel="stylesheet" href="/app-theme/dist/styles/login.css">
+#end
+
+#if($Pagename=="register")
+<link rel="stylesheet" href="/app-theme/dist/styles/register.css">
+#end
+
+#if($Pagename=="forgot-password")
+<link rel="stylesheet" href="/app-theme/dist/styles/forgot-password.css">
+#end
+
+#if($Pagename=="profile")
+<link rel="stylesheet" href="/app-theme/dist/styles/profile.css">
+#end
+
+#if($Pagename=="credits")
+<link rel="stylesheet" href="/app-theme/dist/styles/credits.css">
+#end
+
+#if($Pagename=="orders")
+<link rel="stylesheet" href="/app-theme/dist/styles/order-history.css">
+#end
+
+#if($Pagename=="invite")
+<link rel="stylesheet" href="/app-theme/dist/styles/invite-friend.css">
+#end
+
+#if($Pagename=="favourites")
+<link rel="stylesheet" href="/app-theme/dist/styles/favourites.css">
+#end
+
+#if($Pagename=="search")
+<link rel="stylesheet" href="/app-theme/dist/styles/search.css">
+#end
+
+#if($Pagename=="invite-registration")
+<link rel="stylesheet" href="/app-theme/dist/styles/invite-registration.css">
+#end
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="/app-theme/dist/styles/fontawesome-ie7.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/app-theme/dist/styles/ie.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="/app-theme/dist/scripts/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="/app-theme/dist/scripts/vendor/respond.js"></script>
+<![endif]-->

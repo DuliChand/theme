@@ -1,0 +1,238 @@
+
+.row {
+    position: relative;
+}
+.col-xs-8 {
+    padding-right: 10px;
+}
+.cart-area-inn {
+    height: auto;
+    margin-right: 335px;
+}
+.alert-message {
+    background: none repeat scroll 0 0 #ffe868;
+    color: #333;
+    
+    font-size: 11px;
+    line-height: 18px;
+    margin-top: 22px;
+    padding: 6px 10px 6px 45px;
+    position: relative;
+}
+.alert-message:before {
+    background: url("http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png") no-repeat scroll -210px -1px rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 24px;
+    left: 12px;
+    position: absolute;
+    top: 12px;
+    width: 24px;
+}
+.form-address {
+    clear: both;
+    margin-top: 20px;
+}
+.control-group {
+   margin-left: 45px;
+    width: 100%;
+    float:left;
+}
+
+.controlsHalfname {
+    float: left;
+    margin-left: -1px !important;
+    width: 34%;
+}
+.controls {
+    margin: 1% 2%;
+}
+.controlsHalf {
+    float: left;
+    margin: 9px 8px;
+    width: 25%;
+}
+.controlsInputHalf{
+     float: left;
+    margin: 2px 2%;
+    width: 35%;
+}
+
+.controlsTitle{ width:55px; float:left;}
+
+.indiaNumber {
+  position: absolute;
+  float: left;
+  left: 62px;
+  line-height: 25px;
+  /* margin-top: 4px; */
+  border-right: #ccc solid 1px;
+  padding: 0 3px 0 0;
+}
+.mph {
+  padding: 0 0 0 30px !important;
+}
+
+.form-address h2 {
+    border-bottom: 1px solid #f5f6f6;
+    color: #333;
+    font-family:'centurygothicbold';
+    font-size: 14px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    line-height:20px;
+}
+
+.form-address label {
+    color: #333;
+    display: block;
+    
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 5px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+}
+.form-address label span{ color:red; font-size:12px; }
+
+.form-address input, .form-address textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    
+    font-size: 11px;
+    height: 25px;
+    padding:2px 5px;
+}
+.form-address .input-field{
+    width:34%;
+}
+.form-address .input-field-option
+{
+    width:94%;
+}
+
+
+/* .form-address .input-field, .form-address textarea, .form-address input, .form-address .select-wrapper, .form-address .select-wrapper .selectbox {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-size: 11px;
+    height: 25px;
+    margin-top: 10px;
+    padding: 3px 2px;
+    width:100%;
+    
+} */
+.form-address select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-size: 11px;
+    height: 25px;
+    /*margin-top: 10px;*/
+    padding: 2px;
+
+}
+.form-address .mr-width {
+    
+    width: 60px;
+}
+/* .form-address .short-width {
+    width: 180px;
+} */
+.form-address .pincode {
+    margin-right: 60px;
+    width: 70px;
+}
+.textareaControl{ width:100%;}
+
+.form-address textarea {
+    height: 54px;
+    padding-top: 7px;
+    resize: vertical;
+    width:75%;
+}
+.form-address .select-wrapper {
+    border: 0 none;
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+    padding-left: 0;
+}
+.form-address .errorfield {
+    border-color: #ff6a6a !important;
+}
+.form-address .select-wrapper.errorfield {
+    border: 1px solid #ff6a6a !important;
+    border-radius: 4px;
+}
+.form-address .select-wrapper .selectbox {
+    margin-top: 0;
+    text-indent: 0;
+}
+.form-address .select-wrapper .selectbox-wrapper {
+    border-top-right-radius: 0;
+    width: 100%;
+}
+.form-address .check-box {
+    display: none;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.form-address .check-box + label {
+    margin: 20px -160px 0 10px;
+    width: auto;
+}
+.form-address .check-box + label.samebilling {
+    margin: 20px 0 0 10px;
+    width: 180px;
+}
+.btn-cartpop {
+    margin: 10px 0 30px 118px;
+    padding: 0 20px;
+}
+.control-group .btn-cartpop-proceed {
+    background: none repeat scroll 0 0 #d22573;
+    border: medium none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    height: auto;
+    line-height: 12px;
+    margin: 10px 0 10px 157px;
+    padding: 9px 10px;
+    text-indent: 0;
+    text-shadow: 1px 1px 1px #333;
+    text-transform: uppercase;
+     width: 125px; 
+}
+.col-sm-left {
+    line-height: 25px;
+    margin-left: 20%;
+}
+.col-sm-left input[type="checkbox"] {
+    margin-top: 10px;
+}
+.col-sm-left label {
+    line-height: 22px;
+}
+.error-message {
+    display: none;
+}
+.errormsg1 {
+    background: none repeat scroll 0 0 red;
+    color: #fff;
+    display: none;
+    font-family: "helvetica_bold";
+    font-size: 11px;
+    margin: 5px 0 0;
+    padding: 8px 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.form-address .input-field[disabled="disabled"] {
+    background-color: #fff;
+}

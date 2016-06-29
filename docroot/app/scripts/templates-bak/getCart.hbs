@@ -1,0 +1,25 @@
+{{#if categories}}
+	<ul class="navbar-left">
+		{{#each categories}}
+			<li class="menu-h"><a class="navbar-brand" href="/category/categories/{{categoryName}}">{{label}}</a>
+			{{#if categories}}
+				<div class="menu-dropdown">
+				{{#each  categories}}
+					<ul class="">
+						<li class="menu-heading"><h3>{{label}}</h3></li>
+						{{#if categories}}
+							{{#each categories}}
+								<li>
+									<a href="/product-listing/category/{{categoryName}}">{{label}}</a>
+								</li>
+							{{/each}}
+						{{/if}}
+					</ul>
+					<span class="nav-sep"></span>
+				{{/each}}
+				</div>
+			{{/if}}
+			</li>
+		{{/each}}
+	</ul>
+{{/if}}

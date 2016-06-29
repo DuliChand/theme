@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+#parse ($init)
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id" ng-app="webUiApp">
+	<head>
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="google-site-verification" content="6zX6cqCppy1O4FMM_4ToMENvyu65rP-jXA4tfiVU4cI" />
+		#if ($the_title == "Status")
+		  <title>FashionAndYou</title>
+		#else
+		  <title>$the_title</title>
+		#end
+		
+		#parse ("$full_templates_path/portal_custom_head.vm")
+		$theme.include($top_head_include)
+		
+		
+		
+		<!-- Open Graph data start -->
+		<meta property="og:title" content="FashionAndYou">
+		<meta property="og:type" content="fashionandyou:website">
+		<meta property="og:url" content="http://fashorgionandyou.com/">
+		<meta property="og:image" content="http://fashionandyou.org/">
+		<meta property="og:description" content="FashionAndYou">
+		<meta property="og:site_name" content="FashionAndYou">
+		<!-- and other facebook stuff -->
+		<meta property="fb:app_id" content="772164726145216">
+		<!-- Open Graph data end -->
+		
+		<!-- Twitter Card data start -->
+  		<meta name="twitter:card">
+  		<meta name="twitter:site" content="@FashionAndYou">
+  		<meta name="twitter:title" content="FashionAndYou">
+  		<meta name="twitter:description" content="FashionAndYou">
+  		<meta name="twitter:image" content="http://fashionandyou.org/">
+		<!-- Twitter Card data end -->
+		
+		<!-- Google Authorship and Publisher Markup -->
+  		<link rel="publisher" href="https://plus.google.com/110887568602383253208">
+  		<link rel="shortcut icon" href="http://www.fashionandyou.com/favicon.ico">
+  		<!-- Schema.org markup for Google+ -->
+  		<meta itemprop="name" content="FashionAndYou">
+  		<meta itemprop="description" content="FashionAndYou">
+  		<meta itemprop="image" content="FashionAndYou">
+  		<script src="/scripts/newvendor.js?newwebversionfnu=2"></script>
+	</head>
+
+	<body class="$css_class">
+		<div class="main-container">
+		#if($tmplcookie =="ngAppTmpl" || $tmpl == "beta")
+			#parse ("$full_templates_path/portal_custom_topbar_new.vm")
+		#else
+			#parse ("$full_templates_path/portal_custom_topbar.vm")
+		#end	
+			<div class="stickheader">
+  				<!-- wrapper starts here -->
+				<div class="wrapper clearfix">
+				#if($tmplcookie =="ngAppTmpl" || $tmpl == "beta")
+						
+				#else
+					#parse ("$full_templates_path/portal_custom_header.vm")
+				#end
+					
+				</div>
+				<!-- wrapper ends here --> 
+
+				<div class="mobile-search">
+					<div class="search-field">
+					<form id="searchForm">  
+						<input type="search" placeholder="What are you Looking For?" id="searchInputBox" />
+						<!-- <a  herf="#" onClick='javascript:void(0)' class="search-icon">Search</a> -->
+						<a href="#" class="search-icon"></a>
+						</form>
+					</div>
+					
+						
+				</div> 	
+	
+			</div>
+			
+			<div class="wrapper clearfix">
+				<section class="midddle-area">
+					#if ($selectable) 
+						$theme.include($content_include) 
+					#else
+						$portletDisplay.recycle() $portletDisplay.setTitle($the_title)
+						$theme.wrapPortlet("portlet.vm", $content_include) #end
+				</section>
+			</div>
+			#if($tmplcookie =="ngAppTmpl" || $tmpl == "beta")
+				#parse ("$full_templates_path/portal_custom_footer_new.vm")
+			#else
+				#parse ("$full_templates_path/portal_custom_footer.vm")
+			#end
+		</div>
+		$theme.include($body_bottom_include) $theme.include($bottom_include)
+		$theme.runtime("navigation_WAR_appportlet")
+		#if($Pagename!="cart")
+			$theme.runtime("cart_WAR_appportlet")
+		#end
+		
+	#if($tmplcookie =="ngAppTmpl" || $tmpl == "beta")
+		<!-- <p id="back-top" style="display:none"> <a href="#top"><span></span></a> </p> -->
+
+		<div id="back-top" data-ng-class="{'fadeIn':showTop,'fadeOut':!showTop}" data-ng-click="goTop()" class="show-top animated fadeIn" style=""><i class="fa fa-angle-up"></i></div>
+
+		<!--confirmation popup start -->
+		<div id="confirmation-popup" class="common-popup confirm">
+			<div align="center"><span class="icon"></span></div>
+			<h2>Are You Sure</h2>
+			<div class="row">
+				<p>You Want To delete this</p>
+				<div align="center">
+					<input type="button" value="Yes" />
+					<input type="button" value="No" />
+				</div>
+			</div>
+		</div>
+		<!--confirmation popup end -->
+			
+		<!--error popup start -->
+		<div id="invalid-popup" class="common-popup invalid">
+			<div align="center"><span class="icon"></span></div>
+			<h2></h2>
+			<div class="row">
+				<p></p>
+			</div>
+		</div>
+		<!--error popup end -->
+
+		<!-- expire product cart popup start -->
+		<div id="cart-product-expire-popup" class="product-expire">
+			<div class="expireicon"></div>
+			<h3>Time is running out</h3>
+			<p>If you don't want to miss out on this amazing deal<br> then checkout before your cart expires.</p>
+
+			<!-- <div class="expire-product">
+				<img src="assets/images/product_image2.jpg" />
+				<h4>Product name</h4>
+				<h5>Size : <span>XL</span><br>	Qty : <span>1</span></h5>
+			</div> -->
+		#end	
+		<script type="text/javascript" src="/scripts/console.js"></script>
+	</body>
+</html>

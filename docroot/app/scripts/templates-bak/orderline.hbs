@@ -1,0 +1,125 @@
+{{#if domainResponse.entitiesResponse}}
+	{{#each domainResponse.entitiesResponse}}
+	{{#if baseDTO}}
+	 <table class="orddetail-table" cellpadding="0" cellspacing="0">
+		  <tr class="table-heading">
+		      <td>Product Details</td>
+		      <td>Amount</td>
+		      <td>Status</td>
+		      <td>Tracking</td>
+		      <td>Action</td>
+		  </tr>
+	      {{#if baseDTO.orderLines.length}}
+	      {{#each baseDTO.orderLines}}
+	       <tr class="table-body">
+		      <td>
+		        {{#if thumbnailUrl}}<a href="/product-detail/product/{{eventId}}/{{vendorProductId}}">
+		        	<img src="{{thumbnailUrl}}" class="product-img" alt="" title="{{thumbnailUrl}}" /></a>
+		        {{else}}
+		        	<img src="/fny-theme/images/order-notfound.jpg" class="product-img" alt="" title="not-found" />
+		        {{/if}}
+		        <span class="product-name">{{productName}}</span> 
+		        <span class="orddet-prod-qty"></span>
+		      </td>
+		      <td>INR {{orderLineValue}}/-</td>
+		      {{#if orderLineTracks}}
+			      {{#each orderLineTracks}}
+				       {{#lastElement ../orderLineTracks.length @index}} 
+				       		{{#lowerEqual status 'canceled'}}
+				        		<td>Cancelled</td>
+				        	{{else}}
+				        		{{#equal status 1}}<td>Awaited</td>
+				        		{{else}}
+				        				{{#equal status 2}}<td>Confirmed</td>
+				        				{{else}}
+				        					{{#equal status 3}}<td>Cancelled</td>
+				        					{{else}}
+				        						{{#equal status 0}}<td>In Transit</td>
+				        						{{else}}
+				        							<td>{{status}}</td>
+				        						{{/equal}}
+				        				{{/equal}}
+				        			{{/equal}}
+				        		{{/equal}}
+				        		
+				        	{{/lowerEqual}}
+				       {{/lastElement}} 
+			      {{/each}}
+		      {{else}}
+		      	<td>&nbsp;</td>
+		      {{/if}}
+		      
+		      {{#if status}}
+			      {{#notLowerEqual status ""}}
+			      	{{#notLowerEqual status "delivered"}}
+			      			{{#notLowerEqual status "canceled"}}
+			      				{{#notEqual baseDTO.status 3}}
+			      			    	<td><a href="#ordernum1" class="fancybox" id="trackMyOrder" data-orderline-id="{{orderLineId}}" data-awb-no="{{awbNumber}}">Track item</a></td>
+			      		    	{{/notEqual}}
+			      		    {{else}}
+			      				<td><a href="#" class="fancybox" id=""> - </a></td>
+			      		    {{/notLowerEqual}}
+			      	{{/notLowerEqual}}
+			      {{/notLowerEqual}}
+			   {{/if}}
+		      
+		      <td><a href="#" class="fancybox">Cancel</a></td>
+		  </tr>
+	      {{/each}}
+	      {{else}}
+	      <tr class="table-body">
+		      <td>
+		        {{#if baseDTO.thumbnailUrl}}
+		        	<a href="/product-detail/product/{{eventId}}/{{vendorProductId}}"><img src="{{baseDTO.thumbnailUrl}}" class="product-img" alt="" id="{{baseDTO.awbNumber}}" title="{{baseDTO.thumbnailUrl}}" /></a>
+		        {{else}}
+		        	<img src="/fny-theme/images/order-notfound.jpg" class="product-img" alt="" title="not-found" />
+		        {{/if}} 
+		        <span class="product-name">{{baseDTO.productName}}</span> 
+		        <span class="orddet-prod-qty"></span>
+		      </td>
+		      <td>INR {{baseDTO.orderLineValue}}/-</td>
+		      {{#lowerEqual baseDTO.status 'canceled'}}
+				       <td>Cancelled</td>
+			  {{else}}
+			  		{{#lowerEqual baseDTO.status 'canceled'}}
+				        		<td>Cancelled</td>
+				        	{{else}}
+				        		{{#equal baseDTO.status 1}}<td>Awaited</td>
+				        		{{else}}
+				        				{{#equal baseDTO.status 2}}<td>Confirmed</td>
+				        				{{else}}
+				        					{{#equal baseDTO.status 3}}<td>Cancelled</td>
+				        					{{else}}
+				        						{{#equal baseDTO.status 0}}<td>In Transit</td>
+				        						{{else}}
+				        							<td>{{baseDTO.status}}</td>
+				        						{{/equal}}
+				        				{{/equal}}
+				        			{{/equal}}
+				        		{{/equal}}
+				     {{/lowerEqual}}
+				{{/lowerEqual}}
+		      <!-- <td>{{baseDTO.status}}</td> -->
+		      <!-- {{#each baseDTO.orderLines.orderLineTracks}}
+		      {{#lastElement ../baseDTO.orderLines.orderLineTracks.length @index}}<td>{{status}}</td>{{/lastElement}}
+		      {{/each}} -->
+		      {{#if baseDTO.status}}
+			      {{#notLowerEqual baseDTO.status ""}}
+			      	{{#notLowerEqual baseDTO.status "delivered"}}
+			      			{{#notLowerEqual baseDTO.status "canceled"}}
+			      				{{#notEqual baseDTO.status 3}}
+			      			    <td><a href="#ordernum1" class="fancybox" id="trackMyOrder" data-orderline-id="{{baseDTO.orderLineId}}" data-awb-no="{{baseDTO.awbNumber}}">Track item</a></td>
+			      		    	{{/notEqual}}
+			      		    {{else}}
+			      				<td><a href="#" class="fancybox" id=""> - </a></td>
+			      		    {{/notLowerEqual}}
+			      	{{/notLowerEqual}}
+			      {{/notLowerEqual}}
+			   {{/if}}
+		      <td><a href="#" class="fancybox">Cancel</a></td>
+		  </tr>
+	      {{/if}}
+	  </table>
+	{{/if}}
+	{{/each}}
+{{/if}}

@@ -1,0 +1,235 @@
+
+<!-- footer area starts here -->
+<footer>
+	  <!-- <div class="row clearfix" style="background:#CCC;bottom: 0;position: fixed;width: 100%;z-index: 9999;">
+		<div class="copyrightbar" style="padding:8px 0 4px;">
+			<p class="copyrighttext" style="font-size:16px;color:#000;font-family:'helvetica_light','Helvetica Neue',Helvetica,Arial,sans-serif;">If you face any issues or have feedack for us, kindly mail us at <a href="mailto:feedback30@fashionandyou.com?Subject=Webshop 3.0 Feeback" style="color:#CE2D78;font-family:'helvetica_light','Helvetica Neue',Helvetica,Arial,sans-serif;">feedback30@fashionandyou.com</a>.</p>
+		</div>
+	  </div> -->
+   
+ 	<div class="payment-icons-outer clearfix">
+    	<div class="row">
+      		<div class="col-md-8">
+        		<ul class="payment-icons">
+          			<li><span>Pay by:</span></li>
+         			<li class="paymenticon">&nbsp;</li>
+        		</ul>
+      		</div>
+      		<div class="clearfix visible-xs"></div>
+      		<div class="col-md-4">
+        		<ul class="security-icons">
+         			<li><a class="safesecure" href="#" title="Safe and Secure Shopping"></a></li>
+          			<!-- <li><a class="verisign" href="#" title="Norton Secured"></a></li> -->
+        		</ul>
+      		</div>
+    	</div>
+ 	</div>
+	<div class="info-links-outer clearfix">
+    	<!-- <div class="row info-links">
+      		<div class="col-xs-12 col-sm-3">
+        		<ul class="info-links-col">
+          			<li><h5>Company</h5></li>
+          			<li><a href="/aboutus">About Us</a></li>
+		  			<li><a href="/careers">Careers</a></li>
+          		
+        		</ul>
+      		</div>
+      		<div class="col-xs-12 col-sm-3">
+        		<ul class="info-links-col">
+          			<li><h5>Indulge</h5></li>
+           			<li><a href="/event/list/todays-sales/0">Today's Sales</a></li>
+					<li><a href="/event/list/current-sales/0">Current Sales</a></li>
+					<li><a href="/category/categories/666">Featuring Shops</a></li>
+					<li><a href="/event/list/ending-soon/0">Ending Soon</a></li> 
+		  		</ul>
+      		</div>
+      
+      		<div class="col-xs-12 col-sm-3">
+		        <ul class="info-links-col">
+		          <li>
+		            <h5>Customer Support</h5>
+		          </li>
+		          <li><a href="/faq">FAQs</a></li>
+				  <li><a href="/contactus">Get in Touch</a></li>
+				  <li><a href="/returnpolicy">Return Policy</a></li>
+				
+		        </ul>
+	      </div>
+      	<div class="col-xs-12 col-sm-3">
+        <ul class="info-links-col social-icons">
+          <li>
+            <h5>social</h5>
+          </li>
+          <li>
+            <ul class="social clearfix">
+              <li><a class="footer-tw" href="http://twitter.com/fashionandyou" title="Twitter" target="_blank"></a></li>
+			  <li><a class="footer-fb" href="http://facebook.com/fashionandyou" title="Facebook" target="_blank"></a></li>
+			  <li><a class="footer-pt" href="http://pinterest.com/fashionandyou/" title="Pinterest" target="_blank"></a></li>
+			  <li><a class="footer-gp" href="https://plus.google.com/110887568602383253208/posts" title="Google+" target="_blank"></a></li>
+			  
+            </ul>
+          </li>
+          </ul>
+          <div class="fb-likes">
+          	<div onClick="_gaq.push(['_trackEvent','Social media','button','Facebook fashionandyou shop page']);" data-show-faces="true" data-width="300" data-send="true" data-href="http://facebook.com/fashionandyou" class="fb-like"></div><div id="fb-root"></div>
+          
+          </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="row quick-shop-links-outer clearfix">
+    <div class="quick-shop-links">
+      <div class="col-xs-12 col-sm-6">
+        <div class="footer-category-names" id="seoLinks"></div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="footer-brand-names">
+       <!-- <h5>Top Brands</h5>
+          <p>
+          	<a href="/search/result/nike">Nike</a> |
+          	<a href="/search/result/reebok">Reebok</a>|
+          	<a href="/search/result/calvin klein">Calvin Klein</a>|
+          	<a href="/search/result/adidas">Adidas</a> |
+          	<a href="/search/result/aerosoles">Aerosoles</a> |
+          	<a href="/search/result/armani">Armani</a> |
+          	<a href="/search/result/austin reed">Austin Reed</a> |
+          	<a href="/search/result/benetton">Benetton</a> |
+          	<a href="/search/result/bossini">Bossini</a> |
+          	<a href="/search/result/christain dior">Christian Dior</a> |
+          	<a href="/search/result/converse">Converse</a> |
+          	<a href="/search/result/diesel">Diesel</a> |
+          	<a href="/search/result/dockers">Dockers</a> |
+          	<a href="/search/result/dolce and gabbana">Dolce & Gabbana</a> |
+          	<a href="/search/result/esprit">Esprit</a> |
+          	<a href="/search/result/gap">Gap</a> |
+          	<a href="/search/result/gucci">Gucci</a> |
+          	<a href="/search/result/guess">Guess</a> |
+          	<a href="/search/result/hugo boss">Hugo Boss</a> |
+          	<a href="/search/result/hush puppies">Hush Puppies</a> |
+          	<a href="/search/result/iceberg">Iceberg</a>|
+          	<a href="/search/result/lacoste">Lacoste</a> |
+          	<a href="/search/result/levis">Levi's</a> |
+          	<a href="/search/result/pepe jeans">Pepe Jeans</a> |
+          	<a href="/search/result/pierre cardin">Pierre Cardin</a> |
+          	<a href="/search/result/polo">Polo</a> |
+          	<a href="/search/result/puma">Puma</a> |
+          	<a href="/search/result/ralph lauren">Ralph Lauren</a> |
+          	<a href="/search/result/tommy hilfiger">Tommy Hilfiger</a> |
+          	<a href="/search/result/vans">Vans</a> |
+          	<a href="/search/result/van heusen">Van Heusen</a> |
+          	<a href="/search/result/versace">Versace</a> |
+          	<a href="/search/result/wrangler">Wrangler</a> </p> -->
+          	
+          	<!-- <ul><li>Nike</li>|<li>Reebok</li>|<li>Calvin Klein</li>|<li>Adidas</li>|<li>Aerosoles</li>|<li>Armani</li>|<li>Austin Reed</li>|<li>Benetton</li>|<li>Bossini</li>|<li>Christian Dior</li>
+          	|<li>Converse</li>|<li>Diesel</li>|<li>Dockers</li>|<li>Dolce & Gabbana</li>|<li>Esprit</li>|<li>Gap</li>|<li>Gucci</li>|<li>Guess</li>|<li>Hugo Boss</li>
+          	|<li>Hush Puppies</li>|<li>Iceberg</li>|<li>Lacoste</li>|<li>Levi's</li>|<li>Pepe Jeans</li>|<li>Pierre Cardin</li>|<li>Polo</li>|<li>Puma</li>
+          	|<li>Ralph Lauren</li>|<li>Tommy Hilfiger</li>|<li>Vans</li>|<li>Van Heusen</li>|<li>Versace</li>|<li>Wrangler</li></ul> -->
+          	
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="copyrightbar">
+     <!-- <p class="copyrighttext">Copyright &copy;2009-2014 fashionandyou.com<br />
+        All Rights Reserved</p> -->
+    </div>
+  </div>
+</footer>
+
+<!-- footer area end here -->
+
+<!--confirmation popup start -->
+<div id="confirmation-popup" class="common-popup confirm">
+	<div align="center"><span class="icon"></span></div>
+	<h2>Are You Sure</h2>
+	<div class="row">
+		<p>You Want To delete this</p>
+		<div align="center">
+			<input type="button" value="Yes" />
+			<input type="button" value="No" />
+		</div>
+	</div>
+</div>
+<!--confirmation popup end -->
+    
+<!--error popup start -->
+<div id="invalid-popup" class="common-popup invalid">
+	<div align="center"><span class="icon"></span></div>
+	<h2></h2>
+	<div class="row">
+		<p></p>
+	</div>
+</div>
+<!--error popup end -->
+
+<!-- expire product cart popup start -->
+<div id="cart-product-expire-popup" class="product-expire">
+	<div class="expireicon"></div>
+	<h3>Time is running out</h3>
+	<p>If you don't want to miss out on this amazing deal<br> then checkout before your cart expires.</p>
+
+	<!-- <div class="expire-product">
+		<img src="assets/images/product_image2.jpg" />
+		<h4>Product name</h4>
+		<h5>Size : <span>XL</span><br>	Qty : <span>1</span></h5>
+	</div> -->
+
+	<div align="center">
+		<a href="/cart" class="procced-checkout">Proceed to Checkout</a>
+	</div>
+</div>
+
+<!--- feedback form----------->
+<div id="feedbackpop" class="hidden-xs">
+<div id="feedback_but"></div>
+
+<form id="feedbackForm" class="feedbackpop_form" action="">
+<!-- <div id="feedback_close"></div> -->
+<div class="errormsg" style="display:none;">
+	<span id="errorMessage" >&nbsp;</span>
+</div>
+<span class="statusmsg green" style="display:none;">
+<span class="text">Thank you for sharing your feedback with us.</span> 
+</span>
+<label>Name :</label> <input type="text" id="feedbackName" class="input-field"><br>
+<label>Email Address :</label> <input type="text" id="feedbackEmail" class="input-field"><br>
+<label>Phone :</label> <input type="text" id="feedbackPhone" class="input-field"><br>
+<label>Type of feedback :</label> <div class="select-wrapper">
+                <select class="input-field" id="feedbackType">
+                   <option value="Product Query">Product Query</option>
+                   <option selected value="Suggestion">Suggestion</option>
+                   <option value="Supplier Query">Supplier Query</option>
+                   <option value="Pr & Media Query">Pr & Media Query</option>
+                   <option value="Website Feedback">Website Feedback</option>
+                </select>
+            </div><br>
+<label>Message :</label> <textarea id="feedbackMessage"></textarea><br>
+<input type="submit" id="feedbackSubmit" value="Submit" class="go" />
+</form>
+</div>
+<!-- end feedback form ------>
+
+<!-- top navi Button --->
+<p id="back-top"> <a href="#top"><span></span></a> </p>
+<!-- end top navi Button --->
+
+
+<!-- expire product cart popup end -->
+
+<div id="fb-root"></div>
+
+<div class="marketing-popup">
+	#set ($VOID = $velocityPortletPreferences.setValue('groupId', $themeDisplay.getScopeGroupId().toString()))
+    #set ($VOID = $velocityPortletPreferences.setValue('articleId', '56385'))
+    #set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
+    #set ($portlet_id = '56')
+	#set ($my_portlet_id = "${portlet_id}_INSTANCE_56385")
+	$theme.runtime($my_portlet_id, "", $velocityPortletPreferences.toString())
+</div>
+<link href="/app-theme/dist/styles/responsive.css?v=0227" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="/app-theme/dist/scripts/vendor.js?v=0227"></script>
+<script src="/app-theme/dist/scripts/plugins.js?v=0227"></script>
+<script src="/app-theme/dist/scripts/utils.js?v=0227"></script>		
+<script src="/app-theme/dist/scripts/main.js?v=0227"></script>

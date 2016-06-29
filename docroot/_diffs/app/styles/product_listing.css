@@ -1,0 +1,1032 @@
+.tw-icon,
+.fb-icon,
+.linkin-share,
+.pt-icon,
+.gplus-share,
+.tooltip-timer,
+.related-videos:before,
+.listing-share,
+.listing-fav,
+.listing-fav-selected,
+.listing-video,
+.style-head:before,
+.expanded-state:before,
+.style-name:after,
+.style-arrow,
+.review-head:before,
+.review-btn:before,
+.fill-star,
+.unfill-star,
+.filsearch-sub,
+.cart-icon,
+.logos-area .express,
+.logos-area .international,
+.logos-area .exclusive,
+.logos-area .logocontent {
+  background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+}
+.related-videos {
+  float: right;
+  width: auto;
+  margin-right: 10px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666;
+}
+.related-videos:before {
+  position: absolute;
+  width: 25px;
+  height: 13px;
+  margin-left: -25px;
+  background-position: -120px -4px;
+  content: '';
+}
+.related-videos:hover {
+  color: #c92869;
+}
+.related-videos:hover:before {
+  background-position: -29px -452px;
+}
+.display-hidden {
+  display: none;
+}
+.overlay-temp {
+  position: fixed;
+  z-index: 8001;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.prod-lstng-area {
+ /*  float: left; */
+  position:relative;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#filterleft {position:absolute; height:100%; width:235px; left:0px;}
+#fliterholder {width:235px;}
+
+.prod-lstng-area > .prod-area-filter {
+  float: left; width:25%;
+  height: auto;
+}
+.prod-lstng-area > .prod-area-list {
+ /*  float: right; */ width:100%;
+  height: auto;
+}
+.filter {
+  float: left;
+  height: auto;
+  padding:5%;
+  width:100%;
+  background: #fcfcfc;
+}
+.filter-head {
+  display:block;
+  clear:both;
+  padding:0px 0 8px 0px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: normal;
+  color: #3d3e3f;
+  text-transform: uppercase;
+}
+.search {
+  position: relative;
+  width:100%;
+  height: 30px;
+  margin: 0 0 12px 0;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.search .filsearch-box {
+  float: left;
+  width: 100%;
+  height: 28px;
+  padding: 0 16% 0 5%;
+  font-size: 12px;
+  line-height: 30px;
+  color: #707070;
+  background: #fff;
+}
+.search .filsearch-sub {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 5;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  color: transparent;
+  text-indent: -9999;
+  cursor: pointer;
+  background-position: -91px -342px;
+}
+
+.scroller-bystyle {max-height:240px;}
+.scroller-bycolor {max-height:50px;}
+.scroller-bystyle {}
+
+.by-style-outer {
+  float: left;
+  width:100%;
+  height: auto;
+  border-top: 1px solid #f4f5f5;
+}
+.by-style-outer:last-child {
+  border-bottom: 1px solid #f4f5f5;
+}
+.style-head {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  color: #666;
+  text-indent: 30px;
+  text-transform: capitalize;
+  background-position: 7px -372px;
+}
+.style-head:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 40px;
+  background-position: 7px -372px;
+  content: "";
+}
+.expanded-state {
+  color: #333;
+}
+.expanded-state:before {
+  background-position: 7px -402px;
+}
+.styles {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 5px 0 20px 10px;
+  opacity: 1;
+}
+.styles .style-name {
+  position: relative;
+  float: left;
+  padding: 5px;
+  margin: 0 0 7px 10px;
+  clear: both;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+  color: #4c4c4c;
+  color: #666;
+  text-transform: capitalize;
+}
+.styles .style-name:after {
+  position: absolute;
+  top: 6px;
+  left: -10px;
+  display: block;
+  float: right;
+  width: 7px;
+  height: 10px;
+  cursor: default;
+  background-position: -4px -443px;
+  content: "";
+}
+.by-color {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.by-color .color-selection {
+  float: left;
+  padding-left: 15px;
+  font-size: 15px;
+  line-height: 40px;
+  color: #3d3e3f;
+  text-transform: capitalize;
+}
+.expand-icon {
+  display: block;
+  float: right;
+  width: 18px;
+  height: 18px;
+  margin: 11px 20px 0 0;
+  background: url( http://cdn1.fashionandyou.com/fny-static/app-images/icon_expand.png) no-repeat;
+}
+.styles .style-name-selected,
+.style-name:hover {
+  color: #fff;
+  background: #666;
+}
+.choose-color {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0  5px 5px 0;
+  background: #441342;
+}
+.red {
+  background: #6e0d20;
+}
+.blue {
+  background: #582cb3;
+}
+.grey {
+  background: #b6b2a7;
+}
+.lightblue {
+  background: #2c6bb3;
+}
+.pink {
+  background: #ce2d78;
+}
+.darkblue {
+  background: #1c2039;
+}
+.purple {
+  background: #c884cf;
+}
+.black {
+  background: #100f15;
+}
+.yellow {
+  background: #eeefa1;
+}
+.darkestblue {
+  background: #423f4c;
+}
+.green {
+  background: #abad1c;
+}
+.alt {
+  margin-left: 10px;
+}
+.choose-color-selected {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  box-shadow: 1px 2px 2px 0 #333;
+}
+/* product css starts here */
+.product-outer {
+  position: relative;
+  display: block;
+  float: left;
+  width: 30%;
+  padding: 0 ;
+  margin: 3% 0 0 3.3%;
+}
+.product-outer .prod-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height:252px;
+  float:left;
+
+}
+
+.product-outer .prod-img .soldout {position:absolute; z-index:99; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/transparent2.png); width:100%; height:100%; text-align:center; float:left;}
+.product-outer .prod-img .soldout h4 {margin:0px 0px 8px 0px; color:#d22573; font-size:28px; display:block; text-align:center; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; padding:60% 0 0 0;}
+.product-outer .prod-img .soldout h4 strong {display:block; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.product-outer .prod-img .soldout p {margin:0px; font-size:11px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/transparent2.png); color:#000; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif; text-align:center; padding:4px; display:inline;}
+
+.product-outer .quickview {position:absolute; height:1px; width:100%; text-align:center; top:170px; z-index:99999; visibility:hidden; opacity:0; transition:all 0.5s linear;}
+.product-outer .quickview a {display:inline-block; background:#000; color:#fff; padding:3px 10px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; text-transform:uppercase; text-decoration:none;}
+.product-outer:hover .quickview {transition:all 0.5s linear; visibility:visible; opacity:1;}
+
+.prod-img img {
+  float: left;
+  width: 100%;
+}
+.product-outer .rolover-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 56px;
+  padding:10px 3px;
+  background:#fff;
+  border-bottom:1px dashed #CCC;
+}
+.sizes-area {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #666;
+  position: relative;
+}
+.sizes-area .size {
+  position: relative;
+  float: left;
+  width: 24px;
+  height: 22px;
+  margin: 7px 4px 0 0;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #666;
+  text-align: center;
+  text-transform: uppercase;
+  background: #f1f2f2;
+}
+.sizes-area .size:hover {
+  color: #333;
+}
+.sizes-area .alt {
+  margin-left: 7px;
+}
+.shipping-area {float: right; height: auto; padding:5px 0px 0px 0px;}
+.shipping-area .shippingtype {float: left; margin-left: 6px; position:relative; display:block; width:19px; height:19px; background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;}
+.shipping-area .shippingtype.international {background-position: -490px -391px;}
+.shipping-area .shippingtype.express {background-position: -461px -391px;}
+.shipping-area .shippingtype.exclusive {background-position: -518px -391px;}
+
+.button-small {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #333;
+}
+.button-small:hover {
+  opacity: .9;
+}
+.button-small .cart-icon {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-position: -120px -218px;
+}
+.shipping-area .pull-right {
+  margin-right: 6px;
+}
+.prod-detail {
+	float:left;
+  display: block;
+  width: 100%;
+}
+.prod-info {
+  float:left;
+  width:100%;
+  height: auto;
+  padding:6px 0px;
+  border-bottom: 1px dashed #e2e2e2;
+}
+.prod-pricing {
+  float:left;
+  width:100%;
+  height: auto;
+  padding: 8px;
+}
+.prod-info .ev-prod-name {
+  float: left;
+  width: 100%;
+  height: 15px;
+  margin: 6px 0 0 0;
+  overflow: hidden;
+  font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  color: #333;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.prod-info .ev-prod-name-font-check {
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.prod-info .event-name {
+  float: left;
+  width: 100%;
+  height: 15px;
+  overflow: hidden;
+  font-family: "helvetica_ulight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 1px;
+  color: #666;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.prod-pricing .old-price {
+  float: left;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 11px;
+  color: #333;
+  text-align: right;
+  text-decoration: line-through;
+}
+.prod-pricing .new-price {
+  float: right;
+  font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #000;
+  text-align: right;
+}
+.prod-detail .action-area {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+}
+.action-area .color-num {
+  display: block;
+  float: left;
+  margin: 10px 0 10px 0;
+  font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  color: #333;
+}
+.action-area .action-icons {
+  float: left;
+  width: auto;
+  height: auto;
+  margin-top: 8px;
+}
+
+
+.action-area .action-icons .sharearea {float:right; width:15px; height:15px; white-space:nowrap; overflow:hidden; position:relative; transition:all 1s linear; -webkit-transition:all 1s linear;}
+.action-area .action-icons .sharearea:hover {width:75px!important;}
+.action-area .action-icons .sharearea:hover .shareslide {transition:all 0.5s linear; -webkit-transition:all 0.5s linear; left:20px; visibility:visible; opacity:1;}
+.action-area .action-icons .sharearea .shareslide {position:absolute; width:55px; left:-150px; visibility:hidden; opacity:0; transition:all 0.5s linear; -webkit-transition:all 0.5s linear;}
+
+.action-area .action-icons .sharearea a.ifacebook, .action-area .action-icons .sharearea a.itwitter, .action-area .action-icons .sharearea a.iemail {display:block; float:left; margin:0px 3px 0px 0px; height:14px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite1.png) no-repeat;}
+.action-area .action-icons .sharearea a.ifacebook {width:14px; background-position:-88px -11px;}
+.action-area .action-icons .sharearea a.itwitter {width:13px; background-position:-88px -33px;}
+.action-area .action-icons .sharearea a.iemail {width:18px; background-position:-88px -55px;}
+
+.action-icons .listing-share {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+  background-position: -3px -328px;
+  cursor:pointer;
+}
+.action-icons .listing-share:hover {
+  background-position: -61px -383px;
+}
+
+.favorite-tab {float:right;}
+.favorite-tab .listing-fav {
+  position: relative;
+  float: right;
+  width: 18px;
+  height: 15px;
+  margin-right: 10px;
+  background-position: -93px -387px;
+}
+.favorite-tab .listing-fav:hover {
+  background-position: -92px -365px;
+}
+.favorite-tab .listing-fav-selected {
+  background-position: -92px -365px;
+}
+.action-icons .listing-video {
+  float: right;
+  width: 21px;
+  height: 11px;
+  margin: 2px 10px 0 0;
+  background-position: -120px -5px;
+}
+.action-icons .listing-video:hover {
+  background-position: -29px -453px;
+}
+.tagimage {
+  position: absolute;
+  top: -22px;
+  right: 5px;
+  z-index: 2;
+  width: 28px;
+  height: 22px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #ce2d78 url( http://cdn1.fashionandyou.com/fny-static/app-images/tag_img.png) 0 20px repeat-x;
+}
+.tagimage:before {
+  position: absolute;
+  top: -28px;
+  left: 0 ;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-bottom: 14px solid #ce2d78;
+  content: "";
+}
+.prod-area-right .col-xs-4 {
+  margin-bottom: 20px;
+}
+.sort-by {
+  float: left;
+  width: 100%;
+  padding:0px 0px 0px 20px;
+  height: auto;
+}
+.sort-by .select-wrapper {
+  width: 100%;
+  height: 28px;
+  box-sizing: border-box;
+}
+.sort-by .select-wrapper .selectbox-wrapper {
+  border-top-right-radius: 0;
+}
+select {
+  float: left;
+  width: 100%;
+  height: 25px;
+  margin: 0 0 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.listing-pagination {
+  display: block;
+  float: right;
+  padding-right: 4px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+}
+/* review section css starts here */
+.prod-review {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.review-head {
+  position: relative;
+  float: left;
+  margin: 27px 0 4px 0;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-indent: 50px;
+  text-transform: uppercase;
+}
+.review-head:before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 43px;
+  height: 31px;
+  background-position: -119px -38px;
+  content: "";
+}
+.ur-review {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 5px 0 7px 0;
+  margin: 15px 0 0 0;
+}
+.ur-review .ur-img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 2px;
+}
+.ur-review .user-details {
+  float: left;
+  width: 76%;
+  height: auto;
+}
+.user-details .ur-name,
+.ur-region {
+  float: left;
+  padding: 0 0 0 8px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+.user-details .ur-name {
+  clear: both;
+}
+.ur-review .ur-words {
+  float: left;
+  padding: 10px 0 0 0;
+  clear: both;
+  font-family: "helvetica_ulight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: .5px;
+  color: #666;
+}
+.review-btn {
+  position: relative;
+  float: left;
+  padding-top: 2px;
+  margin: 17px 0 0 0;
+  clear: both;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #666;
+  text-indent: 22px;
+}
+.review-btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-position: -125px -97px;
+  content: '';
+}
+.review-btn:hover {
+  color: #c92869;
+}
+.review-btn:hover:before {
+  background-position: -155px -97px;
+}
+.fill-star {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 15px;
+  margin: 0 0 7px 5px;
+  background-position: -4px -274px;
+}
+.fill-star:first-child {
+  margin-left: 8px;
+}
+.unfill-star {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 15px;
+  margin: 0 0 7px 5px;
+  background-position: -4px -299px;
+}
+/* review section css ends here */
+/* size pop up starts here */
+.size-pop {
+  z-index: 99999;
+  display: none;
+  top: 0px;
+  left: 0;
+  width: 214px;
+  height: auto;
+  margin: 0 0 0 0;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+  position: absolute;
+}
+.size-pop:before {
+  width: 0;
+  height: 0;
+  content: '';
+  border: 10px solid transparent;
+  border-bottom: 0;
+  border-top: 10px solid #ccc;
+  position: absolute;
+  bottom: -10px;
+  right: 50%;
+  margin-right: -10px;
+}
+.tip-top-left:before {
+  right: 20px;
+  border-right: 0;
+}
+.sizepop-inn {
+  width: 196px;
+  height: auto;
+  margin: 10px;
+}
+.sizepop-inn .tile {
+  float: left;
+  width: 45px;
+  height: 40px;
+  padding: 3px 0 3px 0;
+  margin-right: 5px;
+  background: #f7f7f7;
+}
+.sizepop-inn .tile:first-child {
+  margin-left: 18px ;
+}
+.sizepop-inn:last-child {
+  margin-right: 0 ;
+}
+.sizepop-inn .tile pre {
+  float: left;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+.sizepop-inn .sold-out {
+  float: left;
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #ce2d78;
+}
+.size-india {
+  float: left;
+  width: 196px;
+  height: auto;
+  padding: 10px 0 10px 0;
+  margin-top: 15px;
+  border-top: 1px solid #edecec;
+}
+.size-india .sizing1 {
+  float: left;
+  height: 20px;
+  margin: 0;
+  font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000;
+  border-right: 1px solid #ccc;
+}
+.size-india .sizing1:first-child {
+  padding-right: 5px;
+}
+.size-india .sizing1:nth-child(2) {
+  padding: 0 5px 0 5px;
+}
+.size-india .sizing1:last-child {
+  padding-left: 5px;
+  border-right: 0;
+}
+/* size pop up ends here */
+/* social share powertip*/
+.social-share-powertip {
+  position: static;
+  z-index: 999;
+  display: none;
+  width: 180px;
+  height: auto;
+  padding: 15px;
+  margin: 0 0 0 0;
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0  3px 5px 0 #ccc;
+}
+.social-share-powertip .fb-icon {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background-position: -1px -2px;
+}
+.social-share-powertip .tw-icon {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  background-position: 0 -33px;
+}
+.social-share-powertip .pt-icon {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 26px;
+  margin-left: 5px;
+  background-position: -25px -417px;
+}
+.social-share-powertip .gplus-share {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  background-position: 0 -98px;
+}
+.social-share-powertip .linkin-share {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  background-position: 0 -67px;
+}
+/* search result page css starts here */
+.total-result {
+  float: left;
+  padding: 20px 0 0 10px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333;
+}
+.total-result span {
+  padding-left: 2px;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #c92869;
+}
+.results {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 5px 0 5px 0;
+  opacity: 1;
+}
+.results .results-value {
+  position: relative;
+  float: left;
+  padding: 5px;
+  margin: 0 0 7px 10px;
+  clear: both;
+  font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+  color: #4c4c4c;
+  color: #666;
+  text-transform: capitalize;
+}
+.results .results-value-selected,
+.results-value:hover {
+  color: #fff;
+  background: #666;
+}
+/* search result page css ends here */
+.search-video {
+  width: 100%;
+  margin: 0;
+}
+.search-video .col-xs-4 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.search-video .video-sec {
+  width: 91%;
+  margin-left: 9%;
+}
+.search-video .video-sec iframe {
+  width:100%;
+  height: 130px;
+}
+.search-video .video-sec .view {
+  margin: 0 30px 0 0;
+  line-height: 35px;
+}
+.search-video .video-sec .view:before {
+  margin-top: 10px;
+}
+.search-video .video-sec .sharing {
+  line-height: 35px;
+}
+.search-video .col-xs-4:first-of-type .video-sec {
+  margin-left: 9%;
+  margin-right: 0;
+}
+.search-video .col-xs-4:nth-of-type(2) .video-sec {
+  margin-left: 9%;
+  margin-right: 0;
+}
+
+.color-area {float:left;}
+.color-area span {display:block; width:10px; height:10px; float:left; margin:0px 5px 0px 0px;}
+
+.discount-tag {float:right; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; color:#ad3a6f; line-height:13px;}
+
+
+#notfound {clear:both; padding:20px 0px 0px 20px;}
+#notfound h2 {font-size:28px; text-align:center; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; margin:0px 0px 20px 0px; color:#000;}
+#notfound a#continueshop {display:inline-block; color:#fff; font-size:16px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; background:#ad386f; padding:5px 15px; margin:0px 20px 0px 0px;}
+#notfound a#continueshop:hover {background:#000;}
+
+#notfound a#resetfilter {display:inline-block; color:#fff; font-size:16px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; background:#000; padding:5px 15px;}
+#notfound a#resetfilter:hover {background:#333;}
+
+.quickviewpopup {width:900px; background:#fff; padding:15px; display:none;}
+.quickproduct {clear:both;}
+.quickproduct .product-gallery {float: left; width:400px; height: auto;}
+.quickproduct .product-gallery .gallery-thumbnails {position: relative; display: block; float: left; width:65px; height: 452px!important; overflow: hidden;}
+.quickproduct .gallery-thumbnails ul {float: left; width: 100%; height: 452px!important;}
+.quickproduct .gallery-thumbnails ul li {float: left; width: 65px; height:90px; margin-bottom: 10px;}
+.quickproduct .gallery-thumbnails ul li .thumbnail-image {display: block; float: left; width: 100%; height:100%;}
+.quickproduct .gallery-thumbnails ul li .thumbnail-image > img {float: left; width: 100%; height:100%;}
+
+.quickproduct .thumbnail-image-selected {float: left; width: 74px; height: 102px; border: 2px solid #cf3277;}
+.quickproduct .gallery-thumbnails .move-previous,
+.quickproduct .gallery-thumbnails .move-next {position: absolute; bottom: 0; left: 0; z-index: 2; width: 65px; height: 20px; background: url( http://cdn1.fashionandyou.com/fny-static/app-images/bg-transparent.png) repeat;}
+.quickproduct .gallery-thumbnails .move-previous {top: 0; bottom: auto;}
+.quickproduct .gallery-thumbnails .move-previous:before {position: absolute; top: 7px; left:28px; width: 9px; height: 5px; background:url("/app-theme/images/sprite.png") -74px -35px no-repeat; content: '';}
+.quickproduct .gallery-thumbnails .move-next {bottom: 0;}
+.quickproduct .gallery-thumbnails .move-next:before {position: absolute; top: 7px; left:28px; width: 10px; height: 6px; background:url("/app-theme/images/sprite.png") -73px -43px no-repeat; content: '';}
+.quickproduct .large-image {position: relative; display: block; float: left; width:305px; margin: 0 0 0 15px; background: #ccc;}
+.quickproduct .large-image img {width: 100%; height: auto;}
+.quickproduct .large-image .image-rolover {position: absolute; bottom: 0; display: none; width:305px; height: 50px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 50px; color: #666; text-align: center; text-transform: uppercase; background: url( http://cdn1.fashionandyou.com/fny-static/app-images/bg-transparent.png) repeat;}
+
+.product-popup-info {float: right; width:470px; height: auto;}
+.product-popup-info .product-name {float: left; padding-bottom: 15px; padding-left: 10px; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 18px; color: #666; text-transform: capitalize;}
+.product-popup-info .code-area {float: left; width: 100%; height: auto; border-bottom: 1px solid #efbed2;}
+.product-popup-info .code-area .product-code {float: left; padding: 0 0 10px 10px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 11px; line-height: 11px; color: #666;}
+.product-popup-info .code-area .product-timer {float: left; float: right; margin-right: 10px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color: #666;}
+.product-popup-info .code-area .product-timer:before {position: absolute; width: 16px; height: 16px; margin: -5px 0 0 -23px; background:url("/app-theme/images/sprite.png") -93px -216px no-repeat; content: '';}
+.product-popup-info .pricing-area {float: left; width: 100%; height: auto; padding-bottom: 20px; margin-top: 20px; border-bottom: 1px solid #f5f6f6;}
+.product-popup-info .pricing-area .old-pricing {float: left; padding-top: 5px; padding-left: 10px; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; color: #666; text-decoration: line-through;}
+.product-popup-info .pricing-area .new-pricing {float: left; padding-left: 15px; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 18px; color: #666;}
+.product-popup-info .pricing-area .shipping-info {float: right; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color: #666;}
+.product-popup-info .pricing-area .shipping-info:before {position: absolute; width: 18px; height: 18px; margin: -5px 0 0 -20px; background:url("/app-theme/images/sprite.png") -34px -4px no-repeat; content: '';}
+.product-popup-info .selection-area {float: left; width: 100%; height: auto; padding-bottom: 11px; margin-top: 10px; border-bottom: 1px solid #f5f6f6;}
+.product-popup-info .selection-area .select-color {float: left; width: 127px; height: 60px; margin-left: 10px; border-right: 1px solid #f5f6f6;}
+.product-popup-info .label {float: left; width: 100%; padding: 11px 0 10px 0; margin: 0; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 14px; color: #666; text-align: left; text-transform: capitalize;}
+.product-popup-info .select-color .color-tiles {float: left; width: 20px; height: 20px; margin: 0  5px 5px 0;}
+.product-popup-info .red {background: #6e0d20;}
+.product-popup-info .blue {background: #582cb3;}
+.product-popup-info .grey {background: #b6b2a7;}
+.product-popup-info .yellow {background: #f9b706;}
+.product-popup-info .color-tiles-selected {width: 20px; height: 20px; border: 1px solid #333; box-shadow: 1px 2px 2px 0 #333;}
+.product-popup-info .selection-area .select-quantity {float: left; width: auto; height: auto; margin-left: 30px;}
+.product-popup-info .selection-area .select-quantity .select-wrapper {z-index: 2; width: 52px; height: 24px;}
+.product-popup-info .selection-area .select-quantity .select-wrapper .selectbox {line-height: 24px;}
+.product-popup-info .selection-area .select-quantity .select-wrapper .selectbox-wrapper {width: 150%;}
+.product-popup-info .selection-area .select-quantity .select-wrapper .selectbox-wrapper ul li {padding: 0;}
+.product-popup-info .size-info {float: left; width: 100%; height: auto; padding: 0 0 20px 10px; margin-top: 9px; border-bottom: 1px solid #f5f6f6;}
+.product-popup-info .size-tiles {display: block; float: left; width: 35px; height: 30px; margin-right: 5px; margin-bottom: 11px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 30px; color: #666; text-align: center; text-transform: uppercase; background: #f1f2f2;}
+.product-popup-info .size-not-avail {color: #e0e0e0; background: #fbfbfb;}
+.product-popup-info .size-not-avail:hover {color: #e0e0e0;}
+.product-popup-info .offer-area {float: left; width: 100%; height: auto; margin-top: 17px;}
+.product-popup-info .offer-area .offer-box {position: relative; float: left; width: 100%; height: 40px; margin-left: 10px; overflow: hidden; background: #f1f2f2;}
+.product-popup-info .offer-box .offer-tag {position: relative; float: left; width: 60px;  height: 40px; padding-left: 6px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 40px; color: #fff; text-transform: uppercase; background: #c92869; border-right: 4px solid #b81a4d;}
+.product-popup-info .offer-box .offer-tag:after {position: absolute; top: 0; right: -11px; z-index: 5; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 11px solid #c92869; content: '';}
+.product-popup-info .offer-box .offer-tag:before {position: absolute; top: 0; right: -15px; border-top: 20px solid transparent; border-bottom: 20px solid transparent;  border-left: 11px solid #b81a4d; content: '';}
+.product-popup-info .offer-info {float: left; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; line-height: 40px; color: #666; text-indent: 21px;}
+.product-popup-info .offer-info .highlighted-text {font-style: italic; color: #c92869;}
+.product-popup-info .action-area {float: left; width: 100%; height: auto; margin-top:17px;}
+
+.product-popup-info .add-favorites {float: left; margin-left: 50px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 40px;  color: #333;}
+.product-popup-info .add-favorites:before {position: absolute; width: 19px; height: 18px; margin: 10px 0 0 -20px; background:url("/app-theme/images/sprite.png") -93px -387px no-repeat; content: '';}
+.product-popup-info .add-favorites:hover {color: #c92869;}
+.product-popup-info .add-favorites:hover:before {background:url("/app-theme/images/sprite.png") -92px -365px no-repeat;}
+.product-popup-info .sharing {float: left; margin-left: 50px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; line-height: 40px; color: #333;}
+.product-popup-info .sharing:before {position: absolute; width: 17px; height: 18px; margin: 10px 0 0 -20px; background:url("/app-theme/images/sprite.png") -57px -326px no-repeat; content: '';}
+.product-popup-info .sharing:hover {color: #c92869;}
+.product-popup-info .sharing:hover:before {background:url("/app-theme/images/sprite.png") -34px -326px no-repeat;}
+
+.product-popup-info .product-share {float:left; margin:13px 0px 0px 50px;}
+.product-popup-info .product-share .sharearea1 {width:80px; height:15px; white-space:nowrap; overflow:hidden; position:relative; transition:all 1s linear;}
+.product-popup-info .product-share .sharearea1 .sharetxt {font-size:13px; line-height:13px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; display:block; float:left;}
+.product-popup-info .product-share .sharearea1 .listing-share1 {float: left; width: 15px; height: 15px; margin-right: 6px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -3px -328px no-repeat; cursor:pointer;}
+.product-popup-info .product-share .sharearea1 .listing-share1:hover {background-position: -61px -383px;}
+.product-popup-info .product-share .sharearea1:hover {width:120px!important;}
+.product-popup-info .product-share .sharearea1:hover .shareslide1 {transition:all 0.5s linear; left:60px; visibility:visible; opacity:1;}
+.product-popup-info .product-share .sharearea1 .shareslide1 {position:absolute; width:55px; left:-150px; visibility:hidden; opacity:0; transition:all 0.5s linear;}
+
+.product-popup-info .product-share .sharearea1 a.ifacebook, .product-popup-info .product-share .sharearea1 a.itwitter, .product-popup-info .product-share .sharearea1 a.iemail {display:block; float:left; margin:0px 3px 0px 0px; height:14px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite1.png) no-repeat;}
+.product-popup-info .product-share .sharearea1 a.ifacebook {width:14px; background-position:-88px -11px;}
+.product-popup-info .product-share .sharearea1 a.itwitter {width:13px; background-position:-88px -33px;}
+.product-popup-info .product-share .sharearea1 a.iemail {width:18px; background-position:-88px -55px;}
+
+.product-popup-info .pricing-area .logos-area {float:right; position:relative; height:34px; margin:0px 6px 0px 0px;}
+.product-popup-info .pricing-area .logos-area .logosholder {float:left; width:34px; height:34px; margin:0px 0px 0px 6px; position:relative;}
+
+.product-popup-info .pricing-area .logos-area .logocontent {background-position:-453px -304px; padding:2px 10px 0px 35px; width:132px; height:34px; font-size:9px; color:#fff; font-family:Arial, Helvetica, sans-serif; text-align:center; line-height:10px; position:absolute; right:0px; visibility:hidden; opacity:0; transition:all 0.2s linear; -webkit-transition:all 0.2s linear;}
+
+.product-popup-info .pricing-area .logos-area .logosholder:hover {z-index:99;}
+.product-popup-info .pricing-area .logos-area .logosholder:hover .logocontent {visibility:visible; opacity:1; transition:all 0.7s linear; -webkit-transition:all 0.7s linear;}
+.product-popup-info .pricing-area .logos-area .logosholder:hover .express,
+.product-popup-info .pricing-area .logos-area .logosholder:hover .international,
+.product-popup-info .pricing-area .logos-area .logosholder:hover .exclusive {right:100px; transition:all 0.2s linear; -webkit-transition:all 0.2s linear;}
+
+.product-popup-info .pricing-area .logos-area .express {background-position:-457px -348px; width:34px; height:34px; position:absolute; z-index:11; right:0px; transition:all 0.2s linear; -webkit-transition:all 0.2s linear;}
+.product-popup-info .pricing-area .logos-area .international {background-position:-498px -348px; width:34px; height:34px; position:absolute; z-index:11; right:0px; transition:all 0.2s linear; -webkit-transition:all 0.2s linear;}
+.product-popup-info .pricing-area .logos-area .exclusive {background-position:-538px -348px; width:34px; height:34px; position:absolute; z-index:11; right:0px; transition:all 0.2s linear; -webkit-transition:all 0.2s linear;}
+.product-popup-info .pricing-area .logos-area .daycount {float:right; font-size:12px; font-family:"helvetica_light","Helvetica Neue",Helvetica,Arial,sans-serif; border-left:1px solid #CCC; padding:0px 0px 0px 10px; margin:8px 0px 0px 10px;}

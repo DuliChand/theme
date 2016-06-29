@@ -1,0 +1,128 @@
+{{#if vendorProductEvents.length}}
+<!-- products starts here -->
+{{#each vendorProductEvents}}
+<div class="product-outer product"
+	id="{{vendorProduct.vendorProductId}}"
+	data-event-id="{{vendorProduct.eventId}}"
+	data-defaultorder=""
+	data-price="{{eventInventories.0.eventPrices.0.spWithVAT}}">
+	<div class="prod-img">
+		{{#notEqual vendorProduct.totalSKUQty 0}}
+		<!-- <div class="quickview">
+				<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick Buy</a>
+			</div> -->
+		{{/notEqual}} <a
+			href="/product-detail/product/{{vendorProduct.eventId}}/{{vendorProduct.vendorProductId}}">
+			{{#equal vendorProduct.totalSKUQty 0}}
+			<div class="soldout">
+				<h4>
+					SOLD <strong>OUT</strong>
+				</h4>
+				<!-- <p>Do not miss out on the next event</p> -->
+			</div> {{/equal}} <img onerror="this.src='/fny-theme/images/listing-error.jpg'" 
+			src="{{vendorProduct.imageView.detailsURL}}"
+			alt="{{vendorProduct.product.name}}"
+			title="{{vendorProduct.product.name}}" />
+		</a>
+
+		<div class="rolover-layer">
+			{{#if vendorProduct.attributes}} {{#each vendorProduct.attributes}}
+			{{#lowerEqual name "size"}}
+			<div class="product-sizing">
+				{{#if attributeValues.length}} {{#each attributeValues}}
+				{{#notLowerEqual value 'na'}} {{#equal quantity 0}} <span
+					class="{{toLowerCase value}} sold">{{toLowerCase value}}</span>
+				{{else}} <a
+					href="/product-detail/product/{{../../../../../../vendorProduct.eventId}}/{{../../../../../../vendorProduct.vendorProductId}}">
+					<span class="{{toLowerCase value}}">{{toLowerCase value}}</span>
+				</a> {{/equal}} {{/notLowerEqual}} {{/each}} {{else}} {{#notLowerEqual
+				attributeValues.value 'na'}} {{#equal attributeValues.quantity 0}} <span
+					class="{{toLowerCase attributeValues.value}}">{{toLowerCase
+					attributeValues.value}}</span> {{else}} <a
+					href="/product-detail/product/{{../../../../../vendorProduct.eventId}}/{{../../../../../vendorProduct.vendorProductId}}">
+					<span class="{{toLowerCase attributeValues.value}}">{{toLowerCase
+						attributeValues.value}}</span>
+				</a> {{/equal}} {{/notLowerEqual}} {{/if}}
+			</div>
+			{{/lowerEqual}} {{/each}} {{/if}}
+
+
+
+			<div class="clear"></div>
+
+			<div class="action-area">
+				<div class="action-icons">
+					<div class="sharearea">
+						<span class="listing-share" title="Share"></span>
+						<div class="shareslide">
+							<!-- <a class="ifacebook" title="Facebook" href="#"></a>
+								<a class="itwitter" title="Twitter" href="#"></a>
+								<a class="iemail" title="Email" href="#"></a> -->
+							<a href="#" class="ifacebook facebook social-share-link" title="Facebook"></a> 
+							<a href="#" class="itwitter twitter social-share-link" title="Twitter"></a>
+							<!-- <a href="#" class="iemail email social-share-link" title="Email"></a> -->
+							<a title="gplus" class="igplus googleplus social-share-link" href="#"></a> 
+							<a title="pintrest" class="ipintrest pinterest social-share-link" href="#"></a>
+						</div>
+					</div>
+					<!-- <a class="listing-video" href="#" title="Video Attached"></a> -->
+				</div>
+				<div class="shipping-area">
+					{{#if vendorProduct.shipmentType}} <span
+						class="shippingtype {{toLowerCase vendorProduct.shipmentType}}">{{vendorProduct.shipmentType}}</span>
+					{{/if}}
+				</div>
+			</div>
+			{{#notEqual vendorProduct.totalSKUQty 0}}
+			<div class="quickview-detail">
+				<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick
+					Buy</a>
+			</div>
+			{{/notEqual}}
+		</div>
+
+	</div>
+
+	<div class="prod-detail">
+		{{#if_less eventInventories.0.eventPrices.0.spWithVAT
+		eventInventories.0.eventPrices.0.mrp}}
+		<div class="discount-tag">- {{discountInPercentage
+			eventInventories.0.eventPrices.0.spWithVAT
+			eventInventories.0.eventPrices.0.mrp}}%</div>
+		{{/if_less}}
+		<div class="prod-info">
+			<a
+				href="/product-detail/product/{{vendorProduct.eventId}}/{{vendorProduct.vendorProductId}}"
+				class="ev-prod-name" title="{{vendorProduct.product.name}}">
+				{{vendorProduct.product.name}} </a> <a href="#" class="event-name"
+				title="{{../event.eventName}}"> {{../eventName}} </a> {{#if
+			vendorProduct.rushHour}}
+			<div class="rush-hour">
+				<span id="qntySold" class="active">{{getQntySoldPercent
+					vendorProduct.totalSKUConsumption vendorProduct.totalSKUQty}}% Sold</span>
+				<span id="qntyLeft">{{getQntyLeftPercent
+					vendorProduct.totalSKUConsumption vendorProduct.totalSKUQty}}% Left</span>
+			</div>
+			{{/if}}
+		</div>
+		<div class="prod-pricing">
+			<span class="old-price">INR
+				{{eventInventories.0.eventPrices.0.mrp}}</span> <span class="new-price">INR
+				{{eventInventories.0.eventPrices.0.spWithVAT}}</span>
+		</div>
+	</div>
+</div>
+{{/each}}
+<!-- products ends here -->
+{{else}}
+<div id="notfound">
+
+	<!-- <div class="oopsImage"><img class="img-responsive" alt="fashionandyou.com" src="/fny-theme/images/notfound.jpg"></div>
+	<div class="btnclass">
+			<h2>Sorry no products currently  meet your requirements !! </h2>
+			<h5> ( Try reseting the filter )</h5>
+	      
+	</div>-->
+
+</div> 
+{{/if}}

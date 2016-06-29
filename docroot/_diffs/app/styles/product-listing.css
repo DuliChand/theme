@@ -1,0 +1,2328 @@
+.evnet-listing-share, .tw-icon, .fb-icon, .linkin-share, .pt-icon, .gplus-share, .tooltip-timer, .related-videos:before, .listing-share, .listing-fav, .listing-fav-selected, .listing-video, .style-head:before, .expanded-state:before, .style-name:after, .style-arrow, .review-head:before, .review-btn:before, .fill-star, .unfill-star, .filsearch-sub, .cart-icon, .logos-area .express, .logos-area .international, .logos-area .exclusive, .logos-area .logocontent {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.button-big {
+	background:#d22573;
+	color:#FFF;
+	float:left;
+	font-size:16px;
+	height:40px;
+	line-height:40px;
+	margin-left:10px;
+	padding:0 7px;
+	border-radius:6px;
+	text-shadow:1px 1px 1px #333;
+	text-transform:uppercase;
+	width:118px
+}
+.related-videos {
+	float:right;
+	width:auto;
+	margin-right:10px;
+	
+	font-size:14px;
+	line-height:14px;
+	color:#666
+}
+.related-videos:before {
+	position:absolute;
+	width:25px;
+	height:13px;
+	margin-left:-25px;
+	background-position:-120px -4px;
+	content:''
+}
+.related-videos:hover {
+	color:#d22573
+}
+.related-videos:hover:before {
+	background-position:-29px -452px
+}
+.display-hidden {
+	display:none
+}
+.overlay-temp {
+	position:fixed;
+	z-index:8001;
+	display:block;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0;
+	filter:alpha(opacity=0)
+}
+.prod-lstng-area {
+	float:left;
+	position:relative;
+	width:100%;
+	height:auto;
+	margin-top:-20px
+}
+#filterleft {
+	position:absolute;
+	height:100%;
+	width:235px;
+	left:0
+}
+#fliterholder {
+	width:235px
+}
+.prod-lstng-area > .prod-area-filter {
+	float:left;
+	width:25%;
+	height:auto
+}
+.prod-area-filter-new {
+	float:left;
+	width:100%;
+	height:auto
+}
+.prod-area-filter-new h1 {
+	font-size:14px;
+	font-weight:700;
+	padding-left:15px;
+	color:#cd4584;
+	text-transform:uppercase;
+	line-height:25px
+}
+.prod-area-filter-new .filter-container-box {
+	padding:5px;
+	border:#d9d9d9 solid 1px;
+	background:#f9f9f9;
+	float:left;
+	width:100%
+}
+.prod-lstng-area > .prod-area-list {
+	float:right;
+	width:100%;
+	height:auto
+}
+.filter {
+	float:left;
+	height:auto;
+	padding:5%;
+	width:100%;
+	background:#fcfcfc
+}
+.filter-head {
+	display:block;
+	clear:both;
+	padding:0 0 8px;
+	
+	font-size:12px;
+	letter-spacing:normal;
+	color:#3d3e3f;
+	text-transform:uppercase
+}
+.search {
+	position:relative;
+	width:100%;
+	height:30px;
+	margin:0 0 12px;
+	border:1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+.search .filsearch-box {
+	float:left;
+	width:100%;
+	height:28px;
+	padding:0 16% 0 5%;
+	font-size:12px;
+	line-height:30px;
+	color:#707070;
+	background:#fff
+}
+.search .filsearch-sub {
+	position:absolute;
+	top:5px;
+	right:10px;
+	z-index:5;
+	display:block;
+	width:20px;
+	height:20px;
+	font-size:0;
+	color:transparent;
+	text-indent:-9999px;
+	cursor:pointer;
+	background-position:-91px -342px
+}
+.scroller-bystyle {
+	max-height:240px
+}
+.scroller-bycolor {
+	max-height:50px;
+	max-height:60px
+}
+.scroller-bystyle ul {
+	margin:0;
+	padding:0
+}
+.scroller-bystyle ul li {
+	width:auto;
+	display:inline-block;
+	padding:3px 10px
+}
+.by-style-outer {
+	float:left;
+	width:100%;
+	height:auto;
+	border-top:1px solid #f4f5f5
+}
+.by-style-outer:last-child {
+	border-bottom:1px solid #f4f5f5
+}
+.style-head {
+	position:relative;
+	float:left;
+	width:15%;
+	
+	font-size:14px;
+	line-height:38px;
+	height:38px;
+	color:#cd4584;
+	text-indent:30px;
+	text-transform:capitalize;
+	background-position:7px -372px;
+	float:left!important
+}
+.style-head:before {
+	position:absolute;
+	top:0;
+	left:0;
+	width:30px;
+	height:40px;
+	background-position:-640px -200px;
+	content:"";
+	margin-left:10px
+}
+.expanded-state {
+	color:#333
+}
+.expanded-state:before {
+	background-position:-640px -232px
+}
+.mCSB_container span {
+	padding:0 5px;
+	line-height:10px;
+	padding-left:10px
+}
+.styles {
+	float:left;
+	padding:5px 0 5px 10px;
+	opacity:1;
+	width:85%;
+	margin-top:7px
+}
+.styles .style-name {
+	position:relative;
+	padding:5px;
+	margin:0 0 7px 10px;
+	clear:both;
+	
+	font-size:12px;
+	line-height:13px;
+	color:#4c4c4c;
+	color:#666;
+	text-transform:capitalize
+}
+.styles .style-name:after {
+	position:absolute;
+	top:6px;
+	left:-10px;
+	display:block;
+	float:right;
+	width:7px;
+	height:10px;
+	cursor:default;
+	background-position:-4px -443px;
+	content:""
+}
+.by-color {
+	display:block;
+	float:left;
+	width:100%;
+	height:auto
+}
+.by-color .color-selection {
+	float:left;
+	padding-left:15px;
+	font-size:15px;
+	line-height:40px;
+	color:#3d3e3f;
+	text-transform:capitalize
+}
+.expand-icon {
+	display:block;
+	float:right;
+	width:18px;
+	height:18px;
+	margin:11px 20px 0 0;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/icon_expand.png) no-repeat
+}
+.styles .style-name-selected, .style-name:hover {
+	color:#fff;
+	background:#666
+}
+.choose-color {
+	float:left;
+	width:13px;
+	height:13px;
+	margin:0 5px 5px 0;
+	background:#441342
+}
+.red {
+	background:#6e0d20
+}
+.blue {
+	background:#582cb3
+}
+.grey {
+	background:#b6b2a7
+}
+.lightblue {
+	background:#2c6bb3
+}
+.pink {
+	background:#ce2d78
+}
+.darkblue {
+	background:#1c2039
+}
+.purple {
+	background:#c884cf
+}
+.black {
+	background:#100f15
+}
+.yellow {
+	background:#eeefa1
+}
+.darkestblue {
+	background:#423f4c
+}
+/* .green {
+	background:#abad1c
+} */
+.alt {
+	margin-left:10px
+}
+.choose-color-selected {
+	width:20px;
+	height:20px;
+	border:1px solid #333;
+	box-shadow:1px 2px 2px 0 #333
+}
+.product-outer {
+	position:relative;
+	display:block;
+	float:left;
+	 width:31.7%; 
+/* 	width:312px; */
+	padding:0;
+	/* margin:2% 0; */
+	 margin:2% .8%; 
+}
+.product-outer .prod-img {
+	position:relative;
+	display:block;
+	width:100%;
+	 max-height:374px;
+	overflow:hidden
+}
+.product-outer .prod-img .soldout {
+	position:absolute;
+	z-index:1;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/transparent2.png);
+	width:100%;
+	height:100%;
+	text-align:center;
+	float:left
+}
+.product-outer .prod-img .soldout h4 {
+	margin:0 0 8px;
+	color:#d22573;
+	font-size:28px;
+	display:block;
+	text-align:center;
+	
+	padding:60% 0 0
+}
+.product-outer .prod-img .soldout h4 strong {
+	display:block;
+	font-family: 'centurygothic';
+	font-weight:normal;
+}
+.product-outer .prod-img .soldout p {
+	margin:0;
+	font-size:10px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/transparent2.png);
+	color:#000;
+	font-family: 'centurygothicbold';
+	text-align:center;
+	padding:2px;
+	display:inline;
+	overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+.product-outer .quickview {
+	position:absolute;
+	height:1px;
+	width:100%;
+	text-align:center;
+	top:170px;
+	z-index:9;
+	visibility:hidden;
+	opacity:0;
+transition:all .5s linear
+}
+.product-outer .quickview a {
+	display:inline-block;
+	background:#000;
+	color:#fff;
+	padding:3px 10px;
+	
+	font-size:12px;
+	text-transform:uppercase;
+	text-decoration:none
+}
+.product-outer:hover .quickview {
+transition:all .5s linear;
+	visibility:visible;
+	opacity:1
+}
+.prod-img img {
+	width:100%
+}
+.product-outer .rolover-layer {
+	position:absolute;
+	bottom:-140px;
+	left:0;
+	z-index:9;
+	width:100%;
+	height:auto;
+	/* height:74px; */
+	padding:6px 3px;
+	background:#fff;
+	border-bottom:1px dashed #CCC
+}
+.sizes-area {
+	float:left;
+	width:100%;
+	height:auto;
+	padding-bottom:7px;
+	border-bottom:1px solid #666;
+	position:relative
+}
+.sizes-area .size {
+	position:relative;
+	float:left;
+	width:24px;
+	height:22px;
+	margin:7px 4px 0 0;
+	
+	font-size:11px;
+	line-height:22px;
+	letter-spacing:1px;
+	color:#666;
+	text-align:center;
+	text-transform:uppercase;
+	background:#f1f2f2
+}
+.sizes-area .size:hover {
+	color:#333
+}
+.sizes-area .alt {
+	margin-left:7px
+}
+.shipping-area {
+	float:right;
+	height:auto;
+	padding:5px 0 0
+}
+.shipping-area .shippingtype {
+	float:left;
+	margin-left:6px;
+	position:relative;
+	display:block;
+	width:19px;
+	height:19px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.shipping-area .shippingtype.international {
+	background-position:-490px -391px
+}
+.shipping-area .shippingtype.express {
+	background-position:-461px -391px
+}
+.shipping-area .shippingtype.exclusive {
+	background-position:-518px -391px
+}
+.button-small {
+	display:block;
+	width:25px;
+	height:25px;
+	background:#333
+}
+.button-small:hover {
+	opacity:.9
+}
+.button-small .cart-icon {
+	float:left;
+	width:15px;
+	height:15px;
+	margin:5px;
+	background-position:-120px -218px
+}
+.shipping-area .pull-right {
+	margin-right:6px
+}
+.prod-detail {
+	float:left;
+	display:block;
+	width:100%;
+	
+}
+.prod-info {
+	float:left;
+	width:100%;
+	height:auto;
+	padding:6px 8px;
+	border-bottom:1px dashed #e2e2e2
+}
+.prod-pricing {
+	float:left;
+	width:100%;
+	height:auto;
+	padding:8px
+}
+.prod-info .ev-prod-name {
+	float:left;
+	width:100%;
+	margin:6px 0 0;
+	overflow:hidden;
+	/*font-family: 'centurygothicbold';*/
+	font-weight: bold;
+	font-size:13px;
+	line-height:normal;
+	padding: 0px 0px 4px 0px;
+	color:#333;
+	text-overflow:ellipsis;
+	text-transform:capitalize;
+	white-space:nowrap
+}
+.prod-info .ev-prod-name-font-check {
+	
+}
+.prod-info .event-name {
+	float:left;
+	width:100%;
+	height:15px;
+	overflow:hidden;
+	font-size:13px;
+	line-height:11px;
+	color:#666;
+	text-overflow:ellipsis;
+	text-transform:capitalize;
+	white-space:nowrap
+}
+.prod-pricing .old-price {
+	 color: #333;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: line-through;
+    margin:1px 10px 0px 0px;
+    
+}
+.prod-pricing .new-price {
+	  color: #000;
+    display: block;
+    float: left;
+   /* font-family: 'centurygothicbold';*/
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 4px;
+}
+.prod-detail .action-area {
+	float:left;
+	width:100%;
+	height:auto;
+	margin-top:8px
+}
+.action-area .color-num {
+	display:block;
+	float:left;
+	margin:10px 0;
+	font-family: 'centurygothicbold';
+	font-size:12px;
+	font-weight:700;
+	line-height:12px;
+	color:#333
+}
+.action-area .action-icons {
+	float:left;
+	width:auto;
+	height:auto;
+	margin-top:2px
+}
+.action-area .action-icons .sharearea {
+	float:right;
+	width:15px;
+	height:25px;
+	white-space:nowrap;
+	/* overflow:hidden; */
+	position:relative;
+	transition:all 1s linear;
+	-webkit-transition:all 1s linear
+}
+.action-area .action-icons .sharearea:hover {
+	width:165px!important
+}
+.action-area .action-icons .sharearea:hover .shareslide {
+transition:all .5s linear;
+-webkit-transition:all .5s linear;
+	left:20px;
+	visibility:visible;
+	opacity:1
+}
+.action-area .action-icons .sharearea .shareslide {
+	/* position:absolute; */
+	width:165px;
+	left:-150px;
+	/* visibility:hidden;
+	opacity:0; */
+transition:all .5s linear;
+-webkit-transition:all .5s linear
+}
+.action-area .action-icons .sharearea a.ifacebook, .action-area .action-icons .sharearea a.itwitter, .action-area .action-icons .sharearea a.iemail, .action-area .action-icons .sharearea a.igplus, .action-area .action-icons .sharearea a.ipintrest {
+	display:block;
+	float:left;
+	margin:0 3px 0 0;
+	height:25px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.action-area .action-icons .sharearea a.ifacebook {
+	width:25px;
+	background-position: -1px -2px;
+}
+.action-area .action-icons .sharearea a.itwitter {
+	width:25px;
+	background-position: 0 -33px;
+}
+.action-area .action-icons .sharearea a.iemail {
+	width:25px;
+	background-position: -399px -154px;
+}
+.action-area .action-icons .sharearea a.igplus {
+	width:25px;
+	background-position: -0px -97px;
+	margin-top:-1px;
+}
+.action-area .action-icons .sharearea a.ipintrest {
+	width:25px;
+	background-position: -25px -416px;
+	margin-top:-1px;
+}
+
+ .action-icons .listing-share {
+	float:left;
+	width:15px;
+	height:25px;
+	margin-right:6px;
+	/* background-position:-3px -323px; */
+	background-position:-61px -378px;
+	cursor:pointer
+}
+.evnet-listing-share {
+float: left;
+width: 15px;
+height: 25px;
+margin-right: 6px;
+margin-top: 11px;
+background-position: -61px -378px;
+cursor: pointer;
+}
+/* .action-icons .listing-share:hover {
+	background-position:-61px -378px
+}  */
+.favorite-tab {
+	float:right
+}
+.favorite-tab .listing-fav {
+	position:relative;
+	float:right;
+	width:18px;
+	height:15px;
+	margin-right:10px;
+	background-position:-93px -387px
+}
+.favorite-tab .listing-fav:hover {
+	background-position:-92px -365px
+}
+.favorite-tab .listing-fav-selected {
+	background-position:-92px -365px
+}
+.action-icons .listing-video {
+	float:right;
+	width:21px;
+	height:11px;
+	margin:2px 10px 0 0;
+	background-position:-120px -5px
+}
+.action-icons .listing-video:hover {
+	background-position:-29px -453px
+}
+.tag-sort {
+	color:#cd4584;
+	font-size:13px;
+	text-align:left;
+	position:absolute;
+	margin-left:-48px;
+	line-height:28px
+}
+.tagimage {
+	position:absolute;
+	top:-22px;
+	right:5px;
+	z-index:2;
+	width:28px;
+	height:22px;
+	font-size:10px;
+	font-weight:400;
+	line-height:18px;
+	color:#fff;
+	text-align:center;
+	background:#ce2d78 url( http://cdn1.fashionandyou.com/fny-static/app-images/tag_img.png) 0 20px repeat-x
+}
+.tagimage:before {
+	position:absolute;
+	top:-28px;
+	left:0;
+	z-index:-1;
+	width:0;
+	height:0;
+	border:14px solid transparent;
+	border-bottom:14px solid #ce2d78;
+	content:""
+}
+.prod-area-right .col-xs-4 {
+	margin-bottom:20px
+}
+.sort-by {
+	float: right;
+/* width: 20%; */
+/* padding: 10px 0 0 20px; */
+/* height: auto; */
+position: absolute;
+top: -50px;
+right: 0;
+
+}
+.sort-by .select-wrapper {
+	float:right;
+	height:28px;
+	box-sizing:border-box;
+}
+.sort-by .select-wrapper .selectbox-wrapper {
+	border-top-right-radius:0
+}
+.selectbox {
+	border:#f0f0f0 solid 1px!important
+}
+.sort-by select {
+	float:right;
+	height:25px;
+	margin:0 0 6px;
+	border:1px solid #ccc;
+	padding:4px
+}
+.listing-pagination {
+	display:block;
+	float:right;
+	padding-right:4px;
+	
+	font-size:14px;
+	line-height:23px;
+	color:#666
+}
+.prod-review {
+	display:block;
+	float:left;
+	width:100%;
+	height:auto;
+	background:#fff
+}
+.review-head {
+	position:relative;
+	float:left;
+	margin:27px 0 4px;
+	
+	font-size:14px;
+	color:#333;
+	text-indent:50px;
+	text-transform:uppercase
+}
+.review-head:before {
+	position:absolute;
+	top:-5px;
+	left:0;
+	width:43px;
+	height:31px;
+	background-position:-119px -38px;
+	content:""
+}
+.ur-review {
+	display:block;
+	float:left;
+	width:100%;
+	height:auto;
+	padding:5px 0 7px;
+	margin:15px 0 0
+}
+.ur-review .ur-img {
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:2px
+}
+.ur-review .user-details {
+	float:left;
+	width:76%;
+	height:auto
+}
+.user-details .ur-name, .ur-region {
+	float:left;
+	padding:0 0 0 8px;
+	
+	font-size:13px;
+	color:#333
+}
+.user-details .ur-name {
+	clear:both
+}
+.ur-review .ur-words {
+	float:left;
+	padding:10px 0 0;
+	clear:both;
+	font-size:12px;
+	line-height:20px;
+	letter-spacing:.5px;
+	color:#666
+}
+.review-btn {
+	position:relative;
+	float:left;
+	padding-top:2px;
+	margin:17px 0 0;
+	clear:both;
+	font-size:12px;
+	letter-spacing:1px;
+	color:#666;
+	text-indent:22px
+}
+.review-btn:before {
+	position:absolute;
+	top:0;
+	left:0;
+	width:16px;
+	height:16px;
+	background-position:-125px -97px;
+	content:''
+}
+.review-btn:hover {
+	color:#d22573
+}
+.review-btn:hover:before {
+	background-position:-155px -97px
+}
+.fill-star {
+	display:block;
+	float:left;
+	width:16px;
+	height:15px;
+	margin:0 0 7px 5px;
+	background-position:-4px -274px
+}
+.fill-star:first-child {
+	margin-left:8px
+}
+.unfill-star {
+	display:block;
+	float:left;
+	width:16px;
+	height:15px;
+	margin:0 0 7px 5px;
+	background-position:-4px -299px
+}
+.size-pop {
+	z-index:99999;
+	display:none;
+	top:0;
+	left:0;
+	width:214px;
+	height:auto;
+	margin:0;
+	background:#fdfdfd;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	float:left;
+	position:absolute
+}
+.size-pop:before {
+	width:0;
+	height:0;
+	content:'';
+	border:10px solid transparent;
+	border-bottom:0;
+	border-top:10px solid #ccc;
+	position:absolute;
+	bottom:-10px;
+	right:50%;
+	margin-right:-10px
+}
+.tip-top-left:before {
+	right:20px;
+	border-right:0
+}
+.sizepop-inn {
+	width:196px;
+	height:auto;
+	margin:10px
+}
+.sizepop-inn .tile {
+	float:left;
+	width:45px;
+	height:40px;
+	padding:3px 0;
+	margin-right:5px;
+	background:#f7f7f7
+}
+.sizepop-inn .tile:first-child {
+	margin-left:18px
+}
+.sizepop-inn:last-child {
+	margin-right:0
+}
+.sizepop-inn .tile pre {
+	float:left;
+	width:100%;
+	height:40px;
+	padding:0;
+	margin-top:1px;
+	margin-bottom:10px;
+	
+	font-size:11px;
+	line-height:16px;
+	color:#333;
+	text-align:center;
+	text-transform:uppercase;
+	border:none
+}
+.sizepop-inn .sold-out {
+	float:left;
+	padding-bottom:5px;
+	font-size:15px;
+	color:#ce2d78
+}
+.size-india {
+	float:left;
+	width:196px;
+	height:auto;
+	padding:10px 0;
+	margin-top:15px;
+	border-top:1px solid #edecec
+}
+.size-india .sizing1 {
+	float:left;
+	height:20px;
+	margin:0;
+	font-family: 'centurygothicbold';
+	font-size:10px;
+	font-weight:700;
+	line-height:20px;
+	color:#000;
+	border-right:1px solid #ccc
+}
+.size-india .sizing1:first-child {
+	padding-right:5px
+}
+.size-india .sizing1:nth-child(2) {
+padding:0 5px
+}
+.size-india .sizing1:last-child {
+	padding-left:5px;
+	border-right:0
+}
+.social-share-powertip {
+	position:static;
+	z-index:999;
+	display:none;
+	width:180px;
+	height:auto;
+	padding:15px;
+	margin:0;
+	background:#fdfdfd;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	box-shadow:0 3px 5px 0 #ccc
+}
+.social-share-powertip .fb-icon {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	background-position:-1px -2px
+}
+.social-share-powertip .tw-icon {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background-position:0 -33px
+}
+.social-share-powertip .pt-icon {
+	display:block;
+	float:left;
+	width:24px;
+	height:26px;
+	margin-left:5px;
+	background-position:-25px -417px
+}
+.social-share-powertip .gplus-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background-position:0 -98px
+}
+.social-share-powertip .linkin-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background-position:0 -67px
+}
+.total-result {
+	float:left;
+	padding:20px 0 0 10px;
+	
+	font-size:14px;
+	line-height:14px;
+	color:#333
+}
+.total-result span {
+	padding-left:2px;
+	
+	color:#d22573
+}
+.results {
+	float:left;
+	width:100%;
+	height:auto;
+	padding:5px 0;
+	opacity:1
+}
+.results .results-value {
+	position:relative;
+	float:left;
+	padding:5px;
+	margin:0 0 7px 10px;
+	clear:both;
+	
+	font-size:12px;
+	line-height:13px;
+	color:#4c4c4c;
+	color:#666;
+	text-transform:capitalize
+}
+.results .results-value-selected, .results-value:hover {
+	color:#fff;
+	background:#666
+}
+.search-video {
+	width:100%;
+	margin:0
+}
+.search-video .col-xs-4 {
+	margin-left:0;
+	margin-right:0
+}
+.search-video .video-sec {
+	width:91%;
+	margin-left:9%
+}
+.search-video .video-sec iframe {
+	width:100%;
+	height:130px
+}
+.search-video .video-sec .view {
+	margin:0 30px 0 0;
+	line-height:35px
+}
+.search-video .video-sec .view:before {
+	margin-top:10px
+}
+.search-video .video-sec .sharing {
+	line-height:35px
+}
+.search-video .col-xs-4:first-of-type .video-sec {
+	margin-left:9%;
+	margin-right:0
+}
+.search-video .col-xs-4:nth-of-type(2) .video-sec {
+margin-left:9%;
+margin-right:0
+}
+.product-sizing {
+	float:left;
+	padding:4px 0;
+	border-bottom:1px dashed #e2e2e2;
+	width:100%;
+margin-bottom:4px;
+}
+.product-sizing span {
+	border: 1px solid #d1d1d1;
+	
+	color: #666;
+	display: block;
+	float: left;
+	line-height: 20px;
+	margin: 0 5px 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
+	font-size: 10px;
+	padding: 2px 5px;
+}
+.product-sizing span.sold {background:url( http://cdn1.fashionandyou.com/fny-static/app-images/strick.png) center #ececec no-repeat;}
+
+.color-area {
+	float:left
+}
+.color-area span {
+	display:block;
+	width:10px;
+	height:10px;
+	float:left;
+	margin:0 5px 0 0
+}
+.discount-tag {
+	float: right;
+	 
+	font-size: 12px;
+	/* border:#fff dashed 1px; */
+	background: #d22573;
+	color: #fff;
+	line-height: 13px;
+	padding: 5px 5px;
+	position: absolute;
+	bottom: 8px;
+	right: 10px;
+	
+}
+#notfound {
+	clear:both;
+	padding:20px 0 0 20px
+}
+#notfound h2 {
+	font-size:28px;
+	text-align:center;
+	
+	margin:0 0 20px;
+	color:#000
+}
+#notfound a#continueshop {
+	display:inline-block;
+	color:#fff;
+	font-size:16px;
+	
+	background:#ad386f;
+	padding:5px 15px;
+	margin:0 20px 0 0
+}
+#notfound a#continueshop:hover {
+	background:#000
+}
+#notfound a#resetfilter {
+	display:inline-block;
+	color:#fff;
+	font-size:16px;
+	
+	background:#000;
+	padding:5px 15px
+}
+#notfound a#resetfilter:hover {
+	background:#333
+}
+.quickviewpopup {
+	width:900px;
+	background:#fff;
+	padding:15px;
+	display:none
+}
+.quickproduct {
+	clear:both
+}
+.quickproduct .product-gallery {
+	float:left;
+	width:45%;
+	height:auto
+}
+.quickproduct .product-gallery .bx-wrapper {
+	width:17%;
+	float:left;
+	position:relative
+}
+.quickproduct .product-gallery .gallery-thumbnails {
+	display:block;
+	width:100%!important
+}
+.quickproduct .gallery-thumbnails .slide {
+	width:100%!important
+}
+.quickproduct .gallery-thumbnails .thumbnail-image {
+	display:block;
+	width:100%;
+	border:2px solid #fff
+}
+.quickproduct .gallery-thumbnails .thumbnail-image > img {
+	width:100%
+}
+.quickproduct .gallery-thumbnails .thumbnail-image.thumbnail-image-selected {
+	border:2px solid #d22573
+}
+.quickproduct .product-gallery .bx-wrapper {
+	float:left
+}
+.quickproduct .product-gallery .bx-wrapper .bx-next, .quickproduct .product-gallery .bx-wrapper .bx-prev {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/bg-transparent.png) repeat
+}
+.quickproduct .product-gallery .bx-wrapper .bx-next:before {
+	width:10px;
+	height:6px;
+	margin-left:-4px!important;
+	top:13px;
+	left:50%;
+	background-position:-73px -43px
+}
+.quickproduct .product-gallery .bx-wrapper .bx-prev:before {
+	width:9px;
+	height:5px;
+	margin-left:-4px!important;
+	top:13px;
+	left:50%;
+	background-position:-74px -35px;
+	content:''
+}
+.quickproduct .product-gallery .bx-wrapper .bx-controls-direction a.bx-prev {
+	bottom:auto;
+	top:0;
+	width:100%
+}
+.quickproduct .product-gallery .bx-wrapper .bx-controls-direction a.bx-next {
+	bottom:0;
+	top:auto;
+	width:100%
+}
+.quickproduct .large-image {
+	position:relative;
+	display:block;
+	float:left;
+	width:305px;
+	margin:0 0 0 15px;
+	background:#ccc
+}
+.quickproduct .large-image img {
+	width:100%;
+	height:auto
+}
+.quickproduct .large-image .image-rolover {
+	position:absolute;
+	bottom:0;
+	display:none;
+	width:305px;
+	height:50px;
+	
+	font-size:12px;
+	line-height:50px;
+	color:#666;
+	text-align:center;
+	text-transform:uppercase;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/bg-transparent.png) repeat
+}
+.product-popup-info {
+	float:right;
+	width:470px;
+	height:auto
+}
+
+.product-popup-info .productdetail-holder {float:left; width:100%; background:#f6f6f6; border:1px solid #e6e6e6; margin:0 0 4% 0;}
+.product-popup-info .productdetail-holder .productdetail-left {float:left; width:265px; padding:10px;}
+.product-popup-info .productdetail-holder .productdetail-right {float:right; width:202px; min-height:220px; padding:10px; border-left:1px dashed #c7c7c7; background:#fff;}
+
+.product-popup-info .product-name {
+	float:left;
+	padding-bottom:15px;
+	padding-left:10px;
+	font-family: 'centurygothicbold';
+	font-size:18px;
+	line-height:18px;
+	color:#666;
+	text-transform:capitalize;
+}
+
+.product-popup-info .code-area {
+	float:left;
+	width:100%;
+	height:auto;
+}
+.product-popup-info .code-area .product-code {
+	float:left;
+	padding:0 0 10px 10px;
+	
+	font-size:11px;
+	line-height:11px;
+	color:#666
+}
+.product-popup-info .code-area .product-timer {
+	float:left;
+	float:right;
+	margin-right:10px;
+	
+	font-size:12px;
+	line-height:12px;
+	color:#666
+}
+.product-popup-info .code-area .product-timer:before {
+	position:absolute;
+	width:16px;
+	height:16px;
+	margin:-2px 0 0 -23px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -93px -216px no-repeat;
+	content:''
+}
+.product-popup-info .pricing-area {
+	float:left;
+	width:100%;
+	height:auto;
+	padding-bottom:5%;
+}
+.product-popup-info .pricing-area .old-pricing {
+	float:left;
+	font-family: 'centurygothicbold';
+	font-size:12px;
+	line-height:21px;
+	color:#000;
+	text-decoration:line-through;
+}
+.product-popup-info .pricing-area .new-pricing {
+	float:left;
+	padding:0px 0 0 15px;
+	font-family: 'centurygothicbold';
+	font-size:20px;
+	line-height:normal;
+	color:#000
+}
+.product-popup-info .pricing-area .shipping-info {
+	float:right;
+	
+	font-size:12px;
+	line-height:12px;
+	color:#666
+}
+.product-popup-info .pricing-area .shipping-info:before {
+	position:absolute;
+	width:18px;
+	height:18px;
+	margin:-5px 0 0 -20px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -34px -4px no-repeat;
+	content:''
+}
+.product-popup-info .label {
+	float:left;
+	width:auto;
+	padding: 4px 0 6px;
+    margin: 0 6px 0 0;
+	font-size:14px;
+	font-weight:400;
+	line-height:14px;
+	color:#000;
+	text-align:left;
+	text-transform:capitalize
+}
+.product-popup-info .selection-area {
+	float:left;
+	width:100%;
+	height:auto;
+	padding-bottom:15px;
+}
+.product-popup-info .selection-area .select-choice {
+	float:left;
+	width:100%;
+}
+.product-popup-info .selection-area .select-choice ul {
+	margin:0;
+	padding:0
+}
+.product-popup-info .selection-area .select-choice ul li {
+	display:block;
+	float:left;
+	border:1px solid #bdbdbd;
+	margin:0 5px 5px 0;
+}
+
+.product-popup-info .selection-area .select-choice ul li span.sold {
+	display:block;
+    padding: 4px 5px 2px;
+	text-align:center;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/strick.png) center #ececec no-repeat;
+	font-family: 'centurygothicbold';
+}
+
+.product-popup-info .selection-area .select-choice ul li a {
+	display:block;
+	padding: 4px 5px 2px;
+	text-align:center;
+}
+.product-popup-info .selection-area .select-choice.color .red {
+	background:#6e0d20
+}
+.product-popup-info .selection-area .select-choice.color .blue {
+	background:#582cb3
+}
+.product-popup-info .selection-area .select-choice.color .grey {
+	background:#b6b2a7
+}
+.product-popup-info .selection-area .select-choice.color .yellow {
+	background:#f9b706
+}
+.product-popup-info .selection-area .select-choice.color .selected {
+	border:1px solid #333;
+	box-shadow:1px 2px 2px 0 #333
+}
+.product-popup-info .selection-area .select-choice.color .notavalible {
+	opacity:.5;
+	box-shadow:none;
+	border:none;
+	cursor:not-allowed
+}
+.product-popup-info .selection-area .select-choice.size .tiles {
+	font-size:11px;
+	margin-bottom:8px;
+	color:#666;
+	text-transform:uppercase;
+	background:#fff;
+}
+.product-popup-info .selection-area .select-choice.size .tiles a {
+	color:#666;
+	
+	font-size:11px
+}
+.product-popup-info .selection-area .select-choice.size .tiles a:hover {
+	color:#000
+}
+.product-popup-info .selection-area .select-choice.size .tiles.selected a {
+	color:#fff;
+	font-family: 'centurygothicbold';
+	background: #d22573;
+}
+.product-popup-info .selection-area .select-quantity {
+	
+	width:100%;
+	height:auto;
+	margin-left:0px
+}
+.product-popup-info .selection-area .select-quantity .select-wrapper {
+	z-index:2;
+	width:70%;
+	height:24px;
+	float:none;
+
+}
+.product-popup-info .selection-area .select-quantity .select-wrapper select {
+	float:left;
+	width:32%;
+	height:25px;
+	margin:0px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	padding:4px
+}
+.product-popup-info .selection-area .select-quantity .select-wrapper .selectbox {
+	line-height:24px
+}
+.product-popup-info .selection-area .select-quantity .select-wrapper .selectbox-wrapper {
+	width:150%
+}
+.product-popup-info .selection-area .select-quantity .select-wrapper .selectbox-wrapper ul li {
+	padding:0
+}
+.product-popup-info .size-info {
+	float:left;
+	width:100%;
+	height:auto;
+	padding:0 0 20px 10px;
+	margin-top:9px;
+	border-bottom:1px solid #f5f6f6
+}
+.product-popup-info .size-tiles {
+	display:block;
+	float:left;
+	width:35px;
+	height:30px;
+	margin-right:5px;
+	margin-bottom:11px;
+	
+	font-size:12px;
+	line-height:30px;
+	color:#666;
+	text-align:center;
+	text-transform:uppercase;
+	background:#f1f2f2
+}
+.product-popup-info .size-not-avail {
+	color:#e0e0e0;
+	background:#fbfbfb
+}
+.product-popup-info .size-not-avail:hover {
+	color:#e0e0e0
+}
+.product-popup-info .offer-area {
+	float:left;
+	width:100%;
+	height:auto;
+	margin-top:8px
+}
+.product-popup-info .offer-area .offer-box {
+	position:relative;
+	float:left;
+	width:100%;
+	height:40px;
+	margin-left:10px;
+	overflow:hidden;
+	background:#f1f2f2
+}
+.product-popup-info .offer-box .offer-tag {
+	position:relative;
+	float:left;
+	width:60px;
+	height:40px;
+	padding-left:6px;
+	
+	font-size:16px;
+	line-height:40px;
+	color:#fff;
+	text-transform:uppercase;
+	background:#d22573;
+	border-right:4px solid #b81a4d
+}
+.product-popup-info .offer-box .offer-tag:after {
+	position:absolute;
+	top:0;
+	right:-11px;
+	z-index:5;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	border-left:11px solid #d22573;
+	content:''
+}
+.product-popup-info .offer-box .offer-tag:before {
+	position:absolute;
+	top:0;
+	right:-15px;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	border-left:11px solid #b81a4d;
+	content:''
+}
+.product-popup-info .offer-info {
+	float:left;
+	
+	font-size:13px;
+	line-height:40px;
+	color:#666;
+	text-indent:21px
+}
+.product-popup-info .offer-info .highlighted-text {
+	font-style:italic;
+	color:#d22573
+}
+.product-popup-info .action-area {
+	float:left;
+	width:100%;
+	height:auto;
+}
+.product-popup-info .add-favorites, .product-popup-info .remove-favorites {
+	float:left;
+	margin-left:25px;
+	
+	font-size:12px;
+	line-height:40px;
+	color:#333;
+	background:none
+}
+.product-popup-info .add-favorites:before, .product-popup-info .remove-favorites:before {
+	position:absolute;
+	width:19px;
+	height:18px;
+	margin:13px 0 0 -20px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -93px -387px no-repeat;
+	content:''
+}
+.product-popup-info .add-favorites:hover {
+	color:#d22573
+}
+.product-popup-info .add-favorites:hover:before {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -92px -365px no-repeat
+}
+.product-popup-info .remove-favorites:before {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -92px -365px no-repeat
+}
+.product-popup-info .sharing {
+	float:left;
+	margin-left:50px;
+	
+	font-size:12px;
+	line-height:40px;
+	color:#333
+}
+.product-popup-info .sharing:before {
+	position:absolute;
+	width:17px;
+	height:18px;
+	margin:10px 0 0 -20px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -57px -326px no-repeat;
+	content:''
+}
+.product-popup-info .sharing:hover {
+	color:#d22573
+}
+.product-popup-info .sharing:hover:before {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -34px -326px no-repeat
+}
+
+.product-popup-info .product-share {float:left; margin:8px 0 0 40px; }
+.product-popup-info .product-share .sharearea1 {width:135px; height:25px; white-space:nowrap; overflow:hidden; position:relative; transition:all 1s linear; -webkit-transition:all 1s linear; ; }
+.product-popup-info .product-share .sharearea1 .sharetxt {font-size:13px; padding:5px 1px; line-height:13px;  display:block; float:left;}
+.product-popup-info .product-share .sharearea1 .listing-share1 {float:left; width:15px; height:25px; margin-right:6px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -61px -378px no-repeat; cursor:pointer; }
+/*.product-popup-info .product-share .sharearea1 .listing-share1:hover {background-position:-61px -378px; } */
+.product-popup-info .product-share .sharearea1:hover {width:145px!important;}
+.product-popup-info .product-share .sharearea1:hover .shareslide1 {
+transition:all .5s linear; -webkit-transition:all .5s linear; left:20px; visibility:visible; opacity:1; }
+.product-popup-info .product-share .sharearea1 .shareslide1 {/* position:absolute; */ width:145px; background:#fff; padding:1px 0 0; left:-150px; /* visibility:hidden; opacity:0; */
+transition:all .5s linear; -webkit-transition:all .5s linear; }
+.product-popup-info .product-share .sharearea1 a.ifacebook, .product-popup-info .product-share .sharearea1 a.itwitter, .product-popup-info .product-share .sharearea1 a.iemail, .sharearea1 a.igplus, .sharearea1 a.ipintrest {display:block; float:left; margin:0 3px 0 0; height:25px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat; }
+.product-popup-info .product-share .sharearea1 a.ifacebook {width:25px; background-position: -1px -2px;}
+.product-popup-info .product-share .sharearea1 a.itwitter {width:25px; background-position: 0 -33px;}
+.product-popup-info .product-share .sharearea1 a.iemail {width:25px; background-position: -399px -154px;}
+.product-popup-info .product-share .sharearea1 a.igplus {width:25px; background-position: -0px -97px; margin-top:-1px;}
+.product-popup-info .product-share .sharearea1 a.ipintrest {width:25px; background-position: -25px -416px; margin-top:-1px;}
+
+.product-popup-info .pricing-area .logos-area {
+	float:right;
+	position:relative;
+	height:34px;
+	margin:0 6px 0 0
+}
+.product-popup-info .pricing-area .logos-area .logosholder {
+	float:left;
+	width:34px;
+	height:34px;
+	margin:0 0 0 6px;
+	position:relative
+}
+.product-popup-info .pricing-area .logos-area .logocontent {
+	background-position:-453px -304px;
+	padding:2px 10px 0 35px;
+	width:132px;
+	height:34px;
+	font-size:9px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	line-height:10px;
+	position:absolute;
+	right:0;
+	visibility:hidden;
+	opacity:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear
+}
+.product-popup-info .pricing-area .logos-area .logosholder:hover {
+	z-index:99
+}
+.product-popup-info .pricing-area .logos-area .logosholder:hover .logocontent {
+	visibility:visible;
+	opacity:1;
+transition:all .7s linear;
+-webkit-transition:all .7s linear
+}
+.product-popup-info .pricing-area .logos-area .logosholder:hover .express, .product-popup-info .pricing-area .logos-area .logosholder:hover .international, .product-popup-info .pricing-area .logos-area .logosholder:hover .exclusive {
+	right:100px;
+transition:all .2s linear;
+-webkit-transition:all .2s linear
+}
+.product-popup-info .pricing-area .logos-area .express {
+	background-position:-457px -348px;
+	width:34px;
+	height:34px;
+	position:absolute;
+	z-index:11;
+	right:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear
+}
+.product-popup-info .pricing-area .logos-area .international {
+	background-position:-498px -348px;
+	width:34px;
+	height:34px;
+	position:absolute;
+	z-index:11;
+	right:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear
+}
+.product-popup-info .pricing-area .logos-area .exclusive {
+	background-position:-538px -348px;
+	width:34px;
+	height:34px;
+	position:absolute;
+	z-index:11;
+	right:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear
+}
+.product-popup-info .pricing-area .logos-area .daycount {
+	float:right;
+	font-size:12px;
+	
+	border-left:1px solid #CCC;
+	padding:0 0 0 10px;
+	margin:8px 0 0 10px
+}
+
+.product-popup-info .productdetail-right .check-avalible {clear:both; margin:0px 0px 8px 0px;}
+.product-popup-info .productdetail-right .check-avalible p {
+	 line-height:normal; font-size:12px;
+	color:#666; margin:0 10px 5px 38px; position:relative;}
+.product-popup-info .productdetail-right .check-avalible p:before {content:''; display:block; position:absolute; left:-39px; width:33px; height:15px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -697px -163px no-repeat;}
+	
+.product-popup-info .productdetail-right .check-avalible .checkservice {
+	clear:both
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice input {
+	width:115px;
+	border:1px solid #CCC;
+	height:23px;
+	margin:0 5px 0 0;
+	float:left;
+	padding:2px;
+	font-size:12px;
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice .go {
+	background:#000;
+	display:block;
+	float:left;
+	color:#fff;
+	padding:3px 10px 2px;
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice .go:hover {
+	background:#d22573
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice span.statusmsg {
+	display:block;
+	clear:left;
+	padding:3px 0 0;
+	font-size:12px;
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice span.green {
+	color:#1a2
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice span.red {
+	color:red;
+	background:none
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice span.icon {
+	width:14px;
+	height:15px;
+	display:block;
+	float:left;
+	margin:1px 5px 0 0
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice span.green span.icon {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -541px -79px no-repeat
+}
+.product-popup-info .productdetail-right .check-avalible .checkservice span.red span.icon {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -357px -125px no-repeat
+}
+
+.product-popup-info .productdetail-right .delivered-days {border-top:1px dashed #d8d8d8; padding:10px 0px;display:none;}
+.product-popup-info .productdetail-right .delivered-days p {line-height:normal; font-size:12px;
+	color:#666; margin:0 10px 5px 38px; position:relative;}
+.product-popup-info .productdetail-right .delivered-days p:before {content:''; display:block; position:absolute; left:-32px; width:24px; height:24px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -704px -190px no-repeat;}
+
+.product-popup-info .productdetail-right .clickoffer {border-top:1px dashed #d8d8d8; padding:10px 0px;}
+.product-popup-info .productdetail-right .clickoffer p {line-height:normal; font-size:12px;
+	color:#666; margin:0 10px 5px 38px; position:relative; padding:6px 0px 0px 0px;}
+.product-popup-info .productdetail-right .clickoffer p a {color:#666; text-decoration:underline;}
+.product-popup-info .productdetail-right .clickoffer p:before {content:''; display:block; position:absolute; left:-32px; top:0px; width:21px; height:24px; background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -705px -224px no-repeat;}
+.product-popup-info .productdetail-right .clickoffer .currentoffer {display:none; font-size:12px; color:#1a2;}
+
+.product-sorting {
+	position:relative;
+	float:right;
+	padding:6px;
+	height:31px;
+	background:#f9f9f9;
+	border:1px solid #e8e8e8;
+	cursor:pointer
+}
+.product-sorting .sortby {
+	color:#666;
+}
+.product-sorting .active-filter {
+	border-right:1px solid #d3d3d3;
+	color:#000;
+	padding:0 10px 0 0;
+}
+.product-sorting ul {
+	position:absolute;
+	z-index:999;
+	display:none;
+	background:#f9f9f9;
+	left:0;
+	top:29px;
+	width:100%;
+	border:1px solid #e8e8e8;
+	margin:0;
+	padding:0
+}
+.product-sorting:hover ul {
+	display:block
+}
+.product-sorting ul li {
+	list-style-type:none;
+	font-size:11px;
+	display:block
+}
+.product-sorting ul li a {
+	color:#666;
+	text-decoration:none;
+	display:block;
+	padding:6px 10px;
+}
+.product-sorting ul li a:hover {
+	color:#000
+}
+.rush-hour {
+	background:#d22573;
+	color:#fff;
+	position:absolute;
+	right:0;
+	margin:4px 0;
+	cursor:pointer
+}
+.rush-hour > span {
+	display:inline-block;
+	font-family: 'centurygothicbold';
+	font-size:9px;
+	line-height:10px;
+	padding:4px;
+	text-align:center;
+	width:40px
+}
+.rush-hour > span.active {
+	background:#a71f5e
+}
+.selection-area .error-message {
+	color:red
+}
+
+.rolover-layer .quickview-detail{
+	width:auto;
+	float:right;
+
+}
+.rolover-layer .quickview-detail a{
+	display:inline-block;
+	/* background:#000; */
+	color:#000;
+	padding:8px 10px 3px 10px;
+	/*font-family: 'centurygothicbold';*/
+	font-size:12px;
+	text-transform:uppercase;
+	text-decoration:none
+}
+
+.rolover-layer .quickview-detail a:hover{ color:#d22573}
+
+.product-popup-info .action-veiw-more {
+  	 float: left;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-top:#ccc solid 1px;
+	border-bottom:#ccc solid 1px;
+}
+
+.product-popup-info .action-veiw-more span{
+	padding:0 10px;
+	line-height:30px;
+	font-size:14px;
+	color:#404040;
+	font-weight:bold;
+	letter-spacing:1px
+}
+.product-popup-info .action-veiw-more span:hover{
+	background:#f0f0f0;
+	line-height:30px;
+	padding:6px 10px;
+}
+p.button-big {
+    text-align: center;
+}
+
+
+#notfound {
+	clear:both;
+	height:auto;
+}
+
+#notfound .oopsImage {background:url( http://cdn1.fashionandyou.com/fny-static/app-images/notfound.jpg) no-repeat; min-height:420px; text-align:center; padding:80px 0px 0px 0px;}
+#notfound .oopsImage p {text-align:center; text-transform:uppercase; font-size:16px; margin:0px 0px 15px 0px; color:#000;}
+#notfound .oopsImage h5 {text-align:center; text-transform:uppercase; font-size:20px; margin:0px 0px 15px 0px; color:#000;}
+#notfound .oopsImage a {display:inline-block; margin:0 auto; background:#d22573; color:#fff; font-size:14px; padding:5px 10px;}
+
+#notfound .btnclass {
+	 float: left;
+    padding: 15% 0;
+    width: 70%;
+}
+#notfound .btnclass h2 {
+	color: #000;
+	float: left;
+	font-size: 28px;
+	margin: 0 25% 20px 0;
+	text-align: center;
+}
+#notfound .btnclass h5 {
+	color: #000;
+	font-size: 18px;
+	margin: 0 25% 20px 0;
+	text-align: center;
+}
+#notfound .btnclass a {
+	float:left;
+	text-align:center;
+	margin: 0 0 20px 25%;
+	color:#fff;
+	font-size:16px;
+	background:#d22573;
+	padding:5px 10px;
+}
+#notfound .btnclass a:hover {
+	background:#000;
+}
+
+.productDescription {
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 140px;
+}
+.productDescription > p {
+    line-height: 20px;
+    font-size: 13px;
+}
+.productDescription > h1 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    background:#f2f2f2 none repeat scroll 0 0;
+
+}
+.breadcrumb > li  {
+    color: #333;
+    font-size: 11px;
+    line-height: 11px;
+        text-transform: capitalize;
+}
+.breadcrumb > li > a {
+    color: #333;
+    font-size: 11px;
+    line-height: 11px;
+        text-transform: capitalize;
+}
+.breadcrumb > li:last-child{
+	color:#c62a69;
+}
+.breadcrumb > li > a:last-child{
+	color:#c62a69;
+}
+.breadcrumb > li > a:hover {
+    color:#871d48;
+}
+
+.sortColumn{
+	margin-top: 10px;
+	float:left;
+}
+.sortColumn>h1{
+	margin:0 0 0 -5px !important;
+}
+.nextSort{
+	display: inline-block;
+	margin-left:5px;
+}
+.select-sort.nextSort {
+    width: 14%;
+    float: left;
+    text-transform: capitalize;
+    padding: 0 0px;
+    margin:0 14px;
+}
+.product-popup-info .productdetail-right .clickoffer .currentoffer .couponCode{
+ color: #000;
+}
+
+.product-popup-info .productdetail-right .clickoffer .currentoffer .couponCode span {
+    float: left;
+    font-size: 11px !important;
+    text-align: justify;
+    color:#1a2;
+}
+
+.product-popup-info .productdetail-right .clickoffer .currentoffer .textCoupon{
+  display: block;
+  padding: 5px 0px;
+  color: #d22573 !important;
+  font-weight: bold;
+}
+.product-popup-info .productdetail-right .clickoffer .currentoffer .textCoupon > span{
+  font-weight: normal;
+}
+.product-popup-info .productdetail-right .clickoffer .currentoffer .textCoupon > span li{
+  padding: 0px 10px;
+}
+
+/**********************New filster ******************/
+ #filter {
+    border-left: #ccc solid 1px;
+    border-right: #ccc solid 1px;
+    border-bottom: #ccc solid 1px;
+}
+
+#filter .container, #sort .container {
+    width: 100%;
+    padding: 0 0px;
+    position: absolute;
+    /*background: #fff;*/
+    z-index: 999;
+    border-left: #ccc solid 1px;
+    border-right: #ccc solid 1px;
+    border-bottom: #ccc solid 1px;
+}
+#sort .container {
+    border-left: none;
+    border-right: none;
+    border-bottom:none;
+}
+
+#filters .nav-tabs>li{
+	float:right;
+	width:17%;
+	font-size: 14px;
+	margin: 0 0 0 6px;
+	cursor: pointer;
+}
+#filters .nav-tabs>li.active{
+	
+	border-bottom: #fff solid 1px;
+	    margin: 0 0 0 6px;
+	    cursor: pointer;
+}
+#filters .nav-tabs>li.active a
+{
+	color:#C62A69;
+	    cursor: pointer;
+}
+  #filters .nav-tabs>li .resize-vertical{
+ background: transparent url("../images/split-icon.png") no-repeat scroll -219px -153px;
+    float: left;
+    height: 34px;
+    margin: -3px 0 0 -11px;
+    width: 37px;
+}
+ #filters .nav-tabs>li .filtericon{
+ background: transparent url("../images/split-icon.png") no-repeat scroll -190px -148px;
+    float: left;
+    height: 34px;
+    margin: -7px 0 0 -5px;
+    width: 37px;    
+}
+#filters .nav-tabs>li .resizedown,#filters .nav-tabs>li .filterdown{
+   background: transparent url("../images/split-icon.png") no-repeat scroll -218px -29px;
+    float: right;
+    height: 16px;
+    margin: -3px 0 0;
+    width: 12px;
+
+}
+#filters .nav-tabs>li span.glyphicon {
+    padding-right: 10px;
+    font-size: 20px;
+  /* color: #686868;*/
+}
+#filters .nav-tabs>li .caret{
+    margin-top: 10px;
+    float: right;
+   /* color: #686868;*/
+}
+
+#filters .nav-tabs>li>a {
+	color: #666;
+    margin-right: 2px;
+    line-height: 1.428571429;
+    border-radius: 2px 2px 0 0;
+    border: #ccc solid 1px;
+    padding: 5px 5px;
+    margin-right: 2px;
+    line-height: 1.428571429;
+    border-radius: 2px 2px 0 0;
+    border-right: #ccc solid 1px;
+    border-left: #ccc solid 1px;
+    border-top: #ccc solid 1px;
+}
+
+.button-group .panelFilter {
+    border-right:#ccc solid 1px;
+    background:#fff;
+}
+
+.button-group .panelFilter.category{
+	 width: 30%;
+    float: left;
+}
+
+.button-group .panelFilter.brand {
+    width: 25%;
+    float: left;
+}
+.button-group .panelFilter.brand li, .button-group .panelFilter.category li {
+    width: 49%;
+    display: inline-block;
+    /*text-overflow: ellipsis;*/
+    text-overflow:inherit;
+    white-space: nowrap;
+        overflow: hidden;
+    float: left;
+}
+.button-group .panelFilter.size{
+    width: 15%;
+    float: left;
+    border-right: none;
+}
+
+.button-group .panelFilter.size li {
+    width: 48%;
+    display: inline-block;
+   /* text-overflow: ellipsis;*/
+    white-space: nowrap;
+}
+.button-group .panelFilter.colour{
+	 width: 15%;
+    float: left;
+}
+ .button-group .panelFilter.colour li
+ {
+ 	display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+ }
+.button-group .panelFilter.price {
+    width: 15%;
+    float: left;
+}
+
+
+.button-group .panelFilter .defaultCat
+{
+	font-weight: bold;
+    text-transform: capitalize;
+    line-height: 28px;
+    color: #434343;
+       padding: 0 10px 0 0px;
+    margin: 0 10px 5px 5px;
+    border-bottom: #ccc solid 1px;
+}
+
+.button-group .panelFilter .filterOptions{
+	/*border-right: #ccc solid 1px;*/
+     min-height: 250px;
+    height: 250px;
+    overflow-y: auto;
+    overflow-x:none;
+    margin: 0 5px 0 0;
+    padding: 5px 0;
+}
+.button-group .panelFilter:last-child .filterOptions{
+	border-right:none;
+}
+.button-group .panelFilter .filterOptions li{
+	line-height: 20px;
+	padding: 0 5px;
+	text-transform: capitalize;
+}
+
+.checkbox-custom, .radio-custom {
+    opacity: 0;
+    /*position: absolute;*/   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    cursor: pointer;
+    
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+    font-size: 12px;
+    font-weight: normal;
+    color: #686868;
+    margin-left:-15px;	
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 11px;
+    padding:0px !important;
+    margin-right:8px;
+    text-align: center;
+}
+
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: #c9286b;
+}
+
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+ /* outline: 1px solid #ddd;*/ /* focus style */
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 180px;
+    overflow-x: hidden;
+}
+	.scrollable-menu::-webkit-scrollbar {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 5px;        
+    }    
+    .scrollable-menu::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #8a8a8a;
+        -webkit-box-shadow: 0 0 1px rgba(100,100,100,.75); 
+        -moz-box-shadow: 0 0 1px rgba(100,100,100,.75);      
+    }
+    .scrollable-menu::-moz-scrollbar {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 5px;        
+    }    
+    .scrollable-menu::-moz-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #8a8a8a;
+        -webkit-box-shadow: 0 0 1px rgba(100,100,100,.75); 
+        -moz-box-shadow: 0 0 1px rgba(100,100,100,.75);      
+    }
+.sortFilterOptions {
+    border: #ccc solid 1px;
+    float: right;
+    padding: 8px 16px;
+    margin-right:0px;
+	width:17%;
+	background:#fff;
+}
+.sortFilterOptions li {
+    line-height: 25px;
+	width:56%;
+}
+.sortFilterOptions li a {
+    color: #686868;
+    font-size: 12px;
+}
+.submitbtn{
+	background:#fff;
+	float:left;
+	margin:0 15px;
+	padding: 15px 0 10px;
+	width:96.9%;
+}
+/*.row.marginTopBottom {
+       margin: 15px 0 5px 0;
+    float: right;
+}*/
+.submitbtn .btn.applyBtn{
+    background: #C62A69;
+    color:#fff;
+    border: #ccc solid 1px;
+    width:100px !important;
+    margin: 0 10px 0px 15px;
+    display: inline-block;
+    text-align: center;
+}
+.submitbtn .btn.resetBtn{
+    background: #fff;
+    color: #333;
+    border: #ccc solid 1px;
+    margin-left: 0px;
+    display: inline-block;
+    width:100px !important;
+}
+.crossIcon {
+     /*float: right;
+    font-size: 10px;
+    font-weight: normal;
+    color: #c2c2c2;
+    cursor: pointer;
+    padding: 2px 0px;
+    position: absolute;
+    right: 16px;*/
+    cursor: pointer;
+    height: 20px;
+    padding: 3px;
+    position: absolute;
+    right: 11px;
+    width: 20px;
+}
+

@@ -1,0 +1,154 @@
+<!-- cart lightbox area starts here -->
+<ul>
+<li class="menu-h menu-h-alt pull-right hidden-md hidden-lg hidden-sm"><a
+	class="mobile-bag-out" href="/cart"> <span class="bag"><span
+			class="badge">{{#if cart.products}} {{#if
+				cart.products.length}} {{cart.products.length}} {{else}} 1 {{/if}}
+				{{else}} 0 {{/if}}</span></span></a></li>
+
+<li class="dropdown hidden-xs">
+<a class="bag-out dropdown-toggle" href="/cart">
+		{{#if cart.products}} <span class="bag-time"><!--span
+			class="timeremaining">Time Remaining :</span--> <span
+			id="cartHeaderTimer">00:00:00 Mins</span></span> {{/if}} <span class="bag"><span
+			class="badge">{{#if cart.products}} {{#if
+				cart.products.length}} {{cart.products.length}} {{else}} 1 {{/if}}
+				{{else}} 0 {{/if}}</span></span>
+</a> <!-- cart drop down starts here -->
+<div class="cart-overlay"></div>
+	<ul class="dropdown-menu cart-dropdown popup">
+		<li>{{#if cart.products}}
+			<div class="cartddwn-top">
+				<span class="cartddwn-head">{{#if cart.products}} {{#if
+					cart.products.length}} {{cart.products.length}} {{else}} 1 {{/if}}
+					{{else}} 0 {{/if}} Item(s) in your Bag</span> 
+					<span class="cartddwn-timer" id="cartDDTimer">00:00:00 minutes left</span>
+					<span class="cartddwn-cross"></span>
+			</div>
+			<div class="cartddwn-btm">
+				<!-- row 1 -->
+				{{#if cart.products.length}} {{#each cart.products}}
+				<div class="cart-details cart-lightbox"
+					data-inventory-id="{{inventoryId}}" data-product-id="{{productId}}"
+					data-sku-id="{{skuId}}" data-event-id="{{eventId}}"
+					data-category-id="{{categoryId}}" data-timer="{{timeToExpire}}"
+					data-sale-price="{{salePrice}}" data-qnty="{{quantity}}">
+					<div class="thumbnail">
+						<img src="{{thumbnailUrl}}" alt="{{productName}}"
+							title="{{productName}}" />
+					</div>
+					<div class="cart-prod">
+						<a href="/product-detail/product/{{eventId}}/{{vendorProductId}}"
+							class="cart-prodname">{{productName}}</a> {{#if size}} <span
+							class="prod-qty">{{size}}</span> {{/if}} {{#if color}} <span
+							class="prod-qty">{{color}}</span> {{/if}} {{#if shippmentType}} <span
+							class="cart-shipicon">{{shippmentType}}</span> {{/if}} <span
+							class="prod-qty">{{quantity}}</span> <select
+							class="prod-qty selectable">
+							<option value="{{quantity}}">{{quantity}}</option>
+						</select>
+						<a href="#" class="action-link  update-product">Save</a>
+					</div>
+					<div class="cart-det">
+						<div class="cartprod-timer">00:00:00 minutes left</div>
+						<a href="#" class="action-link edit-product" title="edit product">edit</a>
+						<a href="#" class="action-link delete-product" title="delete product">delete</a> 
+							<!-- <a href="#" class="action-link update-product" title="update product">update</a> -->
+						<span class="cart-disprice cart-disprice-alt">{{currencyType}}
+							{{mrp}}</span> <span class="cart-dp-price-alt">{{currencyType}}
+							{{salePrice}}</span> <strong class="cart-dp-price-alt">Total:
+							{{currencyType}} {{product quantity salePrice}}</strong>
+					</div>
+				</div>
+				<div class="cart-btm-sep"></div>
+				{{/each}} {{else}}
+				<div class="cart-details cart-lightbox"
+					data-inventory-id="{{cart.products.inventoryId}}"
+					data-product-id="{{cart.products.productId}}"
+					data-sku-id="{{cart.products.skuId}}"
+					data-event-id="{{cart.products.eventId}}"
+					data-category-id="{{cart.products.categoryId}}"
+					data-timer="{{cart.products.timeToExpire}}"
+					data-sale-price="{{cart.products.salePrice}}"
+					data-qnty="{{cart.products.quantity}}">
+					<div class="thumbnail">
+						<img src="{{cart.products.thumbnailUrl}}"
+							alt="{{cart.products.productName}}"
+							title="{{cart.products.productName}}" />
+					</div>
+					<div class="cart-prod">
+						<a
+							href="/product-detail/product/{{cart.products.eventId}}/{{cart.products.vendorProductId}}"
+							class="cart-prodname">{{cart.products.productName}}</a> {{#if
+						cart.products.size}} <span class="prod-qty">{{cart.products.size}}</span>
+						{{/if}} {{#if cart.products.color}} 
+						<span class="prod-qty">{{cart.products.color}}</span>
+						{{/if}} {{#if cart.products.shippmentType}} <span
+							class="cart-shipicon">{{cart.products.shippmentType}}</span>
+						{{/if}} <span class="prod-qty">{{cart.products.quantity}}</span> 
+						<select class="prod-qty selectable">
+							<option value="{{cart.products.quantity}}">{{cart.products.quantity}}</option>
+						</select>
+						<a href="#" class="action-link  update-product">Save</a>
+						
+					</div>
+					<div class="cart-det">
+						<div class="cartprod-timer">00:00:00 minutes left</div>
+						<a href="#" class="action-link edit-product" title="edit product">edit</a>
+						<a href="#" class="action-link delete-product" title="delete product">delete</a> 
+							<!-- <a href="#" class="action-link update-product" title="update product">update</a> -->
+						<span class="cart-disprice cart-disprice-alt">{{cart.products.currencyType}}
+							{{cart.products.mrp}}</span> <span class="cart-dp-price-alt">{{cart.products.currencyType}}
+							{{cart.products.salePrice}}</span> <strong class="cart-dp-price-alt">Total:
+							{{cart.products.currencyType}} {{product cart.products.quantity
+							cart.products.salePrice}}</strong>
+					</div>
+				</div>
+				<div class="cart-btm-sep"></div>
+				{{/if}}
+				<!-- row 1 ends -->
+			</div>
+			<div class="checkout-btn-area">
+				<div class="popcart-btnn">
+					<a href="/cart" class="btn-cartpop-checkout"><i
+						class="icon-basket"></i> Checkout</a>
+				</div>
+				<div class="savngs-area">
+					<label class="savngs-label">Savings :</label> <label
+						class="savings-info" id="youSaveValue">{{#if cart.products.length}}
+						{{cart.products.0.currencyType}} {{else}}
+						{{cart.products.currencyType}} {{/if}} {{cart.youSaveValue}}</label> <label
+						class="savngs-label">Sub Total :</label> <label
+						class="savings-info" id="subTotalValue">{{#if cart.products.length}}
+						{{cart.products.0.currencyType}} {{else}}
+						{{cart.products.currencyType}} {{/if}} {{cart.grandOrderValue}}</label>
+				</div>
+			</div> {{else}}
+			<div class="cartddwn-top">
+				<span class="cartddwn-head">0 Item(s) in your Bag</span> 
+				<span class="cartddwn-timer">00:00:00 minutes left</span>
+				<span class="cartddwn-cross"></span>
+			</div>
+			<div class="cartddwn-btm">
+				<p style="text-align: center; font-size: 16px; padding: 10px 0; color: #333333;">Your
+					Shopping Cart is empty!</p>
+				<div class="checkout-btn-area">
+
+					<a href="/home" class="empty-cart-shopping"><i class="icon-plus"></i> Continue Shopping</a>
+
+				</div>
+			</div> {{/if}}
+		</li>
+	</ul> <!-- cart drop down ends here --></li>
+
+
+<li class="pull-right hidden-lg hidden-md hidden-sm">
+	<ul class="nav top-area-sticky">
+		<li class="search-field">
+			<!-- <input type="search" placeholder="What are you Looking For?" /> -->
+			<a href="#" class="search-icon-sticky">&nbsp;</a>
+		</li>
+	</ul>
+</li>
+</ul>
+<!-- cart lightbox area ends here -->

@@ -1,0 +1,67 @@
+<!-- header area starts here -->
+<header>
+<<<<<<< .mine
+ <!-- top row with logo , add area and favorite and search field starts here -->
+ <div class="row clearfix logobar">
+  <div class="col-sm-4 col-md-4"></div>
+     <div class="col-sm-4 col-center hidden-xs">
+       <a href="/home" class="logo-img" title="FashionAndYou">
+        <img src="/app-theme/dist/images/logo.png" alt="FashionAndYou" title="FashionAndYou" />
+       </a>
+  </div>
+  
+  <div class="col-sm-4 col-md-4"></div>
+  <!-- <div class="col-sm-6 col-hide">
+   <div class="adds-area">
+    #set ($VOID = $velocityPortletPreferences.setValue('groupId', $themeDisplay.getScopeGroupId().toString())) 
+    #set ($VOID = $velocityPortletPreferences.setValue('articleId', '13531')) 
+    #set ($VOID =$velocityPortletPreferences.setValue('portletSetupShowBorders', 'false')) 
+    #set ($portlet_id = '56') #set ($my_portlet_id = "${portlet_id}_INSTANCE_54321") 
+    $theme.runtime($my_portlet_id, "", $velocityPortletPreferences.toString())
+   </div>
+  </div> -->
+  
+ </div>
+ <!-- top row with logo ei, add area and fav and search field starts here -->
+=======
+	<!-- top row with logo , add area and favorite and search field starts here -->
+	<div class="row clearfix logobar">
+		<div class="col-sm-4 col-md-4"></div>
+	    <div class="col-sm-4 col-center hidden-xs">
+	      <a href="/home" class="logo-img" title="FashionAndYou">
+	      	<img src="/app-theme/dist/images/logo.png" alt="FashionAndYou" title="FashionAndYou" />
+	      </a>
+		</div>
+		
+		<div class="col-sm-4 col-md-4"></div>
+		<-- <div class="col-sm-6 col-hide">
+			<div class="adds-area">
+				#set ($VOID = $velocityPortletPreferences.setValue('groupId', $themeDisplay.getScopeGroupId().toString())) 
+				#set ($VOID = $velocityPortletPreferences.setValue('articleId', '13531')) 
+				#set ($VOID =$velocityPortletPreferences.setValue('portletSetupShowBorders', 'false')) 
+				#set ($portlet_id = '56') #set ($my_portlet_id = "${portlet_id}_INSTANCE_54321") 
+				$theme.runtime($my_portlet_id, "", $velocityPortletPreferences.toString())
+			</div>
+		</div> -->
+		
+	</div>
+	<!-- top row with logo ei, add area and fav and search field starts here -->
+>>>>>>> .r8722
+
+ <!-- navigation starts here -->
+ <div class="navbar navbar-default">
+  <div class="navbar-header">
+   
+   <div class="navbar">
+    <div id="backbone-portlet-main-navigation"></div>
+    <ul class="navbar-right pull-right">
+     <li><div id="cartLightBox"></div></li>
+     <li><div id="backbone-portlet-user-section-header"></div></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <!-- navigation ends here -->
+
+</header>
+<!-- header area ends here -->

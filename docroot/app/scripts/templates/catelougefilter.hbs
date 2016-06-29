@@ -1,0 +1,29 @@
+ {{#if filters}}
+ <div class="filterOption">
+			<h1>Filter By :</h1>
+		
+ 	{{#each filters}}
+
+			<div class="col-xs-12 col-sm-2 col-md-2">
+				<div class="select-sort">
+				<input type="hidden" id="catchangeval" value=""/>
+					<select class="select choose-option {{@key}} " data-filter-name="{{@key}}" data-filter-type="{{filterType}}" id="sortSelect">
+						<option class="defaultCat" value="select" >{{@key}}</option>
+						{{#each buckets}} 
+							<option value="{{key}}" id="{{key}}">{{key}}</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>	
+	{{/each}}
+	<div class="col-xs-12 col-sm-2 col-md-2">
+		<div class="select-sort">
+			<select class="select choose-option" id="sortOrderSelect">
+				<option value="">Sort</option>
+				<option value="HIGH_TO_LOW">Price High to Low</option>
+				<option value="LOW_TO_HIGH">Price Low to High</option>
+			</select>
+		</div>
+	</div>
+	</div>	
+{{/if}}

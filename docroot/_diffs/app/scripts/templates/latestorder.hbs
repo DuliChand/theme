@@ -1,0 +1,67 @@
+<div class="myaccount-area">
+<div id="left" class="sidebar-floating ">
+  <div id="sidebar" class="last-ord-sum">  
+       {{#if orders}}
+        <h4 class="last-ord-heading">Last Order</h4>
+
+        <div class="ord-sum-outer">
+
+         <div class="ord-particulars">
+
+          <span>Order Number</span>
+
+          <strong>{{orders.orderNumber}}</strong>
+          
+          <span>Order Status</span>
+          
+          {{#lowerEqual orders.status 'canceled'}}
+           <strong>Cancelled</strong>
+          {{else}}
+           <strong>{{orders.status}}</strong>
+          {{/lowerEqual}}
+
+          {{#if orders.bankTransactionId}}
+          <span>Transaction Id</span>
+          
+          <strong>{{orders.bankTransactionId}}</strong>
+          {{/if}}
+
+          <span>Item(s)</span>
+
+          <strong>{{orders.totalOrderItems}}</strong>
+
+          <span>Order Value</span>
+
+          <strong>Rs. {{orders.totalAmountPaid}}</strong>
+          {{#notEqual orders.totalShippingCharge '0.00'}}
+           <span>Delivery Charges</span>
+           <strong>Rs. {{orders.totalShippingCharge}}</strong>
+          {{/notEqual}}
+          {{#notEqual orders.totalCodCharge '0.00'}}
+           <span>COD Charges</span>
+           <strong>Rs. {{orders.totalCodCharge}}</strong>
+          {{/notEqual}}
+          {{#notEqual orders.totalTax '0.00'}}
+           <span>Taxes</span>
+           <strong>Rs. {{orders.totalTax}}</strong>
+          {{/notEqual}} 
+          {{#notEqual orders.totalRewardAmount '0.00'}}
+           <span>Reward Points</span>
+           <strong>{{orders.totalRewardAmount}}</strong>          
+          {{/notEqual}}
+
+          {{#notEqual orders.totalStoredCredit '0.00'}}
+           <span>Credits Used</span>
+           <strong>{{orders.totalStoredCredit}}</strong>
+          {{/notEqual}}
+
+         </div>
+
+         <!-- <a href="#" class="moredetail">More Details</a> -->
+
+    </div>
+        {{/if}}
+   </div>
+  
+ </div>
+ </div>

@@ -1,0 +1,127 @@
+#invite-registration {
+	background:url(http://static.fashionandyou.com/app-images/invite-reg.jpg) no-repeat;
+	background-size:cover;
+	clear:both;
+	float:left;
+	height:1150px;
+	margin:0 auto;
+	padding:30px 50px;
+	width:940px
+}
+#invite-registration h2 {
+	clear:both;
+	color:#000;
+	display:block;
+	
+	font-size:33px;
+	margin:0 0 20px;
+	float:right;
+	width:72%;
+	text-align:left
+}
+#registration-box {
+	clear:both;
+	float:left;
+	padding:19% 0 0;
+	width:320px;
+	margin-left:28%
+}
+#registration-box h4 {
+	background:none repeat scroll 0 0 #d22573;
+	clear:both;
+	color:#FFF;
+	
+	font-size:13px;
+	margin:0 auto;
+	padding:5px 10px;
+	text-align:center;
+	width:150px
+}
+#registration-box h3 {
+	clear:both;
+	color:#000;
+	display:block;
+	
+	font-size:17px;
+	margin:10px auto;
+	width:320px;
+	text-align:center
+}
+#registration-box label {
+	clear:left;
+	float:left;
+	
+	font-size:13px;
+	font-weight:400;
+	padding:0 5px 3px 0;
+	text-align:right;
+	width:110px
+}
+
+#registration-box label.check-fix{ clear:none; width:auto;}
+
+#registration-box input[type="text"], #registration-box input[type="password"] {
+	border:1px solid #E1E1E1;
+	border-radius:4px;
+	height:22px;
+	padding:0 5px;
+	margin:0 0 8px;
+	width:150px
+}
+#registration-box .go {
+	background:none repeat scroll 0 0 #000;
+	color:#FFF;
+	display:inline-block;
+	
+	font-size:14px;
+	padding:3px 16px;
+	border-radius:5px
+}
+#registration-box .already {
+	clear:both;
+	color:#333;
+	display:block;
+	
+	padding:10px 0 0;
+	text-align:center
+}
+#registration-box .already a {
+	color:#d22573;
+	
+}
+.error-message {
+	color:red;
+	clear:both;
+	display:block;
+	margin-top:-5px;
+	padding-left:113px;
+	float:left;
+}
+.controls {
+	margin:0!important
+}
+
+/* @media only screen and (max-width: 900px) {
+#registration-box {
+      margin-left: 21%;
+    padding-top: 17%;
+   }
+#invite-registration h2{
+	font-size:27px;
+}
+}
+@media only screen and (max-width: 800px) {
+#registration-box {
+    margin-left: 21%;
+    padding-top: 15%;
+   }
+	
+}
+@media only screen and (max-width: 767px) {
+#invite-registration h2 {
+       
+	width:100%;
+    text-align: center;
+  
+} */
+}

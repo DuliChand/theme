@@ -1,0 +1,172 @@
+{{#if categories}}
+	<div id="responsivemenu">
+      <div class="menuicon">
+        <span id="menulink">&nbsp;</span>
+        <a href="/" title="Home">
+        	<img src="/app-theme/images/logo-mobile.png" alt="FashionAndYou" width="100" />
+        </a>
+      </div>
+      <div class="menulisting" id="openmenu">
+      <ul>
+      	{{#each categories}}
+        <li>
+        	<a href="/previewcategory/previewcategories/{{categoryId}}" title="{{categoryName}}">{{categoryName}}</a>
+       	</li>
+        {{/each}}
+        	
+      </ul>
+      </div>
+    </div>	
+	<ul class="navbar-left">
+	<li class="menu-h"><a class="navbar-home navbar-brand" href="/"></a></li>
+		{{#each categories}}
+			{{#equal isCategory 1}}
+			<li class="menu-h">
+			  <a class="navbar-brand {{categoryName}}" href="/previewcategory/previewcategories/{{categoryId}}" title="{{categoryName}}"><span>{{categoryName}}</span></a>
+			  <div class="menu-dropdown move-right {{categoryName}}">
+	          <div class="menucolumn">
+				<div class="menurow">
+			  	{{#if freshArrivalEvents}}
+		  		<div class="menucell">
+	            <ul>
+			      <li class="menu-heading">
+			        <h3>Today's Sales</h3>
+			      </li>
+				  {{#each freshArrivalEvents}}
+				  {{#if_less_equal @index 16}}
+				  <li>
+				  	<a href="/product/listing/event/{{eventId}}">{{eventName}}</a>
+			      </li>
+			      {{/if_less_equal}}
+				  {{/each}}
+				  {{#if_gt freshArrivalEvents.length 17}}
+				  <li class="moreitem"><a href="/event/list/todays-sales/{{cleanString ../categoryId}}">View More<i class="icon-right-circled"></i></a></li>
+				  {{/if_gt}}
+			    </ul>
+	            </div>
+			  	{{/if}}
+			  	
+			  	{{#if weRecommendedEvents}}
+	            <div class="menucell">
+		  		<ul>
+			      <li class="menu-heading">
+			        <h3>Current Sales</h3>
+			      </li>
+				  {{#each weRecommendedEvents}}
+				  {{#if_less_equal @index 16}}
+			  	  <li>
+			      	<a href="/product/listing/event/{{eventId}}">{{eventName}}</a>
+		          </li>
+		          {{/if_less_equal}}
+				  {{/each}}
+				  {{#if_gt weRecommendedEvents.length 17}}
+				  <li class="moreitem"><a href="/event/list/current-sales/{{../categoryId}}">View More<i class="icon-right-circled"></i></a></li>
+				  {{/if_gt}}
+				  
+			    </ul>
+	            </div>
+			  	{{/if}}
+			  	
+			  	{{#if endingSoonEvents}}
+		  		<div class="menucell">
+			      <ul>
+			      <li class="menu-heading">
+			        <h3>Ending soon</h3>
+			      </li>
+				  {{#each endingSoonEvents}}
+				   {{#if_less_equal @index 16}}
+			  	  <li>
+			      	<a href="/product/listing/event/{{eventId}}">{{eventName}}</a>
+		          </li>
+		           {{/if_less_equal}}
+				  {{/each}}
+				  {{#if_gt endingSoonEvents.length 17}}
+				   <li class="moreitem"><a href="/event/list/ending-soon/{{../categoryId}}">View More<i class="icon-right-circled"></i></a></li>
+				  {{/if_gt}}
+				  </ul>
+			    </div>
+			  	{{/if}}
+			  	
+			  	{{#if categories}}
+	            <div class="menucell">
+		  		<ul>
+			      <li class="menu-heading">
+			        <h3>Shop By Category</h3>
+			      </li>
+				  {{#each categories}}
+				  {{#if_less_equal @index 16}}
+				  <li>
+			        <a href="/product/listing/category/{{categoryId}}" rel="catLink{{../../categoryId}}{{categoryId}}" class="ref_link">{{categoryName}}</a>
+			      </li>
+			      {{/if_less_equal}}
+				  {{/each}}
+			    </ul>
+	            </div>
+			  	{{/if}}
+			  	
+			  <!-- 	{{#if categories}}
+			  	{{#each categories}}
+				  {{#if_less_equal @index 16}}
+			        {{#if categories}}
+		        	<div class="menucell hidemenu" id="catLink{{../../../categoryId}}{{../categoryId}}"> 
+		        		 <ul>
+				          <li class="menu-heading">
+				            <h3>{{../categoryName}}</h3>
+				          </li>
+				          {{#each categories}}
+				          {{#if_less_equal @index 16}}
+				          <li>
+				            <a href="/product/listing/category/{{categoryId}}">{{categoryName}}</a>
+				          </li>
+				          {{/if_less_equal}}
+				          {{/each}}
+			            </ul> 
+		            </div>
+			        {{/if}}
+			      {{/if_less_equal}}
+				  {{/each}}
+				  {{/if}}  -->  
+				  
+				  
+			  	
+				  
+				  
+			    
+	          </div>
+	         
+	          </div>
+	          </div>
+			</li>
+			{{/equal}}
+			{{#equal isCategory 0}}
+			<li class="menu-h">
+			  <a class="navbar-brand {{categoryName}}" href="/previewcategory/previewcategories/{{categoryId}}" title="{{categoryName}}"><span>{{categoryName}}</span></a>
+			  <div class="menu-dropdown move-right {{categoryName}}">
+				{{#if categories}}  
+				  			  <div class="shoplounge_holder">
+				                {{#each categories}}
+							  <div class="menucell shoplounge ">
+					              <ul>
+					              	<li class="menu-heading"><h3>{{categoryName}}</h3></li>
+						              {{#if freshArrivalEvents}}
+						              {{#each freshArrivalEvents}}
+						              {{#if_less_equal @index 16}}
+						              	<li><a href="/product/listing/event/{{eventId}}">{{eventName}}</a></li>
+						              {{/if_less_equal}}
+						              {{/each}}
+						              {{/if}}
+						            {{#if_gt freshArrivalEvents.length 17}}
+									  	<li class="moreitem"><a href="/previewcategory/previewcategories/{{../categoryId}}">View More<i class="icon-right-circled"></i></a></li>
+									{{/if_gt}}
+					              </ul>
+				              </div>
+					{{/each}}
+			  </div>
+			  
+			  {{/if}} 
+			  </div>
+			  </li> 
+			{{/equal}}
+		{{/each}}
+	</ul>
+{{/if}}

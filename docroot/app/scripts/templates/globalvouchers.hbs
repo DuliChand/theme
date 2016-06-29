@@ -1,0 +1,25 @@
+{{#equal domainResponse.responseCode "SUCCESS"}}
+<h3>Global Vouchers</h3>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1" id="globalTable">
+      <tr>
+        <th>Coupon</th>
+        <th>Description</th>
+        <th width="35%">Exp Date</th>
+      </tr>
+       {{#if domainResponse.entitiesResponse.length}}
+	      {{#each domainResponse.entitiesResponse}}
+	      <tr>
+	        <td>{{baseDTO.voucherCode}}</td>
+	        <td >{{baseDTO.voucherDescription}}</td>
+	        <td id="{{baseDTO.endDate}}" >{{getDOB baseDTO.endDate}}</td>
+	      </tr>
+	      {{/each}}
+	    {{else}}
+	   	   <tr>
+	        <td>{{domainResponse.entitiesResponse.baseDTO.voucherCode}}</td>
+	        <td>{{domainResponse.entitiesResponse.baseDTO.voucherDescription}}</td>
+	        <td id="{{domainResponse.entitiesResponse.baseDTO.endDate}}">{{getDOB domainResponse.entitiesResponse.baseDTO.endDate}}</td>
+	      </tr>
+       {{/if}}
+</table>
+{{/equal}}

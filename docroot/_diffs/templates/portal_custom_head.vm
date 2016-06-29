@@ -1,0 +1,105 @@
+#if($tmplcookie !="ngAppTmpl" && $tmpl != "beta")
+<link rel="stylesheet" href="/app-theme/dist/styles/bootstrap.css">
+#end
+<link rel="stylesheet" href="/app-theme/dist/styles/main.css?v=0227">
+<link rel="stylesheet" href="/app-theme/dist/styles/layout.css?v=0227">
+<link rel="stylesheet" href="/app-theme/dist/styles/home.css?v=0227">
+
+#if($tmplcookie =="ngAppTmpl" || $tmpl == "beta")
+	<link rel="stylesheet" href="/styles/newapp.css?newwebversionfnu=2">	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,420' rel='stylesheet' type='text/css'>	
+#end
+
+
+
+#if($Pagename=="product-listing")
+<link rel="stylesheet" href="/app-theme/dist/styles/product-listing.css?v=0227">
+#end
+
+#if($Pagename=="store")
+<link rel="stylesheet" href="/app-theme/dist/styles/product-listing.css?v=0227">
+#end
+
+#if($Pagename=="products")
+<link rel="stylesheet" href="/app-theme/dist/styles/product-detail.css?v=0227">
+#end
+
+#if($Pagename=="cart")
+<link rel="stylesheet" href="/app-theme/dist/styles/cart.css?v=0227">
+#end
+
+#if($Pagename=="billing")
+<link rel="stylesheet" href="/app-theme/dist/styles/billing.css?v=0227">
+#end
+
+#if($Pagename=="payment")
+<link rel="stylesheet" href="/app-theme/dist/styles/orderSummary.css?v=0227">
+#end
+
+#if($Pagename=="login")
+<link rel="stylesheet" href="/app-theme/dist/styles/login.css?v=0227">
+#end
+
+#if($Pagename=="ccelogin")
+<link rel="stylesheet" href="/app-theme/dist/styles/login.css?v=0227">
+#end
+
+#if($Pagename=="register")
+<link rel="stylesheet" href="/app-theme/dist/styles/register.css?v=0227">
+#end
+
+#if($Pagename=="forgot-password")
+<link rel="stylesheet" href="/app-theme/dist/styles/forgot-password.css?v=0227">
+#end
+
+#if($Pagename=="profile")
+<link rel="stylesheet" href="/app-theme/dist/styles/profile.css?v=0227">
+#end
+
+#if($Pagename=="credits")
+<link rel="stylesheet" href="/app-theme/dist/styles/credits.css?v=0227">
+#end
+
+#if($Pagename=="orders")
+<link rel="stylesheet" href="/app-theme/dist/styles/order-history.css?v=0227">
+#end
+
+#if($Pagename=="cir")
+<link rel="stylesheet" href="/app-theme/dist/styles/order-history.css?v=0227">
+#end
+
+#if($Pagename=="return")
+<link rel="stylesheet" href="/app-theme/dist/styles/order-history.css?v=0227">
+#end
+
+#if($Pagename=="invite")
+<link rel="stylesheet" href="/app-theme/dist/styles/invite-friend.css?v=0227">
+#end
+
+#if($Pagename=="favourites")
+<link rel="stylesheet" href="/app-theme/dist/styles/favourites.css?v=0227">
+#end
+
+#if($Pagename=="search")
+<link rel="stylesheet" href="/app-theme/dist/styles/search.css?v=0227">
+#end
+
+#if($Pagename=="invite-registration")
+<link rel="stylesheet" href="/app-theme/dist/styles/invite-registration.css?v=0227">
+#end
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="/app-theme/dist/styles/fontawesome-ie7.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/app-theme/dist/styles/ie.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="/app-theme/dist/scripts/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="/app-theme/dist/scripts/vendor/respond.js"></script>
+<![endif]-->

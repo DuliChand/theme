@@ -1,0 +1,69 @@
+ <!-- size chart pop up starts here -->
+    <div class="size-chart-outer clearfix" id="size-chart">
+            <div class="size-chart-inner clearfix">
+                <div class="header clearfix">
+                    <h2>Select Your Size</h2>
+                    <a href="#" class="cross" ></a>
+                </div>
+                <div class="size-chart">
+                    <div class="image-outer" >
+                        <img src="$images_folder/size-chart.jpg" alt="" title="" />
+                        <div class="text">All measurements shown are of the garment.</div>
+                    </div>
+                    <div class="detail-outer">
+                        <ul class="size-tabs">
+                            <li class="selected-tab"><a href="#">Find My Size</a></li>
+                            <li><a href="#">Measurement Guide</a></li>
+                        </ul>
+                        <ul class="size-tabs-content">
+                            <li>
+                                <div class="brand-select">
+                                <p>Get the closest fit in Puma Jackets based on Brand that you wear</p>
+                                <div class="row">
+                                <div class="col-xs-6">
+                                <label>what brand you wear ?</label>
+                                <div class="select-wrapper">
+                                <select class="select">
+                                        <option>Addidas</option>
+                                        <option>Lacoste</option>
+                                        <option>Reebok</option>
+                                    </select>
+                                
+                                </div>
+                                </div>
+                                <div class="col-xs-6">
+                                <label>your size ?</label>
+                                <div class="select-wrapper">
+                                <select class="select">
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                   </select>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="size-select clearfix">
+                                    <p>Jackets size “S” in PUMA jackets is the closest fit to ADDIDAS “S”</p>
+                                    <ul class="size-tile">
+                                        <li>XS</li>
+                                        <li>S</li>
+                                        <li>M</li>
+                                        <li class="size-not-avail">L</li>
+                                        <li>XL</li>
+                                        <li>2XL</li>
+                                        <li>3XL</li>
+                                    </ul>
+    								
+    								<div class="clear"></div>
+                                    
+    								<a href="#" class="button-big">add to bag</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- size chart pop up ends here -->

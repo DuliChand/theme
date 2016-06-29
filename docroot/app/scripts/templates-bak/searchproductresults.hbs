@@ -1,0 +1,75 @@
+ {{#if hits.length}}
+
+	{{#each hits}}                   
+	<!-- product 1 starts here -->
+	      <div class="product-outer {{_source.category.categoryGroup}}">
+	      
+	      <div class="prod-img" id="{{_source.vendorProductId}}" data-event-id="{{_source.eventId}}">
+	        <a href="/product-detail/product/{{_source.eventId}}/{{_source.vendorProductId}}"> 
+	        {{#equal _source.inventory.quantity 0}}
+				<div class="soldout">
+					<h4>
+						SOLD OUT
+					</h4>
+					<!--<p>Don't miss out on the next event</p>-->
+				</div> 
+			{{/equal}}
+	          <img src="{{_source.vendorProductInventories.0.imageView.0.detailsURL}}" alt="{{_source.product.name}}" title="{{_source.product.name}}" /> 
+	        </a>
+	        <div class="rolover-layer">
+	            <div class="color-area">
+	             <!--  <span class="red"></span>  -->
+	            </div>
+	            
+	            <div class="clear"></div>
+	            <div class="action-area">
+	              <div class="action-icons">
+	                <div class="sharearea">
+							<span class="listing-share" title="Share"></span>
+							<div class="shareslide">
+								<!-- <a class="ifacebook" title="Facebook" href="#"></a>
+								<a class="itwitter" title="Twitter" href="#"></a>
+								<a class="iemail" title="Email" href="#"></a> -->
+								<a href="#" class="ifacebook facebook social-share-link" title="Facebook"></a>
+								<a href="#" class="itwitter twitter social-share-link" title="Twitter"></a>
+								<!-- <a href="#" class="iemail email social-share-link" title="Email"></a> -->
+								<a title="gplus" class="igplus googleplus social-share-link" href="#"></a>
+								<a title="pintrest" class="ipintrest pinterest social-share-link" href="#"></a>
+							</div>
+						</div>
+	                    <!-- <a title="Video Attached" class="listing-video" href="video-popup.html"></a> --> 
+	              </div>
+	              <div class="shipping-area"> 
+	              <!--span class="shippingtype international"></span-->
+	              </div>
+	            </div>
+	            {{#notEqual _source.inventory.quantity 0}}
+				<div class="quickview-detail">
+					<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick
+						Buy</a>
+				</div>
+				{{/notEqual}}
+	            
+	        </div>
+	        </div>
+	        <div class="prod-detail">
+	        		{{#if_less _source.inventory.salePriceWithVAT _source.inventory.mrp}}
+						<div class="discount-tag">- {{discountInPercentage _source.inventory.salePriceWithVAT _source.inventory.mrp}}%</div>
+					{{/if_less}}
+								
+	          <div class="prod-info"> 
+	            <a href="#" class="ev-prod-name" title="{{_source.product.name}}">{{_source.product.name}}</a> 
+	            <a href="/{{_source.eventId}}" class="event-name" title="{{_source.eventName}}">{{_source.eventName}}</a> 
+	          </div>
+	          <div class="prod-pricing"> 
+	            <span class="old-price">INR {{_source.inventory.mrp}}</span> 
+	            <span class="new-price">INR {{_source.inventory.salePriceWithVAT}}</span> 
+	          </div>
+	        </div>
+	     
+	      </div>
+	      
+	<!-- product 1 ends here --> 
+	{{/each}}
+	
+{{/if}}

@@ -1,0 +1,18 @@
+{{#if categories}}
+	{{#each categories}}
+		{{#if categories.length}}
+	    	<p id="{{categoryName}}"><a href="/{{#specialCharReplace categoryName}}{{/specialCharReplace}}/?src=mainNav"><strong>{{categoryName}} :</strong></a> 
+	    {{/if}}
+    {{#if categories}}
+    	{{#each categories}}
+    	<a href="/{{#specialCharReplace ../../categoryName}}{{/specialCharReplace}}/{{#specialCharReplace categoryName}}{{/specialCharReplace}}">{{categoryName}}</a>
+    	<!-- {{#if categories}}
+	    	{{#each categories}}
+	    		<a href="/{{#specialCharReplace ../../categoryName}}{{/specialCharReplace}}/{{#specialCharReplace categoryName}}{{/specialCharReplace}}">{{categoryName}}</a>
+	    	{{/each}}
+    	{{/if}} -->
+    	{{/each}} 
+    {{/if}}
+    </p>
+    {{/each}}
+{{/if}}

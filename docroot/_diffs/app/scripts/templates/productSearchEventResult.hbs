@@ -1,0 +1,39 @@
+{{#if hits.length}}
+<div class="row clear">
+    <div class="col-xs-12">
+        <h2 class="prod-heading">Events</h2>
+    </div>
+</div>
+ <!-- event starts here -->
+<div class="row event"> 
+	<!-- Event 1 starts here -->
+	{{#each hits}} 
+    <div class="removable">
+        <div class="event-outer"> 
+        	<a href="/product/listing/event/{{_source.eventId}}" class="event-img"> 
+	        	<img src="http://cdn1.fashionandyou.com/fny-event/{{_source.eventCode}}/banner_catalog_new.jpg" alt="{{_source.eventName}}" title="{{_source.eventName}}" />
+	           <!--  <div class="tagimage-hoz"><span></span></div>  -->
+	            <h2 class="event-name">{{_source.eventName}}<!-- <span class="timer"> </span>-->
+		            <!-- <span class="shipping">
+		            <span class="shippingtype exclusive" title="Exclusive"></span> 
+		            <span class="shippingtype international" title="International"></span> | 16 Days</span> -->
+		           <!--  <span class="event-favourite"></span> -->
+	            </h2>
+            </a> 
+        </div>
+     </div>
+     {{/each}}
+     <!-- Event 1 ends here --> 
+    
+	<div class="row">
+	<div class="morebutton">
+	    			<a href="#" id="moreEvents"><span>View More <i class="icon-right-circled"></i></span></a>
+	    		</div>
+		
+	</div>
+	
+</div>
+<!-- event ends here -->
+{{/if}}
+            
+           

@@ -1,0 +1,44 @@
+{{#if productCassandraWrapper}}
+	{{#if productCassandraWrapper.products}}
+	<!-- recently browsed area starts here -->
+    <div class="others-bought">
+      <div class="row">
+        <div class="col-xs-12 clearfix">
+          <h2 class="subheading">Recently Browsed</h2>
+        </div>
+        <div class="col-xs-12">
+          <div id="ca-container" class="ca-container clearfix">
+            <div class="ca-wrapper">
+            	{{#if productCassandraWrapper.products.length}}
+      		        {{#each productCassandraWrapper.products}}
+		              	<div class="slide offer-prod ca-item">
+		                      <a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" title="{{productName}}" class="offer-prod-img">
+		                      	<img src="{{thumbnailUrl}}" alt="{{productName}}" title="{{productName}}" />
+		                      </a>
+		                      <a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" title="{{productName}}" class="offer-prod-name">
+		                      	{{productName}}
+		                      </a>
+		                      <span class="offer-price">INR {{salePrice}}</span>
+		                      <a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" class="button-small pull-right" title="View More"><span class="view-more-icon"></span></a>
+						</div>
+              		{{/each}}
+             	{{else}}
+	             	<div class="slide offer-prod ca-item">
+	                     <a href="/product-detail/product/{{productCassandraWrapper.products.eventId}}/{{productCassandraWrapper.products.vendorProductId}}" title="{{productCassandraWrapper.products.productName}}" class="offer-prod-img">
+	                     	<img src="{{productCassandraWrapper.products.thumbnailUrl}}" alt="{{productCassandraWrapper.products.productName}}" title="{{productCassandraWrapper.products.productName}}" />
+	                     </a>
+	                     <a href="/product-detail/product/{{productCassandraWrapper.products.eventId}}/{{productCassandraWrapper.products.vendorProductId}}" title="{{productCassandraWrapper.products.productName}}" class="offer-prod-name">
+	                     	{{productCassandraWrapper.products.productName}}
+                    	 </a>
+	                     <span class="offer-price">INR {{productCassandraWrapper.products.salePrice}}</span>
+	                     <a href="/product-detail/product/{{productCassandraWrapper.products.eventId}}/{{productCassandraWrapper.products.vendorProductId}}" class="button-small pull-right" title="View More"><span class="view-more-icon"></span></a>
+					</div>
+            	{{/if}}
+			</div>
+		  </div>
+		</div>
+      </div>
+    </div>
+    <!-- recently browsed area area ends here -->
+	{{/if}}
+{{/if}}

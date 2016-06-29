@@ -1,0 +1,74 @@
+{{#if sectionValues}}
+<!-- we recommend area starts here -->
+<div class="row events {{sectionValues}}">
+    <h1 class="col-xs-12">{{sectionValues.title}}</h1>
+
+    {{#if sectionValues.events}}
+    <!-- column 1 starts here -->
+    <div class="col-xs-4 event-col">
+        <div class="ftr-2-5">
+            <a class="showtooltip"  href="#" title="{{sectionValues.events.0.eventName}}">
+                <img alt="{{sectionValues.events.0.eventName}}" src="{{sectionValues.events.0.bannerImage}}"  />
+                <div class="tagimage">{{sectionValues.events.0.discountLabel}}</div>
+                <h2 class="events-name">{{sectionValues.events.0.eventName}}<span>Ends Today</span></h2>
+            </a>
+        </div>
+
+        <div class="ftr-3-5">
+            <a class="showtooltip"  href="#" title="{{sectionValues.events.1.eventName}}">
+                <img alt="{{sectionValues.events.1.eventName}}" src="{{sectionValues.events.1.bannerImage}}"  />
+                <div class="tagimage">{{sectionValues.events.1.discountLabel}}</div>
+                <h2 class="events-name">{{sectionValues.events.1.eventName}}<span>Ends Today</span></h2>
+            </a>
+        </div>
+
+    </div>
+    <!-- column 1 ends here -->
+
+    <!-- column 2 starts here -->
+    <div class="col-xs-4 event-col">
+        <div class="ftr-3-5">
+            <a class="showtooltip"  href="#" title="{{sectionValues.events.2.eventName}}">
+                <img alt="{{sectionValues.events.2.eventName}}" src="{{sectionValues.events.2.bannerImage}}"  />
+                <div class="tagimage">{{sectionValues.events.2.discountLabel}}</div>
+                <h2 class="events-name">{{sectionValues.events.2.eventName}}<span>Ends Today</span></h2>
+            </a>
+        </div>
+
+        <div class="ftr-2-5">
+            <a class="showtooltip"  href="#" title="{{sectionValues.events.3.eventName}}">
+                <img alt="{{sectionValues.events.3.eventName}}" src="{{sectionValues.events.3.bannerImage}}"  />
+                <div class="tagimage">{{sectionValues.events.3.discountLabel}}</div>
+                <h2 class="events-name">{{sectionValues.events.3.eventName}}<span>Ends Today</span></h2>
+            </a>
+        </div>
+    </div>
+    <!-- column 2 ends here -->
+
+    <!-- column 3 starts here -->
+    <div class="col-xs-4 event-col">
+        <div class="ftr-2-5">
+            <a class="showtooltip"  href="#" title="{{sectionValues.events.4.eventName}}">
+                <img alt="{{sectionValues.events.4.eventName}}" src="{{sectionValues.events.4.bannerImage}}"  />
+                <div class="tagimage">{{sectionValues.events.4.discountLabel}}</div>
+                <h2 class="events-name">{{sectionValues.events.4.eventName}}<span>Ends Today</span></h2>
+            </a>
+        </div>
+
+        <div class="ftr-2-5">
+            <a class="showtooltip"  href="#" title="{{sectionValues.events.4.eventName}}">
+                <img alt="{{sectionValues.events.4.eventName}}" src="{{sectionValues.events.4.bannerImage}}"  />
+                <div class="tagimage">{{sectionValues.events.4.discountLabel}}</div>
+                <h2 class="events-name">{{sectionValues.events.4.eventName}}<span>Ends Today</span></h2>
+            </a>
+        </div>
+
+        <div class="ftr-1-5 more">
+            <a href="{{../sectionValues.landingLandingUrl}}"><p>{{../sectionValues.landingLinkLabel}}</p></a>
+        </div>
+    </div>
+    <!-- column 3 ends here -->
+    {{/if}}
+</div>
+{{/if}}
+<!-- we recommend area ends here -->

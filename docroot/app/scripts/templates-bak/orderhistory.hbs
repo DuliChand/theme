@@ -1,0 +1,118 @@
+<!-- order-history area starts here -->
+<div class="order-history-area">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="orderhistory-left">
+				<h2 class="page-heading">Order History</h2>
+				<div id="allorderbox">
+					<div id="ordertabs">
+						<ul>
+						<!-- <li><a href="#" class="active" id="rorders">Recent Orders</a></li>
+						 	<li><a href="#" id="porders">Past Orders</a></li> -->
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="rorder-table">
+						<div class="order-outer">
+							<!-- order header starts here -->
+							{{#if orders}}
+							<div class="order-header">
+								<div class="order-no">
+									<span>Order No.</span>
+								</div>
+								<div class="order-no">
+									<span>Order Date/Time</span>
+								</div>
+								<div class="order-items">
+									<span>Items</span>
+								</div>
+								<div class="order-value">
+									<span>Order Value</span>
+								</div>
+							</div>
+							<!-- order header ends here -->
+
+							<!-- order content area starts here -->
+							{{#if orders.length}} 
+							<div class="paging">
+							{{#each orders}}
+								<div class="order-content">
+									
+									<div id="last-order" class="content-row">
+										<div class="ordno-content">
+										<a name="{{orderId}}" class="expendable">&nbsp;</a>	<a href="#trackorder1" name="{{orderId}}" id="trackorderDetail" class="fancybox button">{{orderId}}</a>
+										</div>
+										<div class="ordvalue-content">
+											<span>{{getDOB createDate}} {{getTime 'hh:mm' createDate}}</span>
+										</div>
+										<div class="orditem-content">
+										{{#if_gt totalOrderItems 1}}
+											<span>{{totalOrderItems}} Items</span>
+										{{else}}
+											<span>{{totalOrderItems}} Item</span>
+										{{/if_gt}}
+										</div>
+										<div class="ordvalue-content">
+											<span>INR {{totalAmountPaid}}/-</span>
+										</div>
+										<div class="orddetail">
+											<a href="#" name="{{orderId}}" class="moredetail">More Info</a>
+										</div>
+									</div>
+									<div class="table-outer" id="{{orderId}}"></div>
+								</div>
+								{{/each}}
+								</div>
+								{{else}}
+								<div class="order-content">
+									
+									<div id="last-order" class="content-row">
+										<div class="ordno-content">
+										<a name="{{orders.orderId}}" class="expendable">&nbsp;</a>	<a href="#trackorder1" id="trackorderDetail" name="{{orders.orderId}}" class="fancybox button">{{orders.orderId}}</a>
+										</div>
+										<div class="ordvalue-content">
+											<span>{{getDOB orders.createDate}} {{getTime 'hh:mm' createDate}}</span>
+										</div>
+										<div class="orditem-content">
+											<span>{{orders.totalOrderItems}} Items</span>
+										</div>
+										<div class="ordvalue-content">
+											<span>INR {{orders.totalAmountPaid}}/-</span>
+										</div>
+										<div class="orddetail">
+											<a href="#" name="{{orders.orderId}}" class="moredetail">More Info</a>
+										</div>
+									</div>
+									<div class="table-outer" id="{{orders.orderId}}"></div>
+								</div>
+							{{/if}}
+						</div>
+						{{/if}}
+						<div class="clear"></div>
+					</div>
+					<div class="porder-table"></div>
+
+					<!-- <div class="press-pagination">
+						<ul>
+							<li><a href="#"><img src="/fny-theme/images/prev.png" /></a></li>
+							<li><a href="#" class="active">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#"><img src="/fny-theme/images/next.png" /></a></li>
+						</ul>
+					</div> -->
+					<div class="order-history-popup" id="ordernum1">
+						<div class="product-loader"><span></span></div>
+					</div>
+					<div class="order-history-popup" id="trackorder1"></div>
+					
+					<!-- <h4>CIR Steps : <a href="#cirstep1" class="fancybox">Step 1</a> &nbsp; <a href="#cirstep2" class="fancybox">Step 2</a> &nbsp; <a href="#cirstep3" class="fancybox">Step 3</a> &nbsp; <a href="#cirstep4" class="fancybox">Step 4</a> &nbsp; </h4>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- order- history area ends here -->

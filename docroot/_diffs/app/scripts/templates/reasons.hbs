@@ -1,0 +1,8 @@
+<option>Select Your Defect</option>
+{{#if reasonForReturns.length}}
+	{{#each reasonForReturns}}
+		<option data-status={{status}}>{{returnReason}}</option>
+	{{/each}}
+{{else}}
+	<option data-status={{reasonForReturns.status}}>{{reasonForReturns.returnReason}}</option>
+{{/if}}

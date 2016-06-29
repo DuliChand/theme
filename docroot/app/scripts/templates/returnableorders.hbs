@@ -1,0 +1,125 @@
+ 
+	  <div id="orderReturning">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h2 class="page-heading">Return Request</h2>
+				<div class="returnRequest">
+					<table cellpadding="0" cellspacing="0">
+					<tr>
+						<th><h2>Order Item</h2></th>
+						<th><h2>Paid Amount</h2></th>
+						<th><h2>Order Status</h2></th>
+					</tr>
+					{{#if orders.length}}
+					{{#each orders}}
+					<tr>
+						<td><p>Chanel Allure Sensuelle EDT 50ml W</p></td>
+						<td><p>4520</p></td>
+						<td><p class="">Delivered</p>
+							<p>on</p>
+							<span class="date">05, Feb 2015</span>
+						</td>
+					</tr>
+					{{/each}}
+					{{else}}
+						<tr>
+						<td><p>Chanel Allure Sensuelle EDT 50ml W</p></td>
+						<td><p>4520</p></td>
+						<td><p class="">Delivered</p>
+							<p>on</p>
+							<span class="date">05, Feb 2015</span>
+						</td>
+					</tr>
+					{{/if}}
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12 leftBoxing">
+			<p>Reason for Return:</p>
+				<select class="productBox selectbox ">
+					<option>Unhappy with the quality</option>
+					<option>Product size is small</option>
+					<option>Product size is big</option>
+				</select>
+				<div class="uploadProduct">
+					<label>Upload Image: </label><input type="file" value="Upload Image" name="returnImage" class="text-field" id="returnImage" data-max-size="1000000" accept="image/*">
+				</div>
+				
+				<div class="clearfix"></div>
+				<br/>
+				<p>Comments (optional):</p>
+				<input type="text" class="productText">
+				<input type="submit" Value="Confirm Return">
+			</div>
+			<div class="col-md-7 col-sm-7 col-xs-12 replacement rightBoxing pull-right">
+			<div class="tips">
+				<p class="tipsHeading">Policy</p>
+			<ul>
+					<li>Our Policy doesn't allow return on this item based on the selected reason. Please submit your complaint below and our team will get back to you soon.</li>
+				</ul>
+			<p class="tipsHeading">Refund Tips</p>
+				<ul>
+					<li>Please submit your complaint below and our team will get back to you soon.</li>
+					<li>Our Policy doesn't allow return on this item based on the selected reason.</li>
+					<li>Please submit your complaint below and our team will get back to you soon.</li>
+					<li>Our Policy doesn't allow return on this item based on the selected reason.</li>
+					
+				</ul>
+			</div>
+			</div>
+					
+			
+		</div>
+		
+	  </div>
+	   
+	  <!---
+{{#if orders}}
+<div class="order-history-area">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="orderhistory-left">
+                <h2 class="page-heading">Initiate Return Request</h2>
+				 <table class="orddetail-table" cellpadding="0" cellspacing="0">
+					  <tr class="table-heading">
+					      <td class="order-header>OrderLine Id</td>
+					      <td class="order-header>Amount</td>
+					      <td class="order-header>quantity</td>
+					      <td class="order-header>Returnable</td>
+					  </tr>
+					  {{#if orders.length}}
+					      {{#each orders}}
+								{{#if cirorderLines}}
+									{{#equal cirorderLines.vendorProduct.isReturnable 'true'}}
+							        <tr class="table-body">
+								      <td class="ordno-content"><span class="product-name">{{cirorderLines.orderLineId}}</span></td>
+								      <td class="ordno-content"><span class="orddet-prod-qty">{{cirorderLines.quantity}}</span></td>
+								      <td class="ordno-content">INR {{cirorderLines.orderLineValue}}/-</td>
+								      <td class="ordno-content"><a href="#quickview1" id="initiateReturn" name="{{cirorderLines.orderLineId}}"class="fancybox">Return</a></td>
+								    </tr>
+								    {{/equal}}
+								{{/if}}
+					      {{/each}}
+				      {{else}}
+				      		{{#if orders.cirorderLines}}
+								{{#equal orders.cirorderLines.vendorProduct.isReturnable true}}
+						        <tr class="table-body">
+							      <td class="ordno-content"><span class="product-name">{{orders.cirorderLines.orderLineId}}</span></td>
+							      <td class="ordno-content"><span class="orddet-prod-qty">{{orders.cirorderLines.quantity}}</span></td>
+							      <td class="ordno-content">INR {{orders.cirorderLines.orderLineValue}}/-</td>
+							      <td class="ordno-content"><a href="#quickview1" id="initiateReturn" name="{{orders.cirorderLines.orderLineId}}" class="fancybox">Return</a></td>
+							    </tr>
+							    {{/equal}}
+							{{/if}}
+				      {{/if}}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{{/if}}
+<div class="quickviewpopup clearfix" id="quickview1"></div>
+
+-->

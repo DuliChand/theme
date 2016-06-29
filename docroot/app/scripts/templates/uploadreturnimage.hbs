@@ -1,0 +1,57 @@
+
+<div id="orderReturning" >
+	<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h2 class="page-heading">Initiate Return</h2>
+				<div class="returnRequest">
+					<table cellpadding="0" cellspacing="0">
+					<tr class="table table-heading">
+						<th>Order Item</th>
+						<th>Paid Amount</th>
+						<th>Order Status</th>
+					</tr>
+					<tr>
+						<td>{{productName}}</td>
+						<td>{{actualAmountPaid}}</td>
+						<td>{{returnstatus status}} on <span class="date">{{getDOB expectedDeliveryDate}}</span></td>
+					</tr>
+					</table>
+				</div>
+			</div>
+	</div>
+	<div class="row" id="commentBox">
+			<div class="col-md-4 col-sm-4 col-xs-12 leftBoxing">
+			<p>Reason for Return:</p>
+				<select class="productBox selectbox ">
+					<option>------select------</option>
+				</select>
+				<div id="message"></div>
+				<br/>
+				<form class="uploadProduct">
+					<label>Upload Image: </label><input type="file" name="returnImage" class="text-field" id="returnImage" data-max-size="1000000" accept="image/*">	
+				</form>
+				<div class="clearfix"></div>
+				<br/>
+				<p>Comments (optional):</p>
+				<input type="text" id="comment" class="productText">
+				<input type="submit" Value="Confirm Return" id="upload" class="btn-cartpop">
+			</div>
+			<div class="col-md-7 col-sm-7 col-xs-12 replacement rightBoxing pull-right">
+				<div class="tips">
+				<p class="tipsHeading">Policy</p>
+				<ul>
+					<li>Our Policy doesn't allow return on this item based on the selected reason. Please submit your complaint below and our team will get back to you soon.</li>
+				</ul>
+				<p class="tipsHeading">Refund Tips</p>
+				<ul>
+					<li>Please submit your complaint below and our team will get back to you soon.</li>
+					<li>Our Policy doesn't allow return on this item based on the selected reason.</li>
+					<li>Please submit your complaint below and our team will get back to you soon.</li>
+					<li>Our Policy doesn't allow return on this item based on the selected reason.</li>	
+				</ul>
+				</div>
+			</div>
+	</div>
+</div>
+<div id="orderReturningView" style="display:none;"></div>
+	   

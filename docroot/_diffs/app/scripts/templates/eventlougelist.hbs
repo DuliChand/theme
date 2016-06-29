@@ -1,0 +1,104 @@
+ {{#if productListing.products.length}}
+<!-- products starts here -->
+{{#each productListing.products}}
+<div class="product-outer product" 	id="{{source.webShopId}}" data-event-id="" 	data-defaultorder="{{@index}}" 	data-price="{{source.offerPrice}}">
+	<div class="prod-img">
+		{{#notEqual '1' 0}}
+		<!-- <div class="quickview">
+				<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick Buy</a>
+			</div> -->
+		{{/notEqual}} <a href="/products/d/{{#specialCharReplace source.title}}{{/specialCharReplace}}/{{source.webShopId}}">
+			{{#equal '1' 0}}
+			<div class="soldout">
+				<h4>
+					SOLD <strong>OUT</strong>
+				</h4>
+				<!-- <p>Don't miss out on the next event</p> -->
+			</div> 
+			{{/equal}} 
+			<img onerror="this.src='http://cdn1.fashionandyou.com/fny-static/app-images/listing-error.jpg'"
+			data-original="{{source.imageUrl}}"
+			alt="{{source.title}}"
+			title="{{source.title}}" class="lazy" />
+		</a> 
+		<div class="rolover-layer">
+			{{#if source.variants.length}}
+			<div class="product-sizing">
+				{{#each source.variants}}
+				{{#equal avail 'false'}} 
+				<span	class="{{toLowerCase name}} sold">{{toLowerCase name}}</span>
+				{{else}} <a
+					href="/products/d/{{#specialCharReplace ../../source.title}}{{/specialCharReplace}}/{{../../source.webShopId}}">
+					<span class="{{toLowerCase value}}">{{toLowerCase name}}</span>
+				</a> 
+				{{/equal}}
+				{{/each}} 
+			</div>
+			{{/if}}
+			<div class="clear"></div>
+
+			<div class="action-area">
+				<div class="action-icons">
+					<div class="sharearea">
+						<span class="listing-share" title="Share"></span>
+						<div class="shareslide">
+							<!-- <a class="ifacebook" title="Facebook" href="#"></a>
+								<a class="itwitter" title="Twitter" href="#"></a>
+								<a class="iemail" title="Email" href="#"></a> -->
+							<a href="#" class="ifacebook facebook social-share-link"
+								title="Facebook"></a> <a href="#"
+								class="itwitter twitter social-share-link" title="Twitter"></a>
+							<!-- <a href="#" class="iemail email social-share-link" title="Email"></a> -->
+							<a title="gplus" class="igplus googleplus social-share-link"
+								href="#"></a> <a title="pintrest"
+								class="ipintrest pinterest social-share-link" href="#"></a>
+						</div>
+					</div>
+					<!-- <a class="listing-video" href="#" title="Video Attached"></a> -->
+				</div>
+				
+			</div>
+			{{#notEqual '1' 0}}
+			<div class="quickview-detail">
+				<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick
+					Buy</a>
+			</div>
+			{{/notEqual}}
+		</div>
+		
+	</div>
+
+	<div class="prod-detail">
+		{{#if_less
+		source.offerPrice
+		source.mrp}}
+		<div class="discount-tag">- {{discountInPercentage source.offerPrice source.mrp}}%
+		</div>
+		{{/if_less}}
+
+		<div class="prod-info">
+			<a
+				href="/products/d/{{#specialCharReplace source.title}}{{/specialCharReplace}}/{{source.webShopId}}"
+				class="ev-prod-name"
+				title="{{source.title}}">
+				{{source.title}} </a>
+			
+			
+		</div>
+		<div class="prod-pricing">
+			<span class="old-price">INR
+				{{source.mrp}}</span>
+			<span class="new-price">INR
+				{{source.offerPrice}}</span>
+		</div>
+	</div>
+</div>
+{{/each}}
+<!-- products ends here -->
+{{else}}
+	<div id="notfound">
+		<div class="oopsImage">
+		<p>If i were you, I Would go back to Homepage !</p>
+		<h5> ( Try reseting the filter )</h5>
+	</div> 
+{{/if}}

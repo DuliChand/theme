@@ -1,0 +1,135 @@
+<div class="row events">
+    <h1 class="heading-style">
+	    <strong>{{data.categoryName}}</strong>
+	</h1>
+	{{#if data.categoryEvents}}
+		<div class="fordesktop todaysalesCount">
+	
+		{{#each data.categoryEvents}}
+	
+	{{#equal @index 2}}
+	<div class="columerow">
+    <div id="marketingPromo">test</div>
+       </div>
+       <div class="clearfix"></div>
+   {{/equal}}
+
+		<div class="columerow">
+	    	<div class="event-col">
+	            <a class="showtooltip" href="/{{#mainGroupUrl ../../topCategoryName event.eventCode}}{{/mainGroupUrl}}/{{#specialCharReplace event.eventName}}{{/specialCharReplace}}_{{event.eventId}}"  title="{{event.eventName}}">
+	                <img onerror="this.src='http://static.fashionandyou.com/Marketingbanner/event-long-error1.jpg'" alt="{{event.eventName}}" data-original="http://static.fashionandyou.com/{{event.eventCode}}/banner_long_new.jpg"  class="lazy" />
+	                {{#if event.eventAttributes}}
+						{{#each event.eventAttributes}}
+							{{#lowerEqual code "discount"}}
+								<div class="tagimage">
+									<span>{{value}}</span>
+                                </div>
+							{{/lowerEqual}}
+						{{/each}}	
+					{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if event.namonics}}
+							{{#isAvailable event.namonics "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent"><p>Express <span>Delivery</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable event.namonics "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent"><p>World&rsquo;s <span>Best Finds</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable event.namonics "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent"><p>Exclusive <span>Buys</span></p></div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3 class="splitEventName">{{splitEventName event.eventName}}</h3><h3 class="categoryEventName">{{categoryEventName event.eventName}}</h3>
+						<h4 class="event-timer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' event.endDate}}">0 DAYS 00:00:00 LEFT</h4>			
+					</div>
+	            </a>
+	            <!-- power tip starts here --> 
+				<div class="powertip-outer">
+					<div class="eventpowertip" data-id="{{event.eventId}}" data-name="{{event.eventName}}" data-image="http://static.fashionandyou.com/{{event.eventCode}}/banner_long_new.jpg">
+						<a href="#" class="event-name">{{event.eventName}}</a>
+						<div class="clear"></div>
+						<!-- <span class="tooltip-timer" data-event-startdate="{{event.startDate}}" data-event-enddate="{{event.endDate}}">0 days left 00:00</span><div class="clear"></div> -->
+						<span class="prod-no">{{event.noOfProducts}} Products</span><span class="disc-tip">{{event.discountType}} {{event.discountValue}}</span>
+						<div class="clear"></div>
+						<span class="tip-sep"></span>
+		                         <div class="moredetail">
+		                         <p class="text text1">Click here for more detail</p>
+						<p class="text">{{event.description}}</p><div class="clear"></div>
+						<span class="tip-sep"></span>
+						<div class="share-icons">
+						<label class="shareon">Share :</label>
+						<a href="#" class="fb-share facebook social-share-link" title="Share on facebook"></a>
+						<a href="#" class="tw-share twitter social-share-link" title="Share on Twitter"></a>
+							<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+						</div>
+	                    	<a href="#" class="shippingtype {{event.shippingMaster.shippingType}}">{{event.shippingMaster.shippingType}}<strong>Dispatch in {{event.shippingMaster.shippingDuration}} days</strong></a>
+	                    </div>
+					</div>
+				</div>
+				<!-- power tip ends here -->
+	        </div>
+    	</div>
+    	{{/each}}
+    	
+    	</div>
+    	
+    	<div class="forresponsive">
+    	{{#each data.categoryEvents}}
+    	<div class="event-col">
+    		<a href="/{{#mainGroupUrl ../../topCategoryName event.eventCode}}{{/mainGroupUrl}}/{{#specialCharReplace event.eventName}}{{/specialCharReplace}}_{{event.eventId}}"  title="{{event.eventName}}">
+	                <img onerror="this.src='http://static.fashionandyou.com/Marketingbanner/event-long-error1.jpg'" alt="{{event.eventName}}" data-original="http://static.fashionandyou.com/{{event.eventCode}}/banner_long_new.jpg" class="lazy"  />
+	                {{#if event.eventAttributes}}
+						{{#each event.eventAttributes}}
+							{{#lowerEqual code "discount"}}
+								<div class="tagimage">
+									<span>{{value}}</span>
+                                </div>
+							{{/lowerEqual}}
+						{{/each}}	
+					{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if event.namonics}}
+							{{#isAvailable event.namonics "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent"><p>Express <span>Delivery</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable event.namonics "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+									<div class="logocontent"><p>World&rsquo;s <span>Best Finds</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable event.namonics "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+									<div class="logocontent"><p>Exclusive <span>Buys</span></p></div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3 class="splitEventName">{{splitEventName event.eventName}}</h3><h3 class="categoryEventName">{{categoryEventName event.eventName}}</h3>
+						<h4 class="event-timer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' event.endDate}}">0 DAYS 00:00:00 LEFT</h4>
+					</div>
+	            </a>
+	           
+	        </div>
+    	{{/each}}
+    	</div>
+    {{/if}}
+</div>

@@ -1,0 +1,387 @@
+#orderresult {
+	clear:both;
+	margin:0;
+}
+#orderresult hr {
+	margin:40px 0 10px;
+	padding:0
+}
+#orderresult #result-box {
+	clear:both;
+	margin:15px auto;
+	float:left;
+	position:relative;
+	 padding: 10px 0 45px 0;
+	background:#f7f7f7;
+	/* border-radius:8px; */
+	border-bottom:1px solid #e0e0e0
+}
+#orderresult #result-box h2 {
+	margin:0 0 10px;
+	text-align:center;
+	font-size:18px;
+	line-height:22px;
+	display:block;
+	
+	color:#d22573
+}
+#orderresult #result-box h3 {
+	margin:0 auto 0px;
+	text-align:center;
+	font-size:18px;
+	line-height:42px;
+	background:url(http://static.fashionandyou.com/app-images/confirm.png) no-repeat;
+	padding:0 0 0 45px;
+	display:block;
+	width:256px
+}
+#orderresult #result-box h4 {
+	 font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+}
+#orderresult #result-box h5 {
+	background: url("http://static.fashionandyou.com/app-images/caution.png") no-repeat;
+    display: block;
+    font-size: 18px;
+    height: 46px;
+    line-height: 50px;
+    margin: 0 auto 10px;
+    padding: 0 0 0 50px;
+    text-align: center;
+    width: 285px;
+}
+#orderresult #result-box h5 strong {
+	color:#de1313;
+	font-weight:400
+}
+#orderresult #result-box p {
+	
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0 0 7px;
+    text-align: center;
+	/* width:700px; */
+	
+}
+.continue-shop1 {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.left-side{ margin-left: -173px !important;}
+.left-side-2{margin-left: -164px;}
+
+#orderresult #result-box p strong {
+	font-weight:400;
+	color:#d22573
+}
+#orderresult .continue-shop {
+	margin:0 auto;
+	display:block;
+	width:145px
+}
+#orderresult .continue-shop a {
+	background: none repeat scroll 0 0 #d22573;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    
+    font-size: 13px;
+    margin-bottom: 12px;
+    margin-left: 130px;
+    margin-top: -34px;
+    padding: 6px 4px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+    text-transform: uppercase;
+}
+#orderresult .continue-shop a:hover {
+	background:#000
+}
+
+.unsceesTxt{float:left; width:100%;}
+
+#orderresult .continue-shop1 a {
+    background: none repeat scroll 0 0 #d22573;
+    border-radius: 3px;
+    color: #fff;
+    display: inline;
+    float: none;
+    margin: 0 auto;
+    padding: 7px 10px;
+    width: 150px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.sharing-area {
+	width:100%;
+	height:auto;
+	margin-top:30px;
+	clear:both;
+	font-size:16px;
+	line-height:16px;
+	color:#666
+}
+#orderresult #que-feedback {
+	clear:both;
+	padding:20px 0 30px;
+	margin:0 auto;
+	float:none;
+	width:80%
+}
+#orderresult #que-feedback h2 {
+	margin:0 0 10px;
+	font-size:32px;
+	color:#242424;
+	
+	text-align:center;
+	display:block
+}
+#orderresult #que-feedback .querybox {
+	background:#f7f7f7;
+	border-radius:6px;
+	border-bottom:1px solid #e0e0e0;
+	padding:15px
+}
+#orderresult #que-feedback .querybox form {
+	display:block;
+	float:left;
+	padding:0;
+}
+#orderresult #que-feedback .querybox form h3 {
+	margin:0 0 10px;
+	font-size:16px;
+	
+	color:#000
+}
+#orderresult #que-feedback .querybox form textarea {
+	width:100%;
+	height:80px;
+	background:#fff;
+	border:1px solid #ededed;
+	border-radius:6px;
+	margin:0 0 8px;
+	resize:vertical;
+	padding:6px
+}
+#orderresult #que-feedback .querybox form input.go {
+	background:#d22573;
+	border:none;
+	padding:4px 12px;
+	font-size:13px;
+	text-transform:uppercase;
+	
+	cursor:pointer;
+	color:#fff
+}
+#orderresult #que-feedback .querybox .question-box {
+	float:right;
+	text-align:center;
+	padding:30px 0 0;
+}
+#orderresult #que-feedback .querybox .question-box h3 {
+	margin:0 0 6px;
+	color:#242424;
+	font-size:24px;
+	
+}
+#orderresult #que-feedback .querybox .question-box p {
+	margin:0;
+	font-size:14px;
+	
+}
+#orderresult #que-feedback .querybox .success-message {
+	display:none;
+	float:left;
+	text-align:center;
+	padding:20px 5px;
+	width:52%;
+	background:#fff;
+	border:1px solid #f0f0f0;
+	border-radius:5px;
+	margin:26px 0 0;
+	color:#d22573
+}
+#orderresult #que-feedback .querybox .success-message p {
+	margin:0;
+	font-size:14px;
+	
+}
+#orderresult #que-feedback .querybox .error-message1 {
+	display:none;
+	float:left;
+	text-align:center;
+	padding:20px 5px;
+	width:52%;
+	background:#fff;
+	border:1px solid #f0f0f0;
+	border-radius:5px;
+	margin:26px 0 0;
+	color:#d22573
+}
+#orderresult #que-feedback .querybox .error-message1 p {
+	margin:0;
+	font-size:14px;
+	
+}
+.sharing-area a:hover {
+	color:#d22573;
+	text-decoration:underline
+}
+.hidesharing .share-products {display:none;}
+.share-products {
+	float:left;
+	width:100%;
+	height:290px;
+	padding:20px 0;
+	overflow:hidden;
+	border-top:1px solid #f5f6f6;
+	border-bottom:1px solid #f5f6f6
+}
+.share-products h2 {
+	width:100%;
+	margin:0 0 10px;
+	
+	font-size:18px;
+	line-height:18px;
+	color:#666
+}
+.share-products h2 div {
+	float:right;
+	padding:5px 0 0;
+	
+	font-size:12px;
+	line-height:12px;
+	color:#666;
+	text-transform:uppercase
+}
+.share-products h2 a {
+	margin:0 2px
+}
+.share-products .products-gallery {
+	float:left;
+	width:100%;
+	height:auto
+}
+.share-products .products-gallery .gal-dis-prod {
+	float:left;
+	width:130px;
+	height:185px;
+	margin:0 32px 40px 0;
+	
+}
+
+.share-products .products-gallery .gal-dis-prod:nth-child(6n+6) {margin-right:0;}
+
+.share-products .products-gallery .gal-dis-prod .gal-prod-img {
+	float:left;
+	width:100%;
+	height:155px;
+	overflow:hidden;
+}
+
+.share-products .products-gallery .gal-dis-prod .gal-prod-img img {width:100%;}
+
+.share-products .products-gallery .gal-dis-prod .gal-prod-name {
+	display:block;
+	float:left;
+	width:100%;
+	height:15px;
+	margin:10px 0 0;
+	overflow:hidden;
+	font-size:12px;
+	font-weight:400;
+	line-height:12px;
+	letter-spacing:normal;
+	color:#666;
+	text-overflow:ellipsis;
+	text-transform:capitalize;
+	white-space:nowrap;
+	
+}
+.product-share {
+	float:left;
+	margin:13px 0 0
+}
+.product-share .sharearea1 {
+	width:135px;
+	height:25px;
+	white-space:nowrap;
+	overflow:hidden;
+	position:relative;
+	transition:all 1s linear
+}
+.product-share .sharearea1 .sharetxt {
+	font-size:12px;
+	line-height:13px;
+	
+	display:block;
+	float:left
+}
+.product-share .sharearea1 .listing-share1 {
+	float:left;
+	width:15px;
+	height:15px;
+	margin-right:6px;
+	margin-top:7px;
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -61px -383px no-repeat;
+	cursor:pointer
+}
+/* .product-share .sharearea1 .listing-share1:hover {
+	background-position:-61px -383px
+} */
+.product-share .sharearea1:hover {
+	width:145px!important
+}
+.product-share .sharearea1 .shareslide1 {
+	  background-color: white;
+    left: -150px;
+   /*  opacity: 0; */
+    padding: 1px 5px;
+   /*  position: absolute; */
+    transition: all 0.5s linear 0s;
+  /*   visibility: hidden; */
+    width: 145px;
+}
+.product-share .sharearea1:hover .shareslide1 {
+transition:all .5s linear;
+	left:20px;
+	visibility:visible;
+	opacity:1
+}
+.product-share .sharearea1 a.iemail, .product-share .sharearea1 a.ifacebook, .product-share .sharearea1 a.itwitter, .product-share .sharearea1 a.igplus, .product-share .sharearea1 a.ipintrest {
+	display:block;
+	float:left;
+	margin:0 3px 0 0;
+	height:25px;
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+.product-share .sharearea1 a.ifacebook {
+	width:25px;
+	height:25px;
+	background-position:-1px -2px
+}
+.product-share .sharearea1 a.itwitter {
+	width:25px;
+ 	background-position:0 -33px
+}
+.product-share .sharearea1 a.iemail {
+	width:18px;
+	height:24px;
+	background-position:-88px -55px
+}
+.product-share .sharearea1 a.igplus {
+	width:25px;
+	height:24px;
+	background-position: -0px -97px;
+}
+.product-share .sharearea1 a.ipintrest {
+	width:25px;
+	height:24px;
+	background-position: -25px -416px;
+}

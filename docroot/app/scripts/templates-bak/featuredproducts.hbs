@@ -1,0 +1,25 @@
+{{#if ArrayList}}
+<div class="row events clearfix">
+	<h1 class="heading-style1">Featured Products</h1>
+	<div class="featurepro">
+	{{#each ArrayList}}
+		<div class="featured-prod slide">
+			<a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" class="featured-image" title="{{productName}}">
+				{{#if vendorProductInventoryImageMapping.length}}
+				<img src="{{vendorProductInventoryImageMapping.0.imageRepository.imageUrl}}" alt="{{productName}}" title="{{productName}}" />
+				{{else}}
+				<img src="{{vendorProductInventoryImageMapping.imageRepository.imageUrl}}" alt="{{productName}}" title="{{productName}}" />
+				{{/if}}
+			</a>
+          		<div class="featured-prod-info">
+				<a href="#" class="featured-prod-name">{{productName}}</a>
+				<a href="#" class="button-small pull-right" title="View More..">
+					<span class="view-more-icon"></span>
+				</a>
+				<span class="featured-prod-price">INR {{salePrice}}</span>
+			</div>
+        </div>
+	{{/each}}
+	</div>
+</div>
+{{/if}}

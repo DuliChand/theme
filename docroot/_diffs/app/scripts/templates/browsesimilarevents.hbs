@@ -1,0 +1,42 @@
+<!-- browse event area starts here -->
+{{#if eventWrapper.events}}
+<div class="browse-evn-area"> <span class="browse-evn-head">Browse Similar Events</span>
+	{{#if eventWrapper.events.length}}
+    <div class="row"> 
+       <!-- expired event 1 starts here -->
+       {{#each eventWrapper.events}}
+       <div class="browse-event"> 
+	       <a href="/product/listing/event/{{eventId}}"> <img src="http://static.fashionandyou.com/{{eventCode}}/banner_medium_new.jpg" alt="{{eventName}}" title="{{eventName}}" />
+	         <!-- <div class="exp-evn-tag"><span>70% Off</span></div> -->
+	         <h2 class="expevents-name">{{eventName}}
+	         <!-- <span class="exp-time">01:16 hrs left</span>  -->
+	         <!-- <span class="exp-evt-ship">
+	         <span class="shippingtype exclusive" title="Exclusive"></span> 
+	         <span class="shippingtype international" title="International"></span> | 14 Days</span>  -->
+	         </h2>
+	       </a> 
+       </div>
+       {{/each}}
+       <!-- expired event 1 ends here --> 
+    </div>
+    {{else}}
+    <div class="row"> 
+       <!-- expired event 1 starts here -->
+       <div class="browse-event"> 
+	       <a href="/product/listing/event/{{eventWrapper.events.eventId}}"> <img src="http://static.fashionandyou.com/{{eventWrapper.events.eventCode}}/banner_medium_new.jpg" alt="{{eventWrapper.events.eventName}}" title="{{eventWrapper.events.eventName}}" />
+	         <!-- <div class="exp-evn-tag"><span>70% Off</span></div> -->
+	         <h2 class="expevents-name">{{eventWrapper.events.eventName}}
+	         <!-- <span class="exp-time">01:16 hrs left</span>  -->
+	         <!-- <span class="exp-evt-ship">
+	         <span class="shippingtype exclusive" title="Exclusive"></span> 
+	         <span class="shippingtype international" title="International"></span> | 14 Days</span>  -->
+	         </h2>
+	       </a> 
+       </div>
+       <!-- expired event 1 ends here --> 
+    </div>
+    {{/if}}
+</div>
+{{/if}}
+<!-- browse event area ends here --> 
+      

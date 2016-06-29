@@ -1,0 +1,32 @@
+{{#equal domainResponse.responseCode "SUCCESS"}}
+  <!-- <h3>Personal Vouchers</h3> -->
+  <div id="credit-tabs">
+      <ul>
+        <li><a href="#" id="vouchersList" class="active">Personal Vouchers</a></li>
+   
+      </ul>
+    </div>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+     <tr>
+       <th>Coupon</th>
+       <th>Description</th>
+       <th>Exp Date</th>
+     </tr>
+     {{#if domainResponse.entitiesResponse.length}}
+      {{#each domainResponse.entitiesResponse}}
+      <tr>
+        <td>{{baseDTO.voucherCode}}</td>
+        <td>{{baseDTO.description}}</td>
+        <td id="{{baseDTO.endDate}}">{{getDOB baseDTO.endDate}}</td>
+      </tr>
+      {{/each}}
+   {{else}}
+       <tr>
+        <td>{{domainResponse.entitiesResponse.baseDTO.voucherCode}}</td>
+        <td>{{domainResponse.entitiesResponse.baseDTO.description}}</td>
+        <td id="{{domainResponse.entitiesResponse.baseDTO.endDate}}">{{getDOB domainResponse.entitiesResponse.baseDTO.endDate}}</td>
+      </tr>
+     {{/if}}
+   </table>
+{{/equal}}
+<div id="globalVoucher"></div>

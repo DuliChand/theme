@@ -1,0 +1,103 @@
+#pressarea {clear:both; margin:0px; padding:5px 10px;}
+#pressarea h2:after {content:''; background:url(http://static.fashionandyou.com/app-images/drop-arrow.jpg) no-repeat; width:11px; height:7px; display:block; position:absolute; bottom:-7px; left:35px; z-index:9;}
+#pressarea h2 {margin:0px 0px 12px 0px; display:block; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; border-bottom:1px solid #c92869; color:#ad3a6f; padding:4px 10px; font-size:18px; position:relative;}
+
+#press-cat {float:left;}
+#press-cat ul {margin:0px; padding:0;}
+#press-cat ul li {float:left; margin:0px 5px 0px 0px; list-style-type:none;}
+#press-cat ul li a {display:block; padding:6px 12px; background:#ededed; color:#757575; text-decoration:none; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:13px; border-radius:6px; position:relative;}
+#press-cat ul li a:hover {background:#b81a4d; color:#fff;}
+#press-cat ul li a.active {background:#b81a4d; color:#fff;}
+#press-cat ul li a.active:before {content:''; position:absolute; z-index:9; background:url(../../static/images/arrow1.png) no-repeat; width:15px; height:7px; bottom:-7px; left:50%; margin-left:-4px;}
+
+
+#press-filter {float:right;}
+#press-filter label {display:block; float:left; margin-right: 8px; padding:6px 0px 0px 0px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; color: #333; text-align: right; text-transform: capitalize;}
+#press-filter .select-wrapper,
+#press-filter .select-wrapper .selectbox {width: 78px; height: 25px; padding-left: 7px; font-size: 11px; padding-top:3px; color: #333; border: 1px solid #ccc; border-radius: 3px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+#press-filter .select-wrapper {display:block; float: left; padding-left: 0; margin:0px 8px 0px 0px; border: 0;}
+#press-filter .select-wrapper .selectbox {margin-top: 0; text-indent: 0;}
+#press-filter .select-wrapper .selectbox-wrapper {width: 100%; border-top-right-radius: 0;}
+#press-filter .select-wrapper .selectbox-wrapper ul li {padding:0px;}
+
+#press-boxes {padding:15px 0px 10px 0px;}
+#press-boxes .press-box1 { display: inline-block;
+    float: left;
+    font-family: "helvetica_light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 1% 0.5% 2%;
+    padding: 1% 1.5%;
+    width: 100%;}
+/* #press-boxes .press-box1 img {max-height:36px; width:auto;} */
+#press-boxes .press-box1 span.datetime {float:right; font-size:12px; color:#b3b3b3; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+#press-boxes .press-box1 h4 {margin:8px 0px 8px 0px; font-size:16px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#000; display:block; clear:both;}
+#press-boxes .press-box1 h3 {background: none repeat scroll 0 0 #f1f1f1;
+    border-bottom: 2px solid #d22573;
+    border-radius: 5px;
+    clear: both;
+    color: #414141;
+    display: block;
+    font-family: "helvetica_bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 8px 5px;
+    padding: 5px;}
+#press-boxes .press-box1 p {margin:0px 0px 8px 0px; font-size:12px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#797979;}
+#press-boxes .press-box1 a {color:#d22573; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; text-decoration:underline;}
+#press-boxes .press-box1 a:hover {color:#333;}
+
+#press-boxes .press-box1 #div3{
+	width:100%;
+	float:left;	
+}
+
+#press-boxes .press-box1 .press-box, .NewsTabrow{  background: none repeat scroll 0 0 #f8f8f8;
+    border-bottom: 1px solid #d1d1d1;
+    border-radius: 8px;
+    float: left;
+    margin: 0% 0.5% 1%;
+    padding: 5px;
+    width: 49%;}
+#press-boxes .press-box1 .press-box, .NewsTabrow h1, h2 a { font-size:12px; line-height:20px;}
+#press-boxes .press-box1 .press-box, .NewsTabrow{}
+#press-boxes .press-box1 .press-box .logo {
+    clear: both;
+    height: 40px;
+    width: 150px;
+}
+#press-boxes .press-box1 .press-box .logo a img, #press-boxes .press-box1 .press-box .logo img  {
+    clear: both;
+    height: 35px !important;
+    width: 100% !important;
+}
+#press-boxes .press-box1 .datetime{ display:none;}
+#press-boxes .press-box1 .press-box .content, .date
+{
+margin: 0px 0px 8px 0px;
+font-size: 12px;
+font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #797979;
+}
+#press-boxes .press-box1 .press-box .date{
+	text-align:right;
+	display:none;
+}
+#press-boxes .press-box1 .press-box .content a{color:#d22573;}
+#press-boxes .press-box1 .press-box .title{margin:8px 0px 8px 0px; font-size:13px; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#d22573; display:block; clear:both; }
+
+#press-boxes .press-box1:last-child{
+	clear:both !important;
+	display:inlie-block !important;
+}
+
+
+
+.presscontent1, .presscontent2, .presscontent3, .presscontent4, .presscontent5 {display:none;}
+
+.press-pagination {clear:both; padding:10px 0px; text-align:center;}
+.press-pagination ul {margin:0px; padding:0px;}
+.press-pagination ul li {display:inline-block; list-style-type:none; font-size:13px; margin:0px 2px;}
+.press-pagination ul li a {display:block; background:#f1f1f1; border:1px solid #dadada; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; padding:3px 8px; border-radius:4px; color:#8f8f8f;}
+.press-pagination ul li a:hover, .press-pagination ul li a.active {background:#b81a4d; color:#fff; border:1px solid #8c153c;}
+
+.press-pagination ul li:first-child a, .press-pagination ul li:last-child a {background:url(http://static.fashionandyou.com/app-images/prev.png) center no-repeat #505050; border:1px solid #2c2c2c; color:#969696; font-family: "helvetica_bold", "Helvetica Neue", Helvetica, Arial, sans-serif; line-height:18px;}
+.press-pagination ul li:last-child a {background:url(http://static.fashionandyou.com/app-images/next.png) center no-repeat #505050;}

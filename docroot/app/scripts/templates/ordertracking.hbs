@@ -1,0 +1,118 @@
+
+{{#if orderWrapper.orderHeaders.orderLines}}
+    <div class="trackorder-tab">
+        <h2>Tracking Detail -  Order No. <span id="orderId"></span></h2>
+        <div class="shipment-detail">
+            <div class="shipment-box">
+			
+			
+            {{#if orderWrapper.orderHeaders.orderLines.shipmentTracks.length}}
+				{{#deliveryCheck orderWrapper.orderHeaders.orderLines.shipmentTracks.0.lastStatus}}
+
+				{{/deliveryCheck}}
+			        <h3>Status : {{orderWrapper.orderHeaders.orderLines.shipmentTracks.0.lastStatus}}</h3>
+			{{else}}
+				{{#if orderWrapper.orderHeaders.orderLines.shipmentTracks}}
+				{{#lowerEqual orderWrapper.orderHeaders.orderLines.shipmentTracks.lastStatus 'canceled'}}
+				      <h3>Status : Cancelled</h3>
+				{{else}}
+					<h3>Status : {{orderWrapper.orderHeaders.orderLines.shipmentTracks.lastStatus}}</h3>
+				{{/lowerEqual}}
+				{{else}}
+					{{#if orderWrapper.orderHeaders.orderLines.orderLineTracks.length}}
+		            {{#each orderWrapper.orderHeaders.orderLines.orderLineTracks}}
+					       {{#lastElement ../orderWrapper.orderHeaders.orderLines.orderLineTracks.length @index}} 
+					        <h3>Status : ({{status}})</h3>
+					       {{/lastElement}} 
+				    {{/each}}
+				    {{else}}
+				    	 <h3>Status : {{orderWrapper.orderHeaders.orderLines.orderLineTracks.status}}</h3>
+				    {{/if}}
+			    {{/if}}
+		    {{/if}}
+		    
+            {{#if orderWrapper.orderHeaders.orderLines.thumbnailUrl}}
+            	<img src="{{orderWrapper.orderHeaders.orderLines.thumbnailUrl}}">
+            {{else}}
+            	<img src="../images/order-notfound.jpg" class="product-img" alt="" title="not-found">
+            {{/if}}
+            <ol>
+                <li>{{orderWrapper.orderHeaders.orderLines.productName}}<br>Quantity {{orderWrapper.orderHeaders.orderLines.quantity}}</li>
+                {{#if orderWrapper.orderHeaders.orderLines.shipmentTracks.length}}
+                	<li id="serviceProvider">Your order is shipped through {{orderWrapper.orderHeaders.orderLines.shipmentTracks.0.deliveryServiceProvider}} </li>
+            	{{else}}
+            		{{#if orderWrapper.orderHeaders.orderLines.shipmentTracks}}
+                	<li id="serviceProvider">Your order is shipped through {{orderWrapper.orderHeaders.orderLines.shipmentTracks.deliveryServiceProvider}} </li>
+	            	{{else}}
+	            		<li id="serviceProvider">Your order is under process. </li>
+	            	{{/if}}
+            	{{/if}}
+            	
+            </ol>
+	        </div>
+	        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	            <tr>
+	                <th>Date & Time</th>
+	                <th>Status</th>
+	                <th>Track</th>
+	            </tr>
+	            {{#if orderWrapper.orderHeaders.orderLines.orderLineTracks.length}}
+	            <tr>
+	                <td>{{getDOB orderWrapper.orderHeaders.orderLines.orderLineTracks.0.createDate}} {{getTime 'hh:mm' orderWrapper.orderHeaders.orderLines.orderLineTracks.0.createDate}}</td>
+	                <td class="capitalletter">{{orderWrapper.orderHeaders.orderLines.orderLineTracks.0.status}}</td>
+	                
+					{{#if orderWrapper.orderHeaders.orderLines.shipmentTracks}}
+	                	<td><a href="#" id="trackToggle" class="tracktoggle">Track</a></td>
+	                {{else}}
+	                
+		                {{#if orderWrapper.orderHeaders.orderLines.orderLineTracks.status}}
+		                		<td>{{#Ordercheck orderWrapper.orderHeaders.orderLines.orderLineTracks.status }}
+		      	                {{/Ordercheck}}</td>
+		                {{else}}
+		                	<td>Shipment not started.</td>
+		            {{/if}}
+	                {{/if}}
+	            </tr>
+	            {{else}}
+	            <tr>
+	                <td>{{getDOB orderWrapper.orderHeaders.orderLines.orderLineTracks.createDate}} {{getTime 'hh:mm' orderWrapper.orderHeaders.orderLines.orderLineTracks.createDate}}</td>
+	                <td  class="capitalletter">{{orderWrapper.orderHeaders.orderLines.orderLineTracks.status}}</td>
+	                {{#if orderWrapper.orderHeaders.orderLines.shipmentTracks}}
+	                	<td><a href="#" id="trackToggle" class="tracktoggle">Track</a></td>
+	                {{else}}
+	                	<td>Shipment not started.</td>
+	                {{/if}}
+	            </tr>
+	            {{/if}}
+	         </table>
+	         {{#if orderWrapper.orderHeaders.orderLines.shipmentTracks}}
+	         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tracktable">
+	          <tr>
+	            <th>Date & Time</th>
+	            <th>Status</th>
+	            <th>Location</th>
+	          </tr>
+	           {{#if orderWrapper.orderHeaders.orderLines.shipmentTracks.length}}
+	            {{#each orderWrapper.orderHeaders.orderLines.shipmentTracks}}
+					{{#if dispatchDate}}
+						<tr>
+							<td>{{getDOB dispatchDate}} {{getTime 'hh:mm' dispatchDate}}</td>
+							<td class="capitalletter">{{deliveryStatus}}</td>
+							<td class="capitalletter">{{packetLocation}}</td>
+						</tr>
+					{{/if}}
+	            {{/each}}
+	            {{else}}
+		            {{#if orderWrapper.orderHeaders.orderLines.shipmentTracks.dispatchDate}}
+		            <tr>
+		                <td>{{getDOB orderWrapper.orderHeaders.orderLines.shipmentTracks.dispatchDate}} {{getTime 'hh:mm' orderWrapper.orderHeaders.orderLines.shipmentTracks.dispatchDate}}</td>
+		                <td class="capitalletter">{{orderWrapper.orderHeaders.orderLines.shipmentTracks.deliveryStatus}}</td>
+		                <td class="capitalletter">{{orderWrapper.orderHeaders.orderLines.shipmentTracks.packetLocation}}</td>
+		            </tr>
+		            {{/if}}
+	            {{/if}}
+	        </table>
+	        {{/if}}
+	    </div>
+    </div>
+{{/if}}

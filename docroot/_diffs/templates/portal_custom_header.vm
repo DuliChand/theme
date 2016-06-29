@@ -1,0 +1,38 @@
+<!-- header area starts here -->
+<header>
+ <!-- top row with logo , add area and favorite and search field starts here -->
+ 
+ <div class="row clearfix logobar">
+<!--  <div class="col-sm-4 col-md-4"></div>
+
+     <div class="col-sm-4 col-center hidden-xs">
+       <a href="/home" class="logo-img" title="FashionAndYou">
+        <img src="/app-theme/dist/images/logo.png" alt="FashionAndYou" title="FashionAndYou" />
+       </a>
+    </div>
+  
+  <div class="col-sm-4 col-md-4"></div>
+
+   -->
+ </div>
+ <!-- top row with logo ei, add area and fav and search field starts here -->
+
+ <!-- navigation starts here -->
+ <div class="navbar navbar-default">
+  <div class="navbar-header">
+   
+   <div class="navbar">
+    <div id="backbone-portlet-main-navigation"></div>
+    <ul class="navbar-right pull-right">
+     <li><div id="cartLightBox"></div></li>
+     <li><div id="backbone-portlet-user-section-header"></div></li>
+   
+    </ul>
+   </div>
+  </div>
+ </div>
+ <!-- navigation ends here -->
+
+</header>
+<!-- header area ends here -->
+<script src="/app-portlet/js/jquery-min.js"></script>

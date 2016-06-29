@@ -1,0 +1,75 @@
+{{#if orderLine}}
+    <div class="trackorder-tab">
+        <h2>Tracking Detail -  Order No. {{../orderNumber}}</h2>
+        <div class="shipment-detail">
+            <div class="shipment-box">
+                
+            {{#if orderLine.thumbnailUrl}}
+              <img src="{{orderLine.thumbnailUrl}}">
+            {{else}}
+              <img src="http://cdn1.fashionandyou.com/fny-static/app-images/order-notfound.jpg" class="product-img" alt="" title="not-found">
+            {{/if}}
+            <ol>
+                <li>{{orderLine.title}}<br>Quantity {{orderLine.quantity}}</li>
+                  {{#if orderLine.status}}
+                    {{#lowerEqual orderLine.status 'delivered'}}
+                        <li id="serviceProvider">Your order has been delivered by {{orderLine.orderData.dspName}} </li>
+                    {{/lowerEqual}}   
+                    {{#lowerEqual orderLine.status 'manifest_created'}}
+                        <li id="serviceProvider">Your order has been packed and will be shipped through {{orderLine.orderData.dspName}} </li>
+                    {{/lowerEqual}}   
+                     {{#lowerEqual orderLine.status 'ready_for_packaging'}}
+                        <li id="serviceProvider">Your order has been packed and will be shipped through {{orderLine.orderData.dspName}} </li>
+                    {{/lowerEqual}}
+                    {{#lowerEqual orderLine.status 'dispatched'}}
+                        <li id="serviceProvider">Your order is shipped through {{orderLine.orderData.dspName}}</li>
+                    {{/lowerEqual}}
+                    {{#lowerEqual orderLine.status 'canceled'}}
+                        <li id="serviceProvider">Your order has been cancelled </li>
+                    {{/lowerEqual}} 
+                    {{#lowerEqual orderLine.status 'confirmed'}}
+                        <li id="serviceProvider">Your order is under process.</li>
+                    {{/lowerEqual}} 
+                    {{#lowerEqual orderLine.status 'vendor_confirmed'}}
+                        <li id="serviceProvider">Your order is under process.</li>
+                    {{/lowerEqual}} 
+                     
+                  {{else}}
+                      <li id="serviceProvider">Your order is under process. </li>
+                   {{/if}}
+            </ol>
+          </div>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                  <th>Date & Time</th>
+                  <th>Status</th>
+              
+              </tr>
+              {{#if orderLine.orderTracks.length}}
+                 
+                {{#each orderLine.orderTracks}}
+	                {{#equal isVisible true}}
+		              <tr>
+		                   <td>{{getDOB createDate}} {{getTime 'hh:mm' createDate}}</td>
+		                     <td class="capitalletter">{{statusMessage}}</td>
+		              </tr>
+	              	{{/equal}}
+             	 {{/each}}
+           	{{else}}
+              <tr>
+                 {{#each orderLine.orderTracks}}
+	                 {{#equal isVisible true}}
+	                
+	                     <td>{{getDOB createDate}}{{getTime 'hh:mm' createDate}}</td>
+	                     <td class="capitalletter">{{statusMessage}}</td>
+	                   {{/equal}}
+                  {{/each}}
+
+              </tr>
+              {{/if}}
+           </table>
+
+           
+      </div>
+    </div>
+{{/if}}

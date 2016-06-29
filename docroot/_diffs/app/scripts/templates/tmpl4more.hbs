@@ -1,0 +1,369 @@
+<div class="row events">
+    <h1 class="heading-style">
+    	<strong>{{data.categoryName}}</strong>
+	</h1>
+	{{#if data.categoryEvents}}
+	<div class="fordesktop">
+	    <!-- column 1 starts here -->  
+	    <div class="columerow">
+	    	{{#if data.categoryEvents.0.event}}
+	        <div class="event-col">
+	            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.0.event.eventId}}"  title="{{data.categoryEvents.0.event.eventName}}">
+	                <img alt="{{data.categoryEvents.0.event.eventName}}" src="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.0.event.eventCode}}/banner_medium_new.jpg"  />
+	                {{#if data.categoryEvents.0.event.eventAttributes}}
+							{{#each data.categoryEvents.0.event.eventAttributes}}
+								{{#lowerEqual code "discount"}}
+									<div class="tagimage"><span>{{value}}</span></div>
+								{{/lowerEqual}}
+							{{/each}}	
+						{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if data.categoryEvents.0.event.eventType}}
+							{{#isAvailable data.categoryEvents.0.event.eventType "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent">Express Sales. Shipped directly from our warehouse.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.0.event.eventType "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent">World's best finds. Imported especially for you.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.0.event.eventType "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent">Exclusive buys. You would love to own.</div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3>{{data.categoryEvents.0.event.eventName}}</h3>
+					</div>
+				</a>
+	            <!-- power tip starts here --> 
+				<div class="powertip-outer">
+					<div class="eventpowertip" data-id="{{data.categoryEvents.0.event.eventId}}" data-name="{{data.categoryEvents.0.event.eventName}}" data-image="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.0.event.eventCode}}/banner_medium_new.jpg">
+						<a href="#" class="event-name">{{data.categoryEvents.0.event.eventName}}</a>
+						<div class="clear"></div>
+						<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.0.event.startDate}}"  data-event-enddate="{{data.categoryEvents.0.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+						<span class="prod-no">{{data.categoryEvents.0.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.0.event.discountType}} {{data.categoryEvents.0.event.discountValue}}</span>
+						<div class="clear"></div>
+						<span class="tip-sep"></span>
+		                         <div class="moredetail">
+		                         <p class="text text1">Click here for more detail</p>
+						<p class="text">{{data.categoryEvents.0.event.description}}</p><div class="clear"></div>
+						<span class="tip-sep"></span>
+						<div class="share-icons">
+						<label class="shareon">Share :</label>
+						<a href="#" class="fb-share" title="Share on facebook"></a> 
+						<a href="#" class="tw-share" title="Share on Twitter"></a>
+							<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+						</div>
+	                    	<a href="#" class="shippingtype {{data.categoryEvents.0.event.shippingMaster.shippingType}}">{{data.categoryEvents.0.event.shippingMaster.shippingType}}<strong>Dispatch in {{data.categoryEvents.0.event.shippingMaster.shippingDuration}} days</strong></a>
+	                    </div>
+					</div>
+				</div>
+				<!-- power tip ends here -->
+	        </div>
+	        {{/if}}
+	        {{#if data.categoryEvents.1.event}}
+	        <div class="event-col">
+	            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.1.event.eventId}}"  title="{{data.categoryEvents.1.event.eventName}}">
+	                <img alt="{{data.categoryEvents.1.event.eventName}}" src="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.1.event.eventCode}}/banner_small_new.jpg"  />
+	                {{#if data.categoryEvents.1.event.eventAttributes}}
+							{{#each data.categoryEvents.1.event.eventAttributes}}
+								{{#lowerEqual code "discount"}}
+									<div class="tagimage"><span>{{value}}</span></div>
+								{{/lowerEqual}}
+							{{/each}}	
+						{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if data.categoryEvents.1.event.eventType}}
+							{{#isAvailable data.categoryEvents.1.event.eventType "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent">Express Sales. Shipped directly from our warehouse.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.1.event.eventType "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent">World's best finds. Imported especially for you.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.1.event.eventType "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent">Exclusive buys. You would love to own.</div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3>{{data.categoryEvents.1.event.eventName}}</h3>
+					</div>
+	            </a>
+	            <!-- power tip starts here --> 
+				<div class="powertip-outer">
+					<div class="eventpowertip" data-id="{{data.categoryEvents.1.event.eventId}}" data-name="{{data.categoryEvents.1.event.eventName}}" data-image="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.1.event.eventCode}}/banner_medium_new.jpg">
+						<a href="#" class="event-name">{{data.categoryEvents.1.event.eventName}}</a>
+						<div class="clear"></div>
+						<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.1.event.startDate}}"  data-event-enddate="{{data.categoryEvents.1.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+						<span class="prod-no">{{data.categoryEvents.1.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.1.event.discountType}} {{data.categoryEvents.1.event.discountValue}}</span>
+						<div class="clear"></div>
+						<span class="tip-sep"></span>
+		                         <div class="moredetail">
+		                         <p class="text text1">Click here for more detail</p>
+						<p class="text">{{data.categoryEvents.1.event.description}}</p><div class="clear"></div>
+						<span class="tip-sep"></span>
+						<div class="share-icons">
+						<label class="shareon">Share :</label>
+						<a href="#" class="fb-share facebook social-share-link" title="Share on facebook"></a>
+						<a href="#" class="tw-share twitter social-share-link" title="Share on Twitter"></a>
+							<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+						</div>
+	                    	<a href="#" class="shippingtype {{data.categoryEvents.1.event.shippingMaster.shippingType}}">{{data.categoryEvents.0.event.shippingMaster.shippingType}}<strong>Dispatch in {{data.categoryEvents.0.event.shippingMaster.shippingDuration}} days</strong></a>
+	                    </div>
+					</div>
+				</div>
+				<!-- power tip ends here -->
+	        </div>
+			{{/if}}
+	    </div>
+	    <!-- column 1 ends here -->
+	    <!-- column 2 starts here -->
+	    <div class="columerow">
+			{{#if data.categoryEvents.2.event}}
+	        <div class="event-col">
+	            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.2.event.eventId}}"  title="{{data.categoryEvents.2.event.eventName}}">
+	                <img alt="{{data.categoryEvents.2.event.eventName}}" src="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.2.event.eventCode}}/web/banner_long_new.jpg"  />
+	                <!-- <div class="tag-name-arrow">Exclusive!</div> -->
+	                {{#if data.categoryEvents.2.event.eventAttributes}}
+						{{#each data.categoryEvents.2.event.eventAttributes}}
+							{{#lowerEqual code "discount"}}
+								<div class="tagimage"><span>{{value}}</span></div>
+							{{/lowerEqual}}
+						{{/each}}	
+					{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if data.categoryEvents.2.event.eventType}}
+							{{#isAvailable data.categoryEvents.2.event.eventType "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent">Express Sales. Shipped directly from our warehouse.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.2.event.eventType "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent">World's best finds. Imported especially for you.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.2.event.eventType "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent">Exclusive buys. You would love to own.</div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3>{{data.categoryEvents.2.event.eventName}}</h3>
+					</div>
+	            </a>
+	            <!-- power tip starts here --> 
+				<div class="powertip-outer">
+					<div class="eventpowertip" data-id="{{data.categoryEvents.2.event.eventId}}" data-name="{{data.categoryEvents.2.event.eventName}}" data-image="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.2.event.eventCode}}/banner_medium_new.jpg">
+						<a href="#" class="event-name">{{data.categoryEvents.2.event.eventName}}</a>
+						<div class="clear"></div>
+						<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.2.event.startDate}}"  data-event-enddate="{{data.categoryEvents.2.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+						<span class="prod-no">{{data.categoryEvents.2.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.2.event.discountType}} {{data.categoryEvents.2.event.discountValue}}</span>
+						<div class="clear"></div>
+						<span class="tip-sep"></span>
+		                         <div class="moredetail">
+		                         <p class="text text1">Click here for more detail</p>
+						<p class="text">{{data.categoryEvents.2.event.description}}</p><div class="clear"></div>
+						<span class="tip-sep"></span>
+						<div class="share-icons">
+						<label class="shareon">Share :</label>
+						<a href="#" class="fb-share facebook social-share-link" title="Share on facebook"></a>
+						<a href="#" class="tw-share twitter social-share-link" title="Share on Twitter"></a>
+							<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+						</div>
+	                    	<a href="#" class="shippingtype {{data.categoryEvents.2.event.shippingMaster.shippingType}}">{{data.categoryEvents.2.event.shippingMaster.shippingType}}<strong>Dispatch in {{data.categoryEvents.2.event.shippingMaster.shippingDuration}} days</strong></a>
+	                    </div>
+					</div>
+				</div>
+				<!-- power tip ends here -->
+	        </div>
+	        {{/if}}
+	
+	    </div>
+	    <!-- column 2 ends here -->
+	
+	    <!-- column 3 starts here -->
+	    <div class="columerow">
+	    	{{#if data.categoryEvents.3.event}}
+	        <div class="event-col">
+	            <a class="showtooltip"  href="/product/listing/event/{{data.categoryEvents.3.event.eventId}}" title="{{data.categoryEvents.3.event.eventName}}">
+	                <img alt="{{data.categoryEvents.3.event.eventName}}" src="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.4.event.eventCode}}/banner_medium_new.jpg"  />
+	                {{#if data.categoryEvents.3.event.eventAttributes}}
+						{{#each data.categoryEvents.3.event.eventAttributes}}
+							{{#lowerEqual code "discount"}}
+								<div class="tagimage"><span>{{value}}</span></div>
+							{{/lowerEqual}}
+						{{/each}}	
+					{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if data.categoryEvents.3.event.eventType}}
+							{{#isAvailable data.categoryEvents.3.event.eventType "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent">Express Sales. Shipped directly from our warehouse.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.3.event.eventType "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent">World's best finds. Imported especially for you.</div>
+							</div>
+							{{/isAvailable}} {{#isAvailable
+							data.categoryEvents.3.event.eventType "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent">Exclusive buys. You would love to own.</div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3>{{data.categoryEvents.3.event.eventName}}</h3>
+					</div>
+	            </a>
+	            <!-- power tip starts here --> 
+				<div class="powertip-outer">
+					<div class="eventpowertip" data-id="{{data.categoryEvents.3.event.eventId}}" data-name="{{data.categoryEvents.3.event.eventName}}" data-image="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.3.event.eventCode}}/banner_medium_new.jpg">
+						<a href="#" class="event-name">{{data.categoryEvents.3.event.eventName}}</a>
+						<div class="clear"></div>
+						<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.3.event.startDate}}"  data-event-enddate="{{data.categoryEvents.3.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+						<span class="prod-no">{{data.categoryEvents.3.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.3.event.discountType}} {{data.categoryEvents.3.event.discountValue}}</span>
+						<div class="clear"></div>
+						<span class="tip-sep"></span>
+		                         <div class="moredetail">
+		                         <p class="text text1">Click here for more detail</p>
+						<p class="text">{{data.categoryEvents.3.event.description}}</p><div class="clear"></div>
+						<span class="tip-sep"></span>
+						<div class="share-icons">
+						<label class="shareon">Share :</label>
+						<a href="#" class="fb-share facebook social-share-link" title="Share on facebook"></a>
+						<a href="#" class="tw-share twitter social-share-link" title="Share on Twitter"></a>
+							<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+						</div>
+	                    	<a href="#" class="shippingtype {{data.categoryEvents.3.event.shippingMaster.shippingType}}">{{data.categoryEvents.3.event.shippingMaster.shippingType}}<strong>Dispatch in {{data.categoryEvents.3.event.shippingMaster.shippingDuration}} days</strong></a>
+	                    </div>
+					</div>
+				</div>
+				<!-- power tip ends here -->
+	        </div>
+	        {{/if}}
+	        {{#if_gt data.categoryEvents.length 4}}
+	    	<div class="event-col noshadow">
+	    		<div class="morebutton">
+	    			<a href="/event/list/{{cleanString data.categoryName}}/{{../categoryId}}"><span>View More <i class="icon-right-circled"></i></span></a>
+	    		</div>
+	   		</div>
+	       	{{/if_gt}}
+	    </div>
+	    <!-- column 3 ends here -->
+    </div>
+    
+    <div class="forresponsive">
+ 		{{#each data.categoryEvents}}
+  		{{#if_less_equal @index 4}}
+    	<div class="event-col">
+            <a class="showtooltip" href="/product/listing/event/{{event.eventId}}"  title="{{event.eventName}}">
+                <img alt="{{event.eventName}}" src="http://cdn1.fashionandyou.com/fny-event/{{event.eventCode}}/banner_medium_new.jpg"  />
+                <!-- <div class="tag-name-arrow">Exclusive!</div> -->
+                {{#if event.eventAttributes}}
+					{{#each event.eventAttributes}}
+						{{#lowerEqual code "discount"}}
+							<div class="tagimage"><span>{{value}}</span></div>
+						{{/lowerEqual}}
+					{{/each}}	
+				{{/if}}
+                <div class="event-bottom">
+					<div class="logos-area">
+					{{#if event.eventType}}
+						{{#isAvailable event.eventType "express"}}
+						<div class="logosholder">
+							<div class="express"></div>
+							<div class="logocontent">Express Sales. Shipped directly from our warehouse.</div>
+						</div>
+						{{/isAvailable}}
+						{{#isAvailable event.eventType "international"}}
+						<div class="logosholder">
+							<div class="international"></div>
+							<div class="logocontent">World's best finds. Imported especially for you.</div>
+						</div>
+						{{/isAvailable}}
+						{{#isAvailable event.eventType "exclusive"}}
+						<div class="logosholder">
+							<div class="exclusive"></div>
+							<div class="logocontent">Exclusive buys. You would love to own.</div>
+						</div>
+						{{/isAvailable}}
+					{{/if}}
+					</div>
+					<h3>{{event.eventName}}</h3>
+				</div>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip" data-id="{{event.eventId}}" data-name="{{event.eventName}}" data-image="http://cdn1.fashionandyou.com/fny-event/{{event.eventCode}}/banner_medium_new.jpg">
+					<a href="#" class="event-name">{{event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{event.startDate}}"  data-event-enddate="{{event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{event.noOfProducts}} Products</span><span class="disc-tip">{{event.discountType}} {{event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+	                         <div class="moredetail">
+	                         <p class="text text1">Click here for more detail</p>
+					<p class="text">{{event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label>
+					<a href="#" class="fb-share facebook social-share-link" title="Share on facebook"></a>
+					<a href="#" class="tw-share twitter social-share-link" title="Share on Twitter"></a>
+						<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+					</div>
+                    	<a href="#" class="shippingtype {{event.shippingMaster.shippingType}}">{{event.shippingMaster.shippingType}}<strong>Dispatch in {{event.shippingMaster.shippingDuration}} days</strong></a>
+                    </div>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+        {{/if_less_equal}}
+        {{/each}}
+        {{#if_gt data.categoryEvents.length 4}}
+    	<div class="event-col noshadow">
+    		<div class="morebutton">
+    			<a href="/event/list/{{cleanString data.categoryName}}/{{../categoryId}}"><p>View More <i class="icon-right-circled"></i></p></a>
+    		</div>
+   		</div>
+	    {{/if_gt}}
+    </div>
+	{{/if}}
+</div>

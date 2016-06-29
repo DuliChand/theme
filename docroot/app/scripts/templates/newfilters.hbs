@@ -1,0 +1,62 @@
+ 			<ul class="nav nav-tabs" id="myTab">
+ 				  <li>
+					  <a data-target="#sort" data-toggle="tab">
+					  <span class="glyphicon glyphicon-resize-vertical">
+					  </span> Sort<span class="caret"></span>
+					  </a>
+				  </li>
+				  <li>
+					  <a data-target="#filter" data-toggle="tab">
+					  <span class="glyphicon glyphicon-filter">
+					  </span>Filter <span class="caret"></span>
+					  </a>
+				  </li>
+			</ul>
+
+			<div class="tab-content">
+			  <div class="tab-pane" id="filter">
+				  <div class="container">
+					  <div class="row">
+					       <div class="col-md-12">
+					     	<div class="button-group">
+						       <span type="button" class="crossIcon" data-toggle="dropdown"><span class="glyphicon glyphicon-remove"></span> </span>
+								{{#if filters}}
+									{{#each filters}}
+										<div class="panelFilter {{@key}}">
+										<input type="hidden" id="catchangeval" value=""/>
+										<div class="defaultCat" value="select" >{{@key}} </div>
+										<ul class="filterOptions choose-option scrollable-menu {{@key}}"  data-filter-name="{{@key}}" data-filter-type="{{filterType}}" id="sortSelect">
+											{{#each buckets}} 
+												<li><input type="checkbox" value="{{key}}" id="{{key}}" class="checkbox-custom">
+												<label for="{{key}}" class="checkbox-custom-label">{{key}}</label></li>
+											{{/each}}
+										</ul>
+									</div>
+									{{/each}}
+								{{/if}}
+					 		 </div>
+							</div>
+						<div class="row marginTopBottom">
+					       <div class="col-md-12">
+					       	<input type="button" value="Reset" class="btn resetBtn">
+					       	<input type="button" value="Apply" class="btn applyBtn">
+					       </div>
+				       </div>
+					  </div>
+					</div>
+			  </div>
+			  <div class="tab-pane" id="sort">
+			  		<div class="container">
+					  <div class="row">
+					       <div class="col-md-12">
+						     	<div class="button-group">
+							        <span type="button" class="crossIcon" data-toggle="dropdown"><span class="glyphicon glyphicon-remove"></span> </span>
+									<ul class="sortFilterOptions sortby" id="sortSelect" data-filter-name="sortby" data-filter-type="{{filterType}}">
+									  <li id="LOW_TO_HIGH"><a href="#" class="small" data-value="low_to_high">Price : Low to High</a></li>
+									  <li id="HIGH_TO_LOW"><a href="#" class="small" data-value="high_to_low">Price : High to Low</a></li>
+									</ul>
+						 		 </div>
+							</div>
+					  </div>
+			  </div>
+			</div>

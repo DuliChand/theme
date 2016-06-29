@@ -1,0 +1,3937 @@
+.payment-icons-outer .payment-icons li.paymenticon, .paymenticon, .menu-dropdown li:before, .common-popup .icon, .nav>li .notify-icon:before, .menu-dropdown .menucell ul li:before {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.breadcrumb{
+	padding: 5px 0px 0;
+}
+.btn-cartpop {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite-button.png) no-repeat
+}
+.navbar-header .home {
+	position: relative;
+	z-index: 11111
+}
+.navbar {
+	position: relative;
+	border-radius: 0
+}
+
+.nb {
+	position: relative;
+	width: 100%
+}
+.nb-left {
+	display: inline-block;
+	height: 40px;
+	padding: 0;
+	list-style: none;
+	background: #333
+}
+.nb-left>li {
+	float: left
+}
+.navbar-brand {
+	float: left;
+	font-size: 15px;
+	line-height: 40px;
+	color: #fff;
+	position: relative
+}
+.navbar-brand.Lounge {
+	font-family: 'edwardian-itc';
+	font-size: 25px;
+}
+.navbar-brand.Shops, .navbar-brand.Shop {
+	color: #fff;
+	/* font-family: 'centurygothicbold'; */
+	font-style : italic;
+}
+.navbar-home {
+	float: left;
+	width: 17px;
+	height: 14px;
+	margin: 13px 0 0;
+	background-position: -119px -174px !important;
+
+}
+.navbar-left .menu-h:first-child:hover {
+	height: 40px !important;
+	background-position: -119px -174px !important;
+	background-color: none !important;
+}
+
+.navbar-left .menu-h:first-child a{
+	background-color: none !important;
+}
+
+.navbar-home.navbar-brand {
+	padding: 0 10px;
+	margin-left: 12px;
+	margin-right: 12px;
+	background-color: none;
+}
+.active > a.navbar-home.navbar-brand {
+    background-color: none !important;
+}
+.menu-h.active > a.navbar-home {
+    color: #fff;
+    background-color: #333;
+}
+.menu-h {
+	display: block;
+	float: left;
+	height: 40px;
+	padding: 0;
+	color: #f4f3f3;
+	background-color: #333;
+	border-right: 1px solid #5D5D5D;
+	border-left: 1px solid #333;
+	/* margin: 1px 0 */
+}
+.menu-h.menu-h-active {
+	background: #000
+}
+
+.shipment-box h3 {
+    text-transform: capitalize;
+}
+.menu-h a {
+	display: block;
+	float: left;
+	/*line-height: 40px;*/
+	color: #f4f3f3;
+	padding: 0 8px
+}
+.menu-h:hover {
+	height: 40px;
+	/* padding: 1px 0 0 0; */
+	/* margin-top: -2px; */
+	margin-bottom: -4px;
+	color: #fff;
+	background: #000;
+	/* border-top: 2px solid #333; *//* border-right:none; */
+	/*border-bottom: 4px solid #f4f3f3;*/
+	/* border-left:none */
+}
+/*.menu-h.active {
+	margin-top:none;
+	margin-bottom:none;
+	border-top:none;
+	border-bottom:none;
+	height:38px;
+	color:#fff;
+	background:#000;
+	padding:1px 0 0 0;
+}*/
+.menu-h:hover > a {
+	color: #fff;
+	text-decoration:none
+}
+.menu-h.active:hover > a.navbar-brand:before {
+	display:none;
+}
+.menu-h:hover .navbar-brand:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 13px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite1.png) -56px -256px no-repeat  !important;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	z-index: 9999;
+	display: block
+}
+.menu-h:hover .menu-dropdown {
+	display: block;
+	opacity: 1
+}
+.menu-h>.navbar-brand:hover, .menu-h .navbar-brand:focus {
+	color: #fff;
+	/*background: #000*/
+}
+
+.home>.menu-h:first-child:hover {
+	height: 40px;
+	margin: 0;
+	/* padding:0 12px; */
+	border: none;
+	background: none;
+	border-right: 1px solid #5d5d5d;
+	border-left: 1px solid #3c3a3a
+}
+.home>.menu-h:first-child a:hover {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -119px -174px no-repeat  !important
+}
+.home>.menu-h:first-child .navbar-brand:before {
+	background: none !important
+}
+.menu-h:first-child .navbar-brand:before {
+background: none !important;
+}
+
+.navbar-right {
+	position: absolute;
+	right: 208px;
+	top: -92px;
+	/*width:110px;*/
+}
+.navbar-right > li {
+	float: left;
+	}
+.fixedHeader .navbar-right {
+	position:relative;
+	top:0px;
+	right:0px;
+ 	width:auto; 
+ 	}
+ 	.fixedHeader .navbar-right li{
+ 	width:auto;
+ 	}
+.fixedHeader .bag-out {
+	margin:5px 5px 0px 0px;
+	float: left;
+    margin-left: -28px;
+}
+
+.loginholder {
+/*	position: absolute;
+   right: 250px;
+    top: 6px;
+   width: 500px;
+    z-index: 99999;
+*/
+     position: absolute;
+    right: 65px;
+    top: 6px;
+    width: 680px;
+    z-index: 99999
+}
+.loginholder > li {
+	margin-right:0px!important;
+	border-right: 1px solid #d5d5d5; 
+}
+.loginholder li > a {
+	color:#000;
+	height: 30px;
+	line-height: 30px;
+	display:block;
+	padding:0px 10px;
+ 	
+}
+.mobile-app-icon{
+
+}
+.mobile-app-icon:before {
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/mobile-icon.png") no-repeat;
+    float: left;
+    height: 25px;
+    width: 25px;
+    display:block;
+    content: "";
+    margin: 2px 0px 0px 0px;
+}
+
+
+.tv-icon {
+    color: #d22573;
+    float: right;
+    line-height: 42px;
+}
+
+.tv-icon:before {
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/tv-icon.png") no-repeat;
+    float: left;
+    height: 30px;
+    width: 30px;
+    display:block;
+    content: "";
+    margin: 5px 5px 0 9px;
+}
+
+.fixedHeader .loginholder {
+	position:static;
+	   width: auto;
+}
+.fixedHeader .loginholder > li {
+	display:none;
+	border:none;
+}
+
+.fixedHeader .loginholder > li.showthis {
+	display:block;
+}
+.fixedHeader .loginholder > li.showthis > a {
+	height:39px;
+}
+.fixedHeader .loginholder > li.showthis1 {
+	display:block;
+}
+
+
+.fixedHeader .bag-out > .bag{margin-top: 2px;}
+.fixedHeader .badge{top:10px;}
+.navbar-right .menu-h>a {
+	padding: 0
+}
+.menu-dropdown {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	display: none;
+	background: #fff;
+	opacity: 0;
+	border: 1px solid #CCC;
+	border-top: none;
+	width: 940px
+}
+.menu-dropdown .shoplounge_holder {
+	display:none;
+}
+.menu-dropdown.Clearance .shoplounge_holder {
+    display: block;
+}
+.menu-dropdown.Fashion .shoplounge_holder {
+    display: block;
+}
+.menu-dropdown.Shops {
+	width: auto !important;
+	left: auto !important;
+	right: 0px;
+	max-width:940px;
+	
+}
+
+.menu-dropdown.Stores .menucell {
+	width: 188px;
+	
+}
+.menu-dropdown.Lounge {
+	left: auto;
+	width: auto !important;
+	right:0;
+}
+
+.menu-dropdown.Shops .categories, .menu-dropdown.Lounge .categories {
+	display:none;
+}
+.menu-dropdown.Shops .shoplounge_holder, .menu-dropdown.Lounge .shoplounge_holder {
+	display:block!important;
+}
+/* .menu-dropdown.Shops .shoplounge_holder .shoplounge, .menu-dropdown.Lounge .shoplounge_holder .shoplounge {
+    background:#d22573; border-right: 1px solid #c71e6d; padding: 12px;}
+
+.menu-dropdown.Shops .shoplounge_holder .shoplounge ul li.menu-heading h3,
+.menu-dropdown.Lounge .shoplounge_holder .shoplounge ul li.menu-heading h3 {color:#fff;}
+.menu-dropdown.Shops .shoplounge_holder .shoplounge ul li,
+.menu-dropdown.Shops .shoplounge_holder .shoplounge ul li a,
+.menu-dropdown.Lounge .shoplounge_holder .shoplounge ul li,
+.menu-dropdown.Lounge .shoplounge_holder .shoplounge ul li a {color:#fff;}
+
+.menu-dropdown.Shops .shoplounge_holder .shoplounge ul li:before,
+.menu-dropdown.Lounge .shoplounge_holder .shoplounge ul li:before {background-position:-729px -278px;}
+
+.menu-dropdown.Shops .shoplounge_holder .shoplounge ul li a:hover,
+.menu-dropdown.Lounge .shoplounge_holder .shoplounge ul li a:hover {text-decoration:underline;} */
+
+
+.navbar-brand.Stores {
+    width: 70px !important;
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/supersaver1.png") no-repeat scroll 0 0 #333333;
+    text-indent: -2000px;
+    line-height: 30px;
+    height:40px;
+}
+
+ .navbar-brand.Stores >span {
+    width: 70px;
+	font-size:0px;
+}
+
+.navbar-brand.Stores:hover >span {
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/supersaver2.png") #333;
+    background-repeat: no-repeat;
+    text-indent: -110px;
+    font-size: 1px;
+    display: block;
+    margin-left: -8px;
+    overflow: hidden;
+    width: 70px;
+  	height:40px;
+	border-bottom: #333 solid 1px !important;
+	line-height: 39px;
+}
+
+.navbar-brand:active.Stores >span
+{
+ background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/supersaver3.png") #333;
+    background-repeat: no-repeat;
+    text-indent: -110px;
+    font-size: 1px;
+    display: block;
+    margin-left: -8px;
+    overflow: hidden;
+    width: 70px;
+}
+/********fashion ***********/
+.navbar-brand.Fashion {
+    width: 104px !important;
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/fashion-garage1.png") no-repeat scroll 0 0 #333333;
+    text-indent: -2000px;
+    line-height: 30px;
+    height:40px;
+}
+
+ .navbar-brand.Fashion >span {
+    width: 105px;
+	font-size:0px;
+}
+
+.navbar-brand.Fashion:hover >span {
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/fashion-garage2.png") #333;
+    background-repeat: no-repeat;
+    text-indent: -110px;
+    font-size: 1px;
+    display: block;
+    margin-left: -8px;
+    overflow: hidden;
+    width: 105px;
+  	height:40px;
+	border-bottom: #333 solid 1px !important;
+	line-height: 39px;
+}
+
+.navbar-brand:active.Fashion >span
+{
+ background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/fashion-garage3.png");
+    background-repeat: no-repeat;
+    text-indent: -110px;
+    font-size: 1px;
+    display: block;
+    height: 40px;
+    margin-left: -8px;
+    overflow: hidden;
+    width: 105px;
+}
+.activeFG{
+	background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/fashion-garage3.png");
+    background-repeat: no-repeat;
+    text-indent: -110px;
+    font-size: 1px;
+    display: block;
+    height: 40px;
+    margin-left: -8px;
+    overflow: hidden;
+    width: 105px;
+}
+.menu-dropdown>ul {
+	position: relative
+}
+.menu-dropdown>ul>li {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 13px;
+	color: #666;
+	text-transform: capitalize !important;
+	border: 0
+}
+.menu-dropdown .menucolumn {
+	display: table
+}
+.menu-dropdown .menurow {
+	display: table-row
+}
+.menu-dropdown .menucell {
+	display: block;
+	width: 250px;
+	float:left;
+	padding: 5px 0px 5px 5px;
+	vertical-align:top;
+}
+.menu-dropdown .menucell:last-child{ width: 180px; float: left;}
+.menu-dropdown .menucell .menu-heading h3 {
+	color: #d22573;
+	margin: 5px 0 5px 5px;
+	font-size: 18px
+}
+.menu-dropdown .menucell ul {
+	margin: 0px;
+	padding: 0
+}
+.menu-dropdown .menucell ul li:before {
+	position: absolute;
+	display: block;
+	width: 5px;
+	height: 5px;
+	content: '';
+	left: 6px;
+	top: 9px;
+	background-position: -729px -287px;
+}
+.menu-dropdown .whatsnew ul li:before, .menu-dropdown .endingsoon ul li:before {
+	background-position: -729px -278px;
+}
+.menu-dropdown .menucell ul li {
+	margin: 0;
+	list-style-type: none;
+	display: block;
+	padding: 1px 5px 2px 18px;
+	position: relative;
+	width:100%;
+	float:left;
+	clear:both;
+}
+.menu-dropdown .menucell ul li a {
+	clear: both;
+    color: #666;
+    display: block;
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.menu-dropdown .menucell ul li:hover {
+	background-color:#d22573;
+}
+.menu-dropdown .menucell ul li:hover:before {
+	background-position: -729px -278px;
+}
+.menu-dropdown .menucell ul li:hover a {
+	color:#fff;
+}
+.menu-dropdown .menucell ul li.moreitem:hover {
+	background:none
+}
+/* .menuImageSection {
+width: 200px;
+padding: 12px 0 12px 12px;
+position: fixed;
+margin-left: 195px;
+}
+
+.menuImageSection img{
+	width:100%;
+
+	} */
+.menu-dropdown .menucell.hidemenu {
+	display: none;
+	background: #fff
+}
+.menu-dropdown .categories ul li:hover {
+	background: #d22573
+}
+.menu-dropdown .categories ul li {
+	padding: 0 0 0 5px;
+}
+.menu-dropdown .categories ul li a {
+	display: block;
+	padding: 1px 5px 2px 13px;
+}
+.menu-dropdown .whatsnew, .menu-dropdown .endingsoon {
+	background: #d22573;
+	padding: 12px;
+	border-right: 1px solid #c71e6d
+}
+.menu-dropdown .categories {
+	background: #fff
+}
+.menu-dropdown .menucell ul li.menu-heading:before {
+	background: none;
+	width:100%;
+}
+.menu-dropdown .menucell ul li.menu-heading {
+	background: none !important;
+	cursor: text;
+	padding-left: 0px;
+	width:100%;
+}
+.menu-dropdown .menu-heading:hover {
+	background: none
+}
+.menu-dropdown .whatsnew .menu-heading h3, .menu-dropdown .endingsoon .menu-heading h3, .menu-dropdown .whatsnew ul li a, .menu-dropdown .endingsoon ul li a {
+	color: #fff
+}
+.menu-dropdown .whatsnew ul li a:hover, .menu-dropdown .endingsoon ul li a:hover {
+	text-decoration: underline;
+}
+
+.menucell.shoplounge:last-child {
+    width: 228px !important;
+}
+.menucell.shoplounge {
+    width: 236.5px !important;
+}
+
+.menu-dropdown>ul>li>a {
+	font-size: 13px;
+	color: #666
+}
+.menu-dropdown>ul>li>.featured {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100px;
+	height: 67px;
+	padding: 0;
+	margin: 0 10px 10px 0;
+	background: none;
+	opacity: 1
+}
+.menu-dropdown>ul>li>.featured>.offlayer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: auto;
+	height: 16px;
+	padding: 0 5px;
+	background: red
+}
+.menu-dropdown>ul>li>.featured>.offlayer>.offlayer-text {
+	display: inline;
+	float: left;
+	font-size: 11px !important;
+	line-height: 16px;
+	color: #fff;
+	text-shadow: none
+}
+.menu-dropdown>ul>li>.featured>.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 20px;
+	background: #333;
+	opacity: .8
+}
+.menu-dropdown>ul>li>.featured>.overlay>.overlay-text {
+	display: inline;
+	float: left;
+	padding-left: 10px;
+	font-size: 11px;
+	line-height: 20px;
+	color: #fff;
+	text-shadow: none
+}
+.menu-dropdown>ul>li>.featured>img {
+	width: 100%;
+	height: 67px;
+	opacity: 1
+}
+.menu-dropdown>ul>li:hover {
+	color: #333
+}
+.menu-dropdown>ul>li:hover:before {
+	background-position: -136px -320px
+}
+.menu-dropdown>ul>li:hover>a {
+	color: #333
+}
+.menu-dropdown>ul .li-alt1 {
+	width: auto;
+	padding: 0;
+	margin: 0;
+	background: none
+}
+.menu-dropdown>ul>.color {
+	display: block;
+	float: left;
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	margin: 0 7px 7px 0;
+	background: none
+}
+.menu-dropdown>ul>.color>a {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 100%
+}
+.menu-dropdown .ul-alt {
+	width: 22%
+}
+.menu-dropdown .ul-alt1 {
+	width: 27%
+}
+.menu-dropdown>ul {
+	height: inherit
+}
+.menu-dropdown>ul:last-of-type {
+	background: none
+}
+.menu-h-alt {
+	padding: 0 15px 0px 13px;
+	margin: 0;
+	color: #333;
+	border: 0
+}
+.menu-h-alt:hover {
+	height: 38px;
+	margin: 0;
+	padding: 0 15px 0px 13px;
+	background: none;
+	border-top: 0;
+	border-bottom: 0
+}
+.menu-h .navbar-brand:hover span {
+	border-bottom: 1px solid #d22573;
+}
+.menu-dropdown>.color-options {
+	float: left;
+	padding: 0 0 0 20px
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11) {
+ display: block;
+ float: left;
+ width: 28px;
+ height: 28px;
+ padding: 0;
+ margin: 0 7px 7px 0
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>a {
+ display: block;
+ float: left;
+ width: 100%;
+ height: 100%
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.violet {
+ background: #451545
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.red {
+ background: #6e0d20
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.green {
+ background: #096a59
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.bluee {
+ background: #1c2039
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.purplee {
+ background: #c884cf
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.blackk {
+ background: #100f15
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.greyy {
+ background: #b6b2a7
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.golden {
+ background: #b6a458
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.orangeee {
+ background: #cf680b
+}
+ .menu-dropdown>.color-options>li:nth-child(-n+11)>.light-yellow {
+ background: #eeefa1
+}
+.menu-dropdown>.color-options>li:first-child {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 17px 0 0;
+	margin-bottom: 15px
+}
+body, div, span, img, a, h1, h2, h3, h4, h5, h6, p, ul, li, input, textarea, select, submit, iframe {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	outline: none
+}
+a {
+	outline: none
+}
+a:focus {
+	outline: none
+}
+body {
+	position: relative
+}
+
+.common-popup.cartload .icon {
+    background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/fny-loading.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    width: 200px;
+}
+
+.radio-button input {
+	visibility: hidden
+}
+.radio-button input[type=radio]:before {
+	display: block;
+	width: 12px;
+	height: 12px;
+	padding: 1px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	content: "";
+	visibility: visible;
+	background-clip: content-box
+}
+.radio-button input[type=radio]:checked:before {
+	background: #d22573;
+	border: 1px solid #d22573;
+	box-shadow: inset 0 0 0 1px #fff;
+	background-clip: content-box
+}
+input[type="radio"], input[type="checkbox"] {
+	margin: 0
+}
+.radio, .check-box {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 12px;
+	cursor: pointer;
+	outline: none;
+	visibility: hidden
+}
+.radio+label, .check-box+label {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #333;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+.radio+label span, .check-box+label span {
+	font-size: 12px;
+	line-height: 14px
+}
+.radio+label:before, .check-box+label:before {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	padding: 1px;
+	margin-top: 1px;
+	background: #fff;
+	border: 1px solid #333;
+	border-radius: 6px;
+	content: "";
+	visibility: visible;
+	background-clip: content-box
+}
+.radio+.label, .check-box+.label {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #333;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+.radio:checked+label, .check-box:checked+label {
+	color: #d22573
+}
+.radio:checked+label:before, .check-box:checked+label:before {
+	background: #d22573;
+	border: 1px solid #d22573;
+	box-shadow: inset 0 0 0 1px #fff;
+	background-clip: content-box
+}
+.check-box+label:before {
+	border-radius: 1px
+}
+.shipping-icons {
+	display: none
+}
+.shipping-icons .international, .shipping-icons .express, .shipping-icons .regular {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.shipping-icons .international {
+	width: 16px;
+	height: 16px;
+	background-position: -92px -302px
+}
+.shipping-icons .express {
+	width: 26px;
+	height: 11px;
+	background-position: -269px -190px
+}
+.shipping-icons .regular {
+	width: 26px;
+	height: 11px;
+	background-position: -280px -252px
+}
+.shipping-icons .international-white {
+	background-position: 0 -468px
+}
+.shipping-icons .international-pink {
+	background-position: -34px -4px
+}
+.shipping-icons .express-white {
+	background-position: -268px -175px
+}
+.shipping-icons .express-pink {
+	background-position: -270px -206px
+}
+.shipping-icons .regular-white {
+	background-position: -279px -222px
+}
+.shipping-icons .regular-pink {
+	background-position: -279px -237px
+}
+.popup-layout-outer {
+	display: none;
+	padding: 20px;
+	background: #fff;
+	border: 10px solid transparent;
+	background-clip: padding-box
+}
+.popup-layout-outer .heading {
+	padding-bottom: 13px;
+	margin: 0 -11px 10px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #333;
+	text-indent: 11px;
+	border-bottom: 1px solid #eee
+}
+.popup-layout-outer .input-field {
+	width: 270px;
+	height: 25px;
+	padding-left: 7px;
+	margin-top: 10px;
+	font-size: 11px;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 3px
+}
+.popup-layout-outer label {
+	width: 110px;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #333;
+	text-align: right;
+	text-transform: capitalize
+}
+.profile-icon:before, .login:before, .login1:before, .fav-icon:before, .search-icon:before, .my-profile:before, .invite:before, .rewards:before, .credits:before, .order:before, .logout:before, .verisign, .safesecure, .info-links-col li:before, .navbar-home, .bag, .cart-shipicon, .cart-notify, .edit-cart, .update-cart, .edit-product, .delete-product, .update-product, .cartprod-timer:before, .cartddwn-timer:before, .cart-icon, .view-more-icon, .user-icon:before, .search-icon-sticky:before, .my-notification:before, .my-favorites:before, .my-login:before {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.edit-product{
+	display: block;
+	float: right;
+	width: 13px;
+	height: 13px;
+	margin: 5px 2px 0 5px;
+	text-indent: -99999px
+}
+.delete-product {
+	display: block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin: 5px 2px 0 5px;
+	text-indent: -99999px
+}
+.update-product {
+	line-height: 12px;
+	font-size: 13px;
+	display: inline-block;
+	background: #d22573;
+	color: #fff;
+	text-indent: 0;
+	text-transform: uppercase;
+	padding: 9px 7px;
+	border-radius: 4px;
+	text-shadow: 1px 1px 1px #333;
+	margin: 0;
+	height: auto;
+	width: auto
+}
+.update-product {
+	background: #333;
+	float: left;
+	padding: 4px 4px;
+	border-radius: 0;
+	margin: 0 0px 0 10px;
+}
+.edit-product {
+	background-position: -120px -245px
+}
+.edit-product:hover {
+	background-position: -120px -258px
+}
+.delete-product, .update-product {
+	display: none
+}
+.delete-product {
+	background-position: -394px -122px;
+}
+.delete-product:hover {
+	background-position: -416px -122px
+}
+.update-product {
+	background-position: -283px -278px
+}
+.update-product:hover {
+	background-position: -283px -296px
+}
+.btn-cartpop.continue-shopping {
+	margin: 0 120px
+}
+.clear {
+	clear: both
+}
+.clear10 {
+	height: 10px;
+	clear: both
+}
+.main-container {
+	position: relative;
+	width: 100%;
+	min-width: 960px;
+	margin: 0 auto
+}
+
+.wrapper {
+	position: relative;
+	width: 960px;
+	height: auto;
+	min-height: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+	margin-top: 6px
+}
+/*clearance tab*/
+
+.navbar-brand.Clearance {
+	font-weight: bold;
+    background: #d22573;
+}
+.menu-h .navbar-brand.Clearance:hover span {
+	border-bottom: 1px solid #d22573;
+}
+.menu-h > .navbar-brand.Clearance:hover {
+    background: #000;
+}
+
+.menu-h .navbar-brand.Clearance:focus{
+background:#d22573;
+}
+
+.menu-h:hover .navbar-brand.Clearance::before
+{
+background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/sprite1.png") no-repeat scroll -56px -256px rgba(0, 0, 0, 0) !important;
+    content: "";
+    display: block;
+    height: 13px;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: 100%;
+    width: 20px;
+    z-index: 9999;
+}
+.navbar-brand.Fashion {
+    text-transform: uppercase;
+}
+.menu-dropdown .menucell ul li.moreitem:before {
+	background: none;
+}
+.menu-dropdown .menucell ul li.moreitem {
+	float: right;
+	clear: both; width:auto;
+}
+.menu-dropdown .menucell ul li.moreitem a {
+	background: #f0f0f0;
+	border-radius: 2px;
+	color: #000 !important;
+	padding: 2px 0px 2px 3px;
+	display: block;
+	text-decoration: none;
+}
+.menu-dropdown .menucell ul li.moreitem a:hover {
+	background: #d22573;
+	text-decoration: none;
+	color: #fff !important;
+	text-underline: none;
+}
+.top-bar {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	min-width: 960px;
+	background: #f4f2f3
+}
+.top-bar-inn {
+	width: 960px;
+	height: 30px;
+	min-width: 960px;
+	padding: 0 10px;
+	margin: 0 auto
+}
+.top-tabs-inn {
+	float: left;
+	list-style: none
+}
+.top-tabs-inn > li {
+	float: left;
+	width: auto;
+	height: 30px;
+	margin-right: 12px;
+	border-right:#ccc solid 1px;
+	line-height:30px;
+	display:inline-block;
+	padding:0 11px 0 0px;
+}
+.top-tabs-inn > li > a {
+	width: auto;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	letter-spacing: normal;
+	color: #000 !important;
+	text-align: center;
+}
+.top-tabs-inn>.selected a {
+	height: 30px;
+	padding: 0 10px;
+	line-height: 30px;
+	background: #fff
+}
+.nav>li {
+	margin-right: 10px;
+	float: left
+}
+.nav>li .loginplain {
+	margin-right: -13px;
+	position: relative;
+	display: block;
+	float: left;
+	/* width: 45px; */
+	/* height: 40px; */
+	font-size: 12px;
+	line-height: 18px;
+	color: #d22573;
+	text-transform: capitalize
+}
+.nav>li .loginplain:before {
+	display: block;
+	position: absolute;
+	content: '';
+	/* background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -350px -488px no-repeat; */
+	/* width: 16px; */
+/* 	height: 18px; */
+	margin-top: 0px;
+}
+.nav > li .login1, .nav > li .login {
+	position: relative;
+	display: block;
+	float: left;
+	/*  width: 45px; 
+	 height: 40px;  */
+	font-size: 12px;
+	color: #000;
+	text-transform: capitalize;
+}
+.fixedHeader #userlogin-txt:hover .login-popup.signin {
+	display: block !important;
+}
+.fixedHeader #userlogin-txt:hover .login-popup {
+	right:0;
+	left:auto;
+}
+.fixedHeader #userlogin-txt:hover .login-popup:before {
+	right:0;
+	left:auto;
+}
+.fixedHeader .nav > li .login1, .fixedHeader .nav > li .login {
+	padding:7px 10px 6px 10px;
+	color:#fff;
+	border-left:1px solid #5d5d5d;
+	border-right:none;
+}
+.nav > li .login1:before, .nav > li .login:before {
+	display: block;
+	position: absolute;
+	content: '';
+	/*  background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -350px -488px no-repeat; 
+	 width: 16px; 
+ 	height: 18px;  */
+	margin-top: 0px;
+}
+/*  .nav > li .login:after{position:absolute;top:14px;right:-20px;z-index:0;width:0;height:0;border:5px solid transparent;border-top:5px solid #666;content:""} */ 
+ 
+.nav > li .notify-icon span {
+	background: #d22573;
+	border-radius: 50%;
+	padding: 1px 4px;
+	font-size: 9px;
+	color: #fff
+}
+.nav > li .notify-icon {
+	position: relative;
+	display: block;
+	float: left;
+	width: auto;
+	height: auto;
+	padding: 7px 0 0;
+	margin-right: 0;
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+	text-indent: 20px;
+	text-transform: capitalize;
+	z-index: 2
+}
+.nav > li .notify-icon:before {
+	position: absolute;
+	top: 6px;
+	left: 16px;
+	width: 16px;
+	height: 16px;
+	background-position: -622px -79px;
+	content: '';
+	z-index: -1;
+}
+.nav .notification {
+	right: -20px;
+	left: auto;
+	float: left;
+	width: 255px;
+	margin: 14px 0 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 0 #ccc
+}
+.nav .notification li {
+	float: left;
+	width: 100%;
+	position: relative;
+	color: #d22573;
+	margin: 0;
+	display: block;
+	font-size: 12px;
+}
+.nav .notification li .notify-scroll {
+	max-height: 270px;
+	overflow: hidden
+}
+.nav .notification li a {
+	width: 100%;
+	color: #9c9c9c;
+	white-space: normal;
+	padding: 0;
+	font-size: 12px;
+}
+.navbar-right.pull-right > li > li .profile-text {
+	color: #fff;
+	padding: 3px 0 10px 10px;
+}
+.nav .notification .see-all {
+	background: #d22573;
+	display: block;
+	margin-top: -17px;
+	border-bottom-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important
+}
+.nav .notification .see-all a {
+	color: #fff;
+	text-align: center
+}
+.nav .notification li li {
+	padding: 8px 0 5px 48px
+}
+.nav .notification li a:hover {
+	background: none
+}
+ .nav .notification li li:nth-child(even) {
+ background: #f0f0f0
+}
+.nav .notification li i {
+	color: #ad3a6f;
+	font-style: normal;
+	font-weight: 500
+}
+.cart-notify {
+	display: block;
+	float: left;
+	width: 23px;
+	height: 16px;
+	left: 10px;
+	top: 13px;
+	position: absolute
+}
+.cart-notify.cart {
+	background-position: -501px -142px;
+	height: 22px;
+	width: 25px
+}
+.cart-notify.edit {
+	background-position: -155px -95px;
+	height: 25px;
+	width: 25px
+}
+.cart-notify.truk {
+	background-position: -501px -175px;
+	width: 32px
+}
+.cart-notify.award {
+	background-position: -518px -390px;
+	width: 32px;
+	height: 25px
+}
+.nav > li .profile-icon {
+	position: relative;
+	display: block;
+	float: left;
+	width: auto;
+	height: 32px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+	text-indent: 5px;
+	text-transform: capitalize;
+	margin-right:15px;
+}
+.nav > li .profile-text {
+	color:#d22573;
+	margin: 0px!important;
+	border: none;
+	/* border-right: 1px solid #ccc; */
+	text-transform: capitalize;
+	 max-width: 355px;
+	 line-height: 27px;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	visibility: visible;
+  	text-overflow: ellipsis !important;
+}
+.fixedHeader .nav > li .profile-text {
+	height: 40px;
+	padding:5px 0 0 10px;
+	border-left: 1px solid #5d5d5d;
+	border-right:none;
+	color:#fff;
+	width:90px;
+}
+.nav>li .profile-icon:before {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	width: 16px;
+	height: 16px;
+	content: ''
+}
+.nav>li .profile-icon.m:before {
+	background-position: -350px -488px
+}
+.nav>li .profile-icon.f:before {
+	background-position: -350px -465px
+}
+.nav>li .profile-icon:after {
+	position: absolute;
+	top: 8px;
+	z-index: 0;
+	width: 18px;
+	height: 18px;
+	font-size: 10px;
+	content: "Hi!";
+	background: #d22573;
+	color: #fff;
+	text-indent: 4px;
+	border-radius: 100%;
+}
+.nav .profile {
+	/* right: -10px; */
+	left: 0;
+	float: left;
+	width: 180px;
+	height: auto;
+	margin: 0px 0 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 0 #ccc
+}
+.fixedHeader .nav .profile {
+	left:auto;
+	right:0px;
+	margin-top:0px;
+}
+.dropdown-menu.profile:before {
+	right: auto;
+	left:5px;
+}
+.fixedHeader .dropdown-menu.profile:before {
+	left:auto;
+	right:3px;
+}
+.nav .profile>li {
+	float: left;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #ccc
+}
+.nav .profile>li:last-child {
+	border-bottom: none
+}
+.nav .profile>li a {
+	display: block;
+	float: left;
+	width: 100%;
+	padding:0 0 0 15px;
+	font-size: 14px;
+	line-height: 28px;
+	color: #333;
+	text-indent: 30px;
+	background: none;
+	border:none;
+}
+.nav .profile>li.gender-login {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0;
+	font-size: 14px;
+	line-height: 28px;
+	color: #333;
+	text-indent: 18px;
+	background: none;
+}
+.nav .profile>li a:hover {
+	color: #c92869;
+	background: none
+}
+.nav .profile>li a:before {
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 17px;
+	margin: 7px 10px 0 0;
+	content: ''
+}
+.nav .profile>li>.my-notification:before {
+	background-position: -623px -77px;
+	height: 25px
+}
+.nav .profile>li>.my-favorites:before {
+	background-position: -93px -387px
+}
+.nav .profile>li>.my-profile:before {
+	background-position: -92px -22px
+}
+.nav .profile>li>.invite:before {
+	background-position: -92px -322px
+}
+.nav .profile>li>.credits:before {
+	background-position: -92px -173px
+}
+.nav .profile>li>.rewards:before {
+	background-position: -92px -134px
+}
+.nav .profile>li>.order:before {
+	background-position: -92px -95px
+}
+.nav .profile>li>.logout:before {
+	background-position: -92px -59px
+}
+.nav .profile>li>.my-login:before {
+	background-position: -160px -302px
+}
+.nav .profile>li:hover {
+	color: #c92869
+}
+.nav .profile>li:hover>.my-login:before {
+	background-position: -185px -302px
+}
+.nav .profile>li:hover>.my-notification:before {
+	background-position: -623px -99px;
+	height: 25px
+}
+.nav .profile>li:hover>.my-favorites:before {
+	background-position: -92px -365px
+}
+.nav .profile>li:hover>.my-profile:before {
+	background-position: -92px -41px
+}
+.nav .profile>li:hover>.invite:before {
+	background-position: -92px -260px
+}
+.nav .profile>li:hover>.rewards:before {
+	background-position: -92px -154px
+}
+.nav .profile>li:hover>.credits:before {
+	background-position: -93px -193px
+}
+.nav .profile>li:hover>.order:before {
+	background-position: -92px -114px
+}
+.nav .profile>li:hover>.logout:before {
+	background-position: -92px -77px
+}
+.logo-img {
+	height: auto;
+	/* width: 180px; */
+float: left;
+	margin: 0 0 5px 30px;
+}
+.logo-img > img {
+	width: 90%
+}
+.adds-area {
+	float: left;
+	height: 40px;
+	margin: 0 0 3px;
+	background: #fff;
+	border-radius: 3px;
+	width: 470px;
+}
+.adds-area .bx-wrapper .bx-controls-direction a {
+	bottom: 0;
+	height: 100%
+}
+.adds-area .bx-wrapper .bx-controls {
+	display: none
+}
+.adds-area:hover .bx-wrapper .bx-controls {
+	display: block
+}
+.adds-area .bx-wrapper .bx-next {
+	margin-right: 3px
+}
+.adds-area .bx-wrapper .bx-next, .adds-area .bx-wrapper .bx-prev {
+	background: none
+}
+.adds-area .bx-wrapper .bx-prev:before {
+	width: 12px;
+	height: 13px;
+	margin-top: -6px;
+	background-position: -498px -427px
+}
+.adds-area .bx-wrapper .bx-next:before {
+	width: 12px;
+	height: 13px;
+	margin-top: -6px;
+	background-position: -518px -427px
+}
+.adds-area>.offer-image {
+	float: left;
+	width: 92px;
+	height: 45px;
+	margin-top: 1px;
+	margin-right: 10px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/offer_icon.png) no-repeat
+}
+.adds-area>.offer-text {
+	float: left;
+	margin-right: 6px;
+	font-size: 13px;
+	line-height: 48px;
+	color: #b91b4e;
+	text-transform: uppercase
+}
+.adds-area>.alt {
+	color: #666;
+	text-transform: none
+}
+.adds-area>.ads-arrow {
+	float: left;
+	width: 7px;
+	height: 12px;
+	margin-top: 18px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/icon_arrow_ads.png) 0 0 no-repeat
+}
+.top-area-sticky {
+	float: right;
+	height: 25px;
+	margin: 4px 12px;
+}
+.top-area-sticky>li {
+	position: relative;
+	float: right;
+	width: auto;
+	height: auto;
+	margin: 0 10px 0 0;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.top-area-sticky>li>.search-icon-sticky {
+	position: relative;
+	z-index: 3;
+	display: block;
+	width: 18px;
+	padding: 1px 0 0 27px;
+	margin-right: -10px;
+	margin-top: 5px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 23px;
+	letter-spacing: normal;
+	color: #333;
+	text-transform: capitalize;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.top-area-sticky>li>.search-icon-sticky:hover {
+	color: #c92869
+}
+.top-area-sticky>li>.search-icon-sticky:before {
+	position: absolute;
+	display: block;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 18px;
+	background-position: -351px -441px;
+	content: ""
+}
+.top-area-sticky>li>.search-icon-sticky:hover:before {
+	background-position: -351px -441px
+}
+.top-area-sticky>li>.search-icon-sticky:active:before {
+	background-position: -351px -441px
+}
+.top-area-sticky>li>.user-icon {
+	position: relative;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: -10px
+}
+.top-area-sticky>li>.user-icon:hover {
+	color: #c92869
+}
+.top-area-sticky>li>.user-icon:before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 19px;
+	height: 18px;
+	background-position: -320px -441px;
+	content: ""
+}
+.top-area-sticky>li>.user-icon:hover:before {
+	background-position: -320px -441px
+}
+.top-area-sticky .search-field {
+	position: relative;
+	float: left;
+	margin: 0
+}
+.top-area-sticky .search-field input[type='search'] {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	width: 0;
+	height: 23px;
+	overflow: hidden;
+	font-size: 11px;
+	border: 0;
+	border-radius: 3px;
+	outline: none;
+	opacity: 0;
+ -webkit-transition: width 0.5s, padding 0.5s, margin 0.5s, border 0.5s,  opacity .5s;
+ transition: width 0.5s, padding 0.5s, margin 0.5s, border 0.5s, opacity  .5s
+}
+.top-area {
+	height: 25px;
+	margin: 4px 0 5px
+}
+.top-area > li {
+	position: relative;
+	float: left;
+	display:inline-block;
+	width: auto;
+	height: auto;
+	/* margin: 0 10px 0 0; */
+	-webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.top-area li input.search-icon {
+	position: relative;
+	z-index: 3;
+	display: block;
+	background:url(" http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png") no-repeat #d22573 -348px -439px;
+	padding:10px 5px;
+	width: 26px;
+	z-index:999;
+	right:0px; font-size:0px;
+	position:absolute;
+}
+.top-area li input.search-icon:hover {
+	color: #c92869
+}
+.top-area li input.search-icon:before {
+    background-position: -348px -441px;
+    content: "";
+    height: 18px;
+    left: 0;
+    margin:1px 4px 1px 0px;
+    position: absolute;
+    top: 2px;
+    width: 19px;
+}
+.top-area li input.search-icon:hover:before {
+	background-position: -348px -441px
+}
+.top-area li input.search-icon:active:before {
+	background-position: -348px -441px
+}
+.top-area>li>.fav-icon {
+	position: relative;
+	display: block;
+	float: left;
+	width: 74px;
+	padding: 1px 0 0 27px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 23px;
+	letter-spacing: normal;
+	color: #666;
+	text-transform: capitalize;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.top-area>li>.fav-icon:hover {
+	color: #c92869
+}
+.top-area>li>.fav-icon:before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 19px;
+	height: 18px;
+	background-position: -93px -387px;
+	content: ""
+}
+.top-area>li>.fav-icon:hover:before {
+	background-position: -92px -365px
+}
+.top-area .cart-position {
+	float: left;
+	margin: 0;
+	position: relative;
+	right: 0;
+	display: block;
+	position: absolute;
+	margin-right: 220px;
+	margin-top: -7px;
+}
+.top-area .search-field {
+	position: relative;
+	float: right;
+	margin: 0
+}
+.top-area .search-field input {
+	width: 180px;
+	border: 1px solid #d22573;
+	float: left;
+	height: 23px;
+	padding: 0 5px
+}
+.top-area .search-field input[type='search'] {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	height: 23px;
+	overflow: hidden;
+	font-size: 11px;
+	border: 0;
+	border-radius: 3px;
+	outline: none;
+	width: 200px;
+	padding-left: 5px;
+	border: 1px solid #d22573
+}
+.search-expanded>li {
+	margin-left: 30px;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.search-expanded>li>.fav-icon {
+	width: 0;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.search-expanded>li>.search-icon {
+	width: 0;
+	overflow: hidden;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.search-expanded .search-field {
+	width: 0;
+	margin: 0
+}
+.search-expanded>.search-field>input[type='search'] {
+	right: 0;
+	width: 200px;
+	padding-left: 10px;
+	text-indent: -999px;
+	border: 1px solid #b9bcbe;
+	opacity: 1;
+ -webkit-transition: width 0.5s, padding 0.5s, margin 0.5s, border 0.5s,  opacity .5s;
+ transition: width 0.5s, padding 0.5s, margin 0.5s, border 0.5s, opacity  .5s
+}
+.search-expanded>li>.search-icon-sticky {
+	width: 0;
+	overflow: hidden;
+ -webkit-transition: margin 0.5s, width .5s;
+ transition: margin 0.5s, width .5s
+}
+.search-expanded .search-field {
+	width: 0;
+	margin: 0
+}
+.search-expanded>.search-field>input[type='search'] {
+	right: 0;
+	width: 200px;
+	padding-left: 10px;
+	text-indent: -999px;
+	border: 1px solid #d22573;
+	opacity: 1;
+ -webkit-transition: width 0.5s, padding 0.5s, margin 0.5s, border 0.5s,  opacity .5s;
+ transition: width 0.5s, padding 0.5s, margin 0.5s, border 0.5s, opacity  .5s
+}
+.search-dropdown {
+	right: -1px;
+	left: auto;
+	float: left;
+	width: 285px;
+	height: 60px;
+	padding: 0;
+	margin-top: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px 0 #ccc
+}
+.search-dropdown>.search-inner {
+	float: left;
+	width: 100%;
+	height: 100%
+}
+.search-box {
+	width: 262px;
+	height: 35px;
+	padding-left: 10px;
+	margin: 13px 0 12px 10px;
+	background: none;
+	border: 1px solid #b9bcbe !important;
+	border-radius: 5px;
+	outline: none
+}
+.search-sub {
+	position: absolute;
+	width: 20px;
+	height: 27px;
+	padding: 0;
+	margin: 17px 0 0 -30px;
+	cursor: pointer;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/submit_btn.png) 0 5px no-repeat;
+	border: none;
+	outline: none;
+	box-shadow: none
+}
+.sep {
+	float: left;
+	width: 2px;
+	height: 38px;
+	padding: 0;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/bg_sep.png) repeat-y
+}
+.bag-out {
+	float: left;
+	position: relative;
+	width: 112px;
+	height:30px;
+	margin-right: 0px;
+	display:block;
+}
+
+.bag-out > .bag {
+	display: block;
+	float: right;
+	width: 18px;
+	height: 26px;
+	/* margin: 2px 0px 0; */
+	margin-top:7px;
+	background-position: -592px -306px
+}
+.mobile-bag-out {
+	float: right;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin-right: 0;
+}
+.mobile-bag-out>.bag {
+	display: block;
+	float: right;
+	width: 22px;
+	height: 26px;
+	margin: 5px 0px 0;
+	background-position: -592px -306px
+}
+.bag-out > .bag-time {
+	float: left;
+	padding-top: 15px;
+	margin-right: 10px;
+	font-size: 11px;
+	line-height: 11px;
+	letter-spacing: 1px;
+	color: #d22573;
+	text-transform: capitalize
+}
+.blinkthis {
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite
+}
+/* @
+-moz-keyframes blinker { 0% {
+	color: #fff
+}
+
+50%
+{
+color
+:red
+
+
+}
+100%
+{
+color
+:
+#fff
+
+
+}
+}
+@
+-webkit-keyframes blinker { 0% {
+	color: #fff
+}
+
+50%
+{
+color
+:red
+
+
+}
+100%
+{
+color
+:
+#fff
+
+
+}
+}
+@
+keyframes blinker { 0% {
+	color: #fff
+}
+
+50%
+{
+color
+:red
+
+
+}
+100%
+{
+color
+:
+#fff
+
+
+}
+} */
+#cartLightBox:hover ul {
+  display: block !important;
+}
+.cart-dropdown {
+	left: auto;
+	float: left;
+	width: 450px;
+	padding: 0;
+	margin-top:30px;
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 1px 2px 0 #ccc
+}
+.fixedHeader .cart-dropdown{
+	margin-top:40px;
+}
+.fixedHeader .bag-out > .bag-time{ padding-top:9px;}
+.cart-dropdown:after {
+	display: block;
+	width: 100%;
+	height: 8px;
+	margin-top: -9px;
+	content: ""
+}
+.cartddwn-btm {
+	float: left;
+	width: 100%;
+	max-height: 300px;
+	padding-top: 10px;
+	background: #fff;
+	border-top: 1px solid #f7f7f7;
+	overflow: hidden
+}
+.thumbnail {
+	float: left;
+	width: 68px;
+	height: 80px;
+	margin-left: 10px;
+	border: 1px solid #bbb;
+	border-radius: none
+}
+.thumbnail>img {
+	float: left;
+	width: 100%;
+	height: 100%
+}
+.cart-prod {
+	float: left;
+	width: 36%;
+	height: auto;
+	padding-left: 10px
+}
+.cart-prodname {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #333;
+	text-transform: capitalize
+}
+.cart-prod .prod-qty {
+	float: left;
+	padding: 0 6px;
+	margin-top: 0px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #333;
+	text-transform: capitalize;
+	border-right: 1px solid #ccc
+}
+.prod-qty.selectable {
+	border: 1px solid #ccc;
+	display: none;
+	height: 20px;
+}
+.cart-shipicon {
+	display: block;
+	float: left;
+	width: 23px;
+	height: 16px;
+	margin: 3px 0 0 5px
+}
+.cart-shipicon.international {
+	background-position: -92px -301px
+}
+.cart-shipicon.express {
+	background-position: -269px -190px;
+	margin-top: 5px;
+	width: 30px
+}
+.cart-shipicon.regular {
+	background-position: -280px -252px;
+	margin-top: 5px;
+	width: 16px
+}
+.cart-det {
+	display: block;
+	float: left;
+	width: 43%;
+	height: auto
+}
+.cartprod-timer {
+	float: left;
+	width: auto;
+	height: auto;
+	padding: 2px 0 3px;
+	font-size: 11px;
+	line-height: 18px;
+	color: #333;
+	text-indent: 25px;
+	text-transform: lowercase
+}
+.cartprod-timer:before {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: -25px;
+	background-position: -93px -216px;
+	content: ''
+}
+.edit-cart {
+	display: block;
+	float: right;
+	width: 11px;
+	height: 11px;
+	margin: 22px 10px 0 5px;
+	background-position: -120px -245px
+}
+.edit-cart:hover {
+	background-position: -120px -258px
+}
+.update-cart {
+	display: block;
+	float: right;
+	width: 10px;
+	height: 14px;
+	margin: 20px 10px 0 5px;
+	background-position: -283px -276px
+}
+.update-cart:hover {
+	background-position: -283px -294px
+}
+.cart-disprice {
+	float: right;
+	margin-top: 3px;
+	clear: both;
+	font-size: 12px;
+	line-height: 15px;
+	color: #666;
+	text-decoration: line-through
+}
+.cart-disprice-alt {
+	margin-top: 3px
+}
+.cart-dp-price {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 15px;
+	color: #333
+}
+.cart-dp-price-alt {
+	float: right;
+	margin-top: 2px;
+	margin-left: 10px;
+	clear: both;
+	font-size: 14px;
+	line-height: 15px;
+	color: #333
+}
+.cart-btm-sep {
+	float: left;
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+	border-top: 1px solid #f7f7f7
+}
+.checkout-btn-area {
+	float: left;
+	width: 100%;
+	height: auto
+}
+.popcart-btnn {
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 10px
+}
+.btn-cartpop {
+	display: block;
+	float: left;
+	height: 35px;
+	padding: 0 30px;
+	margin: 10px 0 10px 10px;
+	font-size: 14px;
+	line-height: 35px;
+	color: #fff;
+	text-transform: capitalize;
+	background: #d22573;
+	border-radius: 6px;
+	border: none
+}
+.btn-cartpop:hover {
+	color: #fff;
+	opacity: .9
+}
+.savngs-area {
+	float: right;
+	width: auto;
+	height: auto;
+	margin-right: 20px
+}
+.savngs-area:after {
+	display: block;
+	height: 0;
+	clear: both;
+	content: ""
+}
+.savngs-label {
+	display: block;
+	float: left;
+	width: 80px;
+	margin-top: 8px;
+	clear: both;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #333;
+	text-align: right;
+	text-transform: capitalize
+}
+.savings-info {
+	float: left;
+	margin: 8px 0 0 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #333
+}
+.cartddwn-top {
+	float: left;
+	width: 100%;
+	height: auto
+}
+.cartddwn-head {
+	float: left;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333
+}
+.cartddwn-timer {
+	display: block;
+	float: right;
+	width: auto;
+	height: auto;
+	padding: 4px 10px 4px 0;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 15px;
+	color: #333;
+	text-indent: 25px;
+	text-transform: lowercase
+}
+.cartddwn-timer:before {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: -25px;
+	background-position: -93px -216px;
+	content: ''
+}
+footer {
+	width: 100%;
+	height: auto;
+	min-width: 960px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #333;
+	background: #ddd url( http://cdn1.fashionandyou.com/fny-static/app-images/bg_filter2.png)
+}
+footer a {
+	color: #6e6e6e
+}
+.payment-secure {
+	width: 100%;
+	border-top: #ccc solid 1px;
+	float: left;
+	margin-top: 28px
+}
+.payment-secure li {
+	color: #333;
+	background-position: -367px -504px;
+	height: 30px
+}
+.payment-secure li.paymenticon {
+	background-position: -367px -504px;
+	height: 30px;
+	margin-left: 55px
+}
+.payment-icons-outer {
+	width: 960px;
+	margin: 0 auto;
+	border-bottom: 1px #dbdbdb solid;
+	box-shadow: 0 1px #f4f4f4
+}
+.payment-icons-outer .payment-icons li, .payment-icons-outer .security-icons li {
+	display: inline-block;
+	float: left;
+	height: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 20px
+}
+.payment-icons-outer .payment-icons li span, .payment-icons-outer .security-icons li span {
+	float: left;
+	padding-top: 2px;
+	padding-left: 5px;
+	font-size: 16px;
+	color: #333;
+	border: none
+}
+.payment-icons-outer .payment-icons li:first-child, .payment-icons-outer .security-icons li:first-child {
+	border: none
+}
+.payment-icons-outer .payment-icons li a, .payment-icons-outer .security-icons li a {
+	display: inline-block;
+	float: left;
+	height: 20px;
+	margin-top: 5px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png)
+}
+.payment-icons-outer .payment-icons li .payby-mastercard, .payment-icons-outer .security-icons li .payby-mastercard {
+	width: 32px;
+	height: 20px;
+	background-position: 0 -182px
+}
+.payment-icons-outer .payment-icons li .payby-visacard, .payment-icons-outer .security-icons li .payby-visacard {
+	width: 65px;
+	height: 20px;
+	background-position: 0 -128px
+}
+.payment-icons-outer .payment-icons li .payby-netbanking, .payment-icons-outer .security-icons li .payby-netbanking {
+	width: 109px;
+	height: 19px;
+	background-position: -92px -465px
+}
+.payment-icons-outer .payment-icons li .payby-paypal, .payment-icons-outer .security-icons li .payby-paypal {
+	width: 91px;
+	height: 24px;
+	background-position: 0 -156px
+}
+.payment-icons-outer .payment-icons li .payby-cod, .payment-icons-outer .security-icons li .payby-cod {
+	width: 71px;
+	height: 22px;
+	background-position: 0 -209px
+}
+.payment-icons-outer .payment-icons .cod {
+	padding-left: 0;
+	border-right: 0
+}
+.payment-icons-outer .payment-icons .visa {
+	border-left: 0
+}
+.payment-icons-outer .security-icons {
+	float: right;
+	padding: 5px 0 5px 5px
+}
+.payment-icons-outer .security-icons li {
+	display: inline-block;
+	height: auto;
+	margin-top: 0;
+	border: none
+}
+.payment-icons-outer .security-icons li a {
+	display: block
+}
+.payment-icons-outer .security-icons li .verisign {
+	width: 94px;
+	height: 49px;
+	margin-right: 5px;
+	background-position: -93px -407px
+}
+.payment-icons-outer .security-icons li .safesecure {
+	width: 125px;
+	height: 45px;
+	margin-right: 22px;
+	background-position: -89px -493px
+}
+.payment-icons-outer .payment-icons li.paymenticon {
+	background-position: -367px -504px;
+	width: 356px;
+	height: 30px
+}
+.quick-shop-links-outer {
+	width: 100%;
+	background: #efefef;
+	border-top: 1px #dbdbdb solid;
+	box-shadow: 0 1px #f4f4f4
+}
+.quick-shop-links {
+	width: 940px;
+	margin: 0 auto
+}
+.footer-category-names, .footer-brand-names {
+	padding-top: 14px;
+	padding-bottom: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #666;
+	text-align: left
+}
+.footer-brand-names ul {
+	margin-left: 20px;
+}
+.footer-brand-names ul li {
+	list-style: none;
+	display: inline-block;
+	/*padding: 0 6px;*/
+}
+.footer-category-names h5, .footer-brand-names h5 {
+	font-size: 15px;
+	font-family:"centurygothicbold";
+	margin-bottom: 10px;
+	padding: 0;
+}
+.footer-brand-names h5 {
+	margin-left: 25px;
+}
+.footer-brand-names p {
+	float: left;
+	margin-left: 20px
+}
+.footer-category-names p {
+	margin: 0 20px 14px 0
+}
+.footer-category-names p a, .footer-brand-names a {
+	padding: 4px;
+	margin-left: 0;
+	white-space: nowrap;
+	position:relative;
+}
+.footer-category-names p a:after {
+	content: '|';
+	position: absolute;
+	right:-6px;
+	top: 0px;
+	color:#666;
+}
+.footer-category-names p a:last-child:after {
+	content: '';
+	display: none;
+}
+.footer-category-names a:hover, .footer-brand-names a:hover {
+	color: #fff;
+	background: #6e6e6e
+}
+.footer-category-names {
+	box-shadow: 12px 0 0 -11px #dbdbdb, 13px 0 0 -11px #f4f4f4
+}
+.footer-category-names p strong, .footer-brand-names p strong {
+	font-family: 'centurygothicbold';
+}
+.info-links-outer {
+	width: 100%;
+	padding: 10px 0 20px;
+	background: #efefef;
+	box-shadow: 0 1px #f4f4f4
+}
+.info-links {
+	width: 940px;
+	padding: 10px 0;
+	margin: 0 auto
+}
+.info-links-col {
+	width: 225px;
+	float: left
+}
+.info-links-col li {
+	position: relative;
+	line-height: 20px
+}
+.info-links-col li:before {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background-position: -135px -308px;
+	content: ''
+}
+.info-links-col li:hover:before {
+	background-position: -135px -321px
+}
+.info-links-col li a {
+	padding-top: 1px;
+	padding-left: 10px;
+	font-size: 12px
+}
+.info-links-col li:first-child {
+	display: block;
+	width: 100%;
+	margin-bottom: 12px
+}
+.info-links-col li:first-child:before {
+	background: none
+}
+.info-links-col h5 {
+	display: block;
+	width: 100%;
+	clear: both;
+	font-family: 'centurygothicbold';
+	font-size: 12px;
+	color: #333;
+	text-transform: uppercase
+}
+.info-links-left {
+	float: left
+}
+.info-links-right {
+	float: left;
+	padding-left: 33%
+}
+.copyrightbar {
+	width: 100%;
+	padding: 20px 0
+}
+.copyrighttext {
+	color: #6e6e6e;
+	text-align: center
+}
+.social-icons li {
+	background: none
+}
+.social-icons li:before {
+	background: none
+}
+.info-links-col .social {
+	margin-top: 4px
+}
+.info-links-col .social>li {
+	display: inline-block;
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	background: none
+}
+.info-links-col .social>li:before {
+	display: none
+}
+.info-links-col .social a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) 0 0 no-repeat
+}
+.info-links-col .social .footer-gp {
+	background-position: -622px -130px
+}
+.info-links-col .social .footer-pt {
+	background-position: -622px -162px
+}
+.info-links-col .social .footer-fb {
+	background-position: -39px -56px
+}
+.info-links-col .social .footer-tw {
+	background-position: -39px -87px
+}
+.info-links-col .social .footer-yt {
+	background-position: 0 -240px
+}
+.info-links-col .social .footer-bl {
+	background-position: -39px -24px
+}
+.fb-likes {
+	/* height:64px; */
+	width: 50%;
+	margin-top: 0;
+	float: left
+}
+.page-heading {
+	float: left;
+	padding: 0 0 0 0px;
+	margin: 0;
+	font-size: 18px;
+	line-height: 18px;
+	color: #666;
+	text-transform: capitalize;
+}
+.page-heading>span {
+	padding-left: 5px;
+	color: #c92869
+}
+.button-small {
+	display: block;
+	width: 25px;
+	height: 25px
+}
+.button-small:hover {
+	opacity: .9
+}
+.button-small .view-more-icon {
+	float: left;
+	width: 22px;
+	height: 22px;
+	margin: 5px;
+	background-position: -653px -193px
+}
+.button-small .view-more-icon:hover {
+	background-position: -653px -223px
+}
+.button-small .cart-icon {
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 5px;
+	background-position: -120px -218px
+}
+.tabs-area {
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-bottom: 8px
+}
+.tabs-area ul li {
+	display: block;
+	float: left;
+	width: auto;
+	height: 32px;
+	margin-right: 3px
+}
+.tabs-area ul li .deselected {
+	display: block;
+	float: left;
+	padding: 0 13px;
+	margin-top: 2px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #666;
+	text-align: center;
+	text-transform: capitalize;
+	background: #f1f2f2;
+	border-bottom: 0
+}
+.tabs-area ul .selected a {
+	display: block;
+	float: left;
+	padding: 0 17px;
+	margin-top: 2px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+	background: #cd4584;
+	border: 1px solid #f1f2f2;
+	border-bottom: none
+}
+.tab-infoarea {
+	display: none;
+	float: left;
+	width: 100%;
+	height: 150px
+}
+.tab-infoarea input[type="text"] {
+	border: #ccc solid 1px;
+	width: 250px;
+	padding: 0 10px;
+	border-radius: 5px;
+	height: 25px
+}
+.tab-infoarea select {
+	border: #ccc solid 1px;
+	width: 120px;
+	padding: 0 10px;
+	border-radius: 5px;
+	height: 25px
+}
+.tab-infoarea input[type="submit"] {
+	border: #ccc solid 1px;
+	width: 80px;
+	padding: 0 10px;
+	border-radius: 5px;
+	background: #555;
+	color: #fff;
+	height: 25px
+}
+.tab-infoarea input[type="submit"]:hover {
+	background: #cd4584
+}
+.tab-infoarea label {
+	padding-left: 20px;
+	font-weight: 400;
+	font-size: 13px;
+	color: #414141;
+	width: 150px
+}
+.information {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 15px 0 20px;
+	border-bottom: 1px solid #f1f2f2
+}
+.size-chart-outer {
+	display: none;
+	width: 850px;
+	height: 460px;
+	padding: 8px;
+	overflow: hidden;
+	border-radius: 5px
+}
+.size-chart-outer .size-chart-inner {
+	width: 834px;
+	height: 445px;
+	padding: 15px;
+	background: #fff
+}
+.size-chart-outer .header {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee
+}
+.size-chart-outer h2 {
+	float: left;
+	font-size: 18px;
+	color: #333
+}
+.size-chart-outer .size-chart {
+	margin-top: 15px
+}
+.size-chart-outer .size-chart .image-outer {
+	float: left;
+	width: 320px;
+	height: 320px;
+	border: 1px solid #eee
+}
+.size-chart-outer .size-chart .image-outer img {
+	width: 265px;
+	height: 261px;
+	margin: 18px 28px 0
+}
+.size-chart-outer .size-chart .image-outer .text {
+	margin-top: 23px;
+	font-size: 11px;
+	line-height: 11px;
+	color: #666;
+	text-align: center
+}
+.size-chart-outer .size-chart .image-outer .text:hover {
+	text-decoration: none;
+	border: none
+}
+.size-chart-outer .size-chart .detail-outer {
+	float: left;
+	width: 420px;
+	margin-left: 10px
+}
+.size-chart-outer .size-tabs {
+	border-bottom: 1px solid #eee
+}
+.size-chart-outer .size-tabs li {
+	display: inline-block;
+	width: 172px;
+	margin-left: 6px;
+	text-align: center;
+	background: #f4f4f4;
+	border: 1px solid #f4f4f4;
+	border-bottom: 0
+}
+.size-chart-outer .size-tabs li a {
+	display: block;
+	padding: 14px 0 12px;
+	font-size: 14px;
+	color: #333
+}
+.size-chart-outer .size-tabs li:first-child {
+	margin-left: 33px
+}
+.size-chart-outer .size-tabs .selected-tab {
+	margin-bottom: -2px;
+	background: #fff;
+	border-bottom: 1px solid #fff
+}
+.size-chart-outer .size-tabs-content .brand-select, .size-chart-outer .size-tabs-content .size-select {
+	width: 390px;
+	padding: 25px 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+	border-bottom: 1px solid #f4f4f4
+}
+.size-chart-outer .size-tabs-content .brand-select .select-wrapper, .size-chart-outer .size-tabs-content .size-select .select-wrapper {
+	z-index: 1;
+	width: 100px;
+	height: 28px
+}
+.size-chart-outer .size-tabs-content .brand-select .select-wrapper .selectbox-wrapper, .size-chart-outer .size-tabs-content .size-select .select-wrapper .selectbox-wrapper {
+	border-top-right-radius: 0
+}
+.size-chart-outer .size-tabs-content .size-select {
+	padding-bottom: 0;
+	border-bottom: 0
+}
+.size-chart-outer .size-tabs-content p {
+	padding-bottom: 20px;
+	font-size: 12px;
+	color: #8a8a8a
+}
+.size-chart-outer .size-tabs-content label {
+	width: 180px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #333
+}
+.size-chart-outer .size-tabs-content label select {
+	float: left;
+	width: 100%;
+	height: 26px;
+	padding: 2px 0 5px;
+	margin-top: 10px;
+	line-height: 25px;
+	border: 1px solid #ccc
+}
+.size-chart-outer .size-tabs-content label:last-child {
+	width: 80px;
+	margin-left: 75px
+}
+.size-chart-outer .size-tabs-content .size-tile {
+	margin: 0 auto
+}
+.size-chart-outer .size-tabs-content .size-tile li {
+	display: block;
+	float: left;
+	width: 35px;
+	height: 30px;
+	margin-right: 5px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #666;
+	text-align: center;
+	text-transform: uppercase;
+	background: #f1f2f2
+}
+.size-chart-outer .size-tabs-content .size-tile li a {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+.size-chart-outer .size-tabs-content .size-tile .size-not-avail {
+	color: #e0e0e0;
+	background: #fbfbfb
+}
+.size-select .button-big {
+	margin: 15px 0 0 110px
+}
+.size-select .size-tile {
+	float: left;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	padding-left: 35px;
+	border-bottom: 1px dashed #d1d1d1
+}
+.button-big {
+	float: left;
+	width: auto;
+	height: 40px;
+	padding: 0 16px;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	background: #212121
+}
+.button-big:hover {
+	color: #fff
+}
+.text-field, .password-field {
+	padding: 5px 10px;
+	font-size: 11px;
+	line-height: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px
+}
+
+.login-popup.forgot.popup{
+	padding:0 0 30px 0;
+}
+.forgot-area .control-group .controls {
+    padding: 10px 0 0 0;
+}
+.login-popup {
+	position: absolute;
+	top: 33px;
+	left: -10px;
+	z-index: 9999;
+	display: block;
+	width: 413px;
+	height: auto;
+	padding-bottom: 10px;
+	background: #fff;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px 0 #999
+}
+.login-popup:before {
+	position: absolute;
+	top: -20px;
+	left: 14px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #ccc;
+	content: ''
+}
+.login-popup:after {
+	position: absolute;
+	top: -20px;
+	right: 0;
+	width: 50%;
+	border: 10px solid transparent;
+	content: ''
+}
+.fixedHeader .login-popup {
+	left:auto;
+	right:5px;
+	top:38px;
+}
+.fixedHeader .login-popup:before {
+	left:auto;
+	right:14px;
+}
+.cartddwn-cross {
+	margin-right: 0px;
+	float: right;
+	right: 2px;
+	top: 2px;
+	width: 96%;
+	position: absolute;
+}
+.cartddwn-cross:after {
+	margin-top: 3px;
+	display: block;
+	content: '';
+	height: 20px;
+	width: 20px;
+	right:0;
+	position:absolute;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -395px -123px no-repeat;
+}
+.header-top {
+	float: left;
+	width: 96%;
+	height: 32px;
+	margin: 0 10px;
+	border-bottom: 1px solid #edecec
+}
+.header-top:after {
+	margin-top: 3px;
+	margin-right: -6px;
+	display: block;
+	content: '';
+	height: 20px;
+	width: 20px;
+	float: right;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -395px -123px no-repeat;
+}
+.header-top span {
+	float: left;
+	font-size: 14px;
+	line-height: 32px;
+	color: #333;
+	text-indent: 13px
+}
+.forgot-area {
+	float: none;
+	clear: both;
+	padding: 10px 25px
+}
+.forgot-area p {
+	margin: 0 0 10px;
+	display: block;
+	clear: both
+}
+.forgot-area .text-field {
+	width: 200px;
+	float: left;
+	margin: 0 10px 0 0
+}
+.forgot-area .btn-cartpop {
+	height: auto;
+	padding: 5px 10px;
+	line-height: 16px;
+	margin: 0
+}
+.success-login {
+	text-align: center;
+	padding: 20px 0;
+	clear: both;
+	font-size: 15px;
+	color: #b03971;
+}
+.register-area {
+	float: left;
+	height: auto;
+	padding: 0 20px
+}
+.register-area .text-field, .register-area .password-field {
+	float: left;
+	width: 150px;
+	margin-top: 10px;
+	margin-right: 90px
+}
+.register-area input[type="radio"] {
+	margin-top: 10px
+}
+.register-area .radio+label {
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 11px
+}
+.register-area .btn-cartpop {
+	padding: 0 10px;
+	margin: 15px 0 10px;
+}
+.register-area .btn-cartpop:focus {
+	background: #000
+}
+.register-area .social-icons-signup {
+	float: left;
+	width: 95%;
+	height: 140px;
+	padding: 0 0 0 20px;
+	margin: 10px 0;
+	border-left: 1px solid #edecec
+}
+.register-area .social-icons-signup li {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 5px 15px 10px 0
+}
+.register-area .social-icons-signup li a {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 32px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.register-area .social-icons-signup li .fb-signup {
+	background-position: -314px -264px
+}
+.register-area .social-icons-signup li .tw-signup {
+	background-position: -314px -301px
+}
+.register-area .social-icons-signup li .ldin-signup {
+	background-position: -314px -337px
+}
+.register-area .social-icons-signup li .gm-signup {
+	background-position: -314px -373px
+}
+.register-area .existing-user {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 5px 0 0;
+	font-size: 12px;
+	line-height: 12px;
+	color: #666
+}
+.register-area .login-link {
+	padding-top: 8px;
+	color: #d22573
+}
+.register-area .login-link:hover {
+	text-decoration: underline
+}
+.register-area .fp-link {
+	font-size: 12px;
+	color: #d22573;
+	float: left;
+	line-height: 25px;
+	padding-left: 10px;
+	margin-top: 20px
+}
+.register-area .fp-link:hover {
+	text-decoration: underline
+}
+.service-popup {
+	width: 450px
+}
+.service-popup p {
+	font-size: 12px;
+	line-height: 17px;
+	color: #333
+}
+.service-popup .pincode {
+	float: left;
+	width: 111px
+}
+.service-popup .btn-cartpop {
+	height: 25px;
+	padding: 0 10px;
+	line-height: 25px
+}
+.service-popup .message {
+	position: relative;
+	width: 130px;
+	margin-top: 10px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #fff;
+	text-align: left;
+	text-indent: 20px;
+	background: #99aa28
+}
+.service-popup .message:before {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 12px;
+	height: 10px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -72px -76px no-repeat;
+	content: ""
+}
+.service-popup .error-message {
+	width: 163px;
+	background: red
+}
+.service-popup .error-message:before {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -71px -90px no-repeat
+}
+.service-popup table {
+	margin-top: 10px
+}
+.service-popup table th, .service-popup table td {
+	width: 95px;
+	color: #333;
+	text-align: center;
+	border: 1px solid #dfdfdf
+}
+.service-popup table th {
+	padding: 10px 0;
+	font-size: 14px;
+	font-weight: 400;
+	background: #f7f7f7
+}
+.service-popup table td {
+	font-size: 11px
+}
+.service-popup table .empty-cell {
+	background: transparent;
+	border: 0
+}
+.search-popup {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 9999;
+	display: none;
+	width: 450px;
+	height: auto;
+	background: #fff;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px 0 #999
+}
+.search-popup:before {
+	position: absolute;
+	top: -20px;
+	right: 20px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #ccc;
+	content: "";
+	opacity: .7
+}
+.search-popup:after {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	border: 5px solid transparent;
+	content: ""
+}
+.search-popup .search-row {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 0 2%;
+	background: #fcfcfc;
+	border-bottom: 1px solid #edecec
+}
+.search-popup .search-row:last-child {
+	padding-bottom: 5%;
+	border: none
+}
+.search-popup .search-row:first-child {
+	padding-top: 2%
+}
+.search-popup .search-row .search-options {
+	float: left;
+	width: 100%;
+	height: auto
+}
+.search-popup .search-row .search-options span {
+	float: left;
+	width: 100%;
+	padding: 20px 10px 5px 0;
+	font-family: 'centurygothicbold';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #666;
+	text-align: right;
+	text-transform: uppercase
+}
+.search-popup .search-row .search-options a {
+	float: left;
+	width: 100%;
+	padding-right: 10px;
+	font-size: 11px;
+	line-height: 11px;
+	color: #c92869;
+	text-align: right
+}
+.search-popup .search-row .search-options a:hover {
+	text-decoration: underline
+}
+.search-popup .search-row .search-results {
+	float: left;
+	width: 100%;
+	height: auto;
+	background: #fff
+}
+.search-popup .search-row .search-results .search-image {
+	float: left;
+	width: 56px;
+	height: 56px;
+	margin: 10px;
+	border: 1px solid #ccc
+}
+.search-popup .search-row .search-results .search-image img {
+	float: left;
+	width: 100%;
+	height: 100%
+}
+.search-popup .search-row .search-results .search-prod-details {
+	float: left;
+	width: 150px;
+	height: auto
+}
+.search-popup .search-row .search-results .search-prod-details .search-prod-name {
+	float: left;
+	width: 100%;
+	padding: 25px 0 7px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #666
+}
+.search-popup .search-row .search-results .search-prod-details .discount-perc {
+	float: left;
+	font-size: 11px;
+	line-height: 11px;
+	color: #c92869
+}
+.search-popup .search-row .search-results .search-prod-price {
+	float: right;
+	width: auto;
+	height: auto
+}
+.search-popup .search-row .search-results .search-prod-price .new-price {
+	float: left;
+	padding: 25px 10px 0 0;
+	padding-right: 10px;
+	font-family: 'centurygothicbold';
+	font-size: 14px;
+	line-height: 14px;
+	color: #333
+}
+.search-popup .search-row .more-search-opt {
+	float: left;
+	width: 100%;
+	height: 33px;
+	font-size: 12px;
+	line-height: 33px;
+	color: #666;
+	text-indent: 10px;
+	border-bottom: 1px solid #edecec
+}
+.search-popup .search-row .more-search-opt:hover {
+	color: #c92869;
+	text-decoration: underline
+}
+#feedbackpop {
+	position: fixed;
+	z-index: 999999999;
+	bottom: 80px;
+	right: 0
+}
+#feedbackpop .feedbackpop_form .errormsg {
+	color: #fff !important;
+	margin: 0px 0px 6px 0px;
+}
+#feedbackpop .feedbackpop_form .statusmsg {
+	clear: left;
+	font-size: 12px;
+}
+#feedbackpop .feedbackpop_form .green {
+	color: #1a2;
+	position:relative;
+	padding:0 0 0 20px;
+	display:block;
+}
+#feedbackpop .feedbackpop_form .text {
+	width:100%;
+}
+#feedbackpop .feedbackpop_form .green:before {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -541px -79px no-repeat;
+	content:"";
+	width:25px;
+	display:block;
+	position:absolute;
+	height:25px;
+	left:0;
+}
+#feedbackpop #feedback_but {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/feedback.png) no-repeat;
+	width: 28px;
+	height: 130px;
+	cursor: pointer;
+	float: left;
+	position: absolute;
+	z-index: 9;
+	left: -25px;
+	bottom: 30px
+}
+#feedbackpop .feedbackpop_form {
+	margin: 0;
+	padding: 15px;
+	width: 262px;
+	background: #464646;
+	float: left;
+	display: block;
+	border: 3px solid #464646;
+	border-right: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	display: none
+}
+#feedbackpop .feedbackpop_form label {
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+	margin: 0 0 2px;
+	white-space: nowrap;
+	float: none;
+	clear: both
+}
+#feedbackpop .feedbackpop_form .input-field, #feedbackpop .feedbackpop_form textarea, #feedbackpop .feedbackpop_form .select-wrapper, #feedbackpop .feedbackpop_form .select-wrapper .selectbox {
+	width: 228px;
+	height: 25px;
+	padding-left: 7px;
+	margin: 0 0 8px;
+	font-size: 11px;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 3px
+}
+#feedbackpop .feedbackpop_form textarea {
+	height: 74px;
+	padding-top: 7px;
+	resize: vertical
+}
+#feedbackpop .feedbackpop_form .select-wrapper:before {
+	z-index: 1
+}
+#feedbackpop .feedbackpop_form .select-wrapper {
+	display: block;
+	float: left;
+	padding-left: 0;
+	margin-right: 0;
+	border: 0
+}
+#feedbackpop .feedbackpop_form .selectbox-wrapper {
+	margin-top: -8px
+}
+#feedbackpop .feedbackpop_form .select-wrapper .selectbox {
+	margin-top: 0;
+	text-indent: 0;
+	background: #fff
+}
+#feedbackpop .feedbackpop_form .select-wrapper .selectbox-wrapper {
+	width: 100%;
+	border-top-right-radius: 0
+}
+#feedbackpop .feedbackpop_form .select-wrapper .selectbox-wrapper ul li {
+	padding: 0
+}
+#feedbackpop .feedbackpop_form input.go {
+	background: #d22573;
+	padding: 5px 20px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	color: #fff;
+	font-size: 15px;
+	margin: 5px 0 0;
+	border: 1px solid #CCC
+}
+.subnav {
+	clear: both;
+	border-bottom: 1px solid #d22573;
+	margin: 0 0 12px
+}
+.subnav ul {
+	margin: 0;
+	padding: 0
+}
+.subnav ul li {
+	float: left;
+	list-style-type: none;
+	font-size: 14px
+}
+.subnav ul li a {
+	color: #696969;
+	text-decoration: none;
+	display: block;
+	padding: 6px 15px;
+}
+.subnav ul li a:hover, .subnav ul li a.active {
+	background: #c92869;
+	color: #fff
+}
+.sidebar-common {
+	height: 80%;
+	float: left;
+	position: absolute
+}
+#common-left {
+	float: left;
+	background: #c92869;
+	border: 2px solid #fff;
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888
+}
+#common-left h3 {
+	margin: 0 0 7px;
+	display: block;
+	padding: 0 0 7px;
+	border-bottom: 1px dashed #fff;
+	color: #fff;
+	font-size: 18px;
+}
+#common-left ul {
+	margin: 0;
+	padding: 0
+}
+#common-left ul li {
+	list-style-type: none;
+	font-size: 13px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/arrow2.png) 0 6px no-repeat;
+	padding: 0 0 0 13px;
+	margin: 0 0 4px
+}
+#common-left ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.errormsg {
+	color: red;
+	font-size: 11px;
+	margin: 5px 0 -5px;
+	position: relative;
+	text-decoration: none;
+	font-family: 'centurygothicbold';
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/caution1.png) no-repeat;
+	padding: 0 0 0 16px
+}
+.forgot-area .errormsg {
+	margin: 5px 0 5px 41px
+}
+#responsivemenu {
+	float: left;
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+	display: none
+}
+#responsivemenu .menuicon {
+	clear: both;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	float: left
+}
+#responsivemenu .menuicon span {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -321px -417px no-repeat;
+	display: block;
+	width: 19px;
+	height: 17px;
+	float: left;
+	margin: 2px 10px 0 0
+}
+#responsivemenu .menulisting {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	width: 100%;
+	background: #333;
+	margin: 0 0 0 -10px;
+	padding: 0 0 10px;
+	z-index: 9999;
+	display: none
+}
+#responsivemenu .menulisting ul {
+	margin: 0 10px;
+	padding: 0
+}
+#responsivemenu .menulisting ul li {
+	display: block;
+	clear: both;
+	border-top: 1px dashed #666;
+	font-size: 14px
+}
+#responsivemenu .menulisting ul li a {
+	color: #999;
+	text-decoration: none;
+	padding: 5px 5px 5px 28px;
+	display: block
+}
+#responsivemenu .menulisting ul li a:hover {
+	background: #494949
+}
+.callus {
+	float: right;
+	color: #666;
+	padding: 0 15px;
+	font-size: 15px;
+}
+.callus span {
+	line-height: 30px;
+	color: #666;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -700px -15px;
+	height: 30px;
+	width: 20px;
+	padding-left: 25px;
+}
+.mailus {
+	float: right;
+	margin-top: 3px;
+	color: #666;
+	padding: 0 0 0 15px;
+	font-size: 15px;
+}
+.mailus span {
+	float: right;
+	line-height: 24px;
+	padding-left: 22px;
+	color: #666;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -700px -32px;
+}
+.mailus span a {
+	color: #666;
+}
+.fixedHeader .menu-h {
+	background: transparent;
+}
+.fixedHeader .navbar-home {
+	/*  background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -700px -74px !important; */
+	float: left;
+	height: 13px;
+	margin: 12px 10px;
+	width: 20px;
+}
+.fixedHeader .home>.menu-h:first-child a:hover {
+	/* background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -700px -57px !important; */
+	float: left;
+	height: 13px;
+	margin: 12px 10px;
+	width: 20px;
+}
+.stickheader .navbar.navbar-default {
+	background: #333;
+}
+.fixedHeader .navbar.navbar-default {
+	background: #333;
+	background: transparent;
+}
+.fixedHeader {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #333;
+	background: rgba(51, 51, 51, 0.95);
+	z-index: 99999;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.fixedHeader .wrapper {
+	margin-top: 0
+}
+.show-block {
+	display: block !important
+}
+.hide-block {
+	display: none !important
+}
+.login-favorites {
+	float: right;
+	padding: 12px 0 0;
+	display: none
+}
+.login-favorites li {
+	float: left;
+	font-size: 12px;
+	color: #fff;
+	margin: 0 0 0 15px;
+	position: relative
+}
+.login-favorites li a {
+	color: #fff;
+	text-decoration: none;
+	display: block
+}
+.login-favorites li a.ilogin:before {
+	display: block;
+	position: absolute;
+	content: '';
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -322px -442px no-repeat;
+	width: 16px;
+	height: 16px;
+	left: -20px
+}
+.login-favorites li a.ifavorites {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -320px -464px no-repeat;
+	width: 20px;
+	height: 17px
+}
+/*.heightset {
+	margin-top: 108px
+}
+*/.common-popup {
+	display: none;
+	min-width: 270px;
+	max-width: 400px;
+	padding: 15px;
+	background: #fff;
+	border-radius: 5px;
+	background-clip: padding-box
+}
+.common-popup h2 {
+	padding-bottom: 5px;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	text-align: center;
+	text-indent: 5px;
+	text-transform: capitalize
+}
+.common-popup p {
+	text-align: center;
+	font-size: 13px;
+	margin: 0 0 12px
+}
+.common-popup input {
+	background: #000;
+	padding: 5px 10px;
+	margin: 0 4px;
+	color: #fff;
+	border: none
+}
+.common-popup .icon {
+	width: 42px;
+	display: inline-block;
+	height: 42px
+}
+.common-popup.confirm .icon {
+	background-position: -555px -455px
+}
+.common-popup.success .icon {
+	background-position: -507px -455px
+}
+.common-popup.invalid .icon {
+	background-position: -459px -455px
+}
+.jumpmenus {
+	clear: both;
+	float: left;
+	width: 100%;
+	border: 1px solid #eee;
+	background: #f6f6f6;
+	padding: 12px 6px;
+	margin: 0 0 12px;
+	display: none
+}
+.jumpmenus strong {
+	font-size: 13px;
+	float: left;
+	display: block;
+	padding: 2px 10px 2px 0;
+	font-weight: 400;
+	width: 30%;
+	text-align: right
+}
+.jumpmenus input {
+	height: 24px
+}
+.jumpmenus .select-wrapper:before {
+	z-index: 1 !important
+}
+.jumpmenus .select-wrapper {
+	width: 50%;
+	background: #fff
+}
+.jumpmenus .selectbox-wrapper ul {
+	padding: 0 !important;
+	margin: 0 !important
+}
+.jumpmenus .selectbox-wrapper ul li {
+	padding: 0 !important;
+	margin: 0 !important
+}
+.profile-popup-outer {
+	max-height: 100%
+}
+.notify-bell {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -584px -89px no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left
+}
+.product-loader {
+	clear: both;
+	text-align: center;
+	position: relative;
+	background: #f9f9f9;
+	padding: 10px 0;
+	margin: 10px 0;
+	width: 100%
+}
+.product-loader span {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/fny-loading.gif) no-repeat scroll 0 0  rgba(0, 0, 0, 0);
+	display: inline-block;
+	font-size: 20px;
+	height: 16px;
+	padding: 2px;
+	width: 88px
+}
+.custom-overlay {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top:40px;
+	z-index: 9999;
+	display: none
+}
+.product-expire {
+	display: none;
+	width: 100%;
+	margin: 0 auto
+}
+.product-expire .expireicon {
+	width: 71px;
+	height: 72px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images//sprite.png) -380px -423px no-repeat;
+	margin: 0 auto;
+	display: block
+}
+.product-expire h3 {
+	color: #d22573;
+	display: block;
+	text-align: center;
+	margin: 5px 0;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.product-expire p {
+	margin: 0 0 10px;
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: normal;
+}
+.product-expire .expire-product {
+	clear: both;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #ebebeb;
+	padding: 0 20%;
+	padding-bottom: 12px;
+	margin: 0 0 12px
+}
+.product-expire .expire-product img {
+	float: left;
+	width: 66px;
+	height: auto;
+	margin: 0 12px 0 0;
+	box-shadow: 0 0 4px #b0b0b0
+}
+.product-expire .expire-product h4 {
+	margin: 0 0 4px;
+	font-size: 14px;
+	color: #000
+}
+.product-expire .expire-product h5 {
+	margin: 0 0 4px;
+	font-size: 13px;
+	color: #000;
+	line-height: 17px
+}
+.product-expire .expire-product h5 span {
+	color: #999
+}
+.product-expire a.procced-checkout {
+	background: #d22573;
+	color: #fff;
+	font-size: 13px;
+	padding: 4px 6px;
+	display: inline-block;
+	border-radius: 6px
+}
+.mobile-search {
+	width: 100%;
+	clear: both;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	display: none;
+	float: left;
+	padding: 5px 0px;
+}
+.mobile-search .search-field {
+	width: 210px;
+	margin: 0 auto;
+}
+.mobile-search .search-field input {
+	width: 180px;
+	height: 23px !important;
+	font-size: 11px !important;
+	border: 1px solid #d22573;
+	float: left;
+	padding: 0 8px;
+	background: #fff;
+}
+/* .mobile-search .search-field .search-icon:before {
+	background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png") -348px -441px no-repeat;
+	content: "";
+	height: 18px;
+	left: 0;
+	margin: 1px 4px;
+	position: absolute;
+	top: 2px;
+	width: 19px;
+}
+ */
+.mobile-search .search-field .search-icon {
+	background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png") -345px -439px no-repeat #d22573;
+	display: block;
+	float: right;
+	padding: 11.5px 14px;
+	position: relative;
+	width: 30px;
+	z-index: 3;
+	font-size:0px;
+	text-indent: -100px;
+}
+/*Menu Active CSS*/
+.menu-h.active > a {
+	background-color: #d22573;
+	color: #fff;
+}
+#back-top {
+	position: fixed;
+	bottom: 500px;
+	margin-right: 5px;
+	right: 0px;
+}
+#back-top a {
+	width: 80px;
+	display: block;
+	text-align: left;
+	font: 10px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #999;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top span {
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin-bottom: 0px;
+	background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/up-arrow.png") no-repeat center  center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+ .homepage-holder {
+	height: 100%;
+	left: 0;
+	top:0;
+	position: fixed;
+	right: 0;
+	width: 100%;
+	z-index: -1;
+}
+#feedback_close{ background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png") -463px -418px;
+content:""; width:29px; height:29px; float:left; display:block; left:-14px; top:-10px;
+position:absolute; cursor:pointer;
+}
+#autoSuggestBox .productName, #autoSuggestBox .eventName{
+	cursor:pointer;
+	
+}
+#autoSuggestBox .productName:hover, #autoSuggestBox .eventName:hover{
+	background-color:#f0f0f0;
+}
+#autoSuggestBox {
+	width:250px;
+}
+#autoSuggestBox ul li{
+	padding:5px;
+	font-size:12px;
+}
+.Event-header,.Product-header{
+	font-weight:bold;
+	padding:5px;
+}
+.shipment-box h3{
+	display:none !important;
+}
+#heroBanner{ clear:both;}

@@ -1,0 +1,133 @@
+{{#if myAccountNav}}
+<div class="profile-navbar">
+
+<ul>
+
+<!-- profile tab starts here -->
+
+<li  class="selected">
+
+<div class="profile-info">
+
+<div class="icon profile-uicon"></div>
+
+<div class="profile-status">
+
+<span class="status-number">{{myAccountNav.profileCompleted}}</span>
+
+<span class="status-text">profile completed</span>
+
+</div>
+
+</div>
+
+<span class="profile-nav-name">profile & activity</span>
+
+</li>
+
+<!-- profile tab ends here -->
+
+<!-- rewards tab starts here -->
+
+<li>
+
+<a href="#">
+<div class="profile-info">
+
+<div class="icon reward-icon"></div>
+
+<div class="profile-status status-rewards">
+
+<span class="status-number">{{myAccountNav.rewardPoints}}</span>
+
+<span class="status-text">reward points</span>
+
+</div>
+
+</div>
+
+<span class="profile-nav-name">shop & earn more points</span>
+
+</a>
+
+</li>
+
+<!-- rewards tab ends here -->
+
+<li>
+
+<a href="#">
+
+<div class="profile-info">
+
+<div class="icon credit-icon"></div>
+
+<div class="profile-status status-credits">
+
+<span class="status-number">{{myAccountNav.credits}}</span>
+
+<span class="status-text">INR credit</span>
+
+</div>
+
+</div>
+
+<span class="profile-nav-name">invite friends & earn credits</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+<div class="profile-info">
+
+<div class="icon history-icon"></div>
+
+<div class="profile-status status-credits">
+
+<span class="status-number">{{myAccountNav.totalSpent}}</span>
+
+<span class="status-text">INR spent</span>
+
+</div>
+
+</div>
+
+<span class="profile-nav-name">order history</span>
+
+</a>
+
+</li>
+{{#if myAccountNav.moreLinks}}
+<li class="dropdown">
+
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+<div class="profile-info">
+
+<div class="icon more-icon"></div>
+
+</div>
+
+<span class="profile-nav-name">more options</span>
+
+</a>
+
+<ul class="dropdown-menu more-dropdown">
+{{#each myAccountNav.moreLinks}}
+<li><a href="{{landingUrl}}">{{label}}</a></li>
+{{/each}}
+</ul>
+
+</li>
+{{/if}}
+
+</ul>
+
+
+
+</div>
+{{/if}}

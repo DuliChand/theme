@@ -1,0 +1,14 @@
+#*
+This file allows you to override and define new Velocity variables.
+*#
+
+#set ($Pagename=$themeDisplay.getLayout().getName($themeDisplay.getLocale()))
+#set($tmpl = $request.getParameter('beta'))
+#set($cookies = $request.getCookies())
+#*set($tmplcookie =$cookie.getName())*#
+
+#foreach($cookie in $cookies)
+	#if($cookie.getName()=="ngAppTmpl")
+		#set($tmplcookie =$cookie.getName())
+	#end	
+#end 

@@ -1,0 +1,24 @@
+ <div class="sum-block-inner clearfix" id="showNotification">
+ {{#if subscriptionWrapper}}
+ {{#if subscriptionWrapper.subscriptions}}
+            <p>How do you wish to get your notifications?</p>
+			
+			{{#each subscriptionWrapper.subscriptions}}
+			
+            <div class="row">
+            	<input type="checkbox" name="subscription" id="{{subscriptionMasterId}}" value="{{subscriptionMasterId}}"/>
+            	<label>{{subscriptionTitle}}</label>
+            </div>
+			
+			{{/each }}
+			
+            <div class="row clear"><a href="#" id="subscriptionBtn" class="btn-cartpop">Submit</a></div>
+ {{/if}}
+ {{/if}}         
+</div>
+<div class='sum-block-inner style-block clearfix'>
+	<span class="statusmsg1 green">
+		<span class="icon"></span>
+		<span class="text">Subscriptions Updated successfully</span>
+	</span>
+</div>

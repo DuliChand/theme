@@ -1,0 +1,671 @@
+.more-icon, .ordder-status-chkd span:after, .ordno-content a.expendable {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+.order-history-area {
+	float:left;
+	height:auto;
+	margin:30px 0 45px 0;
+	position:relative;
+	width:610px
+}
+.orderhistory-left {
+	height:auto
+}
+.order-history-area .page-heading {
+	border-bottom:1px solid #F1C1D6;
+	padding-bottom:10px;
+	width:100%
+}
+#allorderbox {
+	clear:both;
+	padding:10px 0
+}
+#allorderbox #ordertabs {
+	clear:both;
+	margin:0 0 10px
+}
+#allorderbox #ordertabs ul {
+	margin:0;
+	padding:0
+}
+#allorderbox #ordertabs ul li {
+	float:left;
+	list-style-type:none;
+	margin:0 10px 0 0
+}
+#allorderbox #ordertabs ul li a.active, #allorderbox #ordertabs ul li a:hover {
+	background:none repeat scroll 0 0 #d22573;
+	color:#FFF
+}
+#allorderbox #ordertabs ul li a {
+	background:none repeat scroll 0 0 #E7E7E7;
+	border-radius:4px;
+	color:#6A6A6A;
+	display:block;
+	
+	font-size:16px;
+	padding:5px 10px;
+	text-decoration:none
+}
+#allorderbox .table1 td:first-child {
+	text-align:left
+}
+#allorderbox .table1 th:first-child {
+	text-align:left;
+	width:20%
+}
+#allorderbox .table1 th {
+	background:none repeat scroll 0 0 #F2F2F2;
+	color:#838383;
+	
+	font-size:14px;
+	font-weight:400;
+	padding:9px 10px;
+	text-align:center
+}
+#allorderbox .table1 td {
+	border-bottom:1px solid #F0F0F0;
+	color:#6F6F6F;
+	
+	font-size:12px;
+	padding:8px 10px;
+	text-align:center
+}
+#allorderbox .table1 td a {
+	color:#000;
+	
+	text-decoration:none
+}
+.order-outer:last-child {
+	border-bottom:medium none
+}
+.order-outer {
+	box-sizing:border-box;
+	float:left;
+	height:auto;
+	padding:0;
+	width:100%
+}
+.order-header {
+	background:none repeat scroll 0 0 #F0F0F0;
+	float:left;
+	height:40px;
+	width:100%
+}
+.order-no {
+	float:left;
+	height:40px;
+	/* width:30% */
+	width:22%;
+}
+
+.order-items {
+	float:left;
+	height:40px;
+	/* width:20% */
+	width:15%;
+}
+.order-value {
+	float:left;
+	height:40px;
+	/* width:39% */
+	width:22%;
+}
+.order-items span, .order-no span, .order-status span, .order-value span {
+	color:#666;
+	float:left;
+	text-align:center !important;
+	font-size:14px;
+	width:100%;
+	line-height:40px
+}
+.order-content {
+	border-left:1px solid #F1F2F2;
+	border-right:1px solid #F1F2F2;
+	float:left;
+	height:auto;
+	width:100%
+}
+.order-content .content-row {
+	border-bottom:1px solid #F1F2F2;
+	float:left;
+	height:39px;
+	width:100%
+}
+
+
+.content-row .ordno-content {
+	float:left;
+	height:39px;
+/* 	width:30% */
+width:24%;
+}
+.ordno-content a.expendable {background-position:-3px -387px; height:10px; width:10px; display:block; margin: 15px 10px 0; cursor: pointer; float:left;}
+.table-expanded .ordno-content a.expendable {background-position: -3px -418px;}
+
+#last-order > h3 {
+    clear: both;
+    display: block;
+    font-size: 18px;
+    padding: 12px 0;
+    text-align: center; 
+}
+
+.content-row .orditem-content {
+	float:left;
+	height:39px;
+	width:16%
+}
+.orddetail {
+	float:left;
+	height:39px;
+	/* width:22% */
+	width:12%;
+}
+.ordvalue-content {
+	float:left;
+	height:39px;
+	/* width:28% */
+	width:24%;
+}
+.ordno-content a {
+	color:#333;
+	float:left;
+	
+	font-size:13px;
+	line-height:40px;
+	position:relative;
+}
+.orditem-content span, .ordno-content span, .ordstatus-content span, .ordvalue-content span {
+	color:#333;
+	
+	font-size:13px;
+	line-height:40px
+}
+.moredetail {
+	color:#d22573;
+	display:block;
+	text-align:left;
+	
+	font-size:12px;
+	line-height:40px;
+	height:auto
+}
+.table-expanded .table-outer {
+	max-height:1000px;
+	transition:all 1s ease 0s
+}
+.table-outer {
+	float:left;
+	max-height:0;
+	overflow-y:hidden;
+	transition:all 1s ease 0s;
+	width:100%
+}
+.orddetail-table {
+	background:none repeat scroll 0 0 #FCFCFC;
+	border:none;
+	float:left;
+	height:auto;
+	margin:0;
+	padding:0;
+	width:100%
+}
+.orddetail-table tr {
+	border-bottom:1px solid #F1F2F2;
+	height:39px;
+	width:100%
+}
+
+.orddetail-table tr td:last-child{
+	display:none;
+}
+
+.orddetail-table .product-name {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.orddetail-table img.product-img {
+	float:left;
+	margin:6px;
+	width:15%
+}
+.table-heading td:first-child {
+	padding:0;
+	text-align:left;
+	text-indent:20px
+}
+.table-heading td {
+	border-right:1px solid #F1F2F2;
+	color:#666;
+	
+	font-size:12px;
+	line-height:30px;
+	padding:0 10px;
+	text-align:center;
+	white-space:nowrap
+}
+.table-body td:first-child {
+	text-align:left
+}
+.table-body td {
+	border-right:1px solid #F1F2F2;
+	
+	text-align:center
+}
+.table-body td a {
+	color:#C92869;
+	font-family:helvetica_light, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.trackorder-tab .shipment-detail .shipment-box img {
+	float:left;
+	margin:0 10px 0 0;
+	width:35px
+}
+.trackorder-tab .shipment-detail .shipment-box ol li {
+	list-style-type:none
+}
+.order-history-popup {
+	display:none;
+	padding:15px 15px 0;
+	background:#fff;
+	max-width:400px;
+	min-width:400px;
+	background-clip:padding-box
+}
+.ordernumber-tab {
+	width:900px
+}
+.ordernumber-tab .table1 {
+	margin:0 0 25px;
+	border-left:1px dashed #D9D9D9
+}
+.ordernumber-tab .table1 th {
+	background:#f2f2f2;
+	
+	font-size:13px;
+	font-weight:400;
+	padding:3px 10px;
+	color:#525252;
+	text-align:center;
+	border-right:1px dashed #d9d9d9;
+	text-transform:uppercase
+}
+.ordernumber-tab .table1 th:first-child {
+	width:33%;
+	text-align:left
+}
+.ordernumber-tab .table1 th:last-child {
+	width:12%
+}
+.ordernumber-tab .table1 td {
+	
+	border-bottom:1px dashed #d9d9d9;
+	border-right:1px dashed #d9d9d9;
+	font-size:12px;
+	text-align:center;
+	color:#6f6f6f;
+	padding:4px 10px
+}
+.ordernumber-tab .table1 td:first-child {
+	text-align:left
+}
+.ordernumber-tab .table1 td img {
+	float:left;
+	width:105px;
+	height:auto;
+	margin:0 5px 0 0
+}
+.ordernumber-tab .table1 td p {
+	margin:0;
+	font-size:14px;
+	color:#484848;
+	font-family:helvetica_light, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.ordernumber-tab .table1 td p i {
+	color:#7e7e7e;
+	font-style:normal;
+	font-size:12px
+}
+.ordernumber-tab .table1 td.column-a div {
+	display:inline-block;
+	width:18px;
+	height:22px;
+	position:relative;
+	margin:-14px 0 0
+}
+.ordernumber-tab .table1 td.column-a div:after {
+	content:'';
+	background:#b0b0b0;
+	border-radius:8px;
+	width:11px;
+	height:11px;
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin-left:-5px
+}
+.ordernumber-tab .table1 td.column-a div.active {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -505px -113px no-repeat
+}
+.ordernumber-tab .table1 td.column-a div.active:after {
+	background:#d22573
+}
+.ordernumber-tab .table1 td.column-b div {
+	display:inline-block;
+	width:24px;
+	height:26px;
+	margin:-14px 4px 0;
+	position:relative
+}
+.ordernumber-tab .table1 td.column-b div:after {
+	content:'';
+	background:#b0b0b0;
+	border-radius:8px;
+	width:11px;
+	height:11px;
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin-left:-5px
+}
+.ordernumber-tab .table1 td.column-b div.active {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -501px -141px no-repeat
+}
+.ordernumber-tab .table1 td.column-b div.active:after {
+	background:#d22573
+}
+.ordernumber-tab .table1 td.column-c div {
+	display:inline-block;
+	width:32px;
+	height:18px;
+	margin:-14px 2px 0;
+	position:relative
+}
+.ordernumber-tab .table1 td.column-c div:after {
+	content:'';
+	background:#b0b0b0;
+	border-radius:8px;
+	width:11px;
+	height:11px;
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin-left:-5px
+}
+.ordernumber-tab .table1 td.column-c div.active {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -496px -174px no-repeat
+}
+.ordernumber-tab .table1 td.column-c div.active:after {
+	background:#d22573
+}
+.ordernumber-tab .trackorder-but {
+	text-align:center;
+	padding:0 0 20px;
+	border-bottom:1px dashed #bfbfbf;
+	margin:0 0 10px
+}
+.ordernumber-tab .trackorder-but a {
+	display:inline-block;
+	background:#272727;
+	color:#fff;
+	
+	font-size:15px;
+	padding:5px 20px
+}
+.ordernumber-tab .trackorder-but a:hover {
+	background:#d22573
+}
+.ordernumber-tab .shiping-ad {
+	text-align:center;
+	padding:0 0 10px
+}
+.ordernumber-tab .shiping-ad h3 {
+	font-size:16px;
+	
+	color:#d22573;
+	margin:0 0 8px
+}
+.ordernumber-tab .shiping-ad h4 {
+	margin:0 0 4px;
+	font-size:14px;
+	
+	color:#000
+}
+.ordernumber-tab .shiping-ad p {
+	margin:0 0 10px;
+	font-size:13px;
+	font-family:helvetica_light, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.trackorder-tab {
+	clear:both;
+	width:100%;
+	padding:0 0 10px
+}
+.trackorder-tab h2 {
+	margin:0 0 10px;
+	font-size:14px;
+	text-transform:uppercase;
+	
+	color:#000
+}
+.trackorder-tab .shipment-detail {
+	clear:both;
+	margin:0 0 10px
+}
+.trackorder-tab .shipment-detail .shipment-box {
+	clear:both;
+	background:#fafafa;
+	border:1px solid #efefef;
+	padding:10px;
+	margin:0 0 10px
+}
+.trackorder-tab .shipment-detail .shipment-box h3 {
+	margin:0 0 8px;
+	font-size:15px;
+	color:#d22573;
+	font-family:helvetica_light, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.trackorder-tab .shipment-detail .shipment-box ol {
+	margin:0;
+	padding:0
+}
+.trackorder-tab .shipment-detail .shipment-box ol li {
+	margin:0 0 2px;
+	font-size:12px;
+	color:#606060;
+	font-family:helvetica_light, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.trackorder-tab .shipment-detail .shipment-box ol li span {
+	color:#000
+}
+.trackorder-tab .shipment-detail table {
+	border-left:1px dashed #d9d9d9
+}
+.trackorder-tab .shipment-detail th {
+	background:#ececec;
+	
+	font-size:13px;
+	font-weight:400;
+	padding:3px 10px;
+	color:#404040;
+	text-align:center;
+	border-right:1px dashed #d9d9d9;
+	text-transform:uppercase
+}
+.trackorder-tab .shipment-detail th:first-child {
+	width:25%;
+	text-align:left
+}
+.trackorder-tab .shipment-detail th:last-child {
+	width:20%
+}
+.trackorder-tab .shipment-detail td {
+	
+	border-bottom:1px dashed #d9d9d9;
+	border-right:1px dashed #d9d9d9;
+	font-size:12px;
+	text-align:center;
+	color:#6f6f6f;
+	padding:4px 10px;
+	width:33%;
+}
+.trackorder-tab .shipment-detail td.capitalletter {text-transform:capitalize;}
+
+.trackorder-tab .shipment-detail td a {position:relative; margin:0px 0px 0px 20px; font-family: "helvetica_light", "Helvetica Neue", Helvetica, Arial, sans-serif; color:#d22573;}
+.trackorder-tab .shipment-detail td a:before {content:''; display:block; width:26px; height:11px; position:absolute; z-index:9; left:-31px; top:2px; background:url(http://static.fashionandyou.com/app-images/sprite.png) -270px -206px no-repeat;}
+.trackorder-tab .shipment-detail .tracktable {position:relative; margin:15px 0px 0px 0px; display:none;}
+/* .trackorder-tab .shipment-detail .tracktable:before {position:absolute; content:'^'; font-size:18px; font-family:arial; font-weight:bold; top:-13px; right:30px;} */
+
+.trackorder-tab .shipment-detail td:first-child {
+	text-align:left
+}
+.event-fav, .event-favourite, .event-name span:before, .favourite-popup .favourite-popup-close {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+.fav-powertip {
+	position:absolute;
+	top:0;
+	z-index:999;
+	display:none;
+	width:160px;
+	height:38px;
+	padding:10px;
+	margin:0;
+	background:#fff;
+	border:1px solid #d22573;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	box-shadow:0 3px 5px 0 #ccc
+}
+.fav-powertip:before {
+	position:absolute;
+	top:-19px;
+	left:50%;
+	z-index:2;
+	width:0;
+	height:0;
+	margin-left:-10px;
+	border:10px solid transparent;
+	border-bottom:10px solid #fff;
+	content:''
+}
+.fav-powertip:after {
+	position:absolute;
+	top:-20px;
+	left:50%;
+	width:0;
+	height:0;
+	margin-left:-10px;
+	border:10px solid transparent;
+	border-bottom:10px solid #d22573;
+	content:''
+}
+.fav-powertip span {
+	
+	font-size:12px;
+	line-height:18px;
+	color:#333
+}
+.fav-powertip span:hover {
+	color:#d22573
+}
+.fav-powertip-top {
+	top:-50px
+}
+.fav-powertip-top:before {
+	top:auto;
+	bottom:-19px;
+	border:10px solid transparent;
+	border-top:10px solid #fff
+}
+.fav-powertip-top:after {
+	top:auto;
+	bottom:-20px;
+	border:10px solid transparent;
+	border-top:10px solid #d22573
+}
+.column-a div:hover .fav-powertip span, .column-b div:hover .fav-powertip span, .column-c div:hover .fav-powertip span {
+	float:left;
+	padding:0;
+	
+	color:#666;
+	text-indent:0;
+	text-shadow:none
+}
+.column-a div:hover .fav-powertip span:hover, .column-b div:hover .fav-powertip span:hover, .column-c div:hover .fav-powertip span:hover {
+	color:#c92869
+}
+.column-a div:hover .fav-powertip:after, .column-a div:hover .fav-powertip:before, .column-b div:hover .fav-powertip:after, .column-b div:hover .fav-powertip:before, .column-c div:hover .fav-powertip:after, .column-c div:hover .fav-powertip:before {
+	background:0 0
+}
+.column-b div:hover .fav-powertip {
+	z-index:10;
+	display:block;
+	top:48px;
+	margin-left:-68px
+}
+.column-c div:hover .fav-powertip {
+	z-index:10;
+	display:block;
+	top:40px;
+	margin-left:-63px
+}
+.column-a div:hover .fav-powertip {
+	z-index:10;
+	display:block;
+	top:43px;
+	margin-left:-70px
+}
+.press-pagination {
+	clear:both;
+	padding:10px 0;
+	text-align:center
+}
+.press-pagination ul {
+	margin:0;
+	padding:0
+}
+.press-pagination ul li {
+	display:inline-block;
+	list-style-type:none;
+	margin:0 2px
+}
+.press-pagination ul li a {
+	display:block;
+	background:#f1f1f1;
+	border:1px solid #dadada;
+	
+	padding:3px 8px;
+	border-radius:4px;
+	color:#8f8f8f
+}
+.press-pagination ul li a.active, .press-pagination ul li a:hover {
+	background:#d22573;
+	color:#fff;
+	border:1px solid #d22573
+}
+.press-pagination ul li:first-child a, .press-pagination ul li:last-child a {
+	background:url(http://static.fashionandyou.com/app-images/prev.png) center no-repeat #505050;
+	border:1px solid #2c2c2c;
+	color:#969696;
+	line-height:18px
+}
+.press-pagination ul li:last-child a {
+	background:url(http://static.fashionandyou.com/app-images/next.png) center no-repeat #505050
+}
+
+.simplePagerNav {  clear: both;
+    display: block;
+    padding: 15px 0 0;
+}
+
+.simplePagerNav li {float:left; margin:0px 5px 0px 0px; font-size:13px;}
+.simplePagerNav li a {color:#333; text-decoration:none; border:1px solid #c8c8c8; background:#e2e2e2; padding:3px 8px;}
+.simplePagerNav li.currentPage a  {border:1px solid #d22573;}
+
+
+
+

@@ -1,0 +1,19 @@
+
+ <ul class="breadcrumb">
+    <li>Home</li>
+    {{#if product.cats}}
+	    {{#each product.cats}}
+	    <li id="product">{{categoryLabel}} </li>
+	    {{/each}}
+    {{else}}
+    	{{#equal listingType "catalog"}}
+		    <li id="catelisting">{{#removeCharReplace globalCat}}{{/removeCharReplace}}</li> 
+		    <li id="catelisting">{{#removeCharReplace subCatUrlName}}{{/removeCharReplace}}</li>
+		{{/equal}}
+		{{#equal listingType "event"}}
+		    <li id="eventlisting" >{{event.eventName}} </li>
+		{{/equal}}
+     {{/if}} 
+    
+ </ul> 
+   

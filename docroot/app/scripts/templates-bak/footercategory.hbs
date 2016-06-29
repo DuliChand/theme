@@ -1,0 +1,20 @@
+{{#if categories}}
+	{{#each categories}}
+		{{#if categories.length}}
+	    	<p><a href="/product/listing/category/{{categoryId}}"><strong>{{categoryName}} :</strong></a> 
+	    {{/if}}
+    {{#if categories}}
+    	{{#each categories}}
+    	<a href="/product/listing/category/{{categoryId}}">{{categoryName}}</a>
+    	<!-- {{#if categories}}
+	    	{{#each categories}}
+	    		<a href="/product/listing/category/{{categoryId}}">{{categoryName}}</a>
+	    	{{/each}}
+    	{{/if}} -->
+    	{{/each}} 
+    {{/if}}
+    </p>
+    {{/each}}
+{{/if}}
+    
+    

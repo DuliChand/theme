@@ -1,0 +1,21 @@
+{{#if domainResponse.entitiesResponse}}
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<th>Friends</th>
+		<th>Invitaion Accepted On</th>
+	</tr>
+	{{#if domainResponse.entitiesResponse.length}}
+	{{#each domainResponse.entitiesResponse}}
+	<tr>
+		<td>{{baseDTO.invitedEmailId}}</td>
+		<td>{{baseDTO.dateInvited}}</td>
+	</tr>
+	{{/each}}
+	{{else}}
+     <tr>
+        <td>{{domainResponse.entitiesResponse.baseDTO.invitedEmailId}}</td>
+        <td>{{getDate 'DDMMYYYY' domainResponse.entitiesResponse.baseDTO.dateInvited}}</td>
+	</tr>
+	{{/if}}
+</table>
+{{/if}}

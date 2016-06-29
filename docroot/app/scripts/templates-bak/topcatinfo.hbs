@@ -1,0 +1,48 @@
+{{#if categoryWrapper.category}}
+	<div class="row">
+		<h1 class="page-heading eventname" id="category">{{categoryWrapper.category.categoryName}}</h1>
+        <!-- <a href="video-popup.html" class="related-videos">4 Related Videos</a>  -->
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="event-info-panel" id="eventInfoPanel">
+				<div class="closebutton">&nbsp;</div>
+				<div class="event-info-image">
+					<img src="http://static.fashionandyou.com/{{../event.eventCode}}/banner_event_info_new.jpg" alt="{{../event.eventName}}" title="{{../event.eventName}}" id="eventMainImage" data-favsrc="http://static.fashionandyou.com/{{../event.eventCode}}/banner_medium_new.jpg" />
+			    {{#if event.eventAttributes}}
+					{{#each event.eventAttributes}}
+						{{#lowerEqual code "discount"}}
+							<div class="tagimage-right"><span>{{value}}</span></div>
+						{{/lowerEqual}}
+					{{/each}}	
+				{{/if}}
+				</div>
+				<div class="event-info-details">
+					<p class="event-des">{{event.description}}</p>
+					<span class="event-info-timer" id="eventTimer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' event.endDate}}">0 DAYS 00:00:00 LEFT</span>
+					<a href="#" class="favorite-icon add-favorites" title="Add to Favourites"></a>
+					<span class="evnet-listing-share" title="Share"></span>
+					<a href="#" title="Facebook" class="event-facebook facebook social-share-link"></a>
+					<a href="#" title="Twitter" class="event-twitter twitter social-share-link"></a>
+					<!-- <a href="#" title="Email" class="event-mail email social-share-link"></a> -->
+					<a title="gplus" class="event-gplus googleplus social-share-link" href="#"></a>
+					<a title="pintrest" class="event-pintrest pinterest social-share-link" href="#"></a>
+					
+					<!-- <a href="#" class="event-facebook facebook social-share-link"></a>
+					<div class="like-boxout">
+						<input type="text" class="like-box" value="20" readonly />
+					</div>
+					
+					<a href="#" class="event-twitter twitter social-share-link"></a>
+					<div class="like-boxout">
+						<input type="text" class="like-box" value="20" readonly />
+					</div>
+					
+					<a href="#" class="event-google googleplus social-share-link"></a>
+					<div class="like-boxout">
+						<input type="text" class="like-box" value="20" readonly />
+					</div> -->
+			</div>
+		</div>
+	</div>
+{{/if}}

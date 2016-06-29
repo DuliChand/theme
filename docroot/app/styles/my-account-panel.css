@@ -1,0 +1,591 @@
+.col-xs-4 a:before, .fb-icon, .gl-icon, .in-icon, .profile-sum h3:before, .tw-icon, .user-gender {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+.hidden-default {
+	display:none
+}
+.profile-sum .sum-block-inner label {
+	font-size:12px;
+	font-weight:400;
+	color:#CE2D78;
+	line-height:18px;
+	padding:0 0 0 3px
+}
+#sidebar {
+	bottom:auto;
+	top:0
+}
+.myaccount-area {
+	float:left;
+	width:100%;
+	top:30px
+}
+.sidebar-floating {
+
+	width:100%;
+	position:relative;
+	background:#FCFCFC;
+	float:left
+}
+.profile-sum {
+	margin-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+	}
+.profile-sum h2 {
+	color:#A4A4A4;
+	font-size:14px;
+	line-height:18px;
+	margin-left:10px;
+	margin-top:20px;
+	border-bottom:#ccc solid 1px
+}
+
+.profile-sum .sum-block:first-of-type {
+	padding-left:13px
+}
+.profile-sum .sum-block .change-password {
+	margin-bottom:20px;
+	margin-top:0
+}
+.profile-sum .sum-block .link.addprefrence {
+	margin-left:20px;
+	background:#000;
+	border-radius:3px;
+	padding:6px 7px;
+	color:#fff;
+	float:left;
+}
+.profile-sum .sum-block .expand-icon:before {
+	background-position:-2px -385px;
+	left:0
+}
+.profile-sum .sum-block.expanded .expand-icon:before {
+	background-position:-2px -415px
+}
+/* .profile-sum h3:before {
+	background-position:-91px -3px;
+	content:"";
+	display:block;
+	height:16px;
+	left:-26px;
+	position:absolute;
+	top:0;
+	width:16px
+} */
+.profile-sum .sum-block .edit-link {
+	margin-top:20px
+}
+.profile-sum .expanded .sum-block-inner {
+	display:block
+}
+.profile-sum .sum-block-inner {
+	float:left;
+	width:100%
+}
+.profile-sum .text-field:after {
+	content:attr(data-unit);
+	position:absolute;
+	right:-20px;
+	top:0
+}
+.profile-sum .text-field input {
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#666;
+	float:right;
+	font-size:12px;
+	height:23px;
+	line-height:13px;
+	padding:3px 0 3px 10px;
+	width:55px
+}
+.profile-sum .text-field {
+	color:#666;
+	display:block;
+	float:left;
+	
+	font-size:12px;
+	font-weight:400;
+	line-height:23px;
+	position:relative;
+	width:160px
+}
+.password-field, .text-field {
+	border:1px solid #CCC;
+	border-radius:3px;
+	
+	font-size:11px;
+	line-height:15px;
+	padding:5px 10px
+}
+.cart-margin .row .btn-cartpop {
+	margin-left:107px
+}
+.profile-sum .sum-block .btn-cartpop {
+	position:absolute;
+	bottom:0;
+	margin:20px 0 0;
+	padding:0 20px
+}
+.profile-sum .style-block p {
+	font-size:13px;
+	line-height:17px;
+	margin-bottom:12px
+}
+.profile-sum .style-block input {
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#666;
+	font-size:12px;
+	height:24px;
+	line-height:15px;
+	padding:3px 0 3px 10px;
+	width:250px;
+	float:left;
+}
+
+.profile-sum .sum-block .link {
+	color:#d22573;
+	display:block;
+	line-height:12px
+}
+.profile-sum .brand-icons {
+	width:270px
+}
+.profile-sum .brand-icons li {
+	background:none repeat scroll 0 0 #FFF;
+	box-shadow:0 0 0 1px #F5F5F5 inset;
+	float:left;
+	height:50px;
+	line-height:50px;
+	margin-right:10px;
+	margin-top:20px;
+	text-align:center;
+	vertical-align:middle;
+	width:60px
+}
+.profile-sum .brand-icons li img {
+	width:50px
+}
+.profile-sum .social-icons {
+	width:270px
+}
+.profile-sum .social-icons li.active {
+	opacity:.5
+}
+.profile-sum .social-icons .fb-icon {
+	background-position:0 -2px
+}
+.profile-sum .social-icons li:last-child {
+	margin-right:0
+}
+.profile-sum .social-icons .tw-icon {
+	background-position:0 -33px
+}
+.profile-sum .social-icons li {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat scroll 0 0 transparent;
+	border-radius:2px;
+	float:left;
+	height:25px;
+	margin-right:10px;
+	margin-top:0;
+	width:25px
+}
+.social-icons li {
+	background:none repeat scroll 0 0 transparent
+}
+.profile-sum .sum-block {
+	
+	padding:13px 10px;
+	width:33%;
+	float:left;
+	min-height:265px;
+	margin-bottom:20px;
+}
+
+.sum-block.clearfix.profile-toggle {
+     position: relative;
+}
+.sum-block.clearfix.style-toggle {
+    width: 100%;
+    border:#f7f7f7 solid 1px;
+     min-height: 130px;
+    position: relative;
+    margin-top:10px;
+  }
+ 
+  .sum-block.clearfix.address-toggle {
+    margin-top: -18px;
+    position: relative;
+    border-left:#f7f7f7 solid 1px;
+  	padding-left:30px;
+}
+
+ .sum-block.clearfix.address-toggle p{
+     text-transform: capitalize;
+  }
+  
+.sum-block.clearfix.notify-toggle {
+    margin-top: -18px;
+    border-left:#f7f7f7 solid 1px;
+    padding-left:30px;
+    position: relative;
+      
+      
+}
+
+.profile-sum .sum-block .expand-icon {
+	cursor:pointer;
+}
+.profile-sum h3 {
+	color:#666;
+	font-family: 'centurygothicbold';
+	font-size:14px;
+	line-height:14px;
+	position:relative
+}
+.profile-sum p {
+	color:#666;
+	font-size:12px;
+	line-height:12px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.profile-sum .sum-block-inner p {
+	margin:0 0 10px
+	 display: block;
+    width: 100%;
+    word-wrap: break-word;
+
+}
+.profile-sum .sum-block-inner .check-box:checked+label:before, .profile-sum .sum-block-inner .radio:checked+label:before {
+	background:none repeat scroll 0 0 padding-box content-box #CE2D78;
+	border:1px solid #CE2D78;
+	box-shadow:0 0 0 1px #FFF inset
+}
+.check-box+label:before, .radio+label:before {
+	background:none repeat scroll 0 0 padding-box content-box #FFF;
+	border:1px solid #333;
+	border-radius:6px;
+	content:"";
+	display:inline-block;
+	height:12px;
+	left:-20px;
+	margin-top:1px;
+	padding:1px;
+	position:absolute;
+	top:0;
+	visibility:visible;
+	width:12px
+}
+.table-outer .check-box+label:before, .table-outer .radio+label:before {
+	position:relative;
+	left:0
+}
+.table-outer .check-box+label, .table-outer .radio+label {
+	margin:0 0 0 20px
+}
+.profile-sum .sum-block-inner .check-box {
+	display:block;
+	margin:10px 0 0 3px
+}
+.profile-sum .sum-block-inner .check-box+label {
+	margin-top:10px;
+	margin-bottom:0
+}
+.chngpsw-popup-outer {
+	background:#FFF;
+	border-radius:5px;
+	display:none;
+	height:auto;
+	max-width:416px;
+	overflow:hidden
+}
+.chngpsw-popup-outer .chngpsw-popup-inner {
+	background:#FFF;
+	float:left;
+	height:auto;
+	padding-bottom:20px;
+	width:100%
+}
+.chngpsw-popup-outer .header {
+	border-bottom:1px solid #EEE;
+	float:left;
+	padding:10px 0 15px;
+	width:100%
+}
+.chngpsw-popup-outer h2 {
+	color:#333;
+	float:left;
+	font-size:18px;
+	line-height:18px;
+	padding-left:15px
+}
+.chngpsw-popup-outer .chngpsw-popup-fields {
+	float:left;
+	height:auto;
+	margin-top:20px;
+	width:100%
+}
+.chngpsw-popup-outer .chngpsw-popup-fields label {
+	clear:both;
+	color:#8A8A8A;
+	font-size:12px;
+	font-weight:400;
+	line-height:25px;
+	margin:10px 8px 0 0;
+	text-align:right;
+	text-transform:capitalize;
+	width:30%
+}
+.chngpsw-popup-outer .chngpsw-popup-fields input[type=password] {
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#333;
+	font-size:11px;
+	height:25px;
+	margin-top:10px;
+	padding:0 0 0 8px;
+	width:60%
+}
+.chngpsw-popup-outer .chngpsw-popup-fields .btn-cartpop {
+	font-size:14px;
+	margin:20px 0 0 33%
+}
+.profile-popup-outer {
+	background:#FFF;
+	border-radius:5px;
+	display:none;
+	height:auto;
+	max-width:416px;
+	max-height:100%
+}
+.profile-popup-outer .profile-popup-inner {
+	background:#FFF;
+	float:left;
+	height:auto;
+	padding-bottom:30px;
+	width:100%
+}
+.profile-popup-outer .header {
+	border-bottom:1px solid #EEE;
+	float:left;
+	padding:10px 0 15px;
+	width:100%
+}
+.profile-popup-outer h2 {
+	color:#333;
+	float:left;
+	font-size:18px;
+	line-height:18px;
+	padding-left:15px
+}
+.profile-popup-outer .profile-popup-area {
+	float:left;
+	height:auto;
+	margin-top:5px;
+	width:100%
+}
+.errormsg1 {
+	background:none repeat scroll 0 0 red;
+	color:#FFF;
+	font-family: 'centurygothicbold';
+	font-size:11px;
+	margin:54px 0 0;
+	padding:3px 6px;
+	position:relative;
+	text-align:center;
+	text-decoration:none
+}
+.errormsg2, .errormsg3, .errormsg4, .errormsg5 {
+	background:none repeat scroll 0 0 red;
+	color:#FFF;
+	font-family: 'centurygothicbold';
+	font-size:11px;
+	margin:5px 0 0;
+	padding:3px 6px;
+	position:relative;
+	text-align:center;
+	text-decoration:none
+}
+.profile-popup-outer .profile-popup-area .label-gender {
+	width:100px
+}
+.profile-popup-outer .profile-popup-area input[disabled=disabled], .profile-popup-outer .profile-popup-area input[type=password], .profile-popup-outer .profile-popup-area input[type=text], .profile-popup-outer .profile-popup-area select, .profile-popup-outer .profile-popup-area textarea {
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#666;
+	font-size:12px;
+	height:25px;
+	letter-spacing:1px;
+	margin-top:10px;
+	line-height:20px;
+	padding:0 0 0 8px;
+	width:60%
+}
+.profile-popup-outer .profile-popup-area label {
+	color:#8A8A8A;
+	float:left;
+	font-size:12px;
+	font-weight:400;
+	line-height:25px;
+	margin:10px 8px 0 0;
+	text-align:right;
+	text-transform:capitalize;
+	width:30%
+}
+.profile-popup-outer .day {
+	float:left;
+	height:24px;
+	margin:10px 7px 0 0;
+	width:70px;
+	z-index:7
+}
+.profile-popup-outer .select-wrapper {
+	float:left;
+	height:24px;
+	margin-top:10px;
+	width:150px;
+	z-index:6
+}
+.select-wrapper {
+	float:left;
+	position:relative
+}
+.profile-popup-outer .day .selectbox {
+	float:left;
+	line-height:24px;
+	width:60px
+}
+.profile-popup-outer .profile-popup-area .btn-cartpop {
+	font-size:14px;
+	margin:20px 0 0 32%;
+	padding:0 20px
+}
+.brand-popup-outer {
+	background:none repeat scroll 0 0 padding-box #FFF;
+	border:10px solid transparent;
+	border-radius:5px;
+	display:block;
+	height:auto;
+	overflow:hidden;
+	padding:8px;
+	width:616px
+}
+.brand-popup-outer .brand-popup-inner {
+	background:none repeat scroll 0 0 #FFF;
+	float:left;
+	height:auto;
+	padding-bottom:20px;
+	width:600px
+}
+.brand-popup-outer .header {
+	border-bottom:1px solid #EEE;
+	float:left;
+	padding:10px 0 15px;
+	width:96.5%
+}
+.brand-popup-outer h2 {
+	color:#333;
+	float:left;
+	font-size:18px;
+	line-height:18px;
+	padding-left:15px
+}
+.brand-popup-outer .brand-area {
+	float:left;
+	height:auto;
+	margin-top:20px;
+	width:96.5%
+}
+.brand-popup-outer .brand-area .col-xs-3 {
+	height:84px;
+	margin-bottom:20px;
+	text-align:center
+}
+.brand-popup-outer .brand-area .col-xs-3 a img {
+	height:auto;
+	width:auto
+}
+.brand-popup-outer .brand-area .col-xs-3 a {
+	display:block;
+	float:left;
+	height:43px;
+	line-height:43px;
+	text-align:center;
+	vertical-align:middle;
+	width:100%
+}
+.brand-popup-outer .brand-area .col-xs-3 input {
+	margin-top:6px;
+	outline:0
+}
+.brand-popup-outer .btn-cartpop {
+	font-size:14px;
+	margin:0 0 0 234px;
+	padding:0 20px
+}
+.btn-cartpop {
+	 background: none repeat scroll 0 0 #eaeaea;
+    border: 1px solid #dfdfdf;
+	color:#000;
+	display:block;
+	float:left;
+	font-size:14px;
+	height:28px;
+	line-height:28px;
+	margin:10px 0 10px 10px;
+	border-radius:4px;
+	padding:0 30px;
+	text-transform:capitalize
+}
+.btn-cartpop:hover{
+	background-color:#d22573;
+}
+.profile-sum h3.user-gender {
+    background: none;
+    display: block;
+    width: 100%;
+    word-wrap: break-word;
+   text-transform:capitalize;
+}
+	
+.profile-sum h3.user-gender.M:before {
+	background-position:-160px -302px
+}
+.profile-sum h3.user-gender.F:before {
+	background-position:-92px -3px
+}
+span.statusmsg {
+	display:none;
+	clear:left;
+	padding:3px 0 0;
+	font-size:14px;
+	}
+span.statusmsg1 {
+	display:none;
+	clear:left;
+	padding:3px 0 0;
+	font-size:12px;
+}
+span.green {
+	color:#1a2
+}
+span.red {
+	color:red;
+	background:0 0
+}
+span.icon {
+	width:14px;
+	height:15px;
+	display:block;
+	float:left;
+	margin:1px 5px 0 0
+}
+span.green span.icon {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -541px -79px no-repeat
+}
+span.red span.icon {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -357px -125px no-repeat
+}

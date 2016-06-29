@@ -1,0 +1,221 @@
+#registerarea {
+	background:url(http://cdn1.fashionandyou.com/fny-static/app-images/register-bg.jpg) no-repeat;
+	min-height:647px;
+	padding-bottom:20px
+}
+#loginarea {
+	background:url(http://cdn1.fashionandyou.com/fny-static/app-images/login-bg.jpg) no-repeat;
+	min-height:647px
+}
+.social-icons-register li a {
+	background:url(http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.social-icons-register {
+	margin:0 0 20px 125px;
+	clear:both
+}
+.social-icons-register h3 {
+	margin:0 0 12px;
+	text-align:center;
+	font-size:16px;
+	color:#000;
+	display:block;
+	background:#efefef;
+	padding:4px 0
+}
+.social-icons-register ul {
+	margin:0;
+	padding:0
+}
+.social-icons-register li {
+	width:auto;
+	float:left;
+	height:18px;
+	margin:0 5px
+}
+.social-icons-register li a {
+	display:block;
+	width:24px;
+	height:24px
+}
+.social-icons-register li span {
+	font-size:14px;
+	line-height:24px;
+	color:#666
+}
+.social-icons-register li input {
+	width:227px;
+	height:24px;
+	padding-left:14px;
+	border:1px solid #ccc;
+	border-radius:3px
+}
+.social-icons-register li .text {
+	width:auto;
+	font-size:14px;
+	line-height:24px;
+	color:#c92869;
+	background:none
+}
+.social-icons-register .fb-icon {
+	background-position:-1px -2px
+}
+.social-icons-register .tw-icon {
+	background-position:-1px -33px
+}
+.social-icons-register .in-icon {
+	background-position:-1px -67px
+}
+.social-icons-register .gl-icon {
+	background-position:-1px -98px
+}
+#registerarea h2, #loginarea h2
+{
+	color: #d22573;
+    float: right;
+    font-size: 32px;
+    padding: 65px 0 0 361px;
+    text-align: center;
+    width: 100%;
+    margin:0px;
+
+  }
+#registerarea h2 {
+	padding-top:25px
+}
+.reg-form {
+	width:341px;
+	margin:10px 0 0 500px
+}
+.reg-form p {
+	display:block;
+	clear:both;
+	color:#000;
+	margin:0 0 10px 130px;
+	font-size:13px
+}
+.reg-form p span {
+    display: inline-block;
+    float: left;
+    padding: 0px 2px 12px 6px;
+    width: 45%;
+}
+.reg-form p a {
+    display: inline-block;
+    height: 28px;
+    margin: 3px 0 0 -14px;
+    width: 100%;
+}
+/* .reg-form p a.iconfacebook {
+	background-position:-543px -110px
+}
+.reg-form p a.icontwitter {
+	background-position:-543px -148px
+}
+.reg-form p a.icongoogleplus {
+	background-position:-578px -237px
+} */
+
+.reg-form p a.iconfacebook {
+	
+	background:url(http://cdn1.fashionandyou.com/fny-static/app-images/facebook-sign-icon.png) no-repeat;
+}
+.reg-form p a.icontwitter {
+	background-position:-543px -148px
+}
+.reg-form p a.icongoogleplus {
+	background-position:-578px -237px;
+	background:url(http://cdn1.fashionandyou.com/fny-static/app-images/google-sign-icon.png) no-repeat;
+}
+
+
+.reg-form input[type="text"] {
+	
+	font-size:11px;
+	border-radius:3px
+}
+.reg-form label {
+	float:left;
+	width:120px;
+	margin:9px 10px 0 0;
+
+	font-size:12px;
+	font-weight:400;
+	line-height:27px;
+	color:#333;
+	text-align:right
+}
+.reg-form .textfield, .reg-form .passwordfield, .reg-form textarea {
+	width:210px;
+	padding:4px 8px;
+	margin-top:10px;
+	font-size:11px;
+	line-height:24px;
+	height:30px;
+	color:#333;
+	border:1px solid #ccc;
+	border-radius:3px
+}
+.reg-form textarea {
+	height:56px;
+	resize:vertical
+}
+.reg-form .pincode, .reg-form .passwordfield {
+	width:150px
+}
+.reg-form .errorfield {
+	border-color:#ff6a6a!important
+}
+.reg-form .select-wrapper.errorfield {
+	border:1px solid #ff6a6a!important;
+	border-radius:4px
+}
+.reg-form .select-wrapper {
+	display:inline-block;
+	float:none;
+	width:210px;
+	margin-top:10px
+}
+.reg-form .select-wrapper input {
+	height:27px;
+	line-height:27px
+}
+.reg-form .select-wrapper .selectbox-wrapper {
+	border-top-right-radius:0
+}
+.reg-form .select-wrapper .selectbox-wrapper li {
+	padding:3px 0
+}
+.reg-form .btn-cartpop {
+	 border: medium none;
+    margin: 10px 0 14px 116px;
+    padding: 0 20px;
+}
+
+.reg-form .registerbtn{
+	background:#666; border:#e1e1e1 solid 1px; 
+}
+
+.reg-form .registerbtn:hover{
+	background:#d22573 !important;
+}
+ .reg-form .forgot-link {
+    color: #d22573;
+    float: left;
+    font-size: 12px;
+    line-height: 28px;
+    margin-top: 6px;
+    padding: 9px;
+}
+.reg-form .forgot-link:hover {
+	text-decoration:underline
+}
+
+#login_form .error_Container{color:red;font-size:13px;float:left;padding:2px 0;width:100%;display:none; margin-left:130px;}
+
+#login_form .error-message, .reg-form .error-message {
+	color:red;
+	clear:both;
+	display:block;
+	margin-left:130px
+}

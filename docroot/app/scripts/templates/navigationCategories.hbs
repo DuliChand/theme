@@ -1,0 +1,130 @@
+{{#if categories}}
+	<div id="responsivemenu">
+      <div class="menuicon">
+        <span id="menulink">&nbsp;</span>
+        <a href="/" title="Home">
+        	<img src="/app-theme/images/logo-mobile.png" alt="FashionAndYou" width="100" />
+        </a>
+      </div>
+      <div class="menulisting" id="openmenu">
+      <ul>
+      	{{#each categories}}
+        <li>
+        	<a href="/category/categories/{{categoryId}}" title="{{categoryName}}">{{categoryName}}</a>
+       	</li>
+        {{/each}}
+      </ul>
+      </div>
+    </div>	
+	<ul class="navbar-left">
+	<li class="menu-h"><a class="navbar-home navbar-brand" href="/"></a></li>
+		{{#each categories}}
+		<li class="menu-h">
+		  <a class="navbar-brand" href="/category/categories/{{categoryId}}" title="{{categoryName}}">{{categoryName}}</a>
+		  <div class="menu-dropdown move-right">
+          <div class="menucolumn">
+			<div class="menurow">
+		  	{{#if freshArrivalEvents}}
+	  		<div class="menucell whatsnew">
+            <ul>
+		      <li class="menu-heading">
+		        <h3>Today's Sales</h3>
+		      </li>
+			  {{#each freshArrivalEvents}}
+			  {{#if_less_equal @index 10}}
+			  <li>
+			  	<a href="/product/listing/event/{{eventId}}">&bull; {{eventName}}</a>
+		      </li>
+		      {{/if_less_equal}}
+			  {{/each}}
+			  {{#if_gt freshArrivalEvents.length 11}}
+			  <li class="moreitem"><a href="/event/list/todays-sales/{{cleanString ../categoryId}}">...More</a></li>
+			  {{/if_gt}}
+		    </ul>
+            </div>
+		  	{{/if}}
+		  	
+		  	<!-- {{#if endingSoonEvents}}
+	  		<ul class="endingsoon">
+		      <li class="menu-heading">
+		        <h3>Ending soon</h3>
+		      </li>
+			  {{#each endingSoonEvents}}
+		  	  <li>
+		      	<a href="/product/listing/event/{{eventId}}">{{eventName}}</a>
+	          </li>
+			  {{/each}}
+			  {{#if_gt endingSoonEvents.length 11}}
+			  <li class="moreitem"><a href="/ending-soon/{{../categoryId}}">...More</a></li>
+			  {{/if_gt}}
+			  
+		    </ul>
+		  	{{/if}} -->
+		  	
+		  	{{#if weRecommendedEvents}}
+            <div class="menucell endingsoon">
+	  		<ul>
+		      <li class="menu-heading">
+		        <h3>We Recommend</h3>
+		      </li>
+			  {{#each weRecommendedEvents}}
+			  {{#if_less_equal @index 10}}
+		  	  <li>
+		      	<a href="/product/listing/event/{{eventId}}">&bull; {{eventName}}</a>
+	          </li>
+	          {{/if_less_equal}}
+			  {{/each}}
+			  <!-- {{#if_gt weRecommendedEvents.length 10}}
+			  <li class="moreitem"><a href="/event/list//we-recommend/{{../categoryId}}">...More</a></li>
+			  {{/if_gt}} -->
+			  
+		    </ul>
+            </div>
+		  	{{/if}}
+		  	
+		  	{{#if categories}}
+            <div class="menucell categories">
+	  		<ul>
+		      <li class="menu-heading">
+		        <h3>Shop By Category</h3>
+		      </li>
+			  {{#each categories}}
+			  {{#if_less_equal @index 10}}
+			  <li>
+		        <a href="/product/listing/category/{{categoryId}}" rel="catLink{{categoryId}}" class="ref_link">&bull; {{categoryName}}</a>
+		      </li>
+		      {{/if_less_equal}}
+			  {{/each}}
+		    </ul>
+            </div>
+		  	{{/if}}
+		  	
+		  	{{#if categories}}
+		  	{{#each categories}}
+			  {{#if_less_equal @index 10}}
+		        {{#if categories}}
+	        	<div class="menucell hidemenu" id="catLink{{../categoryId}}"> 
+	        		<ul>
+			          <li class="menu-heading">
+			            <h3>{{../categoryName}}</h3>
+			          </li>
+			          {{#each categories}}
+			          {{#if_less_equal @index 10}}
+			          <li>
+			            <a href="/product/listing/category/{{categoryId}}">&bull; {{categoryName}}</a>
+			          </li>
+			          {{/if_less_equal}}
+			          {{/each}}
+		            </ul>
+	            </div>
+		        {{/if}}
+		      {{/if_less_equal}}
+			  {{/each}}
+			  {{/if}}
+		  </div>
+          </div>
+          </div>
+		</li>
+		{{/each}}
+	</ul>
+{{/if}}

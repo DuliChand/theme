@@ -1,0 +1,62 @@
+<div class="myaccount-area">
+<div id="left" class="sidebar-floating ">
+		<div id="sidebar" class="last-ord-sum">
+							{{#if orders}}
+								<h4 class="last-ord-heading">Last Order</h4>
+
+								<div class="ord-sum-outer">
+
+									<div class="row ord-particulars">
+
+										<span>Order Number</span>
+
+										<strong>{{orders.orderNumber}}</strong>
+										
+										<span>Order Status</span>
+										
+										{{#lowerEqual orders.status 'canceled'}}
+											<strong>Cancelled</strong>
+										{{else}}
+											<strong>{{orders.status}}</strong>
+										{{/lowerEqual}}
+
+										{{#if orders.bankTransactionId}}
+										<span>Transaction Id</span>
+										
+										<strong>{{orders.bankTransactionId}}</strong>
+										{{/if}}
+
+										<span>Item(s)</span>
+
+										<strong>{{orders.totalOrderItems}}</strong>
+
+										<span>Order Value</span>
+
+										<strong>{{orders.totalAmountPaid}}</strong>
+
+										{{#if orders.totalRewardAmount}}
+											<span>Reward Points</span>
+
+											<strong>{{orders.totalRewardAmount}}</strong>
+										{{else}}
+											<span>Reward Points</span>
+
+											<strong>0</strong>
+										{{/if}}
+
+										{{#if orders.totalStoredCredit}}
+											<span>Credits Used</span>
+
+											<strong>{{orders.totalStoredCredit}}</strong>
+										{{/if}}
+
+									</div>
+
+									<!-- <a href="#" class="moredetail">More Details</a> -->
+
+				</div>
+	     		{{/if}}
+			</div>
+		
+	</div>
+	</div>

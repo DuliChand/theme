@@ -1,0 +1,191 @@
+#vouchersarea {
+	clear:both;
+	margin:0;
+	padding:15px 0;
+	min-height:300px
+}
+#voucherleft {
+	float:left;
+	/*background:url(http://static.fashionandyou.com/app-images/bar1.jpg) 0 24px repeat-x;*/
+}
+#voucherleft ul {
+	margin:0;
+	padding:10px 10px 0;
+	width:80%
+}
+#voucherleft ul li {
+	list-style-type:none;
+	font-size:13px;
+	display:block;
+	margin:0 0 8px
+}
+#voucherleft ul li a {
+	display:block;
+	color:#404040;
+	background:#ebebeb;
+	border:1px solid #d3d3d3;
+	padding:2px 0 0 10px;
+	height:27px;
+	border-radius:4px;
+	position:relative;
+}
+#voucherleft ul li a:after {
+	content:'';
+	display:block;
+	position:absolute;
+	right:-1px;
+	top:-1px;
+	width:18px;
+	height:27px;
+	background:url(http://static.fashionandyou.com/app-images/sprite1.png) -55px -73px no-repeat
+}
+#voucherleft ul li a:hover, #voucherleft ul li a.active {
+	background:#d22573;
+	border:1px solid #d22573;
+	color:#fff
+}
+#voucherleft ul li a:hover:after, #voucherleft ul li a.active:after {
+	background:url(http://static.fashionandyou.com/app-images/sprite1.png) -55px -37px no-repeat!important
+}
+#voucherright {
+	float:left;
+	/*background:url(http://static.fashionandyou.com/app-images/bar1.jpg) 0 24px repeat-x;*/
+	padding:10px 0 0 10px;
+}
+#voucherright #credit-tabs {
+	clear:both;
+	margin:0 0 8px;
+	height:34px
+}
+#voucherright #credit-tabs ul {
+	margin:0;
+	padding:0
+}
+#voucherright #credit-tabs ul li {
+	float:left;
+	font-size:13px;
+	list-style-type:none;
+	margin:0 10px 0 0
+}
+#voucherright #credit-tabs ul li a {
+	color:#333;
+	display:block;
+	text-decoration:none;
+	background:#f3f3f3;
+	padding:6px 12px;
+	border:1px solid #CCC;
+	border-radius:4px
+}
+#voucherright #credit-tabs ul li a:hover, #voucherright #credit-tabs ul li a.active {
+	background:#d22573;
+	color:#fff;
+	border:1px solid #d22573
+}
+#voucherright h3 {
+	line-height:normal;
+	font-size:19px;
+	color:#404040;
+	margin:0 0 5px;
+	float:left
+}
+#voucherright .table1 {
+	margin:0 0 25px;
+	clear:both;
+	border-left:1px dashed #d9d9d9
+}
+#voucherright .table1 th {
+	background:#ebebeb;
+	font-size:14px;
+	font-weight:400;
+	padding:2px 10px;
+	color:#434343;
+	border-right:1px dashed #d9d9d9
+}
+#voucherright .table1 th:first-child {
+	width:18%
+}
+#voucherright .table1 th:last-child {
+	width:15%
+}
+#voucherright .table1 td {
+	border-bottom:1px dashed #d9d9d9;
+	border-right:1px dashed #d9d9d9;
+	font-size:12px;
+	color:#6f6f6f;
+	padding:4px 10px
+}
+#voucherright .table1 tr:hover {
+	background:#d22573;
+	color:#fff
+}
+#voucherright .table1 tr:hover td {
+	color:#fff
+}
+#voucherright .print-but {
+	float:left;
+	display:block;
+	clear:both;
+	margin:0 0 10px
+}
+#voucherright .print-but a {
+	display:block;
+	background:#000;
+	font-size:13px;
+	color:#fff;
+	padding:4px 12px
+}
+.statment-table {
+	display:none
+}
+.statment-filter {
+	float:right;
+	position:relative
+}
+.statment-filter .select-wrapper .selectbox {
+	padding:3px;
+	font-size:11px;
+	color:#333;
+	border:1px solid #ccc;
+	border-radius:3px;
+}
+.statment-filter .select-wrapper {
+	display:block;
+	float:left;
+	padding-left:0;
+	margin:0 8px 0 0;
+	border:0
+}
+.statment-filter .select-wrapper .selectbox {
+	margin-top:0;
+	text-indent:0
+}
+.statment-filter .select-wrapper .selectbox-wrapper {
+	width:100%;
+	border-top-right-radius:0
+}
+.statment-filter .selectbox-wrapper ul {
+	width:100%!important
+}
+.statment-filter .selectbox-wrapper ul li {
+	padding:0!important
+}
+.selectbox {
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	cursor:pointer;
+	display:block;
+	height:100%;
+	width:100%
+}
+.selectbox, .selectbox-wrapper {
+	background-color:#FFF;
+	border:1px solid #CCC;
+	border-radius:5px;
+	color:#666;
+	font-size:12px;
+	line-height:28px;
+	margin:0;
+	padding:0;
+	text-align:left;
+	text-indent:10px;
+	width:100%
+}

@@ -1,0 +1,50 @@
+ {{#if storedCreditWrapper}}
+      {{#if storedCreditWrapper.storedCredits}}
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+	        <tr>
+	          <th>Date</th>
+	          <th>Order No.</th>
+	          <th>Description</th>
+	          <th>Awarded</th>
+	          <th>Deducted</th>
+	          <th>Total</th>
+	        </tr>
+	        {{#if storedCreditWrapper.storedCredits.length}}
+	        {{#each storedCreditWrapper.storedCredits}}
+	        <tr>
+	          <td>{{getDOB createDate}}</td>
+	          <td>{{returnOrderHeader.orderId}}</td>
+	          <td>{{description}}</td>
+	          <td>Rs {{awardedAmount}}/-</td>
+	          <td>{{consumedAmount}}</td>
+	          <td>{{availableCredits}}</td>
+	        </tr>
+	        {{/each}}
+	        {{else}}
+	        <tr>
+	          <td>{{getDOB storedCreditWrapper.storedCredits.createDate}}</td>
+	          <td>{{storedCreditWrapper.storedCredits.returnOrderHeader.orderId}}</td>
+	          <td>{{storedCreditWrapper.storedCredits.description}}</td>
+	          <td>Rs {{storedCreditWrapper.storedCredits.awardedAmount}}/-</td>
+	          <td>{{storedCreditWrapper.storedCredits.consumedAmount}}</td>
+	          <td>{{storedCreditWrapper.storedCredits.availableCredits}}</td>
+	        </tr>
+	        {{/if}}
+      </table>
+      <span class="print-but"><a href="#">Print Statement</a></span>
+      {{else}}
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+	        <tr>
+	          <th>Date</th>
+	          <th>Order No.</th>
+	          <th>Description</th>
+	          <th>Awarded</th>
+	          <th>Deducted</th>
+	          <th>Total</th>
+	        </tr>
+	        <tr>
+	          <td colspan="6" align="center">Stored Credits Not Available</td>
+	        </tr>
+      </table>
+      {{/if}}
+{{/if}}

@@ -1,0 +1,265 @@
+.cart-item-timer:before {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+.cart-area-inn {
+	height:auto;
+	margin-right:335px;
+	min-height:510px
+}
+.cart-area-inn .section-heading {
+	float:left;
+	width:100%;
+	padding:16px 0 10px;
+	font-size:12px;
+	line-height:38px;
+	color:#8a8a8a;
+	text-indent:10px;
+	text-transform:uppercase;
+	border-bottom:1px solid #f5f6f6
+}
+.cart-area-inn .section-heading span {
+	color:#8a8a8a
+}
+.cart-area-inn .section-heading a {
+	display:inline;
+	float:right;
+	line-height:12px;
+	color:#666
+}
+.cart-area-inn a.continue-shopping-btn, .cart-area-inn a.update-cart, .cart-area-inn a.cont-shopping, .order-sum-outer a.btn-cartpop, .save-cart {
+	line-height:12px;
+	font-size:13px;
+	display:inline-block;
+	background:#d22573;
+	color:#fff;
+	text-indent:0;
+	text-transform:uppercase;
+	padding:9px 7px;
+	border-radius:4px;
+	text-shadow:1px 1px 1px #333;
+	margin:0;
+	height:auto;
+	width:auto
+}
+
+.cart-area-inn a.continue-shopping-btn {
+	float:right
+}
+.cart-area-inn a.update-cart {
+	float:left
+}
+.save-cart {
+	background:#333;
+    float: left;
+    padding: 4px 4px;
+    border-radius:0;
+    margin:0 0px 0 10px;
+	
+}
+.cart-area-inn a.cont-shopping {
+	  float: right;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-shadow: none;
+    padding: 7px 4px;
+}
+.order-sum-outer a.btn-cartpop {
+	float:left;
+	margin:10px auto 0!important
+}
+.cart-area-inn .cart-details {
+	border-bottom:1px solid #F5F6F6;
+	float:left;
+	height:auto;
+	padding:15px 0 10px 10px;
+	width:100%;
+	z-index:2
+}
+.cart-details .col-cartitem2 {
+	float:right
+}
+.cart-details .col-cartitem1 {
+	float:left
+}
+.cart-details .select-wrapper {
+	float:left; width:auto;
+}
+.cart-details .select-wrapper select {
+	border: 1px solid #ccc;
+    border-radius: 3px;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    margin: 0 0 15px;
+   /* padding: 0 4px;*/
+    width: 60px;
+}
+.cart-prod-img {
+	float:left;
+	margin:0 10px 0 0;
+	width:77px;
+	border:1px solid #F5F6F6
+}
+.cart-prod-img img {
+	float:left;
+	height:auto;
+	width:100%
+}
+.cart-det-prodname {
+	font-family:'centurygothicbold';
+	font-size:14px;
+	line-height:14px;
+	padding-bottom:6px
+}
+.cart-det-prodname a {
+	color:#666;
+	font-family:'centurygothicbold';
+}
+.cart-det-label {
+	color:#999;
+	float:left;
+	font-size:12px;
+	font-weight:400;
+	line-height:19px;
+	margin-right:10px
+}
+.cart-remove {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat;
+	background-position:-395px -123px;
+	display:block;
+	float:right;
+	height:20px;
+	margin-right:10px;
+	width:20px;
+	margin-top:-10px;
+}
+.cart-item-timer:before {
+	background-position:-93px -216px;
+	content:"";
+	height:16px;
+	left:0;
+	position:absolute;
+	top:-3px;
+	width:16px
+}
+.cart-item-timer {
+	color:#666;
+	float:right;
+	font-size:12px;
+	line-height:12px;
+	padding-right:15px;
+	position:relative;
+	text-indent:20px
+}
+.col-cartitem2 .item-old-price {
+	color:#666;
+	float:right;
+	font-family:'centurygothicbold';
+	font-size:12px;
+	line-height:16px;
+	margin:11px 10px 9px 0;
+	text-decoration:line-through
+}
+.col-cartitem2 .item-new-price {
+	color:#666;
+	float:right;
+	font-family:'centurygothicbold';
+	font-size:12px;
+	margin:11px 10px 9px 0;
+	line-height:16px;
+	padding-left:10px;
+	border-left:1px solid #666
+}
+.col-cartitem2 .item-total-price {
+	clear:both;
+	color:#666;
+	float:right;
+	font-family:'centurygothicbold';
+	font-size:13px;
+	line-height:20px;
+	padding-right:10px
+}
+
+.col-cartitem2 .item-total-days {
+	clear: both;
+    color: #333;
+    float: right;
+    font-family:'centurygothicbold';
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 10px;
+    ppadding: 0 6px;
+    margin-top: 10px;
+   
+}
+
+.col-cartitem1 .item-old-price {
+	color:#666;
+	font-family:'centurygothicbold';
+	font-size:12px;
+	line-height:16px;
+	margin:0 10px 9px 0;
+	text-decoration:line-through;
+	display:none
+}
+.col-cartitem1 .item-new-price {
+	color:#666;
+	font-family:'centurygothicbold';
+	font-size:12px;
+	margin:0 10px 9px 0;
+	line-height:16px;
+	padding-left:10px;
+	border-left:1px solid #666;
+	display:none
+}
+.cart-action-area {
+	/* border-bottom:1px solid #F5F6F6; */
+	float:left;
+	height:auto;
+	padding:6px 0;
+	width:100%
+}
+.empty-cart-section {
+	width:100%;
+	text-align:center;
+	clear:both;
+	padding:20px 0;
+	border-bottom:1px solid #F5F6F6
+}
+.empty-cart-section p {
+	float:none;
+	display:block;
+	text-align:center;
+	font-size:20px
+}
+#cartPromoData{
+	float: left;
+	width: 100%;
+}
+#cartPromoData .cart-discount {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 1px solid #c7c7c7;
+  /*  float: left;*/
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px 10px;
+   /* width: 93%;*/
+}
+#cartPromoData > span {
+    background: none repeat scroll 0 0 #d22573;
+    display: block;
+   float: left;
+    height: auto;
+    padding: 14px 14px;
+    margin: 0 5px 0 0;
+    position: static;
+    text-align: center;
+  /*  width: 5%;*/
+}
+#cartPromoData > span img{
+    background: url("http://static.fashionandyou.com/app-images/sprite.png") repeat scroll -433px -240px #d22573;
+    display: block;
+    float: left;
+    width: 21px;
+    height: 20px;
+}

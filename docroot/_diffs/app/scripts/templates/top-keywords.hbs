@@ -1,0 +1,13 @@
+
+{{#if searchTermsWrapper.searchTerms.length}}
+{{#each searchTermsWrapper.searchTerms}}
+<a href="{{text}}" class="results-value" id="selectedKeyword">
+     {{text}} ({{searched}})
+</a>
+{{/each}}
+{{else}}
+<a href="{{searchTermsWrapper.searchTerms.text}}" class="results-value" id="selectedKeyword">
+     {{searchTermsWrapper.searchTerms.text}} ({{searchTermsWrapper.searchTerms.searched}})
+</a>
+{{/if}}
+        

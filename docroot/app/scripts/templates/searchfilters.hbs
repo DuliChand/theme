@@ -1,0 +1,71 @@
+<!-- filter area starts here -->
+
+<div id="filter-wrapper">
+  <div class="title-heading"> <span class="title-filter-left">Filter</span><span>(refine your search by choosing sub categories below) </span> <span class="title-filter-right reset-all">Reset All</span> </div>
+  <div id="product-filter-wrapper">
+    <div class="filter-bar-box">
+    {{#if categoryGroup}}
+    	 {{#if categoryGroup.buckets.length}}
+    	 {{#each categoryGroup.buckets}}
+		      <h4> {{getSearchSpecificData key}} - ({{doc_count}}) <span class="reset-link"></span></h4>
+		      <div class="toggle-box">
+		        <div class="scroller-bystyle" >
+		          <ul>
+		          {{#if categoryLevel1.buckets.length}}
+		          {{#each categoryLevel1.buckets}}
+		          	{{#if categoryLevel2.buckets.length}}
+		          		{{#each categoryLevel2.buckets}}
+				            <li>
+				              <input type="checkbox" name="{{../../../key}}" value="{{key}}" class="choose-option" id="get{{key}}{{doc_count}}">
+				              <label for="get{{key}}{{doc_count}}" value="{{key}}"> {{getSearchSpecificData key}} ({{doc_count}}) </label>
+				            </li>
+				         {{/each}}
+		             {{/if}}
+		            {{/each}}
+		            {{/if}}
+		          </ul>
+		        </div>
+		      </div>
+		    {{/each}}
+      		{{/if}}
+      {{/if}}
+      
+      <!-- {{#if aggregations}}
+      {{#notEqual aggregations.maxRange.value aggregations.minRange.value}}
+      <h4>Price Range <span class="reset-link"></span></h4>
+      <div class="toggle-box price" data-filter-name="{{filterName}}" data-filter-type="{{filterType}}">
+        <div class="scroller-bystyle">
+          <p>
+            <label for="amount">Price Range:</label>
+            <input type="text" id="amount">
+          </p>
+          <div id="slider-range"></div>
+          <div class="price-min-max">
+            <div class="min">Min (INR {{aggregations.minRange.value}}) </div>
+            <div class="max">Max (INR {{aggregations.maxRange.value}})</div>
+          </div>
+        </div>
+      </div>
+      {{/notEqual}}
+      {{/if}}  -->
+     </div>
+  </div>
+</div>
+
+<!-- filter area ends here -->
+
+<!-- <script>
+	$(function() {
+		$( "#slider-range" ).slider({
+		  range: true,
+		  min: 0,
+		  max: 500,
+		  values: [ 75, 300 ],
+		  slide: function( event, ui ) {
+			$( "#amount" ).val( "INR " + ui.values[ 0 ] + " - INR " + ui.values[ 1 ] );
+		  }
+		});
+		$( "#amount" ).val( "INR " + $( "#slider-range" ).slider( "values", 0 ) +
+		  " - INR " + $( "#slider-range" ).slider( "values", 1 ) );
+   });
+</script> -->

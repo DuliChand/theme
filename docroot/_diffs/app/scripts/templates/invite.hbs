@@ -1,0 +1,66 @@
+<!-- invite breadcrumb area starts here -->
+<div class="col-xs-12 col-md-12 col-sm-12">
+	<div id="breadcrumb-container">
+		<ul class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li><a href="/profile">Profile</a></li>
+			<li class="active">Invite</li>
+		</ul>
+	</div>
+</div>
+<!-- invite breadcrumb area ends here -->
+
+<!-- invite area starts here -->
+<section>
+	<div id="invitearea" class="col-xs-12">
+    	
+    	
+  	</div>
+
+		<div id="yourinvitation">
+		  <h2>Your Invitations</h2>
+		    <div id="invitation-tabs">
+		      <ul>
+		        <li><a href="#" class="active" id="invitetab1">Open Invitations</a></li>
+		        <li><a href="#" id="invitetab2">Accepted Invitations</a></li>
+		        <li><a href="#" id="invitetab3">Credits Earned</a></li>
+		      </ul>
+		      <div class="clear"></div>
+		  	</div>
+		    <div id="invitationdata">
+		
+		    <div id="openinvitation" style="display:block;">
+		    {{#if domainResponse.entitiesResponse}}
+		      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		        <tr>
+		          <th>Friends</th>
+		          <th>Last Invitation Sent</th>
+		          <th>No. of Invites Sent</th>
+		        </tr>
+		        {{#if domainResponse.entitiesResponse.length}}
+		        {{#each domainResponse.entitiesResponse}}
+		        <tr>
+		          <td>{{baseDTO.invitedEmailId}}</td>
+		          <td>{{getDate 'DDMMYYYY' baseDTO.dateInvited}}</td>
+		          <td>{{baseDTO.inviteCount}}</td>
+		        </tr>
+		        {{/each}}
+		        {{else}}
+		       	<tr>
+		          <td>{{domainResponse.entitiesResponse.baseDTO.invitedEmailId}}</td>
+		          <td>{{getDate 'DDMMYYYY' domainResponse.entitiesResponse.baseDTO.dateInvited}}</td>
+		          <td>{{domainResponse.entitiesResponse.baseDTO.inviteCount}}</td>
+		        </tr>
+		        {{/if}}
+		      </table>
+		      {{/if}}
+		    </div>
+		
+		    <div id="acceptinvitation"></div>
+		
+		    <div id="creditsearn"></div>
+		
+		  </div>
+	  	</div>
+  </section>
+<!-- invite area ends here -->

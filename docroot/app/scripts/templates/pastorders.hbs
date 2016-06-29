@@ -1,0 +1,31 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+	<tr>
+        <th>Order No.</th>
+        <th>Amount</th>
+        <th>Items</th>
+        <th>Status</th>
+    </tr>
+    {{#if orders}}
+    {{#if orders.length}}
+        {{#each orders}}
+        <tr>
+            <td><a href="#">{{orderId}}</a></td>
+            <td>Rs.{{totalAmountPaid}}/-</td>
+            <td>{{totalOrderItems}}</td>
+            <td>{{status}}</td>
+        </tr>
+        {{/each}}
+    {{else}}
+        <tr>
+            <td><a href="#">{{orders.orderId}}</a></td>
+            <td>Rs.{{orders.totalAmountPaid}}/-</td>
+            <td>{{orders.totalOrderItems}}</td>
+            <td>{{orders.status}}</td>
+        </tr>
+    {{/if}}
+    {{else}}
+    <tr>
+        <td colspan="4" align="center">You don't have any orders...yet!</td>
+    </tr>
+	{{/if}}
+</table>

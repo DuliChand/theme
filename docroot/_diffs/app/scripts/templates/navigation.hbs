@@ -1,0 +1,49 @@
+{{#if categories}}
+			<div id="responsivemenu">
+						    <div class="menuicon">
+							    <span id="menulink">&nbsp;</span>
+							    <a href="/" title="Home">
+							    <img src="/app-theme/images/logo-mobile.png" alt="FashionAndYou" width="100" />
+							    </a>
+						    </div>
+					        <div class="menulisting" id="openmenu">
+						      <ul>
+						      	{{#each categories}}
+						        <li>
+						        	<a href="/{{#spacetounderscore categoryName}}{{/spacetounderscore}}/?src=mainNav" title="{{categoryName}}">{{categoryName}}</a>
+						       	</li>
+						        {{/each}}
+						    
+						      </ul>
+					      	</div>
+					    </div>
+			<ul class="navbar-left">
+				<li class="menu-h"><a class="navbar-home navbar-brand" href="/"></a></li>
+				{{#each categories}}			
+					<li class="menu-h">
+					  <a class="navbar-brand {{categoryName}}" href="/{{#spacetounderscore categoryName}}{{/spacetounderscore}}/?src=mainNav" title="{{categoryName}}">
+					  <span>{{categoryName}}</span></a>
+					<div class="menu-dropdown move-right {{categoryName}}">		        			
+						<div class="menucolumn">								
+							<div class="menurow">
+							{{#each categories}}
+								<div class="menucell">			            				
+									<ul>									      
+										<li class="menu-heading">									        
+										<h3>{{subCatName}}</h3>									     
+										</li>
+										{{#each categories}}
+		<li>
+			<a href="/{{#spacetounderscore ../../categoryName}}{{/spacetounderscore}}/{{eventName}}_{{eventId}}">{{eventName}}</a>		
+		</li>					      			
+								 		{{/each}}
+									</ul>
+								</div>
+							{{/each}}
+							</div>
+						</div>
+					</div>
+					</li>
+				{{/each}}
+			</ul>	
+{{/if}}

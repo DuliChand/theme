@@ -1,0 +1,12 @@
+.myaccount-area {float:right; position:relative; min-height:490px;}
+.sidebar-floating {position:absolute; right:0; top:20px; width:300px; height:90%;}
+.last-ord-sum {float:left; height:auto; width:300px;}
+.last-ord-heading {color:#d22573; float:left; font-size:12px; line-height:12px; margin:8px 11px 10px; text-transform:uppercase;}
+.ord-sum-outer {background:#FCFCFC; float:left; height:auto; width:100%;}
+.ord-particulars span {float:left; padding:20px 0 0 10px; clear:both; font-size:14px; line-height:12px; color:#666; text-transform:none;}
+.ord-particulars span:nth-child(2n) {float:right; padding:20px 10px 0 0; clear:none; text-transform:none;}
+.ord-sum-outer .moredetail {padding:0 10px 10px 0; padding:0 10px 10px 0;}
+
+.ord-particulars span, .ord-particulars strong {float:left; padding:20px 0 0 10px; clear:both; font-size:13px; line-height:12px; 
+	color:#666; /* text-transform:uppercase */}
+.ord-particulars strong {float:right; padding:20px 10px 0 0; clear:none; text-transform:none;}

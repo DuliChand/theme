@@ -1,0 +1,43 @@
+{{#if fresh-arrival}}
+
+<div class="row events">
+	<h1 class="col-xs-12">{{fresh-arrival.title}}</h1>
+{{#if fresh-arrival.events}}
+{{#each fresh-arrival.events}}
+	<!-- column 1 starts here -->
+	<div class="col-xs-4 event-col" >
+		<div class="ftr-3-5">
+			<a class="showtooltip"  href="{{../fresh-arrival.landing-url}}">
+				<img alt="" src="{{banner-image}}"  />
+				<div class="tagimage">{{discount-label}}</div>
+				<h2 class="events-name">{{event-name}}</h2>
+			</a>
+		</div>
+	</div>
+	<!-- column 1 ends here -->
+
+</div>
+<!-- fresh arrivals ends here -->
+<div class="powertip-outer">
+	<div class="eventpowertip">
+		<a href="#" class="event-name">{{event-name}}</a>
+		<div class="clear"></div>
+		<span class="tooltip-timer">{{event-duration}}</span><div class="clear"></div>
+		<span class="prod-no">{{product-count}}</span><span class="disc-tip">Upto {{discount-label}}</span>
+		<div class="clear"></div>
+		<span class="tip-sep"></span>
+		<p class="text">{{short-desc}}</p><div class="clear"></div>
+		<span class="tip-sep"></span>
+
+		<div class="share-icons">
+
+			<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+
+		</div>
+    </div>
+    	<a href="#" class="int-ship">{{delivery-mode}}<strong>{{delivery-time}}</strong></a>
+</div>
+{{/each}}
+{{/if}}
+
+{{/if}}

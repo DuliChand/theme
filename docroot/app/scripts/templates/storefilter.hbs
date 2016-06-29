@@ -1,0 +1,48 @@
+ {{#if filters}}
+ <div class="filterOption">
+			<h1>Filter By :</h1>
+ 	{{#each filters}}
+ 		{{#equal filterName 'Price'}}
+		
+ 		{{else}}
+			{{#filtersubcat filterLabel}}
+			{{#if filterOptions}}
+			<div class="col-xs-12 col-sm-2 col-md-2 filterDatalist" id="{{#filterSequence filterLabel}}{{/filterSequence}}" >
+				<div class="select-sort">
+				
+				<input type="hidden" id="catchangeval" value=""/>
+					<!-- <div class="brand-title">{{../filterLabel}}</div> -->
+					<select class="select choose-option {{filterName}} " data-filter-name="{{filterName}}" data-filter-type="{{filterType}}" id="sortSelect">
+						<option class="defaultCat" value="select" >{{../filterName}}</option>
+						{{#if filterOptions.length}}
+						{{#each filterOptions}} 
+							<option value="{{optionId}}" id="{{optionId}}">{{optionLabel}}</option>
+						{{/each}}
+						{{else}}
+							<option value="{{filterOptions.optionId}}" id="{{filterOptions.optionId}}">{{filterOptions.optionLabel}}</option>
+						{{/if}}
+					</select>
+				</div>
+			</div>
+			
+			{{/if}}	
+			{{/filtersubcat}}	
+ 		{{/equal}}
+	{{/each}}
+	<div class="col-xs-12 col-sm-2 col-md-2 subcategory filterDatalist" style="display:none" id='2'>
+		<div class="select-sort subcategory" style="display:none">
+			
+		</div>
+	</div>
+	
+	<div class="col-xs-12 col-sm-2 col-md-2 filterDatalist" id="4">
+		<div class="select-sort">
+			<select class="select choose-option" id="sortOrderSelect">
+				<option value="">Price</option>
+				<option value="HIGH_TO_LOW">Price High to Low</option>
+				<option value="LOW_TO_HIGH">Price Low to High</option>
+			</select>
+		</div>
+	</div>
+	</div>	
+{{/if}}

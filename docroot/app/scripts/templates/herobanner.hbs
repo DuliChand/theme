@@ -1,0 +1,19 @@
+<!-- banner starts here -->
+{{#if data.categoryEvents}}
+<div class="hero-slider">
+  <ul class="bxslider">
+  {{#if data.categoryEvents}}
+	{{#each data.categoryEvents}}
+	<li>
+		<a href="/{{#mainGroupUrl 'all' event.eventCode}}{{/mainGroupUrl}}/{{#specialCharReplace event.eventName}}{{/specialCharReplace}}_{{event.eventId}}">
+			<img src="http://static.fashionandyou.com/{{event.eventCode}}/banner_hero_new.jpg" alt="{{event.eventName}}" />
+		</a>
+	</li>
+    {{/each}}
+  
+	
+    {{/if}}
+  </ul>      
+</div>
+{{/if}}
+<!-- banner ends here -->

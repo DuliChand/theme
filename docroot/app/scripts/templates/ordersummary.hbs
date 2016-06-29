@@ -1,0 +1,202 @@
+<div id="left" class="sidebar-floating">
+	<div id="sidebar" class="order-sum-outer">
+		<div class="order-sum-box">
+			<span class="sum-heading">More Saving</span>
+			<div class="sum-content">			
+				<div class="moresaving">
+				<span class="product-value-label">Total Savings</span>
+				<span>{{#if cart.products.length}} {{cart.products.0.currencyType}} {{else}} {{cart.products.currencyType}} {{/if}} {{cart.youSavedAmount}}</span>
+
+							
+				</div>
+
+				<!-- redeem area ends here -->
+				<span class="sum-heading">Order Summary</span>
+				<ul>
+					{{#if cart.products}}
+						{{#if cart.products.length}}
+							{{#each cart.products}}
+								{{#if promotions}}
+									{{#if promotions.length}}
+										{{#each promotions}}
+											{{#lowerEqual promotionType "voucher"}}
+												<!-- <li id="couponrow">
+													<span class="product-value-label">Coupon ({{voucherCode}})</span> 
+													<input type="text" title="Remove Coupon" data-type="voucher" data-value="{{voucherCode}}" value="{{value}}"/>
+													<button type="button" class="remove-offer del-but" data-type="voucher">Remove</button>
+
+													<!-- <a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{voucherCode}}">remove</a> 
+													<span class="product-value" id="couponValue">INR {{value}}</span> -->
+												</li> -->
+											{{else}}
+												{{#lowerEqual promotionType "personalvoucher"}}
+													<!-- <li id="couponrow">
+																											<span class="product-value-label">Coupon ({{voucherCode}})</span> 
+														<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{voucherCode}}">remove</a>
+														<span class="product-value" id="couponValue">INR {{value}}</span>
+													</li> -->
+												{{/lowerEqual}}
+											{{/lowerEqual}}
+										{{/each}}
+									{{else}}
+										{{#lowerEqual promotions.promotionType "voucher"}}
+											
+											<!-- <li id="couponrow">
+												<span class="product-value-label">Coupon ({{promotions.voucherCode}})</span> 
+												<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{promotions.voucherCode}}">remove</a>
+												<span class="product-value" id="couponValue">INR {{promotions.value}}</span>
+											</li> -->
+										{{else}}
+											{{#lowerEqual promotions.promotionType "personalvoucher"}}
+												<!-- <li id="couponrow">
+													<span class="product-value-label">Coupon ({{promotions.voucherCode}})</span> 
+													<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{promotions.voucherCode}}">remove</a>
+													<span class="product-value" id="couponValue">INR {{promotions.value}}</span>
+												</li> -->
+											{{/lowerEqual}}
+										{{/lowerEqual}}
+										
+									{{/if}}
+								{{/if}}
+							{{/each}}
+						{{else}}
+							{{#if cart.products.promotions}}
+								{{#if cart.products.promotions.length}}
+									{{#each cart.products.promotions}}
+										{{#lowerEqual promotionType "voucher"}}
+											<!-- <li id="couponrow">
+												<span class="product-value-label">Coupon ({{voucherCode}})</span> 
+												<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{voucherCode}}">remove</a>
+												<span class="product-value" id="couponValue">INR {{baseAmount}}</span>
+											</li> -->
+										{{else}}
+											{{#lowerEqual promotionType "personalvoucher"}}
+												<!-- <li id="couponrow">
+													<span class="product-value-label">Coupon ({{voucherCode}})</span> 
+													<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{voucherCode}}">remove</a>
+													<span class="product-value" id="couponValue">INR {{baseAmount}}</span>
+												</li> -->
+											{{/lowerEqual}}
+										{{/lowerEqual}}
+									{{/each}}
+								{{else}}
+									{{#lowerEqual cart.products.promotions.promotionType "voucher"}}
+										<!-- <li id="couponrow">
+											<span class="product-value-label">Coupon ({{cart.products.promotions.voucherCode}})</span> 
+											<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{cart.products.promotions.voucherCode}}">remove</a>
+											<span class="product-value" id="couponValue">INR {{cart.products.promotions.value}}</span>
+										</li> -->
+									{{else}}
+										{{#lowerEqual cart.products.promotions.promotionType "personalvoucher"}}
+											<!-- <li id="couponrow">
+												<span class="product-value-label">Coupon ({{cart.products.promotions.voucherCode}})</span> 
+												<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="voucher" data-value="{{cart.products.promotions.voucherCode}}">remove</a>
+												<span class="product-value" id="couponValue">INR {{cart.products.promotions.value}}</span>
+											</li> -->
+										{{/lowerEqual}}
+									{{/lowerEqual}}
+								{{/if}}
+							{{/if}}
+						{{/if}}
+					{{/if}}
+							
+					{{#if cart.promotions}}
+						{{#if cart.promotions.length}}
+							{{#each cart.promotions}}
+								{{#lowerEqual promotionType "voucher"}}
+									<!-- <li id="couponrow">
+											<span class="product-value-label">Coupon ({{voucherCode}})</span> 
+											<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="{{promotionType}}" data-value="{{voucherCode}}">remove</a>
+											<span class="product-value" id="couponValue">INR {{value}}</span>
+									</li> -->
+								{{else}}
+									{{#lowerEqual promotionType "personalvoucher"}}
+									<!--	<li id="couponrow">
+												<span class="product-value-label">Coupon ({{voucherCode}})</span> 
+												<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="{{promotionType}}" data-value="{{voucherCode}}">remove</a>
+												<span class="product-value" id="couponValue">INR {{value}}</span>
+										</li> -->
+									{{/lowerEqual}}
+								{{/lowerEqual}}
+							{{/each}}
+						{{else}}
+							{{#lowerEqual cart.promotions.promotionType "voucher"}}
+							<!-- <li id="couponrow">
+								<span class="product-value-label">Coupon ({{cart.promotions.voucherCode}})</span> 
+								<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="{{cart.promotions.promotionType}}" data-value="{{cart.promotions.voucherCode}}">remove</a>
+								<span class="product-value" id="couponValue">INR {{cart.promotions.value}}</span>
+							</li> -->
+							{{else}}
+								{{#lowerEqual cart.promotions.promotionType "personalvoucher"}}
+							<!-- 	<li id="couponrow">
+									<span class="product-value-label">Coupon ({{cart.promotions.voucherCode}})</span> 
+									<a href="#" title="Remove Coupon" class="remove-offer del-but" data-type="{{cart.promotions.promotionType}}" data-value="{{cart.promotions.voucherCode}}">remove</a>
+									<span class="product-value" id="couponValue">INR {{cart.promotions.value}}</span>
+								</li> -->
+								{{/lowerEqual}}
+							{{/lowerEqual}}
+							
+							
+						{{/if}}
+					{{/if}}
+					
+					{{#if cart.rewardAmount}}
+						{{#notEqual cart.rewardAmount 0}}
+							<!-- <li id="rewardrow">
+								<span class="product-value-label">Rewards ({{cart.rewardAmount}} Points)</span> 
+								<a href="#confirmation-popup" title="Remove Reward Points" class="remove-offer del-but" data-type="Reward" data-value="{{cart.rewardAmount}}">remove</a>
+								<span class="product-value" id="rewardsValue">INR {{cart.rewardAmount}}</span>
+							</li> -->
+						{{/notEqual}}
+					{{/if}}
+					
+					{{#if cart.storedCreditAmount}}
+						{{#notEqual cart.storedCreditAmount 0}}
+							<!-- <li id="creditrow">
+								<span class="product-value-label">Credits (INR {{cart.storedCreditAmount}})</span> 
+								<a href="#confirmation-popup" title="Remove Store Credits" class="remove-offer del-but" data-type="StoredCredit" data-value="{{cart.storedCreditAmount}}">remove</a>
+								<span class="product-value" id="creditsValue">INR {{cart.storedCreditAmount}}</span>
+							</li> -->	
+						{{/notEqual}}
+					{{/if}}
+					
+					 <li>
+						<span class="product-value-label">Total</span> 
+						<span class="product-value">{{#if cart.products.length}} {{cart.products.0.currencyType}} {{else}} {{cart.products.currencyType}} {{/if}} {{cart.baseAmount}}</span>
+					</li> 
+					<li id="shippingCharges">
+						<span class="product-value-label">Shipping <!-- <i>Add 100 points more to get free Shipping</i> --></span> 
+						<span class="product-value">{{#if cart.products.length}} {{cart.products.0.currencyType}} {{else}} {{cart.products.currencyType}} {{/if}} {{cart.shippingCharge}}</span>
+					</li>
+					<!-- {{#notEqual cart.shippingCharge 0}}
+					<li>
+						<span class="product-value-label">Shipping <i>Add 100 points more to get free Shipping</i></span> 
+						<span class="product-value"> INR {{cart.shippingCharge}}</span>
+					</li>
+					{{/notEqual}} -->
+				</ul>
+
+				<ul>
+					<li class="product-value-label"><span>You Save :</span> <span>(-){{#if cart.products.length}} {{cart.products.0.currencyType}} {{else}} {{cart.products.currencyType}} {{/if}} {{cart.youSavedAmount}}</span></li> 
+					{{#equal cart.overallExpectedTimeDelivery 0}}
+					{{else}}
+						{{#if cart.products.length}}
+							<li class="textbold">Products expected to be delivered within {{subtract cart.overallExpectedTimeDelivery}} to {{add cart.overallExpectedTimeDelivery}} days. </li>
+						{{else}}
+							<li class="textbold">Product expected to be delivered within {{subtract cart.overallExpectedTimeDelivery}} to {{add cart.overallExpectedTimeDelivery}} days. </li>
+						{{/if}}
+					{{/equal}}
+					
+				</ul>
+
+				<div class="total-area">
+					<span>Net Payable Amount :</span> <span>{{#if cart.products.length}} {{cart.products.0.currencyType}} {{else}} {{cart.products.currencyType}} {{/if}} {{cart.payableAmount}}</span>
+				</div>
+			</div>
+		</div>
+		
+     	
+              <div class="clear"></div>
+            
+	</div>
+</div>

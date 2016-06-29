@@ -1,0 +1,70 @@
+<div id="left" class="sidebar-floating">
+	<div id="sidebar" class="order-sum-outer">
+		<div class="order-sum-box">
+		{{#if cart}}
+			
+				<div class="sum-content">				
+				<span class="sum-heading moresaving">Order Summary</span>
+				
+				<ul>					
+					<!-- <li>
+						<span class="product-value-label">Cart Total</span> 
+						<span class="product-value">Rs. {{cart.totalMrp}}</span>
+					</li>  -->
+					<!--<li>
+						<span class="product-value-label">Cart Discount</span> 
+						<span class="product-value">(-) Rs. {{cart.totalDiscont}}</span>
+					</li> -->
+					<li>
+						<span class="product-value-label">Cart Total</span> 
+						<span class="product-value">Rs. {{cart.baseAmount}}</span>
+					</li>
+					{{#notEqual cart.youSavedAmount 0}}
+					<li>					
+						<span class="product-value-label">Promo/Coupon</span> 
+						<span class="product-value">(-) Rs. {{cart.youSavedAmount}}</span>
+					</li>
+					{{/notEqual}}
+					{{#notEqual cart.storedCreditUsed 0}}
+					<li>
+						<span class="product-value-label">Credits</span> 
+						 <span class="product-value">(-){{cart.storedCreditUsed}}</span>
+					</li>	
+					{{/notEqual}}	
+						{{#notEqual cart.shippingCost 0}}			
+					<li>
+						<span class="product-value-label">Delivery Charges</span> 
+						 <span class="product-value">Rs. {{cart.shippingCost}}</span>
+					</li>
+					{{/notEqual}}
+					{{#notEqual cart.totalTax 0}}
+					<li>
+						<span class="product-value-label">Taxes</span> 
+						<span class="product-value">Rs. {{cart.totalTax}}</span>
+					</li>
+					{{/notEqual}}
+					
+					
+				</ul>
+
+				<!-- <ul>
+					<li class="product-value-label">
+					<span>You Save :</span> 
+					<span>(-) Rs. {{cart.totalSaving}}</span>
+					</li> 
+					
+					
+				</ul> -->
+
+				<div class="total-area">
+					<span>Net Payable Amount :</span> <span>Rs. {{cart.totalPayableAmount}}</span>
+				</div>
+			</div>
+		{{/if}}	
+		</div>
+			
+	</div>
+		
+ <div class="clear"></div>
+            
+</div>

@@ -1,0 +1,27 @@
+<!-- My Profile Section Start -->
+{{#if baseDTO}}
+
+<ul class="nav pull-right loginholder">
+
+	<li class="dropdown showthis1">
+		<a href="#" class="hidden-xs profile-text dropdown-toggle {{toLowerCase baseDTO.gender}}" data-toggle="dropdown" data-gender="{{baseDTO.gender}}">Hi {{baseDTO.firstName}}<!-- {{baseDTO.firstName}} {{baseDTO.lastName}} --></a>
+		 <a href="#" class="hidden-lg hidden-md hidden-sm dropdown-toggle profile-icon {{toLowerCase baseDTO.gender}}" data-toggle="dropdown" data-gender="{{baseDTO.gender}}"><!-- {{baseDTO.firstName}} {{baseDTO.lastName}} --></a>
+		<ul class="dropdown-menu profile">
+		    <span class="cartddwn-cross"></span>
+			<!-- <li class="gender-login">Hi {{baseDTO.firstName}}</li> -->
+			<li><a href="/profile" class="my-profile">My Profile</a></li>
+			<li><a href="/credits" class="credits">My Credits(<span id="credits">0</span>)</a></li>
+			<li><a href="/credits" class="rewards">My Rewards(<span id="rewards">0</span>)</a></li>
+			<li><a href="/orders" class="order">Order History</a></li>
+			<li><a href="/invite" class="invite">Invite Friend</a></li>
+			<li><a href="/favourites" class="my-favorites">Favorites</a></li>
+			<li><a href="#" class="logout" id="userLogout">Logout</a></li>
+		</ul>
+	</li>
+	
+	<li><a href="/invite">Invite</a></li>
+    <li><a href="/faq">Customer Support</a></li>
+    
+</ul>
+{{/if}}
+<!-- My Profile Section End -->

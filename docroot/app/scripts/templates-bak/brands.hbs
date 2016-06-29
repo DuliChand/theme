@@ -1,0 +1,24 @@
+<!-- add brand pop up starts here -->
+{{#if favouriteBrandWrapper.favouriteBrands}}
+<div class="brand-popup-outer" id="add-brands">
+	<div class="brand-popup-inner">
+		<div class="header">
+		<h2>Add Brands You Like</h2>
+		</div>
+	<div class="brand-area">
+		{{#each favouriteBrandWrapper.favouriteBrands}}
+		<div class="col-xs-3">
+			<a href="#"><img src="/fny-theme/images/{{thumbnailURL}}" alt="{{brandCode}}" id="{{favouriteBrandId}}" title="{{brandCode}}" /></a>
+			<input id="{{favouriteBrandId}}" type="checkbox" name="bank" /><label></label>
+		</div>
+		{{/each}}
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<input type="button" id="addFavBrands" class="btn-cartpop" value="Add Brands" />
+		</div>
+	</div>
+	</div>
+</div>
+{{/if}}
+<!-- add brands pop up ends here -->

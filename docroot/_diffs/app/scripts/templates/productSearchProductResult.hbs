@@ -1,0 +1,56 @@
+ {{#if hits.length}}
+ <!--div class="row">
+	      <div class="sort-by">
+	        <div class="col-xs-12">
+	          <div class="listing-pagination">Page 1&nbsp;/&nbsp;3</div>
+	        </div>
+	      </div>
+</div-->
+
+	{{#each hits}}                   
+	<!-- product 1 starts here -->
+	      <div class="product-outer">
+	      <div class="prod-img">
+	        <a href="/product-detail/product/{{_source.eventId}}/{{_source.product.productId}}"> 
+	          <img src="{{_source.vendorProductInventories.0.imageView.0.detailsURL}}" alt="{{_source.product.name}}" title="{{_source.product.name}}" /> 
+	        </a>
+	        <div class="rolover-layer">
+	            <div class="color-area">
+	             <!--  <span class="red"></span>  -->
+	            </div>
+	            <div class="discount-tag"></div>
+	            <div class="clear"></div>
+	            <div class="action-area">
+	              <div class="action-icons">
+	                <div class="sharearea"> 
+	                  <span title="Share" class="listing-share"></span>
+	                  <div class="shareslide">
+	                    <a href="#" class="ifacebook" title="Facebook"></a> 
+	                    <a href="#" class="itwitter" title="Twitter"></a> 
+	                    <a href="#" class="iemail" title="Email"></a>
+	                  </div>
+	                </div>
+	                    <!-- <a title="Video Attached" class="listing-video" href="video-popup.html"></a> --> 
+	              </div>
+	              <div class="shipping-area"> 
+	              <!--span class="shippingtype international"></span-->
+	              </div>
+	            </div>
+	        </div>
+	        </div>
+	        <div class="prod-detail">
+	          <div class="prod-info"> 
+	            <a href="#" class="ev-prod-name" title="{{_source.product.name}}">{{_source.product.name}}</a> 
+	            <a href="/{{_source.eventId}}" class="event-name" title="{{_source.eventName}}">{{_source.eventName}}</a> 
+	          </div>
+	          <div class="prod-pricing"> 
+	            <span class="old-price">INR {{_source.vendorProductEvents.0.eventInventories.0.eventPrices.0.mrp}}</span> 
+	            <span class="new-price">INR {{_source.vendorProductEvents.0.eventInventories.0.eventPrices.0.spWithVAT}}</span> 
+	          </div>
+	        </div>
+	      </div>
+	      
+	<!-- product 1 ends here --> 
+	{{/each}}
+	
+{{/if}}

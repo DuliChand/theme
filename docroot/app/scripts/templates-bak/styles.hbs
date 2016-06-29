@@ -1,0 +1,29 @@
+
+
+<!-- style pop up starts here -->
+{{#if styleGuideWrapper.styleGuides}}
+<div class="style-popup-outer" id="style-popup">
+
+<div class="style-popup-inner">
+	<div class="header">
+		<h2>Tell Us More About Yourself</h2>
+	</div>
+	<div class="style-chart">
+		<h3>What is your Fashion must have ?</h3>
+		<div class="row style-area">
+			{{#each styleGuideWrapper.styleGuides}}
+			<div class="col-xs-4">
+				<a href="#" class="{{toLowerCase description}}"><img src="/fny-theme/images/{{thumbnailURL}}" alt="{{styleCode}}" id="{{styleGuideId}}" /></a>
+				<input type="radio" id="{{styleGuideId}}" name="styles" />
+				<label>{{styleCode}}</label>
+			</div>
+			{{/each}}
+			<a href="#" class="btn-cartpop" id="addStyles">Apply</a>
+			<a href="#" class="skip-link">Skip</a>
+		</div>
+	</div>
+</div>
+</div>
+{{/if}}
+
+<!-- style pop up ends here -->

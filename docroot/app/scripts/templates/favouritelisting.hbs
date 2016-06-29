@@ -1,0 +1,251 @@
+<div class="prod-area-list fav-list">
+	<div class="row">
+		<div class="col-xs-12">
+			<h2 class="prod-heading">Products</h2>
+		</div>
+	</div>
+	<div class="row products">
+		<!-- product starts here -->
+		{{#if products}}
+			{{#if products.length}}
+				{{#each products}}
+				
+				<div class="product-outer product" id="{{vendorProductId}}" data-event-id="{{eventId}}" data-defaultorder="{{@index}}" data-price="{{eventLiveInventory.salePriceWithVAT}}">
+					<div class="prod-img">
+					{{#notEqual eventLiveInventory.quantity 0}}
+					<!-- <div class="quickview-detail">
+						<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick Buy</a>
+					</div> -->
+					{{/notEqual}}
+					<a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" title="{{productName}}">
+						{{#equal eventLiveInventory.quantity 0}}
+							<div class="soldout">
+								<h4>SOLD <strong>OUT</strong></h4>
+								<!-- <p>Don't miss out on the next event</p> -->
+							</div>
+						{{/equal}}
+						<img src="{{thumbnailUrl}}" alt="{{productName}}" title="{{productName}}" />
+					</a>
+					{{#notEqual eventLiveInventory.quantity 0}}
+					<div class="rolover-layer">
+						<!-- {{#if vendorProduct.attributes}}
+								{{#each vendorProduct.attributes}}
+									{{#lowerEqual name "color"}}
+									<div class="color-area">
+										{{#each attributeValues}}
+											<span class="{{toLowerCase value}}"></span>
+										{{/each}}
+									</div>
+									{{/lowerEqual}}
+								{{/each}}
+						{{/if}} -->
+						
+						
+		
+						<div class="clear"></div>
+		
+						<div class="action-area">
+							<div class="action-icons">
+								 <div class="sharearea">
+							<span class="listing-share" title="Share"></span>
+							<div class="shareslide">
+								<!-- <a class="ifacebook" title="Facebook" href="#"></a>
+								<a class="itwitter" title="Twitter" href="#"></a>
+								<a class="iemail" title="Email" href="#"></a> -->
+								<a href="#" class="ifacebook facebook social-share-link" title="Facebook"></a>
+								<a href="#" class="itwitter twitter social-share-link" title="Twitter"></a>
+								<!-- <a href="#" class="iemail email social-share-link" title="Email"></a> -->
+								<a title="gplus" class="igplus googleplus social-share-link" href="#"></a>
+								<a title="pintrest" class="ipintrest pinterest social-share-link" href="#"></a>
+							</div>
+						</div>
+								<!-- <a class="listing-video" href="#" title="Video Attached"></a> -->
+							</div>
+							<div class="shipping-area">
+								{{#if shippingType}}
+								<span class="shippingtype {{toLowerCase shippingType}}">{{shippingType}}</span>
+								{{/if}}
+							</div>
+						</div>
+						<div class="quickview-detail">
+				<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick Buy</a>
+			</div>
+					</div>
+					{{/notEqual}}
+					
+					</div>
+		
+					<div class="prod-detail">
+					<div class="discount-tag">-{{discountInPercentage eventLiveInventory.salePriceWithVAT eventLiveInventory.mrp}}%</div>
+						<div class="prod-info">
+							<a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" class="ev-prod-name" title="{{productName}}">
+								{{productName}}
+							</a>
+							<!-- <a href="#" class="event-name" title="{{eventName}}">
+								{{eventName}}
+							</a> -->
+						</div>
+						<div class="prod-pricing">
+							<span class="old-price">{{eventLiveInventory.currencyCode}} {{eventLiveInventory.mrp}}</span>
+							<span class="new-price">{{eventLiveInventory.currencyCode}} {{eventLiveInventory.salePriceWithVAT}}</span>
+					</div>
+					</div>
+				</div>
+		{{/each}}
+	{{else}}
+		<div class="product-outer product" id="{{products.vendorProductId}}" data-event-id="{{products.eventId}}" data-defaultorder="{{@index}}" data-price="{{products.eventLiveInventory.salePriceWithVAT}}">
+					<div class="prod-img">
+					{{#notEqual products.eventLiveInventory.quantity 0}}
+					<!-- <div class="quickview-detail">
+						<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick Buy</a>
+					</div> -->
+					{{/notEqual}}
+					<a href="/product-detail/product/{{products.eventId}}/{{products.vendorProductId}}" title="{{products.productName}}">
+						{{#equal products.eventLiveInventory.quantity 0}}
+							<div class="soldout">
+								<h4>SOLD <strong>OUT</strong></h4>
+								<!-- <p>Don't miss out on the next event</p> -->
+							</div>
+						{{/equal}}
+						<img src="{{products.thumbnailUrl}}" alt="{{products.productName}}" title="{{products.productName}}" />
+					</a>
+					{{#notEqual products.eventLiveInventory.quantity 0}}
+					<div class="rolover-layer">
+						<!-- {{#if vendorProduct.attributes}}
+								{{#each vendorProduct.attributes}}
+									{{#lowerEqual name "color"}}
+									<div class="color-area">
+										{{#each attributeValues}}
+											<span class="{{toLowerCase value}}"></span>
+										{{/each}}
+									</div>
+									{{/lowerEqual}}
+								{{/each}}
+						{{/if}} -->
+						
+						
+						<div class="clear"></div>
+		
+						<div class="action-area">
+							<div class="action-icons">
+								<div class="sharearea">
+							<span class="listing-share" title="Share"></span>
+							<div class="shareslide">
+								<!-- <a class="ifacebook" title="Facebook" href="#"></a>
+								<a class="itwitter" title="Twitter" href="#"></a>
+								<a class="iemail" title="Email" href="#"></a> -->
+								<a href="#" class="ifacebook facebook social-share-link" title="Facebook"></a>
+								<a href="#" class="itwitter twitter social-share-link" title="Twitter"></a>
+								<!-- <a href="#" class="iemail email social-share-link" title="Email"></a> -->
+								<a title="gplus" class="igplus googleplus social-share-link" href="#"></a>
+								<a title="pintrest" class="ipintrest pinterest social-share-link" href="#"></a>
+							</div>
+						</div>
+								<!-- <a class="listing-video" href="#" title="Video Attached"></a> -->
+							</div>
+							<div class="shipping-area">
+								{{#if products.shippingType}}
+								<span class="shippingtype {{toLowerCase products.shippingType}}">{{products.shippingType}}</span>
+								{{/if}}
+							</div>
+						</div>
+						<div class="quickview-detail">
+						<a class="fancybox" id="quickViewProduct" href="#quickview1">Quick Buy</a>
+					</div>
+					</div>
+					{{/notEqual}}
+					
+					</div>
+		
+					<div class="prod-detail">
+					<div class="discount-tag">-{{discountInPercentage products.eventLiveInventory.salePriceWithVAT products.eventLiveInventory.mrp}}%</div>
+		
+						<div class="prod-info">
+							<a href="/product-detail/product/{{products.eventId}}/{{products.vendorProductId}}" class="ev-prod-name" title="{{products.productName}}">
+								{{products.productName}}
+							</a>
+							<!-- <a href="#" class="event-name" title="{{products.eventName}}">
+								{{products.eventName}}
+							</a> -->
+						</div>
+						<div class="prod-pricing">
+							<span class="old-price">{{products.eventLiveInventory.currencyCode}} {{products.eventLiveInventory.mrp}}</span>
+							<span class="new-price">{{products.eventLiveInventory.currencyCode}} {{products.eventLiveInventory.salePriceWithVAT}}</span>
+					</div>
+					</div>
+				</div>
+		{{/if}}
+	{{else}}
+		<div class="datanotfound">
+			<p>Oops! You currently don't have favourite products. Click on
+				the heart icon to add products to your favourites !!</p>
+		</div>
+	{{/if}}
+		<!-- product ends here -->
+	</div>
+	<div class="row clear">
+		<div class="col-xs-12">
+			<h2 class="prod-heading">Events</h2>
+		</div>
+	</div>
+	<div class="row event">
+		<!-- Event  starts here -->
+		{{#if events}} {{#if events.length}} {{#each events}}
+		<div class="col-xs-4">
+			<div class="event-outer">
+				<a href="/product/listing/event/{{eventId}}" class="event-img">
+					<img src="{{thumbnailUrl}}" alt="{{eventName}}"
+					title="{{eventName}}" />
+					<div class="tagimage-hoz">
+						<span>70% Off</span>
+					</div>
+					<h2 class="event-name">
+						{{eventName}}
+						<!--  <span class="timer">00:00 hrs left</span>
+			            <span class="shipping">Regular | 16 Days</span> -->
+						<span class="listing-fav event-fav" data-type="event"
+							data-created-time="{{createdTime}}">
+							<div class="fav-powertip">
+								<span>Remove from Favourites</span>
+							</div>
+						</span>
+					</h2>
+				</a>
+			</div>
+		</div>
+		{{/each}} {{else}}
+		<div class="col-xs-4">
+			<div class="event-outer">
+				<a href="/product/listing/event/{{events.eventId}}" 
+					class="event-img"> <img src="{{events.thumbnailUrl}}"
+					alt="{{events.eventName}}" title="{{events.eventName}}" />
+					<div class="tagimage-hoz">
+						<span>70% Off</span>
+					</div>
+					<h2 class="event-name">
+						{{events.eventName}}
+						<!--  <span class="timer">00:00 hrs left</span>
+		            <span class="shipping">Regular | 16 Days</span> -->
+						<span class="listing-fav event-fav" data-type="event" 
+							data-created-time="{{events.createdTime}}">
+							<div class="fav-powertip">
+								<span>Remove from Favourites</span>
+							</div>
+						</span>
+					</h2>
+				</a>
+			</div>
+		</div>
+		{{/if}} {{else}}
+		<div class="datanotfound">
+			<p>Oops! You currently don't have events products. Click on the
+				heart icon to add events to your favourites !!</p>
+		</div>
+		{{/if}}
+		<!-- Event ends here -->
+	</div>
+</div>
+<!-- product area list ends here -->
+</div>
+<!-- product listing area ends here -->
+<div class="quickviewpopup clearfix" id="quickview1"></div>

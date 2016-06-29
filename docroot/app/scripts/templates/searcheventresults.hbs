@@ -1,0 +1,21 @@
+{{#if hits.length}}
+ 	<!-- event starts here -->
+	{{#each hits}} 
+    <div class="removable">
+        <div class="event-outer"> 
+        	<a href="/product/listing/event/{{_source.eventId}}" class="event-img"> 
+	        	<img src="http://static.fashionandyou.com/{{_source.eventCode}}/banner_medium_new.jpg" alt="{{_source.eventName}}" title="{{_source.eventName}}" />
+	           <!--  <div class="tagimage-hoz"><span></span></div>  -->
+	            <h2 class="event-name">{{_source.eventName}}<!-- <span class="timer"> </span>-->
+		            <!-- <span class="shipping">
+		            <span class="shippingtype exclusive" title="Exclusive"></span> 
+		            <span class="shippingtype international" title="International"></span> | 16 Days</span> -->
+		           <!--  <span class="event-favourite"></span> -->
+	            </h2>
+            </a> 
+        </div>
+     </div>
+     {{/each}}
+	<!-- event ends here -->
+{{/if}}
+        

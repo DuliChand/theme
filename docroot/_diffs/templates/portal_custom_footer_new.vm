@@ -1,0 +1,11 @@
+<footer  ui-view="footer"></footer>
+<link href="/app-theme/dist/styles/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/styles/newapp_custom.css?newwebversionfnu=2">
+
+<script src="/scripts/newapp.js?newwebversionfnu=2"></script>
+
+<script src="/app-theme/dist/scripts/vendor.js?v=0227"></script>
+<script src="/app-theme/dist/scripts/plugins.js?v=0227"></script>
+<script src="/app-theme/dist/scripts/utils.js?v=0227"></script>		
+<script src="/app-theme/dist/scripts/main.js?v=0227"></script>
+<script src="/scripts/fix.js?newwebversionfnu=2"></script>

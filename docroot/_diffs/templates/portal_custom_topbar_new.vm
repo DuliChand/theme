@@ -1,0 +1,6 @@
+<!-- top tabs starts here -->
+
+<header ui-view="header"></header>
+<div ui-view id="content-view"></div>
+
+<!-- top tabs ends here -->

@@ -1,0 +1,76 @@
+{{#if event}}
+	<!-- <div class="row">
+		<ul class="breadcrumb pull-left">
+			<li>&nbsp;</li>
+			<li><a href="#">Men</a></li>
+			<li><a href="#">Category</a></li>
+			<li class="active">Event Name</li>
+		</ul>
+	
+		<ul class="breadcrumb pull-right clearfix">
+			<li>&nbsp;</li>
+			<li><a href="#">Next</a></li>
+			<li class="active">Category Name</li>
+		</ul>
+	</div> -->
+	<div class="row">
+		<h1 class="page-heading">{{event.eventName}}</h1>	
+		<!-- <a class="related-videos" href="video-popup.html">4 Related Videos</a> -->
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="event-info-panel">
+				<div class="event-info-image">
+				{{#if event.eventImageMappings}} 
+			    	{{#each event.eventImageMappings}}
+			    		<img src="http://cdn1.fashionandyou.com/fny-event/{{imageRepository.imageUrl}}" alt="{{../event.eventName}}" title="{{../event.eventName}}" /> 
+			    	{{/each}}
+			    {{/if}}
+					<div class="tagimage-right">{{event.discountType}} {{event.discountValue}}</div>
+				</div>
+				<div class="event-info-details">
+					<p class="event-des">{{event.description}}</p>
+					<span class="event-info-timer" id="eventTimer" data-event-startdate="{{event.startDate}}" data-event-enddate="{{event.endDate}}">00:00 hrs left</span>
+					<a href="#" class="favorite-icon" title="Add to Favorites"></a>
+					<a href="#" class="event-facebook"></a>
+					<div class="like-boxout">
+						<input type="text" class="like-box" value="20" readonly />
+					</div>
+					<a href="#" class="event-twitter"></a>
+					<div class="like-boxout">
+						<input type="text" class="like-box" value="20" readonly />
+					</div>
+					<a href="#" class="event-google"></a>
+					<div class="like-boxout">
+						<input type="text" class="like-box" value="20" readonly />
+					</div>
+					<div class="shipping-details">
+						<span class="shipping-days">
+							14 - 21 Days
+							<a href="#">Why?</a>
+						</span>
+					</div>
+				</div>
+				<!-- 
+				{{#if eventInfo.videoGallery}}
+				<div class="video-event">
+					<span class="video-event-name">NA</span>
+					<div class="video-area">
+						<iframe src="#" allowfullscreen></iframe>
+						<object type="application/x-shockwave-flash"  width="262" height="160">
+					        <param name="wmode" value="transparent" />
+					        <param name="movie" value="https://www.youtube.com/v/M7lc1UVf-VE?version=3" />
+					        <param name="allowFullScreen" value="true" />
+					        <param name="allowScriptAccess" value="always" />
+					        <embed src="https://www.youtube.com/v/M7lc1UVf-VE?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" wmode="transparent" width="262" height="160" />
+					    </object>
+					</div>
+					<a href="#" class="sharing">Share this Video</a>
+				</div>
+				{{/if}}
+				 -->
+			</div>
+		</div>
+	</div>
+	<div class="prod-lstng-area">
+{{/if}}

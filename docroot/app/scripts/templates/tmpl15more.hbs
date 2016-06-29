@@ -1,0 +1,219 @@
+<div class="row events clearfix">
+    <h1 class="col-xs-12">{{data.categoryName}}</h1>
+	{{#if data.categoryEvents}}
+    <!-- column 1 starts here -->
+    <div class="col-xs-4 event-col event-col">
+    	{{#if data.categoryEvents.0.event}}
+        <div class="ftr-2-5">
+            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.0.event.eventId}}"  title="{{data.categoryEvents.0.event.eventName}}">
+                <img alt="{{data.categoryEvents.0.event.eventName}}" src="
+                {{#each data.categoryEvents.0.event.eventImageMappings}}
+                	{{#lowerEqual imageRepository.imageName 'banner_new'}}
+                		{{imageRepository.imageUrl}}
+                	{{/lowerEqual}}
+                {{/each}}
+				" />
+                <div class="tagimage">{{data.categoryEvents.0.event.discountType}} {{data.categoryEvents.0.event.discountValue}}</div>
+                <h2 class="events-name">{{data.categoryEvents.0.event.eventName}}</h2>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip">
+					<a href="#" class="event-name">{{data.categoryEvents.0.event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.0.event.startDate}}"  data-event-enddate="{{data.categoryEvents.0.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{data.categoryEvents.0.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.0.event.discountType}} {{data.categoryEvents.0.event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+					<p class="text">{{data.categoryEvents.0.event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+					</div>
+					<a href="#" class="int-ship">{{data.categoryEvents.0.event.shippingMaster.shippingType}}<strong>{{data.categoryEvents.0.event.shippingMaster.shippingDuration}} days</strong></a>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+		{{/if}}
+		{{#if data.categoryEvents.1.event}}
+        <div class="ftr-3-5">
+            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.1.event.eventId}}"  title="{{data.categoryEvents.1.event.eventName}}">
+                <img alt="{{data.categoryEvents.1.event.eventName}}" src="
+				{{#each data.categoryEvents.1.event.eventImageMappings}}
+                	{{#lowerEqual imageRepository.imageName 'banner_new'}}
+                		{{imageRepository.imageUrl}}
+                	{{/lowerEqual}}
+                {{/each}}
+				" />
+                <!-- <div class="tag-name-arrow">Exclusive!</div> -->
+                <div class="tagimage">{{data.categoryEvents.1.event.discountType}} {{data.categoryEvents.1.event.discountValue}}</div>
+                <h2 class="events-name">{{data.categoryEvents.1.event.eventName}}</h2>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip">
+					<a href="#" class="event-name">{{data.categoryEvents.1.event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.1.event.startDate}}"  data-event-enddate="{{data.categoryEvents.1.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{data.categoryEvents.1.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.1.event.discountType}} {{data.categoryEvents.1.event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+					<p class="text">{{data.categoryEvents.1.event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+					</div>
+					<a href="#" class="int-ship">{{data.categoryEvents.1.event.shippingMaster.shippingType}}<strong>{{data.categoryEvents.1.event.shippingMaster.shippingDuration}} days</strong></a>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+        {{/if}}
+    </div>
+    <!-- column 1 ends here -->
+
+    <!-- column 2 starts here -->
+    <div class="col-xs-4 event-col">
+		{{#if data.categoryEvents.2.event}}
+        <div class="ftr-3-5">
+            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.2.event.eventId}}"  title="{{data.categoryEvents.2.event.eventName}}">
+                <img alt="{{data.categoryEvents.2.event.eventName}}" src="
+				{{#each data.categoryEvents.2.event.eventImageMappings}}
+                	{{#lowerEqual imageRepository.imageName 'banner_new'}}
+                		{{imageRepository.imageUrl}}
+                	{{/lowerEqual}}
+                {{/each}}
+				" />
+                <!-- <div class="tag-name-arrow">Exclusive!</div> -->
+                <div class="tagimage">{{data.categoryEvents.2.event.discountType}} {{data.categoryEvents.2.event.discountValue}}</div>
+                <h2 class="events-name">{{data.categoryEvents.2.event.eventName}}</h2>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip">
+					<a href="#" class="event-name">{{data.categoryEvents.2.event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.2.event.startDate}}"  data-event-enddate="{{data.categoryEvents.2.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{data.categoryEvents.2.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.2.event.discountType}} {{data.categoryEvents.2.event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+					<p class="text">{{data.categoryEvents.2.event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+					</div>
+					<a href="#" class="int-ship">{{data.categoryEvents.2.event.shippingMaster.shippingType}}<strong>{{data.categoryEvents.2.event.shippingMaster.shippingDuration}} days</strong></a>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+		{{/if}}
+		{{#if data.categoryEvents.3.event}}
+        <div class="ftr-2-5">
+            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.3.event.eventId}}"  title="{{data.categoryEvents.3.event.eventName}}">
+                <img alt="{{data.categoryEvents.3.event.eventName}}" src="
+				{{#each data.categoryEvents.3.event.eventImageMappings}}
+                	{{#lowerEqual imageRepository.imageName 'banner_new'}}
+                		{{imageRepository.imageUrl}}
+                	{{/lowerEqual}}
+                {{/each}}
+				" />
+                <div class="tagimage">{{data.categoryEvents.3.event.discountType}} {{data.categoryEvents.3.event.discountValue}}</div>
+                <h2 class="events-name">{{data.categoryEvents.3.event.eventName}}</h2>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip">
+					<a href="#" class="event-name">{{data.categoryEvents.3.event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.3.event.startDate}}"  data-event-enddate="{{data.categoryEvents.3.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{data.categoryEvents.3.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.3.event.discountType}} {{data.categoryEvents.3.event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+					<p class="text">{{data.categoryEvents.3.event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+					</div>
+					<a href="#" class="int-ship">{{data.categoryEvents.3.event.shippingMaster.shippingType}}<strong>{{data.categoryEvents.3.event.shippingMaster.shippingDuration}} days</strong></a>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+        {{/if}}
+    </div>
+    <!-- column 2 ends here -->
+
+    <!-- column 3 starts here -->
+    <div class="col-xs-4 event-col">
+		{{#if data.categoryEvents.4.event}}
+        <div class="ftr-2-5">
+            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.4.event.eventId}}"  title="{{data.categoryEvents.4.event.eventName}}">
+                <img alt="{{data.categoryEvents.4.event.eventName}}" src="
+				{{#each data.categoryEvents.4.event.eventImageMappings}}
+                	{{#lowerEqual imageRepository.imageName 'banner_new'}}
+                		{{imageRepository.imageUrl}}
+                	{{/lowerEqual}}
+                {{/each}}
+				" />
+                <div class="tagimage">{{data.categoryEvents.4.event.discountType}} {{data.categoryEvents.4.event.discountValue}}</div>
+                <h2 class="events-name">{{data.categoryEvents.4.event.eventName}}</h2>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip">
+					<a href="#" class="event-name">{{data.categoryEvents.4.event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.4.event.startDate}}"  data-event-enddate="{{data.categoryEvents.4.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{data.categoryEvents.4.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.4.event.discountType}} {{data.categoryEvents.4.event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+					<p class="text">{{data.categoryEvents.4.event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+					</div>
+					<a href="#" class="int-ship">{{data.categoryEvents.4.event.shippingMaster.shippingType}}<strong>{{data.categoryEvents.4.event.shippingMaster.shippingDuration}} days</strong></a>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+        {{/if}}
+		{{#if data.categoryEvents.5.event}}
+        <div class="ftr-3-5">
+            <a class="showtooltip" href="/product/listing/event/{{data.categoryEvents.5.event.eventId}}"  title="{{data.categoryEvents.5.event.eventName}}">
+                <img alt="{{data.categoryEvents.5.event.eventName}}" src="
+				{{#each data.categoryEvents.5.event.eventImageMappings}}
+                	{{#lowerEqual imageRepository.imageName 'banner_new'}}
+                		{{imageRepository.imageUrl}}
+                	{{/lowerEqual}}
+                {{/each}}
+				" />
+                <div class="tagimage">{{data.categoryEvents.5.event.discountType}} {{data.categoryEvents.5.event.discountValue}}</div>
+                <h2 class="events-name">{{data.categoryEvents.5.event.eventName}}</h2>
+            </a>
+            <!-- power tip starts here --> 
+			<div class="powertip-outer">
+				<div class="eventpowertip">
+					<a href="#" class="event-name">{{data.categoryEvents.5.event.eventName}}</a>
+					<div class="clear"></div>
+					<span class="tooltip-timer" data-event-startdate="{{data.categoryEvents.5.event.startDate}}"  data-event-enddate="{{data.categoryEvents.5.event.endDate}}">0 days left 00:00</span><div class="clear"></div>
+					<span class="prod-no">{{data.categoryEvents.5.event.noOfProducts}} Products</span><span class="disc-tip">{{data.categoryEvents.5.event.discountType}} {{data.categoryEvents.5.event.discountValue}}</span>
+					<div class="clear"></div>
+					<span class="tip-sep"></span>
+					<p class="text">{{data.categoryEvents.5.event.description}}</p><div class="clear"></div>
+					<span class="tip-sep"></span>
+					<div class="share-icons">
+					<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+					</div>
+					<a href="#" class="int-ship">{{data.categoryEvents.5.event.shippingMaster.shippingType}}<strong>{{data.categoryEvents.5.event.shippingMaster.shippingDuration}} days</strong></a>
+				</div>
+			</div>
+			<!-- power tip ends here -->
+        </div>
+        {{/if}}
+    </div>
+    <!-- column 3 ends here -->
+    {{/if}}
+</div>

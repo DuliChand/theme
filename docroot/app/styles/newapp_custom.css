@@ -1,0 +1,201 @@
+.navbar-header{
+width: 155px;
+}
+
+.ythdr .nav2{
+margin-left: 40px;
+}
+
+.nav > li{
+margin-right: 0px;
+}
+
+.navbar-right{
+position: static;
+width: 146px;
+}
+
+.separator {
+  margin: 0px auto !important;
+}
+
+.isearch {
+  background: url(/app-theme/dist/images/split-icon.png) -54px 12px no-repeat !important;
+}
+
+.ythdr .nav2.navbar-right .iuser {
+  background: url(/app-theme/dist/images/split-icon.png) -9px 12px no-repeat !important;
+}
+
+.ythdr .nav2.navbar-right li a:not(.btn).cart {
+  border-right: 1px solid #C62A69;
+  border-left: 1px solid #C62A69;
+  background: url(/app-theme/dist/images/split-icon.png) -89px 12px no-repeat #C62A69 !important;
+  color: #fff;
+  position: relative;
+}
+
+.ythdr .nav2.navbar-right li a:not(.btn).cart:hover {
+  background: url(/app-theme/dist/images/split-icon.png) -89px -38px no-repeat #fff!important;
+}
+.text-center {
+  box-sizing: border-box;
+  display: block;
+ 
+  }
+  .login-popup.dropdown-menu .wide {
+  width: 414px !important;
+}
+
+.dropdown-menu:before{
+border: none !important;
+}
+.form-control {
+  width: 100% !important;
+  height: 34px !important;
+  }
+  
+  .btn{
+    padding: 6px 12px !important;
+  font-size: 14px !important;
+  outline: none;
+  }
+  
+  .login-popup .btn-fb, .login-popup .btn-google {
+      font-size: 12px !important;
+  }
+  .modal-backdrop{
+  z-index: 10 !important;
+  }
+  .login-popup:before {
+  border: none !important;
+ 
+}
+
+@media only screen and (max-width: 960px){
+
+.main-container, .wrapper, .top-bar, .top-bar-inn, footer, .payment-icons-outer {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+.navbar{
+height: 60px !important;
+}
+.aui .btn {
+margin-top: 0px !important;
+}
+
+.ythdr .navbar-header .navbar-toggle{
+  margin: 13px 10px !important;
+}
+.modal-content{
+border: none;
+}
+.login-popup.modal-popup{
+  position: absolute;
+  top: 0px !important;
+  left: 0px !important;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0px 4px !important;
+}
+.login-popup .btn-fb, .login-popup .btn-google {
+  margin-bottom: 10px;
+  margin-top: 10px !important;
+  padding-left: 8px !important;
+  width: 170px !important;
+  font-size: 12px !important;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn, .input-lg {
+  height: 46px !important;
+  padding: 10px 16px !important;
+  font-size: 18px !important;
+  line-height: 1.3333333;
+  border-radius: 4px;
+}
+}
+@media (max-width: 767px) and (max-width: 979px){
+.aui .btn {
+margin-top: 0px !important;
+}
+.modal-content{
+border: none;
+}
+.login-popup.modal-popup{
+  position: absolute;
+  top: 0px !important;
+  left: 0px !important;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0px 4px !important;
+}
+.login-popup .btn-fb, .login-popup .btn-google {
+  margin-bottom: 10px;
+  margin-top: 10px !important;
+  padding-left: 8px !important;
+  width: 170px !important;
+  font-size: 12px !important;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn, .input-lg {
+  height: 46px !important;
+  padding: 10px 16px !important;
+  font-size: 18px !important;
+  line-height: 1.3333333;
+  border-radius: 4px;
+}
+}
+@media only screen and (max-width: 767px){
+.login-popup {
+display: block !important; 
+}
+.modal-content{
+border: none;
+}
+
+.login-popup.modal-popup{
+  position: absolute;
+  top: 0px !important;
+  left: 0px !important;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0px 4px !important;
+}
+.login-popup .btn-fb, .login-popup .btn-google {
+  margin-bottom: 10px;
+  margin-top: 10px !important;
+  padding-left: 8px !important;
+  width: 170px !important;
+  font-size: 12px !important;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn, .input-lg {
+  height: 46px !important;
+  padding: 10px 16px !important;
+  font-size: 18px !important;
+  line-height: 1.3333333;
+  border-radius: 4px;
+}
+}
+@media only screen and (min-width: 320px) or  (max-width:900px) { 
+.col-cartitem1 .item-old-price{
+    margin: 0 0px 9px 0 !important;
+}
+.col-cartitem1 .item-new-price{
+    margin: 0 0px 9px 0 !important;
+    padding-left: 4px;
+}
+.cart-area-inn .section-heading{
+    padding: 0px 0 10px !important;
+}
+.cart-area-inn a.cont-shopping{
+        padding: 7px 3px !important;
+    margin-top: 5px !important;
+}
+}
+

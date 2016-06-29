@@ -1,0 +1,805 @@
+.processLoading{
+ margin:20px 0; padding:10px; border:#ededed solid 3px; border-radius:6px;
+}
+
+.processLoading .companyLogo{ display:block; width:160px; float:left;}
+.processLoading .companyLogo img{ width:90%; padding:10px;}
+.processLoading .processText .loadingImg{color: #d22573;    font-size: 25px;    line-height: 35px; padding-right:100px;   /* padding-left: 50px;    text-align: left; background-size:50%; */}
+.processLoading .processText .loadingImg:after{ background: url(" http://cdn1.fashionandyou.com/fny-static/app-images/fny-loading.gif") repeat scroll 0 0 rgba(0, 0, 0, 0); margin-top:12px; margin-left:10px; content: ""; float: right; height: 16px;    position: absolute;    width: 87px;}
+.processLoading .processText{ padding:5% 0;  color:#333;  text-align:center;}
+.processLoading .processText h2{ font-size:21px; line-height:25px; clear:both;}
+.processLoading .processText h3{ font-size:16px; line-height:18px;}
+.processLoading .processText h3:before{ content:"(  " ;}
+.processLoading .processText h3:after{ content:"  )";}
+
+.PAYUCC-BUTTON{position:relative; font-size:0px !important;  width:80px; display:block; }
+
+.PAYUCC-BUTTON:after{
+ background-color:#fff;
+ background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -685px -85px;
+width:62px; height:25px;  display:block;
+content:''; position:absolute;
+right: 21px;
+top: -7px;
+z-index:999;}
+.HDFCCC-BUTTON{position:relative; font-size:0px !important;  width:80px; display:block; }
+
+.HDFCCC-BUTTON:after{
+ background-color:#fff;
+ background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -618px -466px;
+width:105px; height:25px;  display:block;
+content:''; position:absolute;
+top: -3px;
+z-index:999;}
+
+.MOBIKWIK-BUTTON{position:relative; font-size:0px !important; width:60px; display:block;  }
+.MOBIKWIK-BUTTON:after{ 
+	background-color:#fff;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -676px -119px;
+width: 80px;
+height: 25px;
+display: block;
+content: '';
+position: absolute;
+right: -15px;
+top: -7px;
+z-index:9999;}
+
+
+.PAYTM-BUTTON{position:relative; font-size:0px !important; width:80px; display:block;  }
+.PAYTM-BUTTON:after{ 
+	background-color:#fff;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -626px -310px;
+width: 95px;
+height: 25px;
+display: block;
+content: '';
+position: absolute;
+right: -15px;
+top: -5px;
+z-index:9999;}
+
+
+.payUMoneybutton{position:relative; font-size:0px !important; width:185px; display:block;  }
+.payUMoneybutton:after{ 
+	background-color:#fff;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -596px -358px;
+width: 145px;
+height: 25px;
+display: block;
+content: '';
+position: absolute;
+top: 0px;
+z-index:9999;}
+
+
+
+
+
+.card-icons:before, .hdfc-bank:before, .payment-section > ul > li .icontype, .payment-section > ul > li.active:after {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+}
+
+.check-avalible, a#checkoutBtn {display:none;}
+
+.payment-section-area {
+	float:left;
+	margin-top:18px;
+	margin-bottom: 120px;
+	width:100%;
+	border-radius:5px;
+}
+.payment-section {
+	width:20%;
+	float:left;
+	padding: 15px 0 0;
+	position:relative;
+	z-index:9; 
+
+}
+.container-payment {
+	width:78%;
+	min-height:235px;
+	float:left;
+	display:block;
+	position:relative;
+	border:#f1f1f1 solid 4px;
+	padding:15px;
+}
+.payment-section > ul {
+
+	padding:0px;
+}
+.payment-section > ul > li {
+	background:#efefef;
+	color: #000000;
+	display: block;
+	
+	font-size: 12px;
+	margin: 1px 0;
+	/*clear: both;*/
+	position:relative;
+}
+
+.payment-section > ul > li.active:after {width:15px; height: 37px; display:block; z-index:99; background-position:-413px -295px; content:''; position:absolute; top:0px; right:-15px;}
+
+
+.payment-section > ul > li > a {
+	
+	color:#666;
+	padding: 10px;
+	display:block;
+}
+.payment-section > ul > li.active, .payment-section > ul > li:hover {
+	color:#fff;
+	background:#d22573;
+	cursor:pointer;
+}
+
+.payment-section > ul > li.active a, .payment-section > ul > li:hover a {color:#fff;}
+
+.payment-section > ul > li .icontype {display:block; width:21px; height:20px; float:left; margin:0px 3px 0px 0px;}
+
+.payment-section > ul > li .icontype.icon-debit {background-position:-402px -243px;}
+.payment-section > ul > li .icontype.icon-netbanking {background-position:-402px -217px;}
+.payment-section > ul > li .icontype.icon-wallet {background-position:-402px -190px;}
+.payment-section > ul > li .icontype.icon-cod {background-position:-402px -265px;}
+
+.payment-section > ul > li .icontype.icon-paytm {background-position:-464px -242px;}
+.payment-section > ul > li .icontype.icon-payUMoney {background-position:-464px -192px;}
+
+.payment-section > ul > li .icontype.icon-mobikwik {background-position:-435px -295px;}
+
+
+
+.payment-section > ul > li.active .icontype.icon-debit,
+.payment-section > ul > li:hover .icontype.icon-debit {background-position:-433px -243px;}
+.payment-section > ul > li.active .icontype.icon-netbanking,
+.payment-section > ul > li:hover .icontype.icon-netbanking {background-position:-433px -217px;}
+.payment-section > ul > li.active .icontype.icon-wallet,
+.payment-section > ul > li:hover .icontype.icon-wallet {background-position:-433px -190px;}
+.payment-section > ul > li.active .icontype.icon-cod,
+.payment-section > ul > li:hover .icontype.icon-cod {background-position:-433px -265px;}
+
+.payment-section > ul > li.active .icontype.icon-paytm,
+.payment-section > ul > li:hover .icontype.icon-paytm {background-position:-464px -270px;}
+.payment-section > ul > li.active .icontype.icon-payUMoney,
+.payment-section > ul > li:hover .icontype.icon-payUMoney {background-position:-464px -216px;}
+
+.payment-section > ul > li.active .icontype.icon-mobikwik,
+.payment-section > ul > li:hover .icontype.icon-mobikwik {background-position:-435px -315px;}
+
+
+.container-payment .divcontent {
+	display:none;
+	top: 0;
+	width: 100%;
+}
+.payment-section .divcontent .bankblock {
+	padding:2px 20px;
+	color:#000;
+	font-size:120%;
+	background:#CCC;
+	display:inline-block;
+}
+.payment-section .divcontent h2 {
+	color:#000;
+}
+.payment-section ul li .divcontent .bank-css {
+	margin:80px 0 80px 0px;
+	display: block;
+	border: solid 1px #e6e6e6;
+	background-color: #f9f9f9;
+	padding:5px 10px;
+	width:25%;
+	color:#000 !important;
+	float:left;
+}
+.payment-section ul li .divcontent .bank-css span {
+	padding-left:20px;
+}
+.paymethod1 {
+	margin-top:-35px;
+}
+.paymethod2 {
+	margin-top:0px;
+}
+.paymethod2 a {
+	color:#fff;
+}
+.breakpoint2 {
+	color:#333;
+	padding:0px 0;
+}
+.breakpoint2 p{ line-height:20px;    font-size:13px;}
+.card-visa{clear:both; line-height:20px;   font-size:13px;}
+
+.breakpoint2 label, .breakpoint3 label {
+	color:#d22573;
+	font-size:13px;
+	padding-right:5px;
+	line-height:25px;
+	margin-top:6px;
+	
+	font-weight:normal;
+	
+}
+.breakpoint2 select, .breakpoint3 select {
+	
+	border:#ccc solid 1px;
+	width:230px;
+	color:#555;
+	height:25px;
+	padding:2px 0 0 0;
+}
+.breakpoint2 select option, .breakpoint2 select option {
+	width:200px;
+}
+.btn-proceed {
+	bottom: 0;
+	float: right;
+	right: 0;
+	display:none;
+	/*   display:block !important;   */
+	clear: both;
+}
+.btn-proceed a {
+	background: none repeat scroll 0 0 #d22573;
+	border-radius: 3px;
+	color: #FFFFFF !important;
+	/* display: block; */
+	font-weight: bold;
+	padding: 5px 30px;
+}
+.btn-proceed1 {
+	float:left;
+	margin-top:10px;
+}
+.btn-proceed1 a {
+	color:#fff !important;
+	padding:5px 30px;
+	display:block;
+	background:#d22573;
+	border-radius:5px;
+}
+.paymethod3 {
+	margin-top:-55px;
+	padding:20px 0;
+}
+.paymethod3 p {
+	padding:0 10px;
+	
+	font-size:13px;
+}
+.paymethod3 table {
+	border:#ccc solid 1px;
+	width:98%;
+	margin: 0 5px;
+}
+.paymethod3 table th {
+	text-align:center;
+	
+	font-size:13px;
+	font-weight:normal;
+	border-bottom:#ccc solid 1px;
+}
+.paymethod3 table td {
+	text-align:center;
+	
+	
+}
+.breakpoint3 {
+	color:#333;
+	padding:10px;
+	float:left;
+}
+
+.breakpoint1 {
+	width:50%;
+	padding: 8px 2px !important;
+	height:32px;
+	line-height:25px;
+}
+.breakpoint1 .hdfc-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-619px -466px;
+	float:left;
+	width:120px;
+	height:25px;
+	line-height:25px;
+	margin: -5px 0 0 -20px;
+}
+.breakpoint1 .city-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-625px -435px;
+	float:left;
+	width:120px;
+	height:25px;
+	line-height:25px;
+	margin: -5px 0 0 -20px;
+}
+.breakpoint1 .icici-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-617px -401px;
+	float:left;
+	width:120px;
+	height:25px;
+	line-height:25px;
+	margin: -5px 0 0 -20px;
+}
+.breakpoint1 .axis-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-619px -372px;
+	float:left;
+	width:120px;
+	height:25px;
+	line-height:25px;
+	margin: -5px 0 0 -20px;
+}
+.breakpoint1 .idbi-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-618px -345px;
+	float:left;
+	width:120px;
+	height:25px;
+	line-height:25px;
+	margin: -2px 0 0 -20px;
+}
+.breakpoint1 .state-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-617px -308px;
+	float:left;
+	width:120px;
+	height:25px;
+	line-height:25px;
+	margin: -5px 0 0 -20px;
+}
+.breakpoint1 .ing-bank {
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	background-position:-619px -279px;
+	float:left;
+	width:120px;
+	height:20px;
+	line-height:35px;
+	margin: -0px 0 0 -20px;
+}
+.paymethod5 {
+	margin-top:0px;
+}
+.pull-down {
+	margin-top:10px;
+}
+.payment-typebox {
+	color: #555555;
+	float: left;
+	font-size: 13px;
+	
+}
+.payment-typebox > ul > li {
+	
+	line-height: 18px;
+	font-size:12px;
+}
+.payment-typebox > ul > li > strong {
+	broder-bottom:#ccc solid 1px;
+	padding-bottom:5px;
+	font-size:12px;
+	
+	font-weight:normal;
+}
+.payment-typebox > ul > li label {
+	color: #d22573;
+	line-height: 30px;
+	padding: 0 10px 0 0;
+	
+}
+.payment-typebox > ul >li input[type="text"] {
+	border: 1px solid #DEDEDE;
+	border-radius: 3px;
+	height: 25px;
+	margin-top: 5px;
+	padding: 0 10px;
+	width: 250px;
+	border:none;
+}
+.check-point {
+	border-bottom:#ccc solid 1px;
+	
+}
+.payment-typebox > ul > li a.edit_btn {
+	background: none repeat scroll 0 0 #d22573;
+	border-radius: 3px;
+	color: #FFFFFF;
+	height: 24px;
+	line-height: 24px;
+	margin-top: 5px;
+	padding: 0 10px;
+	position: absolute;
+	margin-left: -38px;
+}
+.payment-typebox > ul > ul > li {
+	float: left;
+	
+	font-size: 12px;
+	line-height: 18px;
+	list-style: disc inside none;
+	padding: 0 0 0 10px;
+	width: 100%;
+}
+.tabs-area {
+    border-bottom:none !important;
+     margin-top: 4px !important;
+    width: 95% !important;
+}
+.tabs-area ul li a {
+	border:none !important;
+	color: #414141;
+	display: block;
+	float: left;
+	
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 2px;
+	padding: 0 17px;
+	text-align: center;
+	text-transform: capitalize;
+}
+/************************/
+.payment-secure-icon {
+	width:100%;
+	border-top:#ccc solid 1px;
+	float:left;
+	margin-top:25px;
+	bottom:0px;
+	position:absolute;
+}
+.payment-secure-icon li {
+	color:#333;
+	background-position:-367px -504px;
+	height:30px;
+}
+.payment-secure-icon li.paymenticon {
+	background-position:-367px -504px;
+	height:30px;
+	margin-left:55px;
+}
+.payment-icons-outer {
+	width: 960px;
+	margin: 0 auto;
+	border-bottom: 1px #dbdbdb solid;
+	box-shadow: 0 1px #f4f4f4;
+}
+.payment-icons-outer .payment-icons li, .payment-icons-outer .security-icons li {
+	display: inline-block;
+	float: left;
+	height: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 20px;
+}
+.payment-icons-outer .payment-icons li span, .payment-icons-outer .security-icons li span {
+	float: left;
+	padding-top: 2px;
+	padding-left: 5px;
+	
+	font-size: 16px;
+	color: #333;
+	border: none;
+}
+.payment-icons-outer .payment-icons li:first-child, .payment-icons-outer .security-icons li:first-child {
+	border: none;
+}
+.payment-icons-outer .payment-icons li a, .payment-icons-outer .security-icons li a {
+	display: inline-block;
+	float: left;
+	height: 20px;
+	margin-top: 5px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png);
+}
+.payment-icons-outer .payment-icons li .payby-mastercard, .payment-icons-outer .security-icons li .payby-mastercard {
+	width: 32px;
+	height: 20px;
+	background-position: 0 -182px;
+}
+.payment-icons-outer .payment-icons li .payby-visacard, .payment-icons-outer .security-icons li .payby-visacard {
+	width: 65px;
+	height: 20px;
+	background-position: 0 -128px;
+}
+.payment-icons-outer .payment-icons li .payby-netbanking, .payment-icons-outer .security-icons li .payby-netbanking {
+	width: 109px;
+	height: 19px;
+	background-position: -92px -465px;
+}
+.payment-icons-outer .payment-icons li .payby-paypal, .payment-icons-outer .security-icons li .payby-paypal {
+	width: 91px;
+	height: 24px;
+	background-position: 0 -156px;
+}
+.payment-icons-outer .payment-icons li .payby-cod, .payment-icons-outer .security-icons li .payby-cod {
+	width: 71px;
+	height: 22px;
+	background-position: 0 -209px;
+}
+.payment-icons-outer .payment-icons .cod {
+	padding-left: 0;
+	border-right: 0;
+}
+.payment-icons-outer .payment-icons .visa {
+	border-left: 0;
+}
+.payment-icons-outer .security-icons {
+	float: right;
+	padding: 5px 0 5px 5px;
+}
+.payment-icons-outer .security-icons li {
+	display: inline-block;
+	height: auto;
+	margin-top: 0;
+	border: none;
+}
+.payment-icons-outer .security-icons li a {
+	display: block;
+}
+.payment-icons-outer .security-icons li .verisign {
+	width: 94px;
+	height: 49px;
+	margin-right: 5px;
+	background-position: -93px -407px;
+}
+.payment-icons-outer .security-icons li .safesecure {
+	width: 125px;
+	height: 45px;
+	margin-right: 22px;
+	background-position: -89px -493px;
+}
+.payment-icons-outer .payment-icons li.paymenticon {
+	background-position:-367px -504px;
+	width:356px;
+	height:30px;
+}
+.tab-infoarea p.paymnt-gateway {
+	padding:20% 25%;
+	font-size:14px;
+	
+}
+/******************************/
+.payment-sel-area {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.bank-scss-categ {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 20px 10px 0 10px;
+	border-bottom: 1px solid #f5f6f6;
+}
+.bank-scss-categ h3 {
+	float: left;
+	padding-bottom: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #9d9fa2;
+	text-transform: capitalize;
+}
+.bank-scss-categ h3 span {
+	padding-left: 5px;
+	font-size: 12px;
+}
+.bank-scss-categ .bronze {
+	color: #ab9d13;
+}
+.bank-scss-categ .gold {
+	color: #e9d20f;
+}
+.bank-scss-categ .col-xs-6 {
+	margin-bottom: 20px;
+}
+.payment-gateways {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 20px 10px 20px 10px;
+	border-bottom: 1px solid #f5f6f6;
+}
+.payment-gateways h2 {
+	float: left;
+		font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #666;
+}
+.payment-details {
+	display: none;
+	float: left;
+	width: 98%;
+	height: auto;
+	padding: 14px 10px 0 10px;
+}
+.payment-details span {
+	float: left;
+	width: 100%;
+	padding: 20px 0 10px 10px;
+	
+	font-size: 12px;
+	line-height: 12px;
+	color: #666;
+}
+.payment-details .card-icons {
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 30px;
+	margin-left: 10px;
+}
+.payment-details .card-icons:before {
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	background-position: -142px -138px;
+	content: '';
+}
+.payment-details .mas-card:before {
+	background-position: -142px -227px;
+}
+.payment-details .discover:before {
+	background-position: -138px -174px;
+}
+.payment-details .amex {
+	width: 51px;
+}
+.payment-details .amex:before {
+	width: 51px;
+	background-position: -114px -336px;
+}
+.pay-mode-sel {
+	float: left;
+	width: 100%;
+	height: auto;
+	
+	font-size: 12px;
+	line-height: 12px;
+	color: #666;
+}
+.pay-mode-sel .pay-bank-sel {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 15px 0 10px 10px;
+	margin-top: 10px;
+	border-top: 1px solid #f5f6f6;
+	border-bottom: 1px solid #f5f6f6;
+}
+.pay-mode-sel .edit-link {
+	float: right;
+	padding-right: 10px;
+	
+	font-size: 12px;
+	line-height: 12px;
+	color: #d22573;
+}
+.card-details {
+	float: left;
+	width: 390px;
+	height: auto;
+	margin: 20px 0 20px 0;
+	clear: both;
+}
+.card-details label {
+	width: 110px;
+	margin-top: 10px;
+	margin-right: 5px;
+	
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	text-align: right;
+	text-transform: capitalize;
+}
+.card-details .input-field {
+	width: 270px;
+	height: 25px;
+	padding-left: 7px;
+	margin-top: 10px;
+	font-size: 11px;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.card-details .pin-width {
+	width: 60px;
+	margin-left: 6px;
+}
+.card-details .no-margin {
+	margin-left: 0;
+}
+.card-details .cvv-img {
+	float: right;
+	width: 54px;
+	height: 31px;
+	margin: 4px 0 0 60px;
+	background: url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) -115px -372px no-repeat;
+}
+.card-details .btn-cartpop {
+	margin-left: 117px;
+}
+.cod-form input {
+	width:50%;
+	border:1px solid #CCC;
+	
+	padding:2px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	margin:0 1% 0 0;
+}
+.cod-form a {
+	background:#000;
+	color:#fff;
+	
+	font-size:12px;
+	text-decoration:none;
+	padding:3px 10px;
+}
+.payment-tabs-area {
+	margin-left: 100px;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-bottom: 8px;/*border-bottom: 1px solid #f1f2f2;*/
+}
+.tab-infoarea {
+	display: none;
+	float: left;
+	height:auto !important;
+	width: 95%;
+}
+.tab-infoarea p {
+	padding:2px 0;
+}
+.tab-infoarea input[type="text"] {
+	border: 1px solid #ccc;
+	border-radius:0px;
+	height: 22px;
+	margin: 3px;
+	padding: 0 10px;
+	width: 250px;
+	
+}
+.tab-infoarea label {
+	
+	  padding-left: 0px;
+}
+.tab-infoarea select {
+	height: 22px;
+	margin: 3px;
+	border: 1px solid #ccc;
+	border-radius:0px;
+	
+}
+.bank-emi-details {
+	display:none;
+}
+.active {
+	background:#d22573;
+	color:#fff !important;
+}
+
+.payment-section-area .error-message {
+	border: 1px solid #f1f1f1;
+    display: block; 
+   /* display:none; */
+    float: left;
+    padding: 10px;
+    width: 98%;
+    margin-bottom: 15px;
+   
+}
+.payment-section-area .error-message p {
+	color:red;
+	font-size: 13px;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,64 @@
+<!-- feedback area starts here -->
+        <div class="col-xs-12 share-products">
+            <h2>Share what you have bought with your friends 
+              <!-- <div>share all : <a href="#">
+                <img src="/fny-theme/images/facebook_share.jpg" /></a> 
+                <a href="#"><img src="/fny-theme/images/twitter_share.jpg" /></a> 
+                <a href="#"><img src="/fny-theme/images/email_share.jpg" /></a>
+              </div> -->
+            </h2>
+
+            <div class="products-gallery">
+            {{#each domainResponse.entitiesResponse.0.baseDTO.orderLines}}
+              <div class="gal-dis-prod">
+                 <a href="/product-detail/product/{{eventId}}/{{vendorProductId}}" class="gal-prod-img">
+                  <img src="{{thumbnailUrl}}" alt="{{productName}}" title="{{productName}}" />
+                 </a> 
+                 <a href="#" class="gal-prod-name">{{productName}}</a> 
+                 <!-- <a href="#"><img src="/fny-theme/images/share-this.png" /></a>  -->
+                 <div class="product-share">
+          <div class="sharearea1">
+            <span class="listing-share1" title="Share"></span>
+            <span class="sharetxt">Share This</span>
+            <div class="shareslide1">
+              <a title="Facebook" class="ifacebook facebook social-share-link" href="#"></a>
+              <a title="Twitter" class="itwitter twitter social-share-link" href="#"></a>
+              <a title="Email" class="iemail email social-share-link" href="#"></a></div>
+          </div>
+        </div>
+              </div>
+            {{/each}}
+            </div>
+        </div>
+        
+        <div id="que-feedback" class="col-sm-9">
+        <h2>We value your questions and feedback</h2>
+        <div class="querybox">
+          <form id="orderFeedbackForm" method="post" class="col-xs-12 col-sm-7">
+            <h3>Help us improve your shoping experience!</h3>
+            <div class="control-group">
+        <div class="controls row clear">
+          <label for="orderFeedbackMessage" style="display:none;"></label>
+          <textarea name="orderFeedbackMessage" id="orderFeedbackMessage" data-error-style="inline" placeholder="Feedback Message"></textarea>
+        </div>
+      </div>
+            <input type="submit" id="submitFeedback" value="SUBMIT" class="go" />
+          </form>
+          
+          <div class="success-message col-xs-12">
+            <p>Thank you for giving us valuable feedback. We will incorporate your suggestions as soon as possible. </p>
+          </div>
+          <div class="error-message1 col-xs-12">
+            <p>Oops!  Something went wrong, please try again your suggestions are in valuable. </p>
+          </div>
+
+         <div class="col-xs-12 col-sm-5 question-box">
+            <h3>Questions?</h3>
+            <p>Checkout our FAQs<br>
+                or call us at 0124-4488800 or Email us</p>
+          </div>
+          
+          <div class="clear"></div>
+        </div>
+    </div>
+ 

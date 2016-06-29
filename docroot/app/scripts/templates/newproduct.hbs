@@ -1,0 +1,392 @@
+<!-- product detail area starts here -->
+
+<div class="product-detail-area">
+  <div class="row" id="product-area">
+    <!-- product gallery starts here -->
+    <div class="gallery-column">
+      <div class="product-gallery">
+        <!-- product gallery thumb nails starts here -->
+        <!-- <div id="product-gallery-thumbnails" class="gallery-thumbnails">
+          <div class="slide">
+            <a href="#" class="thumbnail-image" data-image-detail=""
+              data-image-original=""> <img src="" data-src="" alt=""
+              title="" />
+            </a>
+          </div>
+        </div> -->
+        <!-- product gallery thumb nails ends here -->
+
+        <!-- product gallery large image starts here -->
+        <a href="#" class="MagicZoomPlus" id="ex1" data-zoom-image="">
+          <img src="" alt="" title="" id="product-gallery-detail" />
+        </a>
+        <!-- product gallery large image ends here -->
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- product gallery ends here -->
+
+    <!-- product detail info starts here -->
+    <div class="product-info-column">
+      <div class="product-detail-info" data-product-id="{{product.webShopId}}">
+        <h2 class="product-name">{{product.title}}</h2>
+        <div class="code-area">
+        
+            <span class="product-code">Product Code : {{product.petStyleCode}}</span>
+            {{#each product.productVariants}}
+            {{#if selected}}
+            	{{#each sellerSKUs}}
+            	{{#if selected}}
+             <span class="product-timer" id="productEventTimer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' event.eventEndDateInMillis}}">0 DAYS 00:00:00 LEFT</span>
+             {{/if}}
+             {{/each}}
+             
+            {{/if}}
+            {{/each}}
+        </div>
+        <div class="productdetail-holder">
+        <div class="productdetail-left">
+        <div class="pricing-area">
+        {{#each product.productVariants}}
+        	{{#if selected}}
+        		{{#each sellerSKUs}}
+					{{#if selected}}
+				          <span class="old-pricing">INR
+				           {{mrp}}</span> 
+				           <span class="new-pricing">INR
+				            <span id="newPrice">{{sp}}</span>
+			              </span> 
+	           	    {{/if}}
+				{{/each}}
+            {{/if}}  
+        {{/each}}
+        </div>
+ 
+        
+          <div class="selection-area" id="variantCode">
+            <div class="select-choice size" data-attribute-id="{{product.productVariants.0.webShopVariantId}}" data-attribute-name="{{product.productVariants.0.event.eventName}}">
+             
+              <label class="label">Select Size</label>
+              <ul>
+              	{{#each product.productVariants}}
+	                		
+		            {{#if variantCode}}
+		              	
+	                  <li class="tiles" data-attribute-value="{{selected}}" data-attribute-value-id="{{variantCode}}" data-attribute-erpsku-id="{{../../../webShopVariantId}}">
+	                  {{#equal inventory 0}}
+	                    <span class="sold">{{toLowerCase variantCode}}</span>
+	                  {{else}}
+	                    <a href="#">{{toLowerCase variantCode}}</a>
+	                  {{/equal}}
+	                  </li> 
+			         {{else}}
+
+		            {{/if}}
+
+	      
+          		{{/each}}                  
+              </ul>
+	          
+            </div>
+          </div>
+        
+         <!--  <div class="selection-area">
+            <div class="select-choice {{toLowerCase name}}"      
+data-attribute-id="{{product.productVariants.0.webShopVariantId}}" data-attribute-name="{{product.productVariants.0.sellerSKUs.0.event.eventName}}">
+			{{#each product.productVariants}}
+	        	{{#if selected}}	        		
+	            {{#if variantCode}}
+              <label class="label">Select Size</label> 
+             
+	              <ul>
+	             
+		              <li class="tiles" data-attribute-value="{{variantCode}}" data-attribute-value-id="{{attributeValueId}}"	data-attribute-erpsku-id="{{erpSku}}">
+		              <a href="javascript:void(0);">{{toLowerCase variantCode}}</a>
+		              </li> 
+		          
+	              </ul>
+              {{/if}}
+              {{/if}}
+            {{/each}}
+            </div>
+          </div>
+-->          
+       
+
+        <div class="selection-area">
+          <div class="select-quantity quantity">
+            <label class="label">Select Quantity</label>
+            <div class="select-wrapper">
+              <select class="select">
+                <option value="0">0</option>
+              </select>
+            </div>
+          </div>
+       </div>
+        
+        <!-- Promotion will come from liferay WCM Start -->
+        <!-- <div class="offer-area">
+          <div class="offer-box">
+            <span class="offer-tag">Offer</span> <span
+class="offer-info">Save
+              like never before! Get additional <span
+class="highlighted-text">10%
+                off</span> off on your coupon!
+            </span>
+          </div>
+        </div> -->
+        <!-- Promotion will come from liferay WCM Start -->
+<a href="/cart" class="button-big" id="addToCart"><i
+class="icon-basket"></i> Buy Now</a>
+</div>
+
+<div class="productdetail-right">
+            <div class="check-avalible">
+              <p>Check product availability and delivery timeline at
+your location</p>
+              <div class="checkservice" id="checkservice">
+                <input type="text" id="pincode" value="" />
+                <a href="#" class="go">Check</a>
+                <span class="statusmsg"><span class="icon"></span><span
+class="text"></span></span>
+              </div>
+            </div>
+            
+            <div class="delivered-days"><p>Delivered in 3 to 4 working
+days</p></div>
+            <div class="clickoffer">
+            <p><a href="#" class="offertoggle">Click here for offer</a></p>
+            <div class="currentoffer">The product is already at its best
+price.</div>
+            {{#if vendorProductWrapper.offers.length}}
+            <div class="bestoffer" style="display:none">
+              <table class="table couponArea">
+                <tr>
+                  <td>Coupon Code: </td>
+                  <td><a
+class="coupon-code">{{vendorProductWrapper.offers.0.couponCode}}</a></td>
+                </tr>
+                <tr>
+                  <td>Applicable on: </td>
+                  <td><a class="offers-valid">Orders above <strong>Rs.
+{{vendorProductWrapper.offers.0.minAmtRequird}}</strong></a></td>
+                </tr>
+                <tr>
+                  <td>Max Discount: </td>
+                  <td><a class="offers-valid">
+                  
+                    {{#promoDiscountInPercentage
+vendorProductWrapper.liveinventory.mrp
+vendorProductWrapper.offers.0.value
+vendorProductWrapper.liveinventory.salePriceWithVAT}}{{/promoDiscountInPercentage}}%
+ 
+                    of MRP(Your total saving Rs. {{#promoTotalSaving
+vendorProductWrapper.liveinventory.mrp
+vendorProductWrapper.offers.0.value
+vendorProductWrapper.liveinventory.salePriceWithVAT}}
+                    {{/promoTotalSaving}} on MRP)
+                  </a></td>
+                </tr>
+              </table>
+            </div>
+            {{else}}
+            <div class="currentoffer">The product is already at its best
+price.</div>
+            {{/if}}
+            </div>
+            
+</div>
+
+</div>
+        <div class="action-area">
+          
+          <div class="clearfix visible-xs"></div>
+          <a href="#" class="add-favorites">Add to Favourites</a>
+          <div class="product-share">
+            <div class="sharearea1">
+             <span class="listing-share1" title="Share"></span>
+             <!-- <span class="sharetxt">Share</span> -->
+              <div class="shareslide1">
+                <a title="Facebook" class="ifacebook facebook
+social-share-link" href="#"></a>
+                  <a title="Twitter" class="itwitter twitter
+social-share-link" href="#"></a>
+                  <!-- <a title="Email" class="iemail email
+social-share-link" href="#"></a> -->
+                  <a title="gplus" class="igplus googleplus
+social-share-link" href="#"></a>
+                  <a title="pintrest" class="ipintrest pinterest
+social-share-link" href="#"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- product detail info ends here -->
+  </div>
+
+  <!-- product description area starts here -->
+  {{#each product.productVariants}}
+  	{{#if selected}}
+    <div class="description-area">
+      <div class="row">
+        <div class="col-xs-12">
+         <h3 class="speck">Product Description</h3>
+        <ul id="description">
+       
+		 	{{#if description}}
+		    	<li class="description">
+		    		<p>{{description}}</p
+		    	</li>
+		    {{/if}}
+		    {{#if description1}}
+		    	<li class="description1">
+		    		<p>{{description1}}</p
+		    	</li>
+		    {{/if}}
+		    {{#if description2}}
+		    	<li class="description2">
+		    		<p>{{description2}}</p
+		    	</li>
+		    {{/if}}
+		    {{#if description3}}
+		    	<li class="description3">
+		    		<p>{{description3}}</p
+		    	</li>
+		    {{/if}}
+		  	 
+		    </ul>
+		    </div>
+     	</div>
+    </div>
+   
+  {{/if}}
+  {{/each}}  
+
+ <div class="description-area">
+    <div class="row">
+      <div class="col-xs-12">
+		  {{#each product.productVariants}} 
+		  		{{#if selected}}
+		  		<h3 class="specify">Specification</h3>
+				  	  <ul class="productDescription">
+            
+				  		{{#each attribute}}
+				  		<li class="attrName">
+				  			{{name}}</li>
+				  		<li class="attrDesc">
+				  			{{value}}
+				  		</li>
+				  		{{/each}}
+				  	</ul>
+		  		{{/if}}
+		  {{/each}}
+  		</div>
+  	</div>
+  </div>
+
+  <div class="description-area">
+    <div class="row">
+      <div class="col-xs-12">
+		  {{#each product.productVariants}} 
+		  		{{#if selected}}
+				     <ul class="gurantee">
+				  		{{#each sellerSKUs}}
+				  			{{#if selected}}
+				  				{{#if warranty}}
+						  		<li>Warranty</li>
+						  		<li class="guranteeValue">{{warranty}}</li>
+						  		{{/if}}
+				  			{{/if}}
+				  		{{/each}}
+				  	</ul>
+		  		{{/if}}
+		  {{/each}}
+  		</div>
+  	</div>
+  </div>
+
+  <div class="description-area">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="tabs-area">
+          <ul id="maintab">
+          {{#if product.productVariants.0.sellerSKUs.selected}}
+            {{#if description}}
+              {{#equal description 0}}
+              {{else}}
+                <li><a href="#" data-name="description"
+class="deselected">Description</a></li>
+              {{/equal}}
+            {{/if}}
+            {{#if dimension}}
+              {{#equal dimension 0}}
+              {{else}}
+                <li><a href="#" data-name="dimension"
+class="deselected">Dimension</a></li>
+              {{/equal}}
+            {{/if}}
+            {{#if guaranty}}
+              {{#equal productVariants.0.sellerSKUs.0.guaranty 0}}
+              {{else}}
+                <li><a href="#" data-name="gaurantee"
+class="deselected">Guarantee</a></li>
+              {{/equal}}
+            {{/if}}
+            {{#if otherInfo}}
+              {{#equal otherInfo 0}}
+              {{else}}
+                <li><a href="#" data-name="other-info"
+class="deselected">Other Info</a></li>
+              {{/equal}}
+            {{/if}}
+            {{/if}}
+          </ul>
+        </div>
+        <div>
+          {{#if description}}
+          <div class="tab-infoarea" id="description">
+            <div class="information">
+              <div
+class="info-text">{{{description}}}</div>
+            </div>
+          </div>
+          {{/if}}
+          {{#if dimension}}
+          <div class="tab-infoarea" id="dimension">
+            <div class="information">
+              <div class="info-text">
+                {{{dimension}}}
+              </div>
+            </div>
+          </div>
+          {{/if}}
+          {{#if guaranty}}
+          <div class="tab-infoarea" id="gaurantee">
+            <div class="information">
+              <div
+class="info-text">{{{guaranty}}}</div>
+            </div>
+          </div>
+          {{/if}}
+          {{#if otherInfo}}
+          <div class="tab-infoarea" id="other-info">
+            <div class="information">
+              <div
+class="info-text">{{{otherInfo}}}</div>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- product description area ends here -->
+
+ 
+
+  <div class="clear"></div>
+</div>
+<!-- product detail area ends here -->

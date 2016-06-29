@@ -1,0 +1,172 @@
+{{#if vendorProductWrapper.vendorProduct}}
+	<div class="quickproduct">
+	  
+	  <div class="product-gallery">
+			<!-- product gallery thumb nails starts here -->
+			<!-- <div id="product-gallery-thumbnails" class="gallery-thumbnails">
+				<div class="slide">
+					<a href="#" class="thumbnail-image" data-image-detail=""  data-image-original="">
+						<img src="" data-src="" alt="" title="" />
+					</a>
+				</div>
+			</div> -->
+			<!-- product gallery thumb nails ends here -->
+
+			<!-- product gallery large image starts here -->
+			<a href="#" class="large-image zoom" id="ex1" data-zoom-image="">
+				<img src="" alt="" title="" id="product-gallery-detail" />
+			</a>
+			<!-- product gallery large image ends here -->
+	  </div>
+	  
+	  <div class="product-popup-info" data-event-id="{{vendorProductWrapper.vendorProduct.eventId}}" data-product-id="{{vendorProductWrapper.vendorProduct.vendorProductId}}">
+	    <h2 class="product-name">{{vendorProductWrapper.vendorProduct.product.name}}</h2>
+	    <div class="code-area">
+	      <span class="product-code">Product Code: {{vendorProductWrapper.vendorProduct.product.productId}}</span>
+	      <span class="product-timer" id="productEventTimer" data-expire-datetime="{{getDate 'YYYY/MM/DD hh:mm:ss' vendorProductWrapper.vendorProduct.event.endDate}}">0 DAYS 00:00:00 LEFT</span>
+	    </div>
+	    
+	    		<div class="productdetail-holder">
+				<div class="productdetail-left">
+	    <div class="pricing-area">
+	      <span class="old-pricing">{{vendorProductWrapper.liveinventory.currencyCode}} {{vendorProductWrapper.liveinventory.mrp}}</span>
+	      <span class="new-pricing">{{vendorProductWrapper.liveinventory.currencyCode}} <span id="newPrice">{{vendorProductWrapper.liveinventory.salePriceWithVAT}}</span></span>
+	      
+	      
+	       
+	    	<!-- <div class="logos-area">
+                 {{#if product.deliveryMode}}
+                 	<div class="logosholder">
+                    <div class="express"></div>
+                    <div class="logocontent">Express Delivery. Shipped directly from our warehouse.</div>
+                  </div>
+                  <div class="logosholder">
+                    <div class="international"></div>
+                    <div class="logocontent">World's best finds. Imported especially for you.</div>
+                  </div>
+               	<div class="daycount"><a href="#" class="shipping-info {{product.deliveryMode}}">{{vendorProductWrapper.vendorProduct.shipmentType}} {{vendorProductWrapper.vendorProduct.product.deliveryTime}}</a></div>
+                 {{/if}}
+            </div> -->
+	    </div>
+	    
+	    {{#if vendorProductWrapper.liveinventory.attributes}}
+			{{#each vendorProductWrapper.liveinventory.attributes}}
+			{{#lowerEqual name "size"}}
+					<div class="selection-area">
+						<div class="select-choice {{toLowerCase name}}" data-attribute-id="{{attributeId}}" data-attribute-name="{{name}}">
+							<label class="label">Select {{toLowerCase name}}</label> 
+							{{#if attributeValues}}
+							<ul>
+								{{#each attributeValues}}
+								{{#notLowerEqual value 'na'}}
+									<li class="tiles" data-attribute-value="{{value}}" data-attribute-value-id="{{attributeValueId}}">
+									{{#equal quantity 0}}
+										<span class="sold">{{toLowerCase value}}</span>
+									{{else}}
+										<a href="#">{{toLowerCase value}}</a>
+									{{/equal}}
+									</li>
+								{{/notLowerEqual}}
+								{{/each}}
+							</ul>
+							{{/if}}
+						</div>
+					</div>
+					{{else}}
+					<div class="selection-area">
+						<div class="select-choice {{toLowerCase name}}"
+							data-attribute-id="{{attributeId}}" data-attribute-name="{{name}}">
+							<label class="label">Select {{toLowerCase name}}</label> {{#if
+							attributeValues}}
+							<ul>
+								{{#each attributeValues}}
+								<li class="tiles" data-attribute-value="{{value}}"
+									data-attribute-value-id="{{attributeValueId}}"><a
+									href="javascript:void(0);">{{toLowerCase value}}</a></li> {{/each}}
+							</ul>
+							{{/if}}
+						</div>
+					</div>
+					{{/lowerEqual}}
+					{{/each}}
+		{{/if}}
+		<div class="selection-area" style="display:none;">
+			<div class="select-quantity quantity">
+				<label class="label">Select Quantity</label>
+				<div class="select-wrapper">
+					<select class="select">
+						<option value="0">0</option>
+					</select>
+				</div>
+			</div>
+			<!-- <div class="check-avalible">
+				<p>Check product availability at your location</p>
+				<div class="checkservice" id="checkservice">
+					<input type="text" id="pincode" value="" /> <a href="#" class="go">Check</a>
+					<span class="statusmsg"><span class="icon"></span><span
+						class="text"></span></span>
+				</div>
+				<div class="clear"></div>
+			</div> -->
+			<div class="clear"></div>
+			<p class="error-message">&nbsp;</p>
+		</div>
+
+		<!-- Promotion will come from liferay WCM Start -->
+		<!-- <div class="offer-area">
+			<div class="offer-box">
+				<span class="offer-tag">Offer</span> <span
+					class="offer-info">Save like never before! Get additional <span class="highlighted-text">10% off</span> on your coupon!</span>
+			</div>
+		</div> -->
+		<!-- Promotion will come from liferay WCM Start -->
+		
+		<a href="#" class="button-big" id="addToCart"><i class="icon-basket"></i>Buy Now</a>
+			 </div>
+
+			<div class="productdetail-right">
+			<div class="check-avalible">
+				<p>Check product availability at your location</p>
+				<div class="checkservice" id="checkservice">
+					<input type="text" id="pincode" value="" /> <a href="#" class="go">Check</a>
+					<span class="statusmsg"><span class="icon"></span><span
+						class="text"></span></span>
+				</div>
+			</div>
+						
+						<div class="delivered-days"><p>Delivered in 3 to 4 working days</p></div>
+						<div class="clickoffer">
+							<p><a href="#" class="offertoggle">Click here for offer</a></p>
+							<div class="currentoffer">The product is already at its best price.</div>
+						</div>
+		
+				</div>
+		</div>
+		
+		<div class="action-area">
+			
+			<div class="clearfix visible-xs"></div>
+			<a href="#" class="add-favorites">Add to Favorites</a>
+			<div class="product-share">
+				<div class="sharearea1">
+					<span class="listing-share1" title="Share"></span>
+					<!--span class="sharetxt">Share</span-->
+					<div class="shareslide1">
+						<a title="Facebook" class="ifacebook facebook social-share-link" href="#"></a>
+						<a title="Twitter" class="itwitter twitter social-share-link" href="#"></a>
+						<a title="gplus" class="igplus googleplus social-share-link" href="#"></a>
+						<a title="pintrest" class="ipintrest pinterest social-share-link" href="#"></a>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="action-veiw-more">
+		<a href="/product-detail/product/{{vendorProductWrapper.vendorProduct.eventId}}/{{vendorProductWrapper.vendorProduct.vendorProductId}}">
+				<span>View More Details</span></a>
+		</div>
+		
+	  </div>
+	</div>
+	<div class="clear"></div>
+{{/if}}

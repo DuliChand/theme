@@ -1,0 +1,512 @@
+.gift-icon:before, .redeem-area span:before, .payment-area a:before {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.sidebar-floating {
+	height:80%;
+	position:absolute;
+	right:10px;
+	top:0;
+	width:315px;
+	
+}
+.order-sum-outer {
+	float:left;
+	height:auto;
+	margin:16px 0 0;
+	width:315px
+}
+.order-sum-box {
+	background:none repeat scroll 0 0 #F1F1F1;
+	border-radius:6px;
+	float:left;
+	height:auto;
+	width:100%
+}
+.order-sum-outer .sum-heading {
+	color:#000;
+	width:100%;
+	float:left;
+	border-bottom:#dedede solid 1px;
+	font-size:14px;
+	line-height:18px;
+	padding:10px 0 0px 14px;
+	text-transform:uppercase
+}
+.redeem-area {
+	float:left;
+	height:auto;
+	margin:0 2px;
+	padding-bottom:5px;
+	width:98%
+}
+.redeem-area #coupon-box, .redeem-area #coupon-box1, .redeem-area #reward-box, .redeem-area #credit-box {
+	float:right;
+	position:relative
+}
+.redeem-area form {
+	color:#666;
+	
+	font-size:12px;
+	margin:2px 0 0
+}
+.redeem-area form label:before {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat scroll -541px -79px;
+	content:"";
+	display:block;
+	height:15px;
+	left:-17px;
+	position:absolute;
+	top:6px;
+	width:14px
+}
+.redeem-area form a.go{
+	background:#333;
+	border-bottom:1px solid #000;
+	color:#FFF;
+	cursor:pointer;
+	float:right;
+	margin:0 0 0 3px;
+	padding:0 2px;
+	width:52px;
+	text-align: center;
+}
+.redeem-area form button.go {
+	background:#333;
+	border:none;
+	color:#FFF;
+	cursor:pointer;
+	float:right;
+	margin:0 0 0 3px;
+	padding:0 2px;
+	line-height: 19px;
+	height:19px;
+	width:52px;
+}
+.redeem-area form input {
+	background:none repeat scroll 0 0 #FFF;
+	border:1px solid #CCC;
+	float:left;
+	line-height: 19px;
+	font-size:11px;
+	height:19px;
+	margin:0;
+	padding:3px 2px;
+	width:110px
+}
+.redeem-area form select {
+	width: 110px;
+    border: #ccc solid 1px;
+    height: 20px;
+    line-height: 19px;
+}
+.redeem-area .coupon:before, .redeem-area .coupon1:before {
+	background-position:-31px -240px;
+	width:16px
+}
+.redeem-area span:before {
+	background-position:-91px -153px;
+	content:"";
+	display:block;
+	height:16px;
+	left:0;
+	position:absolute;
+	width:13px
+}
+.redeem-area span.active:after {
+
+}
+.redeem-area span:after {
+	color:#999;
+	font-size:10px;
+	left:90px;
+	margin:0 0 0 10px;
+	position:absolute;
+	top:0
+}
+.redeem-area .coupon, .redeem-area .coupon1 {
+	clear:none;
+	float:left;
+	padding-right:5px
+}
+.redeem-area span {
+	color:#000;
+	cursor:pointer;
+	display:block;
+	float:left;
+	
+	font-size:12px;
+	line-height:16px;
+	margin:5px 0 5px 5px;
+	position:relative;
+	text-indent:20px
+}
+.redeem-area span i {
+	color:#d22573;
+	display:block;
+	font-size:11px;
+	font-style:normal
+}
+.sum-content ul {
+	margin:0 13px;
+	padding:0
+}
+.sum-content ul li {
+	border-bottom:1px dashed #C3C3C3;
+	clear:both;
+	display:block;
+	float:left;
+	line-height:normal;
+	list-style-type:none;
+	min-height:25px;
+	padding:3px;
+	width:100%
+}
+
+.sum-content ul li span {
+	color:#333;
+	float:left;
+	
+	font-size:12px
+}
+.sum-content ul li span:first-child {
+	min-width:120px
+}
+.sum-content ul li span.product-value-label {
+	float:left;
+	min-width:auto
+}
+.sum-content ul li span.product-value {
+	float:right;
+	min-width:auto;
+	clear:none;
+	letter-spacing:normal;
+	text-transform:capitalize
+}
+.sum-content ul li span:last-child {
+	
+	float:right!important;
+	letter-spacing:normal;
+	text-transform:capitalize;
+	min-width:120px;
+	text-align: right;
+}
+.sum-content ul li span i {
+	clear:both;
+	color:#d22573;
+	display:block;
+	font-size:12px;
+	font-style:normal
+}
+.sum-content ul li a.del-but, .sum-content ul li a.edit-but {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat;
+	display:block;
+	float:left;
+	height:11px;
+	margin:3px 5px 0 0;
+	width:11px;
+	text-indent:-99999px
+}
+.sum-content ul li a.del-but {
+	background-position:-357px -125px
+}
+.sum-content ul li a.edit-but {
+	background-position:-120px -258px
+}
+.sum-content ol {
+	margin:13px;
+	padding:0
+}
+.sum-content ol li {
+
+	clear:both;
+	display:block;
+	list-style-type:none;
+	min-height:20px;
+	padding:4px 3px;
+	text-align:right
+}
+.sum-content ol li.textbold{ font-size:12px; }
+.sum-content ol li:last-child{
+	border:none;
+}
+.sum-content ol li strong {
+	color:#d22573;
+	
+}
+.sum-content ol li span {
+	display:inline-block;
+	
+	width:70px
+}
+.total-area {
+	 background:#dedede;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 1px solid #ddd;
+    clear: both;
+    color: #000;
+    height: 35px;
+    padding: 10px;
+    text-align: right;
+}
+.total-area span:first-child {
+	padding:0 20px 0 0;
+	text-transform:uppercase
+}
+.total-area span:last-child {
+	padding-right:5px;
+	text-transform:capitalize
+}
+.total-area span {
+	color:#333;
+	
+	font-size:14px;
+	line-height:normal
+}
+.offers-link.personal:before {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat -504px -11px;
+	content:"";
+	display:block;
+	height:15px;
+	left:-23px;
+	position:absolute;
+	width:19px
+}
+.offers-link.personal {
+	clear:both;
+	color:#d22573;
+	cursor:pointer;
+	display:block;
+	position:relative;
+	float:left;
+	
+	margin:5px 0 4px 36px
+}
+.offers-link.personal .questionmark .offertooltip {
+	position:absolute;
+	
+	background:#fff;
+	color:#333;
+	z-index:3;
+	border:1px solid #d22573;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	width:160px;
+	left:-70px;
+	right:auto;
+	top:20px;
+	padding:5px;
+	display:none
+}
+.offers-link.personal .questionmark:hover .offertooltip {
+	display:block
+}
+.offers-link.personal .questionmark {
+	display:inline-block;
+	
+	position:relative;
+	color:#fff;
+	background:#d22573;
+	padding:0 5px;
+	border-radius:100%
+}
+#showhiderow {
+	display:none
+}
+.redeem-area form.hidethis {
+	display:none
+}
+.redeem-area form .select-wrapper {
+	margin-right:0;
+	width:auto
+}
+.select-wrapper {
+	height:24px;
+	margin:0 20px 6px 0;
+	position:relative;
+	width:52px;
+	z-index:auto
+}
+.redeem-area form input.selectbox {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/arrowdown.jpg) no-repeat scroll right center #FFF;
+	padding-right:15px;
+	text-indent:2px;
+	width:100%!important
+}
+.select-wrapper .selectbox {
+	line-height:24px
+}
+.select-wrapper .selectbox-wrapper {
+	width:100%!important
+}
+.redeem-area form .selectbox-wrapper ul li {
+	padding:3px
+}
+.check-avalible {
+	padding:15px 10px 0 0;
+	clear:both;
+	position:relative
+}
+.check-avalible h3 {
+	
+	font-size:12px;
+	color:#666;
+	margin:0
+}
+.check-avalible .checkservice {
+	clear:both;
+	padding:3px 0 0;
+	padding:5px 0;
+	margin:5px 0 0
+}
+.check-avalible .checkservice input {
+	width:105px;
+	border:1px solid #CCC;
+	height:23px;
+	margin:0 5px 0 0;
+	float:left;
+	padding:2px;
+	line-height:20px;
+}
+.check-avalible .checkservice .go {
+	background:#333;
+	display:block;
+	float:left;
+	color:#fff;
+	padding:3px 10px 2px;
+	
+}
+.check-avalible .checkservice .go:hover {
+	background:#d22573
+}
+.check-avalible h3 .button-check {
+	background:#000;
+	display:block;
+	float:right;
+	line-height:15px;
+	color:#fff;
+	padding:3px 10px 2px;
+	
+}
+.check-avalible h3 .button-check:hover {
+	background:#d22573
+}
+.check-avalible .checkservice .statusmsg {
+	display:none;
+	clear:both;
+	padding:3px 0 0;
+	font-size:12px;
+	
+	height:22px;
+	float:left;
+}
+.check-avalible .checkservice .statusmsg .icon {
+	width:14px;
+	height:15px;
+	display:block;
+	float:left;
+	margin:1px 5px 0 0;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat 20px 20px
+}
+.check-avalible .checkservice .statusmsg.green {
+	color:#1a2
+}
+.check-avalible .checkservice .statusmsg.green .icon {
+	background-position:-541px -79px
+}
+.check-avalible .checkservice .statusmsg.red {
+	color:#d22573;
+	background:none
+}
+.check-avalible .checkservice .statusmsg.red .icon {
+	background-position:-357px -125px
+}
+.select-payment {
+	border-top:1px solid #F5F6F6;
+	color:#666;
+	float:left;
+	
+	font-size:12px;
+	height:auto;
+	line-height:12px;
+	margin:0 10px;
+	padding:20px 0 0 5px;
+	text-transform:uppercase;
+	width:93%
+}
+.payment-area {
+	float:left;
+	height:auto;
+	width:100%
+}
+.payment-area a {
+	position:relative;
+	float:left;
+	width:47px;
+	height:16px;
+	margin:15px 8px 5px 0
+}
+.payment-area a:before {
+	position:absolute;
+	width:47px;
+	height:16px;
+	background-position:-28px -265px;
+	content:''
+}
+.payment-area .master {
+	width:26px;
+	margin-top:14px
+}
+.payment-area .master:before {
+	width:26px;
+	background-position:-230px -207px
+}
+.payment-area .paypal-icon {
+	width:59px;
+	margin-top:16px
+}
+.payment-area .paypal-icon:before {
+	width:59px;
+	background-position:-162px -210px
+}
+.payment-area .netbank-icon {
+	width:67px;
+	height:8px;
+	margin-top:21px
+}
+.payment-area .netbank-icon:before {
+	width:67px;
+	height:8px;
+	background-position:-188px -174px
+}
+.payment-area .cod-icon {
+	width:53px;
+	margin-top:14px;
+	margin-right:0
+}
+.payment-area .cod-icon:before {
+	width:53px;
+	background-position:-202px -188px
+}
+.redeem-area.personal {
+	display:block;
+}
+.redeem-area #personal-voucher-box, .redeem-area #coupon-box, .redeem-area #rewards-box, .redeem-area #credits-box {
+	float:right;
+	position:relative;
+	display:block
+}
+.redeem-area.global #coupon-box {
+	display:block
+}
+.redeem-area .coupon:after {
+    content: "";
+}
+
+.moresaving{background-color:#e4e4e4; padding: 3px 15px !important; width:100% !important; clear:both;}
+.moresaving .product-value {
+    clear: none;
+    float: right;
+    letter-spacing: normal;
+    text-transform: capitalize;
+}

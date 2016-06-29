@@ -1,0 +1,132 @@
+{{#if value.children.length}}
+{{#each value.children}}
+<div class="events">
+{{#notEqual data.categoryName 'heroGallery'}}
+    <h1 class="heading-style">
+	    <strong>{{data.categoryName}}</strong>
+	</h1>
+	{{#if data.categoryEvents}}
+		<div class="fordesktop">
+		{{#each data.categoryEvents}}
+		<div class="columerow">
+	    	<div class="event-col">
+	            <a class="showtooltip" href="/{{#mainGroupUrl ../../../../value.data.categoryName events.eventCode}}{{/mainGroupUrl}}/{{#specialCharReplace events.eventName}}{{/specialCharReplace}}_{{events.eventId}}"  title="{{events.eventName}}">
+	                <img onerror="this.src='http://cdn1.fashionandyou.com/fny-static/app-images/event-long-error1.jpg'" alt="{{events.eventName}}"  data-original="http://cdn1.fashionandyou.com/fny-event/live/{{events.eventCode}}/web/banner_long_new.jpg "   class="lazy"/>
+	                {{#if events.eventAttributes}}
+						{{#each events.eventAttributes}}
+							{{#lowerEqual code "discount"}}
+								<div class="tagimage">
+									<span>{{value}}</span>
+                                </div>
+							{{/lowerEqual}}
+						{{/each}}	
+					{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if events.namonics}}
+							{{#isAvailable events.namonics "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent"><p>Express <span>Delivery</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable events.namonics "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent"><p>World&rsquo;s <span>Best Finds</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable events.namonics "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent"><p>Exclusive <span>Buys</span></p></div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3 class="splitEventName">{{splitEventName events.eventName}}</h3><h3 class="categoryEventName">{{categoryEventName events.eventName}}</h3>
+						<h4 id="eventTimerText" style="display:none" data-expire-datetimetext="{{events.endDate}}">{{events.endDate}}</h4>
+						<h4 class="event-timer" data-expire-datetime="{{getDate 'YYYY/MM/DD ' events.endDate}}">0 DAYS</h4>			
+					</div>
+	            </a>
+	            <!-- power tip starts here --> 
+				<div class="powertip-outer">
+					<div class="eventpowertip" data-id="{{events.eventId}}" data-name="{{events.eventName}}" data-image="http://cdn1.fashionandyou.com/fny-event/live/{{events.eventCode}}/web/banner_long_new.jpg ">
+						<a href="#" class="event-name">{{events.eventName}}</a>
+						<div class="clear"></div>
+						<!-- <span class="tooltip-timer" data-event-startdate="{{events.startDate}}" data-event-enddate="{{events.endDate}}">0 days left 00:00</span><div class="clear"></div> -->
+						<!--<span class="prod-no">{{events.noOfProducts}} Products</span><span class="disc-tip">{{events.discountType}} {{events.discountValue}}</span>-->
+						<div class="clear"></div>
+						<span class="tip-sep"></span>
+		                         <div class="moredetail">
+		                         <p class="text text1">Click here for more detail</p>
+						<p class="text">{{events.description}}</p><div class="clear"></div>
+						<span class="tip-sep"></span>
+						<div class="share-icons">
+						<label class="shareon">Share :</label>
+						<a href="#" class="fb-share facebook social-share-link" title="Share on facebook"></a>
+						<a href="#" class="tw-share twitter social-share-link" title="Share on Twitter"></a>
+							<!-- <a href="#" class="em-share email social-share-link" title="Share on Email"></a> -->
+							<a href="#" class="gp-share googleplus social-share-link" title="Share on Gplus"></a>
+							<a href="#" class="pint-share pinterest social-share-link" title="Share on Pinterest"></a>
+						</div>
+	                    	<a href="#" class="shippingtype {{events.shippingMaster.shippingType}}">{{events.shippingMaster.shippingType}}<strong>Dispatch in {{events.shippingMaster.shippingDuration}} days</strong></a>
+	                    </div>
+					</div>
+				</div>
+				<!-- power tip ends here -->
+	        </div>
+    	</div>
+    	{{/each}}
+    	</div>
+    	<div class="forresponsive">
+    	{{#each data.categoryEvents}}
+    	<div class="event-col">
+    		<a href="/{{#mainGroupUrl ../../../../value.data.categoryName events.eventCode}}{{/mainGroupUrl}}/{{#specialCharReplace events.eventName}}{{/specialCharReplace}}_{{events.eventId}}"  title="{{events.eventName}}">
+	                <img onerror="this.src='http://cdn1.fashionandyou.com/fny-static/app-images/event-long-error1.jpg'" alt="{{events.eventName}}" data-original="http://cdn1.fashionandyou.com/fny-event/live/{{events.eventCode}}/web/banner_long_new.jpg "   class="lazy" />
+	                {{#if events.eventAttributes}}
+						{{#each events.eventAttributes}}
+							{{#lowerEqual code "discount"}}
+								<div class="tagimage">
+									<span>{{value}}</span>
+                                </div>
+							{{/lowerEqual}}
+						{{/each}}	
+					{{/if}}
+	                <div class="event-bottom">
+						<div class="logos-area">
+						{{#if events.eventType}}
+							{{#isAvailable events.namonics "express"}}
+							<div class="logosholder">
+								<div class="express"></div>
+								<div class="logocontent"><p>Express <span>Delivery</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable events.namonics "international"}}
+							<div class="logosholder">
+								<div class="international"></div>
+								<div class="logocontent"><p>World&rsquo;s <span>Best Finds</span></p></div>
+							</div>
+							{{/isAvailable}}
+							{{#isAvailable events.namonics "exclusive"}}
+							<div class="logosholder">
+								<div class="exclusive"></div>
+								<div class="logocontent"><p>Exclusive <span>Buys</span></p></div>
+							</div>
+							{{/isAvailable}}
+						{{/if}}
+						</div>
+						<h3 class="splitEventName">{{splitEventName events.eventName}}</h3><h3 class="categoryEventName">{{categoryEventName events.eventName}}</h3>
+						<h4 id="eventTimerText" style="display:none" data-expire-datetimetext="{{events.endDate}}">{{events.endDate}}</h4>
+						<h4 class="event-timer" data-expire-datetime="{{getDate 'YYYY/MM/DD' events.endDate}}">0 DAYS </h4>
+					</div>
+	            </a>
+	           
+	        </div>
+    	{{/each}}
+    	</div>
+    {{/if}}
+</div>
+{{/notEqual}}
+{{/each}}
+{{/if}}

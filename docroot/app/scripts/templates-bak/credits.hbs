@@ -1,0 +1,104 @@
+<div id="vouchersarea">
+  <div id="voucherleft" class="col-xs-12 col-sm-3">
+   <!--  <img src="/fny-theme/images/ribbon.jpg" class="hidden-xs visible-sm visible-md visible-lg"  /> -->
+    <ul class="visible-sm visible-md visible-lg">
+      <li><a href="#" class="active" id="creditsList">Credits</a></li>
+      <li><a href="#" id="rewardsList">Rewards</a></li>
+       <li><a href="#" id="vouchersList" >Vouchers</a></li>
+    </ul>
+    <div class="jumpmenus">
+		<strong>Pages :</strong>
+		<div class="select-wrapper">
+			<select class="selectbox" id="cmsPageLinks">
+				<option value="credits" class="active" id="creditsList">Credits</option>
+				<option id="rewardsList">Rewards</option>
+				<option id="vouchersList">Vouchers</option>
+			</select>
+		</div>
+	</div>
+  </div>
+
+  <div id="voucherright" class="col-xs-12 col-sm-9">
+	
+	{{#if storedCreditWrapper}}
+    <div id="credit-tabs">
+      <ul>
+        <li><a href="#" id="showcredit" class="active">My Credits</a></li>
+        <li><a href="#" id="showstatment">My Credit Statment</a></li>
+      </ul>
+    </div>
+
+    <div class="clear"></div>
+	
+	<div class="credit-table" style="display:block;">
+      <h3></h3>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+	        <tr>
+	          <th>Order No.</th>
+	          <th>Description</th>
+	          <th>Amount</th>
+	          <th>Expiry Date</th>
+	        </tr>
+	        {{#if storedCreditWrapper.storedCredits}}
+		        {{#if storedCreditWrapper.storedCredits.length}}
+			        {{#each storedCreditWrapper.storedCredits}}
+			        <tr>
+			          <td>{{returnOrderHeader.orderId}}</td>
+			          <td>{{description}}</td>
+			          <td>{{difference awardedAmount consumedAmount}}</td>
+			          <td>{{getDOB endDate}}</td>
+			        </tr>
+			       {{/each}}
+			     {{else}}
+			     	<tr>
+			           <td>{{storedCreditWrapper.storedCredits.returnOrderHeader.orderId}}</td>
+			          <td>{{storedCreditWrapper.storedCredits.description}}</td>
+			          <td>{{difference storedCreditWrapper.storedCredits.awardedAmount storedCreditWrapper.storedCredits.consumedAmount}}</td>
+			          <td>{{getDOB storedCreditWrapper.storedCredits.endDate}}</td>
+			        </tr>
+		       {{/if}}
+	       {{else}}
+	       <tr>
+	       	<td colspan="6" align="center">Stored Credits Not Available</td>
+           </tr>
+	       {{/if}}
+      </table>
+    </div>
+
+   	{{/if}}
+   	
+   	 <div class="statment-table">
+   	 	<h3>My Credit Statement</h3>
+   	    <div class="statment-filter">
+	        <div class="select-wrapper">
+	          <select class="select selectbox" id="month" >
+	            <option value="0">---Month---</option>
+	            <option value="1">1</option>
+	            <option value="2">2</option>
+	            <option value="3">3</option>
+	            <option value="4">4</option>
+	            <option value="5">5</option>
+	            <option value="6">6</option>
+	            <option value="7">7</option>
+	            <option value="8">8</option>
+	            <option value="9">9</option>
+	            <option value="10">10</option>
+	            <option value="11">11</option>
+	            <option value="12">12</option>
+	          </select>
+        	</div>
+
+	        <div class="select-wrapper">
+	          <select class="select selectbox" id="year">
+	            <option>---Year---</option>
+	            <option value="2014">2014</option>
+	            <option value="2013">2013</option>
+	          </select>
+	        </div>
+      </div>
+      <div id="statement-tab"></div>
+    </div>
+   	
+  </div>
+
+</div>

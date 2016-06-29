@@ -1,0 +1,433 @@
+#invitearea {
+	clear:both;
+	margin:0;
+	padding:15px 5px
+}
+#inviteleft {
+	float:left;
+	width:50%;
+	padding:0
+}
+#inviteleft h2 {
+	margin:0 0 5px;
+	font-weight:400;
+	color:#6a6a6a;
+	font-size:38px;
+	
+}
+#inviteleft h2 strong {
+	color:#d22573
+}
+#inviteleft img {
+	max-width:100%
+}
+#inviteright {
+	float:right;
+	width:48%;
+	margin:0 0 15px
+}
+#inviteright .invitebox {
+	background:#f6f6f6;
+	border:1px solid #dedede;
+	border-radius:6px;
+	padding:12px;
+	clear:both;
+	margin:0 0 12px
+}
+#inviteright .invitebox h3 {
+	display:block;
+	;
+	font-size:19px;
+	text-align:center;
+	color:#d22573;
+	margin:0 0 12px;
+	position:relative
+}
+#inviteright .invitebox h3:before {
+	content:'';
+	display:block;
+	position:absolute;
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+#inviteright .invitebox h3.heading1:before {
+	width:36px;
+	height:23px;
+	background-position:-457px -7px
+}
+#inviteright .invitebox h3.heading2:before {
+	width:33px;
+	height:27px;
+	background-position:-458px -38px
+}
+/* #inviteright .invitebox h3.heading3:before {
+	width:29px;
+	height:29px;
+	background-position:-460px -73px
+} */
+#inviteright .invitebox form {
+	margin:0 0 10px;
+	padding:0
+}
+#inviteright .invitebox form label {
+	display:block;
+	float:left;
+	clear:left;
+	text-align:right;
+	font-size:12px;
+	;
+	font-weight:400;
+	width:16%;
+	text-align:right;
+	padding:2px 10px 2px 0
+}
+#inviteright .invitebox form input, #inviteright .invitebox form textarea {
+	width:84%;
+	;
+	font-size:12px;
+	margin:0 0 7px;
+	padding:5px;
+	border:1px solid #efefef
+}
+#inviteright .invitebox form input.small {
+	width:78%
+}
+#inviteright .invitebox form textarea {
+	height:70px
+}
+#inviteright .invitebox form input.go {
+	background:#d22573;
+	font-size:12px;
+	color:#fff;
+	cursor:pointer;
+	width:19%;
+	padding:5px 8px;
+	border:none
+}
+#inviteright .invitebox form input.go:hover {
+	background:#000
+}
+#inviteright .invitebox #importarea {
+	float:right;
+	text-align:center;
+	padding:0 4px 0 0
+}
+#inviteright .invitebox #importarea strong {
+	font-weight:400;
+	font-size:13px;
+	;
+	display:block;
+	text-align:center;
+	margin:0 0 4px
+}
+#inviteright .invitebox #importarea #gmail, #inviteright .invitebox #importarea #window, #inviteright .invitebox #importarea #yahoo {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat;
+	display:inline-block;
+	margin:0 4px
+}
+#inviteright .invitebox #importarea #gmail {
+	background-position:-460px -110px;
+	width:30px;
+	height:15px
+}
+#inviteright .invitebox #importarea #window {
+	background-position:-465px -132px;
+	width:20px;
+	height:15px
+}
+#inviteright .invitebox #importarea #yahoo {
+	background-position:-465px -153px;
+	width:20px;
+	height:15px
+}
+.popup-outer {
+	display:none;
+	width:370px;
+	padding:15px;
+	background:#fff;
+	border:10px solid transparent;
+	border-radius:5px;
+	background-clip:padding-box
+}
+.popup-outer h2 {
+	padding-bottom:10px;
+	;
+	font-size:18px;
+	line-height:28px;
+	color:#333;
+	text-transform:capitalize
+}
+.popup-outer ul {
+	margin:0;
+	padding:0
+}
+.popup-outer ul li {
+	margin:0 0 6px 40px
+}
+.popup-outer ul li a {
+	;
+	font-size:15px;
+	color:#333;
+	text-decoration:none;
+	position:relative;
+	line-height:35px
+}
+.popup-outer ul li a.yahoo_icon:before, .popup-outer ul li a.gmail_icon:before, .popup-outer ul li a.outlook_icon:before {
+	content:'';
+	position:absolute;
+	display:block;
+	width:32px;
+	height:32px;
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat;
+	left:-40px
+}
+.popup-outer ul li a.yahoo_icon:before {
+	background-position:-458px -176px
+}
+.popup-outer ul li a.gmail_icon:before {
+	background-position:-458px -215px
+}
+.popup-outer ul li a.outlook_icon:before {
+	background-position:-458px -256px
+}
+#inviteright .invitebox p {
+	margin:0 0 6px;
+	font-size:13px;
+	;
+	line-height:17px
+}
+#inviteright .invitebox p>span{
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -64px -187px no-repeat;
+    content: " ";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+#inviteright .invitebox a.continueshop {
+	float:right;
+	display:block;
+	background:#d22573;
+	padding:5px 10px;
+	text-decoration:none;
+	color:#fff;
+	font-size:13px;
+	;
+	margin:20px 0 20px 10px
+}
+#inviteright .invitebox a.continueshop:hover {
+	background:#000
+}
+#sharethis {
+	clear:both
+}
+#sharethis strong {
+	float:left;
+	font-weight:400;
+	font-size:13px;
+	color:#000
+}
+#sharethis .fb-icon, #sharethis .tw-icon, #sharethis .pt-icon, #sharethis .gplus-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat
+}
+#sharethis .fb-icon {
+	background-position:-1px -2px
+}
+#sharethis .tw-icon {
+	background-position:0 -33px
+}
+#sharethis .pt-icon {
+	background-position:-25px -417px
+}
+#sharethis .gplus-share {
+	background-position:0 -98px
+}
+#yourinvitation {
+	clear:both;
+	border-top:1px dashed #dedede;
+	padding:12px 0 0
+}
+#yourinvitation h2 {
+	margin:0 0 14px;
+	font-size:29px;
+	color:#1a1a1a;
+	
+}
+#yourinvitation #invitation-tabs {
+	clear:both;
+	margin:0 0 15px
+}
+#yourinvitation #invitation-tabs ul {
+	margin:0;
+	padding:0
+}
+#yourinvitation #invitation-tabs ul li {
+	float:left;
+	list-style-type:none;
+	float:left;
+	margin:0 5px 0 0
+}
+#yourinvitation #invitation-tabs ul li a {
+	color:#7c7c7c;
+	text-decoration:none;
+	;
+	font-size:13px;
+	display:block;
+	background:#eee;
+	padding:5px 10px;
+	border-radius:4px
+}
+#yourinvitation #invitation-tabs ul li a.active, #yourinvitation #invitation-tabs ul li a:hover {
+	background:#d22573;
+	color:#fff
+}
+#yourinvitation #invitationdata {
+	clear:both
+}
+#yourinvitation #invitationdata #openinvitation, #yourinvitation #invitationdata #acceptinvitation, #yourinvitation #invitationdata #creditsearn {
+	display:none
+}
+#yourinvitation #invitationdata table {
+	margin:0 0 12px;
+	border-left:1px dashed #CCC
+}
+#yourinvitation #invitationdata table th {
+	background:#d22573;
+	color:#fff;
+	;
+	font-size:15px;
+	font-weight:400;
+	padding:5px 10px;
+	text-align:center;
+	border-right:1px dashed #CCC
+}
+#yourinvitation #invitationdata table th:first-child {
+	text-align:left
+}
+#yourinvitation #invitationdata table tr:hover {
+	background:#f7f7f7
+}
+#yourinvitation #invitationdata table td {
+	;
+	font-size:13px;
+	color:#333;
+	padding:4px 10px;
+	text-align:center;
+	border-bottom:1px dashed #CCC;
+	border-right:1px dashed #CCC
+}
+#yourinvitation #invitationdata table td:first-child {
+	text-align:left
+}
+#yourinvitation #invitationdata .showmore {
+	clear:both;
+	float:left
+}
+#yourinvitation #invitationdata .showmore a {
+	display:block;
+	color:#fff;
+	font-size:13px;
+	background:#000;
+	text-decoration:none;
+	padding:5px 10px;
+	
+}
+#yourinvitation #invitationdata .showmore a:hover {
+	background:#d22573
+}
+#invite-registration {
+	background:url(http://static.fashionandyou.com/app-images/invite-reg.jpg) no-repeat;
+	width:900px;
+	height:598px;
+	float:left;
+	clear:both;
+	margin:0 auto;
+	padding:30px 50px
+}
+#invite-registration h2 {
+	margin:0 0 20px;
+	display:block;
+	clear:both;
+	font-size:40px;
+	color:#000;
+	
+}
+#registration-box {
+	float:right;
+	clear:both;
+	width:320px;
+	padding:19% 0 0
+}
+#registration-box h4 {
+	margin:0 0 5px;
+	;
+	font-size:13px;
+	color:#fff;
+	text-align:right;
+	float:left;
+	clear:both;
+	background:#d22573;
+	padding:2px 5px
+}
+#registration-box h3 {
+	margin:0 0 5px;
+	display:block;
+	clear:both;
+	;
+	font-size:16px;
+	color:#000
+}
+#registration-box label {
+	float:left;
+	width:110px;
+	text-align:right;
+	clear:left;
+	font-weight:400;
+	font-size:12px;
+	;
+	padding:0 5px 3px 0
+}
+#registration-box input[type="text"] {
+	width:150px;
+	border:1px solid #e1e1e1;
+	border-radius:4px;
+	margin:0 0 8px
+}
+#registration-box .go {
+	background:#000;
+	color:#fff;
+	font-size:13px;
+	;
+	display:inline-block;
+	padding:2px 7px
+}
+#registration-box .go:hover {
+	background:#af3970
+}
+#registration-box .already {
+	clear:both;
+	display:block;
+	;
+	color:#333;
+	text-align:center;
+	padding:10px 0 0
+}
+#registration-box .already a {
+	color:#af3970;
+	
+}
+.errormsg1 {
+	display:none;
+	color:#fff;
+	font-size:11px;
+	margin:5px 0 0;
+	position:relative;
+	text-decoration:none;
+	font-family: 'centurygothicbold';
+	background:red;
+	padding:8px 6px;
+	text-align:center
+}

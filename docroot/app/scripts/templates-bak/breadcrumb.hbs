@@ -1,0 +1,22 @@
+{{#if CatGrupName.vendorProductWrapper.vendorProduct}}
+ <ul class="breadcrumb">
+    <li><a href="/home">Home</a></li>
+    <li id="breadcrmbsecnd"><a href="/category/categories/{{#categoryChk CatGrupName.vendorProductWrapper.vendorProduct.category.categoryGroup CatGrupID.categories}}
+
+{{/categoryChk}}">{{CatGrupName.vendorProductWrapper.vendorProduct.category.categoryGroup }} </a></li>
+    <li id="breadcrmbthird"><a href="/product/listing/event/{{CatGrupName.vendorProductWrapper.vendorProduct.event.eventId}}">{{CatGrupName.vendorProductWrapper.vendorProduct.event.eventName}}</a></li>
+    <li id="breadcrmbforth" class="active">{{CatGrupName.vendorProductWrapper.vendorProduct.product.name}}</li>
+ </ul>
+ {{else}}
+   {{#if categoryWrapper.category}}
+      <ul class="breadcrumb">
+    <li><a href="/home">Home</a></li>
+    <li id="breadcrmbsecnd" class="active">{{categoryWrapper.category.categoryName}}</li>
+ </ul>
+ {{else}}
+ <ul class="breadcrumb">
+    <li><a href="/home">Home</a></li>
+    <li id="breadcrmbsecnd" class="active">{{event.eventName}}</li>
+ </ul>
+ {{/if}}    
+{{/if}}

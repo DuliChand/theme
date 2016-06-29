@@ -1,0 +1,51 @@
+<!-- we recommend area starts here -->
+{{#if we-recommend}}
+
+<div class="row events endingsoon">
+	<h1 class="col-xs-12">{{we-recommend.title}}</h1>
+
+	{{#if we-recommend.events}}
+	{{#each we-recommend.events}}
+	<div class="col-xs-4 event-col">
+		
+		<div class="ftr-2-5">
+		<a class="showtooltip"  href="#">
+		<img alt="" src="{{banner-image}}"  />
+		<div class="tagimage">{{discount-label}}</div>
+		<h2 class="events-name">{{event-name}}<span>Ends Today</span></h2></a>
+		</div>
+
+	</div>
+
+
+
+	<div class="powertip-outer">
+		<div class="eventpowertip">
+			<a href="#" class="event-name">{{event-name}}</a>
+			<div class="clear"></div>
+			<span class="tooltip-timer">{{event-duration}}</span><div class="clear"></div>
+			<span class="prod-no">{{product-count}}</span><span class="disc-tip">Upto {{discount-label}}</span>
+			<div class="clear"></div>
+			<span class="tip-sep"></span>
+			<p class="text">{{short-desc}}</p><div class="clear"></div>
+			<span class="tip-sep"></span>
+
+			<div class="share-icons">
+
+				<label class="shareon">Share :</label><a href="#" class="fb-share" title="Share on facebook"></a> <a href="#" class="tw-share" title="Share on Twitter"></a><a href="#" class="gplus-share" title="Share on Google Plus"></a><a href="#" class="linkin-share" title="Share on Linked IN"></a>
+
+			</div>
+
+			<a href="#" class="int-ship">{{delivery-mode}}<strong>{{delivery-timing}}</strong></a>
+
+
+		</div>
+		{{/each}}
+		{{/if}}
+		{{#if we-recommend.landing-link-label}}
+		<div class="ftr-1-5 more"><a href="{{we-recommend.landing-url}}"><p>{{we-recommend.landing-link-label}} &GT;</p></a></div>
+		{{/if}}
+
+	</div>
+	<!-- we recommend area ends here -->
+	{{/if}}

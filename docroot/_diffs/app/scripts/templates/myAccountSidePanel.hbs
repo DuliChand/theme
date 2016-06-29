@@ -1,0 +1,453 @@
+<div class="myaccount-area">
+
+{{#if customers}}
+
+<div class="profile-sum">
+        <h2>YOU ARE SIGNED IN AS</h2>
+        <div class="sum-block clearfix profile-toggle">
+            <h3 class="user-gender {{customers.gender}}">{{customers.firstName}}</h3>
+            <p>{{customers.loginId}}</p>
+            <p>**********</p>  
+            {{#lowerEqual customers.loginSource.sourceMaster.sourceCode 'app'}}
+            <a id="changePassword" class="change-password link fancybox" href="#change-password">Change Password</a>
+            {{/lowerEqual}}
+            <p>{{#equal customers.gender 'F'}}Female{{/equal}}{{#equal customers.gender 'M'}}Male{{/equal}} {{#if customers.maritalStatus}}| {{customers.maritalStatus}} {{/if}}</p>
+            {{#if customers.dateOfBirth}}<p><strong>DOB :</strong> <span id="dob">{{getDOB customers.dateOfBirth}}</span></p>{{/if}}
+            
+            {{#if customers.contact.length}}
+              <p><strong>Contact :</strong> <span>{{customers.contact.0.value}}</span></p>
+            {{else}}
+              {{#if customers.contact}}
+                <p><strong>Contact :</strong> <span>{{customers.contact.value}}</span></p>
+              {{/if}}
+            {{/if}}
+            
+            <!-- {{#if customers.customerAddresses.length}}
+              <p><strong>City :</strong> <span>{{customers.customerAddresses.0.cityMaster.cityName}}</span></p>
+            {{else}}
+              {{#if customers.customerAddresses.cityMaster}}
+                <p><strong>City :</strong> <span>{{customers.customerAddresses.cityMaster.cityName}}</span></p>
+              {{/if}}
+            {{/if}} -->
+            
+            <a href="#edit-profile" class="btn-cartpop fancybox" id ="editProfile">Edit Profile</a>
+        </div>
+        </div>
+        <div  class="profile-sum">
+        <div class="sum-block clearfix address-toggle" id="addressClearFix">
+            <h3 class="expand-icon pull-left" id = "showAddress">Primary Address</h3>
+            <a href="#add-address" class="link pull-right fancybox" id ="addNewAddress">Add</a>
+            <div class="sum-block-inner clearfix" id = "showAddressPrimary">
+            {{#if customers.customerAddresses}}
+               {{#if customers.customerAddresses.length}}
+                {{#each customers.customerAddresses}}
+                {{#lowerEqual addressType 'billing'}}
+                     <p>{{address1}}</p>
+                     <p>{{address2}}</p>
+                     <p>{{address3}}</p>
+                     <p>{{landMark}}</p>
+                     <p>{{pinCodeMaster.pinCode}}</p>
+                     <p>{{pinCodeMaster.cityMaster.cityName}}</p>
+                     <p>{{pinCodeMaster.cityMaster.stateMaster.stateName}}</p>
+                     <p>{{pinCodeMaster.cityMaster.stateMaster.countryMaster.countryname}}</p>
+                   {{/lowerEqual}}   
+                   {{/each}}
+               {{else}}
+                {{#lowerEqual customers.customerAddresses.addressType 'billing'}}
+                     <p>{{customers.customerAddresses.address1}}</p>
+                     <p>{{customers.customerAddresses.address2}}</p>
+                     <p>{{customers.customerAddresses.address3}}</p>
+                     <p>{{customers.customerAddresses.landMark}}</p>
+                     <p>{{customers.customerAddresses.pinCodeMaster.pinCode}}</p>
+                     <p>{{customers.customerAddresses.pinCodeMaster.cityMaster.cityName}}</p>
+                     <p>{{customers.customerAddresses.pinCodeMaster.cityMaster.stateMaster.stateName}}</p>
+                     <p>{{customers.customerAddresses.pinCodeMaster.cityMaster.stateMaster.countryMaster.countryname}}</p> 
+                  {{/lowerEqual}}
+               {{/if}}           
+               <a id = "editAddressSubmit" href="#edit-address" class="btn-cartpop fancybox" >Edit</a>
+          {{else}}
+            <p>Primary address is not added&nbsp;</p>
+            {{/if}}
+            </div>
+        </div>
+        </div>
+         <!-- notify me starts here-->
+         <div  class="profile-sum"> 
+         <div class="sum-block clearfix notify-toggle" id="notifyMeClearFix">
+            <h3 class="expand-icon pull-left" id="notifyMe">Notify Me</h3>
+            <div id="notifyMeBox">
+            <!-- HERE THE TABLE WILL BE RENDERED -->
+            </div>           
+        </div>
+        </div>
+        <!--notify me ends here -->
+
+         <!-- size starts here--> 
+       <!--  <div class="sum-block clearfix cart-margin toggle-box" id="showSizeClearFix">
+            <h3 class="expand-icon pull-left" id="sizeLink">Size</h3>
+            <div class="sum-block-inner clearfix" id="showSize">
+                <label class="text-field" data-unit="in">Chest <input type="text" placeholder="36" value="{{customers.customerSize.0.sizeValue}}" id="chestTxtBox" sizeAttbMstrId="{{customers.customerSize.0.customerSizeId}}"/></label>
+                <label class="text-field" data-unit="in">Waist <input type="text" placeholder="36" value="{{customers.customerSize.1.sizeValue}}" id="waistTxtBox" sizeAttbMstrId="{{customers.customerSize.1.customerSizeId}}"/></label>
+                <label class="text-field" data-unit="in">Hip <input type="text" placeholder="36" value="{{customers.customerSize.2.sizeValue}}" id="hipTxtBox" sizeAttbMstrId="{{customers.customerSize.2.customerSizeId}}"/></label>
+                <label class="text-field" data-unit="in">Bottom Length <input type="text" placeholder="36" value="{{customers.customerSize.3.sizeValue}}" id="bottomTxtBox" sizeAttbMstrId="{{customers.customerSize.3.customerSizeId}}"/></label>
+                <div class="row clear"><a href="#" class="btn-cartpop" id="sizeBtn">Submit</a></div>            
+            </div>
+        </div> -->
+        <!-- size ends here-->
+
+        <!--style preference starts here
+        <div  class="profile-sum">
+        <div class="sum-block clearfix style-toggle" id="styleClearFix">
+            <h3 class="expand-icon pull-left" id="stylePreferences" >Style Preferences</h3>
+            <div class="sum-block-inner style-block clearfix" id="showStylePreferences">
+                <div class="errormsg5 hidden-default">
+                  <img src="http://cdn1.fashionandyou.com/fny-event/app-images/caution1.png" />
+                  <span id="errorMessage" >&nbsp;</span>
+          </div>
+                  <p>
+                         Help us identify the brands & style you would
+                         like to buy. We will inform you when we have
+                         great sales on your brand your style.
+                  </p>
+                  <input type="text" placeholder="Type your brand here" id="stylePrefText" />
+                  <a class="link addprefrence" href="#" id="stylePrefLink">Add</a>
+            </div>
+            <div class='sum-block-inner style-block clearfix'>
+            <span class="statusmsg green">
+          <span class="icon"></span>
+          <span class="text">Your Styles Updated</span>
+        </span>
+      </div>
+        </div>
+      </div>
+        style preference ends starts here-->
+      
+        
+       <!--  Link other account section starts here
+        <div class="sum-block clearfix">
+            <h3 class="expand-icon pull-left" id="showAccountsToLink">Link Other Accounts</h3>
+            <div class="sum-block-inner clearfix" id="showLinkOtherAccountsSection">
+                <ul class="social-icons">
+                    <li><a href="#" id="facebook_link">Fb</a></li>
+          <li><a href="#" id="gmail_link">Gmail</a></li>
+                </ul>
+            
+            </div>
+        </div>
+        Link other account section ends here -->
+       
+
+{{/if}}
+ </div>
+
+</div>
+
+<!-- change password pop up starts here -->
+<div class="chngpsw-popup-outer" id="change-password">
+      <div class="chngpsw-popup-inner">
+            <div class="header"><h2>Change Password</h2></div>
+            <div class="errormsg1">
+            <img src="http://cdn1.fashionandyou.com/fny-event/app-images/caution1.png" />
+            <span id="errorMessage">&nbsp;</span>
+        </div> 
+            <div class="chngpsw-popup-fields">
+                  <div class="col-xs-12">
+                        <label>Old Password :</label>
+                        <input type="password" placeholder="Enter your Old Password" id="oldPassword" />
+                        <label>New Password :</label>
+                        <input type="password" placeholder="Enter your New Password" id="newPassword" />
+                        <label>Retype Password :</label>
+                        <input type="password" placeholder="Re type Password" id="confirmPassword" />
+                        <a href="#resetPassword" class="btn-cartpop" id="resetPassword">Apply</a>
+                  </div>
+            </div>
+      </div>
+</div>
+<!-- change password pop up ends here -->
+
+<!-- edit profile pop up starts here -->
+<div class="profile-popup-outer" id="edit-profile">
+      <div class="profile-popup-inner">
+            <div class="header">
+                  <h2>Edit your Profile</h2>
+            </div>
+            <div class="profile-popup-area">
+                  <div class="col-xs-12">
+                      <div class="errormsg2 hidden-default">
+                  <img src="http://cdn1.fashionandyou.com/fny-event/app-images/caution1.png" />
+                  <span id="errorMessage" >&nbsp;</span>
+                </div>
+                <div class="row clear">
+                          <label>Firstname :</label>
+                          <input type="text" maxlength="70" value="{{customers.firstName}}" id="userName" />
+                        </div>
+                        <div class="row clear">
+                          <label>Lastname :</label>
+                          <input type="text" maxlength="70" value="{{customers.lastName}}" id="userLastName" />
+                        </div>
+                        <div class="row clear">
+                          <label>Email Id :</label>
+                          <input type="text" value="{{customers.loginId}}" id="loginId" disabled="disabled" />
+                        </div>
+                        <div class="row clear">
+                          <label>Gender :</label>
+              <!-- <label class="label-gender">{{customers.gender}}</label> -->
+              {{#equal customers.gender 'F'}}
+              <input type="text" value="Female" id="gender" disabled="disabled" /> 
+              {{/equal}}
+              {{#equal customers.gender 'M'}}
+              <input type="text" value="Male" id="gender" disabled="disabled" /> 
+              {{/equal}}
+                        </div>
+            <div class="row clear">
+              <label>Marital Status :</label>
+              <div>
+                <select id="maritalStatus">
+                {{#if customers.maritalStatus}}
+                  {{#lowerEqual customers.maritalStatus "single"}}
+                  <option value="Single" selected="selected">Single</option>
+                  {{else}}
+                  <option value="Single">Single</option>
+                  {{/lowerEqual}}
+                  
+                  {{#lowerEqual customers.maritalStatus "married"}}
+                  <option value="Married" selected="selected">Married</option>
+                  {{else}}
+                  <option value="Married">Married</option>
+                  {{/lowerEqual}}
+                {{else}}
+                <option value="select" selected="selected">--Select--</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                {{/if}}
+                </select>
+              </div>
+            </div>
+            
+            <div class="row clear">
+                        {{#if customers.contact.length}}
+                              <label>Contact No. :</label>
+                              <input type="text" maxlength="10" value='{{customers.contact.0.value}}' id="phoneNumber" class="small" />
+                        {{else}}
+                              <label>Contact No. :</label>
+                              <input type="text" maxlength="10" value='{{customers.contact.value}}' id="phoneNumber" class="small" />
+                        {{/if}}
+                        </div>
+            
+            {{#if customers.dateOfBirth}}
+                        <div class="clear"></div>
+                        <div class="row clear">
+                          <label>DOB :</label>
+                          <div class="hero-unit">
+                        <input  type="text" placeholder="dd/mm/yyyy"  value="{{getDate 'DDMMYYYY' customers.dateOfBirth}}" id="editDob" />
+                    </div>
+                  </div>
+                  {{else}}
+                  <div class="clear"></div>
+                        <div class="row clear">
+                          <label>DOB :</label>
+                          <div class="hero-unit">
+                        <input  type="text" placeholder="dd/mm/yyyy"  value="" id="editDob" />
+                    </div>
+                  </div>
+                  {{/if}}
+                  
+                  {{#if customers.anniverseryDate}}
+                        <div class="clear"></div>
+            <div class="row clear">
+              <label>Anniversary :</label>
+              <div class="hero-unit">
+                        <input  type="text" placeholder="dd/mm/yyyy" value="{{getDate 'DDMMYYYY' customers.anniverseryDate}}" id="editAnniversaryDate">
+                    </div>
+                  </div>
+                  {{else}}
+                  <div class="clear"></div>
+            <div class="row clear">
+              <label>Anniversary :</label>
+              <div class="hero-unit">
+                        <input  type="text" placeholder="dd/mm/yyyy" value="" id="editAnniversaryDate">
+                    </div>
+                  </div>
+                  {{/if}}
+
+                        <a href="#" class="btn-cartpop" id="updateCustomer">Save</a>
+                  </div>
+            </div>
+      </div>
+</div>
+<!-- edit profile pop up ends here -->
+
+<!-- add primary address pop up starts here -->
+<div class="profile-popup-outer" id="add-address">
+      <div class="profile-popup-inner">
+            <div class="header">
+                  <h2>Add Primary Address</h2>
+            </div>
+            <div class="profile-popup-area">
+               <div class="errormsg3 hidden-default">
+                  <img src="http://cdn1.fashionandyou.com/fny-event/app-images/caution1.png" />
+                  <span id="errorMessage" >&nbsp;</span>
+          </div>
+                  <div class="col-xs-12">
+                        {{#if customers.customerAddresses.length}}
+                        <div class="control-group">
+                              <div class="controls">
+                                 <label>Address1 :</label>
+                                 <input type="text" maxlength="99" name="address1" placeholder="your address1" id = "addAddress1" value="{{customers.customerAddresses.0.address1}}" /> 
+                                 <label>Address2 :</label>
+                                 <input type="text" maxlength="99" name="address2" placeholder="your address2" id = "addAddress2" value="{{customers.customerAddresses.0.address2}}" />
+                                 <label>Address3 :</label>
+                                 <input type="text" maxlength="99" name="address3" placeholder="your address3" id = "addAddress3" value="{{customers.customerAddresses.0.address3}}" />
+                              </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                 <label>Landmark :</label>
+                                 <input type="text" name="landmark" id = "landmark"  placeholder="your landmark" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.0.landMark}}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                 <label>Pincode :</label>
+                                 <input type="text" maxlength="6" name="pincode" id = "addPinCode1"  placeholder="your pincode" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.0.pinCodeMaster.pinCode}}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                                   <div class="controls">
+                                    <label>State :</label>
+                                    <input type="text" name="billing_state" id="billing_state"  placeholder="your state" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.0.pinCodeMaster.cityMaster.stateMaster.stateName}}" disabled="disabled" />
+                                 </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label>City:</label>
+                                <input class="input-field short-width" name="city" id="billing_city" data-error-style="inline" type="text" placeholder="Your City" value = "{{customers.customerAddresses.0.pinCodeMaster.cityMaster.cityName}}" disabled="disabled" />
+                            </div>
+                        </div>
+                        {{else}}
+                        <div class="control-group">
+                            <div class="controls">
+                               <label>Address1 :</label>
+                                 <input type="text" maxlength="99"  name="address1" placeholder="address1" id = "addAddress1" value="{{customers.customerAddresses.0.address1}}" />
+                                 <label>Address2 :</label>
+                                 <input type="text" maxlength="99" name="address2" placeholder="address2" id = "addAddress2" value="{{customers.customerAddresses.0.address2}}" />
+                                 <label>Address3 :</label>
+                                 <input type="text" maxlength="99" name="address3" placeholder="address3" id = "addAddress3" value="{{customers.customerAddresses.0.address3}}" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                 <label>Landmark :</label>
+                                 <input type="text" name="landmark" id = "landmark"  placeholder="your landmark" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.landMark}}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                 <label>Pincode :</label>
+                                 <input type="text" maxlength="6" name="pincode" id = "addPinCode1"  placeholder="your pincode" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.pinCodeMaster.pinCode}}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                                   <div class="controls">
+                                    <label>State :</label>
+                                    <input type="text" name="billing_state" id="billing_state"  placeholder="your state" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.0.pinCodeMaster.cityMaster.stateMaster.stateName}}" disabled="disabled" />
+                                 </div>
+            </div>
+            <div class="control-group">
+                            <div class="controls">
+                                <label>City:</label>
+                                <input class="input-field short-width" name="city" id="billing_city" data-error-style="inline" type="text" placeholder="Your City" value = "{{customers.customerAddresses.pinCodeMaster.cityMaster.cityName}}" disabled="disabled" />
+                            </div>
+                        </div>
+                        {{/if}}
+
+                        <!-- <div class="clear"></div> -->
+            <div class="row clear">
+                              <a href="#" class="btn-cartpop" id = "add-Address-submit">Add</a>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!-- add primary address pop up ends here -->
+
+<!-- edit primary address pop up starts here -->
+{{#if customers.customerAddresses}}
+      <div class="profile-popup-outer" id="edit-address">
+            <div class="profile-popup-inner">
+                  <div class="header">
+                        <h2>Edit Primary Address</h2>
+                  </div>
+                  <div class="profile-popup-area">
+                        <div class="col-xs-12">
+                         <div class="errormsg4 hidden-default">
+                  <img src="http://cdn1.fashionandyou.com/fny-event/app-images/caution1.png" />
+                  <span id="errorMessage" >&nbsp;</span>
+              </div>
+                            {{#if customers.customerAddresses.length}}
+                            {{#each customers.customerAddresses}}
+                      {{#lowerEqual addressType 'billing'}}
+                          <div class="control-group">
+                                <div class="controls">
+                                   <label>Address1 :</label>
+                                     <input type="text" maxlength="99" name="address1" placeholder="address1" id = "editAddress1" value="{{address1}}" />
+                                     <label>Address2 :</label>
+                                     <input type="text" maxlength="99" name="address2" placeholder="address2" id = "editAddress2" value="{{address2}}" />
+                                     <label>Address3 :</label>
+                                     <input type="text" maxlength="99" name="address3" placeholder="address3" id = "editAddress3" value="{{address3}}" />
+                                </div>
+                          </div>
+                          <label>Landmark :</label>
+                          <input class="input-field short-width" name="landmark" id="editLandmark" data-error-style="inline" type="text" placeholder="Your Landmark" value = "{{landMark}}" />
+                              
+                              <label>Pincode :</label>
+                              <input type="text" maxlength="6" value="{{pinCodeMaster.pinCode}}" placeholder="your pincode" class="small" id="editPinCode1"/>
+                              
+                          <div class="clear"></div>
+                          <label>State :</label>
+                                    <input type="text" name="editState" id="editState"  placeholder="state" data-error-style="inline" class="textfield"  value = "{{pinCodeMaster.cityMaster.stateMaster.stateName}}" disabled="disabled" />
+                          
+                          <div class="clear"></div>
+                          <label>City :</label>
+                          <input class="input-field short-width" name="city" id="editCity" data-error-style="inline" type="text" placeholder="Your City" value = "{{pinCodeMaster.cityMaster.cityName}}" />
+                          {{/lowerEqual}}
+                          {{/each}}
+                          {{else}}
+                            {{#lowerEqual customers.customerAddresses.addressType 'billing'}}
+                          <div class="control-group">
+                                <div class="controls">
+                                   <label>Address1 :</label>
+                                     <input type="text" maxlength="99" name="address1" placeholder="address1" id = "editAddress1" value="{{customers.customerAddresses.address1}}" />
+                                     <label>Address2 :</label>
+                                     <input type="text" maxlength="99" name="address2" placeholder="address2" id = "editAddress2" value="{{customers.customerAddresses.address2}}" />
+                                     <label>Address3 :</label>
+                                     <input type="text" maxlength="99" name="address3" placeholder="address3" id = "editAddress3" value="{{customers.customerAddresses.address3}}" />
+                                </div>
+                          </div>
+                          <label>Landmark :</label>
+                          <input class="input-field short-width" name="landmark" id="editLandmark" data-error-style="inline" type="text" placeholder="Your Landmark" value = "{{customers.customerAddresses.landMark}}" />
+                              
+                              <label>Pincode :</label>
+                              <input type="text" maxlength="6" value="{{customers.customerAddresses.pinCodeMaster.pinCode}}" placeholder="your pincode" class="small" id="editPinCode1"/>
+                              
+                          <div class="clear"></div>
+                          
+                          <label>State :</label>
+                                    <input type="text" name="editState" id="editState"  placeholder="state" data-error-style="inline" class="textfield"  value = "{{customers.customerAddresses.pinCodeMaster.cityMaster.stateMaster.stateName}}" disabled="disabled" />
+                          
+                          <div class="clear"></div>
+                          <label>City :</label>
+                          <input class="input-field short-width" name="city" id="editCity" data-error-style="inline" type="text" placeholder="Your City" value = "{{customers.customerAddresses.pinCodeMaster.cityMaster.cityName}}" />
+                          {{/lowerEqual}}
+                          {{/if}}
+                          <div class="clear"></div>
+                          <div class="row clear">
+                                <a href="#" class="btn-cartpop" id="editAddress">Save</a></div>
+                          </div>
+                  </div>
+            </div>
+    
+{{/if}}
+
+<!-- edit primary address pop up ends here -->

@@ -1,0 +1,5 @@
+#*
+This file allows you to override and define new Velocity variables.
+*#
+
+#set ($Pagename=$themeDisplay.getLayout().getName($themeDisplay.getLocale()))

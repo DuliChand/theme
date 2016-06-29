@@ -1,0 +1,181 @@
+<div class="col-sm-12">
+<div class="cart-area-inn">
+  <!-- <div class="alert-message">
+    For ICICI &amp; HDFC banks please make sure you enter the same billing address as given to the bank, else the payment will not be successfull
+  </div> -->
+  <form method="post" id="checkoutAddressForm">
+    <div id="billingAddressForm" class="form-address clearfix">
+      <h2>enter billing address</h2>
+      <div class="errormsg1">
+      	<img src="/app-theme/dist/images/caution1.png" />
+      	<span id="errorMessage">&nbsp;</span>
+      </div>
+      
+      <div class="control-group">
+         <!--  <div class="controls controlsTitle">
+	         <label><span>*</span>Title :</label>
+	           <select class="select " name="" id="">
+	            	<option value="0">Select</option>
+	            	<option value="1">Mr. </option>
+	            	<option value="2">Miss. </option>
+	          </select>  
+	       </div> -->
+     <div class="controls controlsInputHalf">
+        <label>First Name :</label>
+          <input class="input-field-option" name="billing_firstname" id="billing_firstname" type="text" placeholder="Your First Name" value="" />
+        </div>
+     
+      <div class="controls controlsInputHalf">
+          <label>Last Name :</label>
+          <input class="input-field-option " name="billing_lastname" id="billing_lastname" type="text" placeholder="Your Last Name" value="" />
+        </div>
+      </div>
+       <div class="control-group">        
+        <div class="controls controlsInputHalf">
+          <label><span>*</span>Pincode :</label>
+          <input class="input-field-option " name="billing_pincode" id="billing_pincode" type="text" value="" />
+        </div>
+            
+        <div class="controls controlsInputHalf">
+          <label>Location :</label>
+          <select class="input-field-option " name="billing_location" id="billing_location">
+            	<option value="0">Select Your Location</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <label><span>*</span>Address :</label>
+          <textarea name="billing_address" id="billing_address" placeholder="Enter Address"></textarea>
+        </div>
+      </div>
+     
+     
+   
+     <div class="control-group">
+      <div class="controls controlsInputHalf">
+          <label>Landmark :</label>
+          <input class="input-field-option " name="billing_landmark" id="billing_landmark" placeholder="Your Landmark" type="text" value="" />
+        </div>        
+        <div class="controls controlsInputHalf">
+          <label>City:</label>
+          <input class="input-field-option " name="billing_city" id="billing_city" type="text" placeholder="Your City" value="" disabled="disabled" />
+        </div>
+      </div>
+      
+    <div class="control-group">        
+        <div class="controls controlsInputHalf">
+          <label>State :</label>
+          <input class="input-field-option " name="billing_state" id="billing_state" type="text" placeholder="Your State" value="" disabled="disabled" />
+        </div>
+    
+        <div class="controls controlsInputHalf">
+          <label>Country :</label>
+          <input class="input-field-option " name="billing_country" id="billing_country" type="text" placeholder="Your Country" value="" disabled="disabled" />
+        </div>
+      </div>
+   <div class="control-group">        
+        <div class="controls controlsInputHalf">
+          <label><span>*</span>Mobile No :</label>
+          <input class="input-field-option" name="billing_mobile" id="billing_mobile" type="tel" value="" />
+        </div>
+         
+        <div class="controls controlsInputHalf">       
+           <label>Alternate No:</label>
+           <input class="input-field-option " name="billing_altno" id="billing_altno" type="tel" value="" />
+         </div>
+      </div>
+    </div>
+    <div class="control-group">
+    	<div class="controls">
+        <input type="checkbox" id="addressSameAsAbove" checked="checked" />
+        <label>Shipping Address is the same as Billing Address</label>
+      </div>
+    </div>
+    <div id="shippingAddressForm" class="form-address clearfix">
+      <h2>enter shipping address</h2>
+      <div class="control-group">
+      <!-- <div class="controls controlsTitle">
+	         <label><span>*</span>Title :</label>
+	           <select class="select " name="" id="">
+	            	<option value="0">Select</option>
+	            	<option value="1">Mr. </option>
+	            	<option value="2">Miss. </option>
+	          </select>  
+	       </div> -->
+       <div class="controls controlsInputHalf">
+          <label>First Name :</label>
+          <input class="input-field-option " name="shipping_firstname" id="shipping_firstname" type="text" placeholder="Your First Name" value="" />
+        </div>
+     
+      <div class="controls controlsInputHalf">
+          <label>Last Name :</label>
+          <input class="input-field-option " name="shipping_lastname" id="shipping_lastname" type="text" placeholder="Your Last Name" value="" />
+        </div>
+      </div>
+      <div class="control-group">        
+       <div class="controls controlsInputHalf">
+          <label><span>*</span>Pincode :</label>
+          <input class="input-field-option " name="shipping_pincode" id="shipping_pincode" type="text" value="" />
+        </div>
+    
+       <div class="controls controlsInputHalf">
+          <label>Location :</label>
+          <select class="input-field-option " name="shipping_location" id="shipping_location">
+            	<option value="0">Select Your Location</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <label><span>*</span>Address :</label>
+          <textarea name="shipping_address" id="shipping_address" placeholder="Enter Address"></textarea>
+        </div>
+      </div>
+      
+    
+     
+      <div class="control-group">
+        <div class="controls controlsInputHalf">
+          <label>Landmark :</label>
+          <input class="input-field-option " name="shipping_landmark" id="shipping_landmark" type="text" placeholder="Your Landmark" value="" />
+        </div>
+     
+        <div class="controls controlsInputHalf">
+          <label>City:</label>
+          <input class="input-field-option " name="shipping_city" id="shipping_city" type="text" placeholder="Your City" value="" disabled="disabled" />
+        </div>
+     
+     
+      </div>
+      
+      <div class="control-group">
+       <div class="controls controlsInputHalf">
+          <label>State :</label>
+          <input class="input-field-option " name="shipping_state" id="shipping_state" type="text" placeholder="Your State" value="" disabled="disabled" />
+        </div>
+      <div class="controls controlsInputHalf">
+          <label>Country :</label>
+          <input class="input-field-option " name="shipping_country" id="shipping_country" type="text" placeholder="Your Country" value="" disabled="disabled" />
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls controlsInputHalf">
+          <label><span>*</span>Mobile No :</label>
+          <input class="input-field-option " name="shipping_mobile" id="shipping_mobile" type="tel" value=""/>
+        </div>
+      
+        <div class="controls controlsInputHalf">            
+           <label>Alternate No:</label>
+           <input class="input-field-option " name="shipping_altno" id="shipping_altno" type="tel" value="" />
+         </div>
+      </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+    		<input type="submit" id="proceedToCheckout" value="Proceed to pay" class="btn-cartpop" />
+    	</div>
+    </div>
+  </form>
+</div>
+</div>

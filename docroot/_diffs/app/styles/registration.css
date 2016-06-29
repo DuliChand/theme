@@ -1,0 +1,364 @@
+#registerarea {
+	/* background:url( http://cdn1.fashionandyou.com/fny-static/app-images/register-bg.jpg) bottom no-repeat; */
+/* 	min-height:647px; */
+	padding-bottom:20px;
+	background:#f4f2f3;
+	float:left;	
+	width:100%;
+	margin-bottom:5px;
+}
+.social-icons-register li a {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+#registerarea h2 {
+	margin:0 0 0 500px;
+	padding:65px 0 0 69px;
+	font-size:32px;
+	color:#d22573;
+	
+}
+#registerarea h2 {
+	padding-top:25px;
+}
+.social-icons-register {
+	margin:0 0 20px 125px;
+	clear:both
+}
+.social-icons-register h3 {
+	margin:0 0 12px;
+	text-align:center;
+	font-size:16px;
+	color:#000;
+	
+	display:block;
+	background:#efefef;
+	padding:4px 0
+}
+.social-icons-register ul {
+	margin:0;
+	padding:0
+}
+.social-icons-register li {
+	width:auto;
+	float:left;
+	height:18px;
+	margin:0 5px
+}
+.social-icons-register li a {
+	display:block;
+	width:24px;
+	height:24px
+}
+.social-icons-register li span {
+	font-size:14px;
+	line-height:24px;
+	color:#666
+}
+.social-icons-register li input {
+	width:227px;
+	height:24px;
+	padding-left:14px;
+	border:1px solid #ccc;
+	border-radius:3px
+}
+.social-icons-register li .text {
+	width:auto;
+	
+	font-size:14px;
+	line-height:24px;
+	color:#c92869;
+	background:none
+}
+.social-icons-register .fb-icon {
+	background-position:-1px -2px
+}
+.social-icons-register .tw-icon {
+	background-position:-1px -33px
+}
+.social-icons-register .in-icon {
+	background-position:-1px -67px
+}
+.social-icons-register .gl-icon {
+	background-position:-1px -98px
+}
+.social-register{
+float: left;
+width: 365px;
+border-right: #eaeaea solid 1px;
+position: relative;
+height: 285px;
+padding: 86px 0px 0 115px;
+margin-right: 65px;
+}
+.social-register .or{ 
+	background: #d1d1d1;
+border-radius: 19px;
+padding: 4px 5px;
+color: #000;
+text-align: center;
+position: absolute;
+right: -13px;
+top: 45%;
+}
+
+.social-register li{ padding:10px 0;}
+
+.social-register li a {
+	display:inline-block;
+	width:217px;
+	height:28px;
+	margin:0 0 0 4px;
+/* 	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat */
+}
+.social-register li a.iconfacebook {
+	background-position:-543px -110px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/facebook-icon.png) no-repeat;
+}
+.social-register li a.icontwitter {
+	background-position:-543px -148px
+}
+.social-register li a.icongoogleplus {
+	background-position:-578px -237px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/google-icon.png) no-repeat;
+}
+
+
+.reg-form {
+	width:341px;
+	margin:10px 0 0 10px;
+	float:left;
+}
+.reg-form p {
+	display:block;
+	clear:both;
+	color:#000;
+	margin:0 0 10px 130px;
+	font-size:13px
+}
+.reg-form p span {
+	display:inline-block;
+	float:left;
+	padding:4px 12px 4px 0;
+	
+}
+.reg-form p a {
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin:0 0 0 4px;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.reg-form p a.iconfacebook {
+	background-position:-543px -110px
+}
+.reg-form p a.icontwitter {
+	background-position:-543px -148px
+}
+.reg-form p a.icongoogleplus {
+	background-position:-578px -237px
+}
+.reg-form input[type="text"] {
+	
+	font-size:11px;
+	border-radius:3px;
+	line-height:15px;
+}
+.reg-form label {
+	float:left;
+	width:120px;
+	margin:9px 10px 0 0;
+	
+	font-size:12px;
+	font-weight:400;
+	line-height:27px;
+	color:#333;
+	text-align:right
+}
+.reg-form .option-label {
+	width:75px;
+	text-align:left;
+	float:left
+}
+.reg-form .textfield, .reg-form .passwordfield, .reg-form textarea, reg-form select {
+	width:210px;
+	padding:5px 8px;
+	margin-top:10px;
+	font-size:11px;
+	line-height:15px;
+	color:#333;
+	border:1px solid #ccc;
+	border-radius:3px
+}
+.reg-form textarea {
+	height:56px;
+	resize:vertical
+}
+.reg-form .pincode, .reg-form .passwordfield {
+	width:150px
+	
+}
+.reg-form .errorfield {
+	border-color:#ff6a6a!important
+}
+.reg-form .select-wrapper.errorfield {
+	border:1px solid #ff6a6a!important;
+	border-radius:4px
+}
+.reg-form .select-wrapper {
+	display:inline-block;
+	float:none;
+	width:210px;
+	margin-top:10px
+}
+.reg-form .select-wrapper input {
+	height:27px;
+	line-height:27px
+}
+.reg-form .select-wrapper .selectbox-wrapper {
+	border-top-right-radius:0
+}
+.reg-form .select-wrapper .selectbox-wrapper li {
+	padding:3px 0
+}
+.reg-form .btn-cartpop {
+	padding:0 20px;
+	margin:20px 0 20px 133px;
+	
+	border:none
+}
+.reg-form .forgot-link {
+	float:right;
+	margin-top:6px;
+	
+	font-size:12px;
+	line-height:35px;
+	color:#c92869
+}
+.reg-form .forgot-link:hover {
+	text-decoration:underline
+}
+/* .errormsg1 {
+	color:#fff;
+	font-size:11px;
+	margin:5px 0 0 130px;
+	position:relative;
+	text-decoration:none;
+	font-family:"helvetica_bold";
+	background:red;
+	padding:3px 6px;
+	text-align:center;
+	display:none;
+} */
+.errorpopup {
+	display:none;
+	padding:20px;
+	background:#fff;
+	border:10px solid rgba(0, 0, 0, 0.1);
+	background-clip:padding-box
+}
+.errorpopup h3 {
+	font-size:20px;
+	margin:0;
+	display:block;
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/caution2.png) no-repeat;
+	color:#000;
+	font-family: 'centurygothicbold';
+	padding:12px 0 8px 50px;
+	white-space:nowrap
+}
+.help-inline { display:none !important;}
+.error_Container{
+	color: red;
+	
+	font-size: 14px;
+    float: left;
+    padding: 2px 115px;
+    width: 100%;
+    display: none;
+}
+.controls .error-message{
+	color:red;
+	width:100%;
+	float:left;
+} 
+/* .reg-form .error-message {
+	color:red;
+	clear:both;
+	display:block;
+	margin-left:130px
+} */
+.reg-message {
+	clear:both;
+	margin:0;
+	padding:25px 10px;
+	min-height:300px;
+	display:none
+}
+.reg-message h2 {
+	text-align:center;
+	margin:0 0 10px;
+	font-size:24px;
+	color:#242424;
+	font-family: 'centurygothicbold';
+}
+.reg-message h3 {
+	text-align:center;
+	margin:0 0 30px;
+	font-size:21px;
+	color:#242424;
+	
+}
+.reg-message .account-login {
+	margin:0 auto;
+	width:305px
+}
+.reg-message .account-login form {
+	margin:0;
+	padding:0
+}
+.reg-message .account-login form label {
+	float:left;
+	clear:left;
+	display:block;
+	width:80px;
+	
+	font-weight:400;
+	font-size:13px;
+	padding:3px 0 5px
+}
+.reg-message .account-login form input {
+	width:220px;
+	border:1px solid #CCC;
+	padding:4px;
+	border-radius:4px;
+	margin:0 0 8px
+}
+.reg-message .account-login form input.go {
+	background:#000;
+	width:auto;
+	padding:5px 20px;
+	color:#fff;
+	cursor:pointer;
+	font-size:16px;
+	border:none;
+	border-radius:0;
+	margin:0 0 0 80px
+}
+.reg-message .account-login form input.go:hover {
+	background:#d22573
+}
+.login-btn {
+	margin-left:43%
+}
+.login-btn a {
+	background:#d22573;
+	border-radius:6px;
+	color:#FFF;
+	display:block;
+	float:left;
+	font-size:14px;
+	height:35px;
+	line-height:35px;
+	margin:10px 0 10px 10px;
+	padding:0 30px
+}

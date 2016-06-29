@@ -1,0 +1,21 @@
+{{#if data.categoryEvents}}
+	<div class="row banner-area clearfix">
+		<a href="/product/listing/event/{{data.categoryEvents.0.event.eventId}}" class="static-banner">
+			<img src="http://cdn1.fashionandyou.com/fny-event/{{data.categoryEvents.0.event.eventCode}}/banner_category_hero_new.jpg" alt="{{data.categoryEvents.0.event.eventName}}" title="{{data.categoryEvents.0.event.eventName}}" />
+		</a>
+		
+		<div class="vertical-carousel">
+			<a href="#" id="prev2" class="arrow-prev"></a>
+			<a href="#" id="next2" class="arrow-next"></a>
+			<ul id="foo2">
+				{{#each data.categoryEvents}}
+					<li>
+						<a href="/product/listing/event/{{event.eventId}}" class="carousel-image">
+							<img data-src="http://cdn1.fashionandyou.com/fny-event/{{event.eventCode}}/banner_category_hero_new.jpg" src="http://cdn1.fashionandyou.com/fny-event/{{event.eventCode}}/banner_category_hero_side_new.jpg" alt="{{event.eventName}}" title="{{event.eventName}}" />
+						</a>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+{{/if}}

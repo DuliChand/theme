@@ -1,0 +1,111 @@
+<div class="payement-options col-xs-12">
+  <div class="payement-box">
+    <div class="secure_shopping_banner"> 100% Secure Shopping </div>
+    <div class="payement-box-text">
+        fashionandyou.com now brings you multiple payment options like Credit Cards<span class="disply-none-cc">, ATM</span>/Debit Cards<span class="disply-none-cc">, Netbanking</span> and Cash on Delivery.
+    </div>
+    <div class="mode-payment">
+        <span>
+            <strong>Select Mode of Payment</strong>
+        </span> <div class="hidethis">How does it Work ?
+        <a class="paymentMode tooltip2" href="#" shape="rect">Cards
+            <b class="second"><span class="heading-tooltip"> Credit / Debit </span>
+                <br clear="none">
+                A bank-issued card that allows consumers to purchase goods or services from a merchant on credit e.g. : VISA, Master Card
+            </b>
+        </a>,
+        <a class="paymentMode tooltip2 disply-none-cc " href="#" shape="rect">Netbanking
+            <b class="second">
+                <!-- <em class="outer"></em>
+                <em class="inner"></em> -->
+                <span class="heading-tooltip"> What is Net Banking? </span>
+                <br clear="none">
+                You can now pay for your transaction using Net Banking directly through your bank account. fashionandyou.com does not collect your banking information. On choosing Net Banking, you will be directed to your banks website for the payment process. After completing the payment process, you will be redirected back to fashionandyou.com.
+            </b>
+        </a>,
+        <a class="paymentMode tooltip3" href="#" shape="rect">Cash on Delivery
+            <b class="second">
+                <!-- <em class="outer"></em>
+                <em class="inner"></em> -->
+                <span class="heading-tooltip">What is COD ?</span>
+                <br clear="none">
+                <br clear="none">
+                We verify all Cash on Delivery orders over the phone after you have made a purchase and post which we process your order. Our Customer Support team will call you within 24 hours of your purchase to verify details; alternatively you can also call us to verify your order on +91-124-4125000. Failing verification of your order may result into cancellation. Therefore we request you to provide us with a mobile phone no. where we can best reach you within 24hrs.<br clear="none"><br clear="none">
+                In case you do not accept a verified Cash on Delivery order we may need to revoke the Cash on Delivery payment option from your account for future purchases.
+            </b>
+        </a>
+        </div>
+    </div>
+    <form id="paymentChannelForm">
+        {{#if paymentChannels.length}}
+            {{#each paymentChannels}}
+                <div class="select-payment row">
+                    <div class="col-xs-12">
+                        <input type="radio" id="paymentChannel{{paymentChannelId}}" name="paymentChannel" value="{{paymentChannelCode}}" class="payment-channel" data-haspg="{{#if baseDTO.pgBankMappings}}{{baseDTO.pgBankMappings.0.pgType}}{{/if}}" />
+                        <label for="paymentChannel{{paymentChannelId}}">{{paymentName}}</label>
+                    </div>
+                    <!--<div class="col-xs-5">
+                        {{#if baseDTO.pgBankMappings}}
+                        <select name="select{{baseDTO.pgBankMappings.0.pgType}}" id="select{{baseDTO.pgBankMappings.0.pgType}}" class="select-bank">
+                            <option value="">--------Select----------</option>
+                            {{#each baseDTO.pgBankMappings}}
+                                <option value="{{bankId}}">{{bankName}}</option>
+                            {{/each}}
+                        </select>
+                        {{/if}}
+                    </div>
+                    -->
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="select-payment row">
+                    <div class="col-xs-12">
+                        <input type="radio" id="paymentChannel{{paymentChannels.paymentChannelId}}" name="paymentChannel" value="{{paymentChannels.paymentChannelCode}}" class="payment-channel" data-haspg="{{#if baseDTO.pgBankMappings}}{{baseDTO.pgBankMappings.0.pgType}}{{/if}}" />
+                        <label for="paymentChannel{{paymentChannels.paymentChannelId}}">{{paymentChannels.paymentName}}</label>
+                    </div>
+                    <!--<div class="col-xs-5">
+                        {{#if baseDTO.pgBankMappings}}
+                        <select name="select{{baseDTO.pgBankMappings.0.pgType}}" id="select{{baseDTO.pgBankMappings.0.pgType}}" class="select-bank">
+                            <option value="">--------Select----------</option>
+                            {{#each baseDTO.pgBankMappings}}
+                                <option value="{{bankId}}">{{bankName}}</option>
+                            {{/each}}
+                        </select>
+                        {{/if}}
+                    </div>
+                    -->
+                </div>
+        {{/if}}
+        <div id="codPaymentInfo" class="cod-info-box">
+            <div class="payment-typebox">
+                <ul class="bullet">
+                    <li style="background-position:5px 14px;">
+                        <div style="float:left;padding-top:0;" class="row1">
+                            <span style="float:left;padding:6px 10px 6px 0px;">Phone No. </span>
+                            <span class="txt3 phoneNumber" style="float:left;">7345654123</span>
+                            <span style="float:left;">
+                                <a href="/checkout/address" class="edit_btn">Edit</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>Why prepaid is better for you:
+                        <ul>
+                            <li>Your transaction is secured by Verisign.</li>
+                            <li>You need not be physically present at the shipping address to make a payment at delivery.</li>
+                            <li>You don't need to confirm your order via phone, once your order is placed.</li>
+                            <li>Hassle free and quicker refunds as card payments are credited directly to your account, whereas a cheque is mailed in case of Cash on Delivery.</li>
+                        </ul>
+                    </li>
+                    <li>In case you do not accept a verified Cash on Delivery order we may need to revoke the Cash on Delivery payment option from your account for future purchases.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="form_control">
+            <div class="form_control_child">
+                <input type="submit" name="payNowBtn" id="payNowBtn" class="btn-paynow btn-cartpop pull-right" value="PAY NOW" />
+                <a href="/billing" shape="rect" class="btn-back btn-cartpop pull-right"><i class="icon-left"></i> BACK</a>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>

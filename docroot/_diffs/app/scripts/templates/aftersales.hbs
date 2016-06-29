@@ -1,0 +1,92 @@
+<!-- after sales area starts here -->
+<div class="row after-sales">
+	<div class="col-xs-4">
+		<aside></aside>
+		<span class="succes-msg">Transaction Successful!</span>
+		<span class="succes-msg">Your transaction ID : {{orderId}}</span>
+	</div>
+
+	<div class="col-xs-12 clearfix">
+		<p class="thanx-msg">Thank you for shopping with Fashion and You! You have earned <span>{{orderLines.0.loyalityPoint}} reward points!</span></p>
+	</div>
+	
+	<div class="order_detail_section">
+		<div class="head"><h4>Your ORDER SUMMARY is provided below:</h4>
+			<a href="javascript:window.print();" class="print_btn"></a>
+		</div>
+		<table class="table_conf">
+			<tbody>
+				<tr>
+					<td width="260px" rowspan="1" colspan="1">
+						<b>Product Name</b>
+					</td>
+					<td width="60px" align="center" rowspan="1" colspan="1">
+						<b>Quantity </b>
+					</td>
+					<td width="70px" align="right" rowspan="1" colspan="1">
+						<b> Unit Price </b>
+					</td>
+					<td width="70px" align="right" rowspan="1" colspan="1">
+						<b>Total(Rs ) </b>
+					</td>
+				</tr>
+				{{#if orderLines}}
+					{{#each orderLines}}
+						<tr>
+							<td width="260px" rowspan="1" colspan="1">{{productName}}</td>
+							<td width="60px" align="center" rowspan="1" colspan="1">{{quantity}}</td>
+							<td width="70px" align="right" rowspan="1" colspan="1">{{salePrice}}</td>
+							<td width="70px" align="right" rowspan="1" colspan="1">{{totalPrice}}</td>
+						</tr>
+					{{/each}}
+				{{/if}}
+			</tbody>
+		</table>
+		<table class="table_conf">
+		<tbody>
+			<tr>
+				<td width="260px" rowspan="1" colspan="1"> Discount</td>
+				<td width="30px" align="center" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1">{{discount}}</td>
+				</tr><tr><td width="260px" rowspan="1" colspan="1"> Store Credit</td>
+				<td width="30px" align="center" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1">{{storedCreditAmount}}</td>
+			</tr>
+			<tr>
+				<td width="260px" rowspan="1" colspan="1"> Total Vat</td>
+				<td width="60px" align="center" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1">{{totalVat}}</td>
+			</tr>
+			<tr>
+				<td width="260px" rowspan="1" colspan="1"> Total Shipping Charges</td>
+				<td width="60px" align="center" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1">{{shippingCharges}}</td>
+			</tr>
+			<tr style="border-top:1px solid #CCCCCC;">
+				<td width="260px" rowspan="1" colspan="1"><b>Grand Total</b></td>
+				<td width="60px" align="center" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"><b>{{grandOrderValue}}</b></td>
+			</tr>
+			<tr style="border-top:1px solid #CCCCCC;">
+				<td width="260px" rowspan="1" colspan="1"><b>*Rewards points:</b></td>
+				<td width="60px" align="center" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1"></td>
+				<td width="70px" align="right" rowspan="1" colspan="1">
+					<b>
+						<!-- <iframe scrolling="auto" frameborder="0" src="http://loyaltyprogram.fashionandyou.com/RewardPoint/Rewardpoint_newWebshop.aspx?email=a@a.com|&amp;CampaignCode=UNI_13DEC28BNB20734|&amp;ProductName=Rberry&amp;apple conditioner|&amp;Price=349|&amp;Quantity=1|&amp;orderamount=349.00&amp;discount=0.00" style="scrolling:none;height:24px;width:70px;resize:none;border:0px solid #B9146D; color:#FFFFFF"></iframe> -->
+					</b>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	
+	<p style="text-align:right;width:100%;padding-top:4px;float:left;">*Points subject to realization of payment for more click <a href="http://newms.fashionandyou.com/FaqHelp/loyalty_tc.html" style="color:#BB1B4F;" target="_blank" shape="rect">T&amp;C</a></p>
+	<div class="order_general_info"><p>Your order will be confirmed and shipped post realization of payment.You will soon receive an order confirmation mail from us with your order details. </p><p class="feedback_sec"><strong>Are you happy with your shopping experience? We would value your </strong><a href="https://docs.google.com/spreadsheet/viewform?formkey=dDJqdkNhVjRhTGtpeWllczFMeTBrNWc6MA#gid=0" target="_blank" class="feedback_btn" shape="rect">Feedback</a></p><p><strong>Delivery Timelines:</strong><br clear="none">Please expect your order to reach you between 3 to 4 weeks of order booking, unless stated otherwise for a Sale Event on the website. We generally receive the supplier's merchandise in our Order Processing Center within two weeks after the end of each sale, after which we prepare your order and ship it via our courier partners.</p><p>In case you have any questions/queries/feedback, please feel free to write to us at <a href="mailto:support@fashionandyou.com" shape="rect">support@fashionandyou.com</a>. We will respond to you promptly. For any queries related to your order please contact our Customer Support at +91-0124-4125000, All 7 Days, 10 am to 7 pm. </p><p>Thank you for visiting Fashion and You. We hope you enjoyed your experience. For exclusive previews of our upcoming sales and promotions, please add <a href="mailto:sales@fashionandyou.com" shape="rect">sales@fashionandyou.com</a> to your address book. We look forward to having you visit us again.</p></div>
+</div>
+<!-- after sales area ends here -->

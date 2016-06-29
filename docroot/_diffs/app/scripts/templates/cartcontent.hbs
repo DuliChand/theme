@@ -1,0 +1,284 @@
+<div class="col-sm-12">
+  <!-- cart area inner starts here -->
+  <div class="cart-area-inn">
+    <h3 class="section-heading">
+      <span>in the bag : </span>
+      {{#if cart.products}} 
+      	{{#if cart.products.length}} 
+      		{{cart.products.length}} 
+        {{else}} 1 
+      	{{/if}} 
+      {{else}} 0 
+      {{/if}} items
+       
+      {{#if cart.products}}
+    	{{#if cart.products.length}}	
+		    {{#each cart.products}}
+		    	{{#lastElement ../cart.products.length @index}}
+      			<a href="/" id="lastContinuelink" class="cont-shopping lastContinuelink"><i class="icon-plus"></i> continue shopping</a>
+      			{{/lastElement}}
+      		{{/each}}
+		{{else}}
+			<a href="/" class="cont-shopping lastContinuelink"><i class="icon-plus"></i> continue shopping</a>
+		{{/if}}
+	  {{else}}
+	  	<a href="/" class="cont-shopping"><i class="icon-plus"></i> continue shopping</a>
+	  {{/if}}
+    </h3>
+    <!-- offer area starts here -->
+    <!-- <div class="offer-area">
+      <div class="offer-box">
+        <span class="offer-tag">offer!</span>
+        <span class="offer-info">
+          <span class="highlighted-text">50% off</span> on Fiama Di Wills Bath & Body Gift Hamper! Do not miss it!
+        </span>
+      </div>
+    </div> -->
+    <!-- offer area ends here -->
+    {{#if cart.products}}
+    	{{#if cart.products.length}}	
+		    {{#each cart.products}}
+			    <!-- cart details starts here -->
+				{{#if soldOut}}
+			    <div class="cart-details cart-main cart-details-blur" data-cart-id="{{../cart.cartId}}" id="{{sKUId}}" data-product-name="{{productName}}" data-vendorprd-id="{{vendorProductId}}"  data-product-id="{{productId}}" data-sku-id="{{sKUId}}" data-createdtime="{{createTime}}" data-event-id="{{eventId}}" data-category-id="{{categoryId}}" data-timer="{{timeToExpire}}" data-sale-price="{{salePrice}}" data-qnty="{{quantity}}">
+			      <h2>SOLD <strong>OUT</strong></h2>
+			      <div class="col-xs-5 col-cartitem2">
+			        <!-- <a href="#gift-popup" class="gift-icon fancybox">Gift This</a> -->
+			        <a href="#" class="cart-remove" title="Remove this Item"></a>
+			       
+			        <div class="clear"></div>			        
+			        <span class="item-new-price">{{currencyType}} {{salePrice}}</span>
+			        <span class="item-old-price">{{currencyType}} {{mrp}}</span>
+			        <div class="clear"></div>
+			        <span class="item-total-price">Total: {{currencyType}} {{product quantity salePrice}}</span>
+			       {{#if expectedMaxDays}}
+					<span class="item-total-days">Delivered by {{expectedMaxDays}} </span>
+					
+					{{/if}}
+			      </div>
+			      
+			      <div class="col-xs-7 col-cartitem1">
+			        <a href="/products/d/{{#spacetounderscore productName}}{{/spacetounderscore}}/{{vendorProductId}}" class="cart-prod-img">
+			          <img src="{{thumbnailUrl}}" alt="{{productName}}" title="{{productName}}" />
+			        </a>
+			      
+			        <h3 class="cart-det-prodname"><a href="#" class="cart-det-prodname">{{productName}}</a></h3>
+			        
+			        <span class="item-old-price">{{currencyType}} {{mrp}}</span>	        
+			        <span class="item-new-price">{{currencyType}} {{salePrice}}</span>
+			        
+			        <div class="selected-attribute-list"></div>	
+			        <div class="select-wrapper qty">	        
+			        <label class="cart-det-label">Quantity</label>
+				        <select class="select save">
+				          	<option value="{{quantity}}">{{quantity}}</option>
+				        </select>
+				        <!-- <a href="#" class="save-cart">Save</a> -->
+				     </div>
+				     {{#if variant}}
+						<div class="select-wrapper">
+						  <label class="cart-det-label">Size</label>
+						   <span class="focus">{{variant}}</span>
+						</div>
+				     {{/if}}
+				   <!-- {{#if variants}}
+				    <div class="select-wrapper size">	        
+			        <label class="cart-det-label">Size</label>
+				        <select class="select size" id="size">
+				          	{{#splitString variants delimiter="*"}} 
+						       <option id="{{categoryEventName this}}" value="{{splitEventName this}}">{{splitEventName this}}</option>
+						     {{/splitString}}
+				        </select>
+				        <a href="#" class="save-cart">Save</a>
+				     </div>
+				     {{/if}} -->
+				 
+
+			      </div>
+			      
+                  <div class="clearfix"></div>
+			    </div>
+			    <!-- cart details ends here -->
+			{{else}}
+			 <div class="cart-details cart-main" data-cart-id="{{../cart.cartId}}" id="{{sKUId}}" data-product-name="{{productName}}" data-vendorprd-id="{{vendorProductId}}"  data-product-id="{{productId}}" data-sku-id="{{sKUId}}" data-createdtime="{{createTime}}" data-event-id="{{eventId}}" data-category-id="{{categoryId}}" data-timer="{{timeToExpire}}" data-sale-price="{{salePrice}}" data-qnty="{{quantity}}">
+			      
+			      <div class="col-xs-5 col-cartitem2">
+			        <!-- <a href="#gift-popup" class="gift-icon fancybox">Gift This</a> -->
+			        <a href="#" class="cart-remove" title="Remove this Item"></a>
+			       
+			        <div class="clear"></div>			        
+			        <span class="item-new-price">{{currencyType}} {{salePrice}}</span>
+			        <span class="item-old-price">{{currencyType}} {{mrp}}</span>
+			        <div class="clear"></div>
+			        <span class="item-total-price">Total: {{currencyType}} {{product quantity salePrice}}</span>
+			       {{#if expectedMaxDays}}
+					<span class="item-total-days">Delivered by {{expectedMaxDays}} </span>
+					
+					{{/if}}
+			      </div>
+			      
+			      <div class="col-xs-7 col-cartitem1">
+			        <a href="/products/d/{{#spacetounderscore productName}}{{/spacetounderscore}}/{{vendorProductId}}" class="cart-prod-img">
+			          <img src="{{thumbnailUrl}}" alt="{{productName}}" title="{{productName}}" />
+			        </a>
+			      
+			        <h3 class="cart-det-prodname"><a href="#" class="cart-det-prodname">{{productName}}</a></h3>
+			        
+			        <span class="item-old-price">{{currencyType}} {{mrp}}</span>	        
+			        <span class="item-new-price">{{currencyType}} {{salePrice}}</span>
+			        
+			        <div class="selected-attribute-list"></div>	
+			        <div class="select-wrapper qty">	        
+			        <label class="cart-det-label">Quantity</label>
+				        <select class="select save">
+				          	<option value="{{quantity}}">{{quantity}}</option>
+				        </select>
+				        <!-- <a href="#" class="save-cart">Save</a> -->
+				     </div>
+				     {{#if variant}}
+				     <div class="select-wrapper">
+					  <label class="cart-det-label">Size</label>
+					   <span class="focus">{{variant}}</span>
+					   </div>
+				     {{/if}}
+				   <!-- {{#if variants}}
+				    <div class="select-wrapper size">	        
+			        <label class="cart-det-label">Size</label>
+				        <select class="select size" id="size">
+				          	{{#splitString variants delimiter="*"}} 
+						       <option id="{{categoryEventName this}}" value="{{splitEventName this}}">{{splitEventName this}}</option>
+						     {{/splitString}}
+				        </select>
+				        <a href="#" class="save-cart">Save</a>
+				     </div>
+				     {{/if}} -->
+				 
+
+			      </div>
+			      
+                  <div class="clearfix"></div>
+			    </div>
+				
+				{{/if}}
+		    {{/each}}			
+		
+		{{else}}
+		{{#if cart.products.soldOut}}
+			<!-- cart details starts here -->
+		    <div class="cart-details cart-main cart-details-blur" data-vendorprd-id="{{cart.products.vendorProductId}}" data-product-id="{{cart.products.productId}}" data-createdtime="{{createTime}}" data-sku-id="{{cart.products.skuId}}" data-event-id="{{cart.products.eventId}}" data-category-id="{{cart.products.categoryId}}" data-timer="{{cart.products.timeToExpire}}" data-sale-price="{{cart.products.salePrice}}" data-qnty="{{cart.products.quantity}}">
+		       <h2>SOLD <strong>OUT</strong></h2>
+		      <div class="col-xs-5 col-cartitem2">
+		        <!-- <a href="#gift-popup" class="gift-icon fancybox">Gift This</a> -->
+		        <a href="#" class="cart-remove" title="Remove this Item"></a>
+		       
+		        <div class="clear"></div>
+		        <span class="item-new-price">{{cart.products.currencyType}} {{cart.products.salePrice}}</span>
+		        <span class="item-old-price">{{cart.products.currencyType}} {{cart.products.mrp}}</span>
+		        <div class="clear"></div>
+		        <span class="item-total-price">Total: {{cart.products.currencyType}} {{product cart.products.quantity cart.products.salePrice}}</span>
+		        {{#if cart.products.expectedMaxDays}}
+					<span class="item-total-days">Delivered by {{cart.products.expectedMaxDays}} </span>
+					
+				{{/if}}
+		      </div>
+		      <div class="col-xs-7 col-cartitem1">
+		        <a href="/products/d/{{#spacetounderscore cart.products.productName}}{{/spacetounderscore}}/{{cart.products.vendorProductId}}" class="cart-prod-img">
+		          <img src="{{cart.products.thumbnailUrl}}" alt="{{cart.products.productName}}" title="{{cart.products.productName}}" />
+		        </a>
+              
+               <h3 class="cart-det-prodname"><a href="#" class="cart-det-prodname">{{cart.products.productName}}</a></h3>
+               
+               <span class="item-old-price">{{cart.products.currencyType}} {{cart.products.mrp}}</span>
+		        <span class="item-new-price">{{cart.products.currencyType}} {{cart.products.salePrice}}</span>
+		        
+		        <div class="selected-attribute-list"></div>
+		        <div class="select-wrapper qty">	
+					{{#if variant}}
+					  <label class="cart-det-label">Size:</label>
+					   <span class="focus">{{cart.products.variant}}</span>
+				     {{/if}}
+		        	<label class="cart-det-label">Qty:</label>
+			        <select class="select save">
+			          	<option value="{{cart.products.quantity}}">{{cart.products.quantity}}</option>
+			        </select>
+			        <!-- <a href="#" class="save-cart">Save</a> -->
+			        </div>
+			       			        		        
+		      </div>
+              <div class="clearfix"></div>
+		    </div>
+			
+			{{else}}
+			 <div class="cart-details cart-main" data-vendorprd-id="{{cart.products.vendorProductId}}" data-product-id="{{cart.products.productId}}" data-createdtime="{{createTime}}" data-sku-id="{{cart.products.skuId}}" data-event-id="{{cart.products.eventId}}" data-category-id="{{cart.products.categoryId}}" data-timer="{{cart.products.timeToExpire}}" data-sale-price="{{cart.products.salePrice}}" data-qnty="{{cart.products.quantity}}">
+		      
+		      <div class="col-xs-5 col-cartitem2">
+		        <!-- <a href="#gift-popup" class="gift-icon fancybox">Gift This</a> -->
+		        <a href="#" class="cart-remove" title="Remove this Item"></a>
+		       
+		        <div class="clear"></div>
+		        <span class="item-new-price">{{cart.products.currencyType}} {{cart.products.salePrice}}</span>
+		        <span class="item-old-price">{{cart.products.currencyType}} {{cart.products.mrp}}</span>
+		        <div class="clear"></div>
+		        <span class="item-total-price">Total: {{cart.products.currencyType}} {{product cart.products.quantity cart.products.salePrice}}</span>
+		        {{#if cart.products.expectedMaxDays}}
+					<span class="item-total-days">Delivered by {{cart.products.expectedMaxDays}} </span>
+					
+				{{/if}}
+		      </div>
+		      <div class="col-xs-7 col-cartitem1">
+		        <a href="/products/d/{{#spacetounderscore cart.products.productName}}{{/spacetounderscore}}/{{cart.products.vendorProductId}}" class="cart-prod-img">
+		          <img src="{{cart.products.thumbnailUrl}}" alt="{{cart.products.productName}}" title="{{cart.products.productName}}" />
+		        </a>
+              
+               <h3 class="cart-det-prodname"><a href="#" class="cart-det-prodname">{{cart.products.productName}}</a></h3>
+               
+               <span class="item-old-price">{{cart.products.currencyType}} {{cart.products.mrp}}</span>
+		        <span class="item-new-price">{{cart.products.currencyType}} {{cart.products.salePrice}}</span>
+		        
+		        <div class="selected-attribute-list"></div>
+		        <div class="select-wrapper qty">	
+					{{#if variant}}
+					  <label class="cart-det-label">Size:</label>
+					   <span class="focus">{{cart.products.variant}}</span>
+				     {{/if}}
+		        	<label class="cart-det-label">Qty:</label>
+			        <select class="select save">
+			          	<option value="{{cart.products.quantity}}">{{cart.products.quantity}}</option>
+			        </select>
+			        <!-- <a href="#" class="save-cart">Save</a> -->
+			        </div>
+			       			        		        
+		      </div>
+              <div class="clearfix"></div>
+		    </div>
+			{{/if}}
+			<!-- cart details ends here -->		
+	    {{/if}}
+	{{else}}
+		<div class="empty-cart-section">
+			<p>No Item(s) in your Shopping Bag</p>
+		</div>
+    {{/if}}
+	
+	<!-- for single product -->
+    <!-- cart action area starts here -->
+    <div class="cart-action-area">
+	  <!-- <a href="#" class="update-cart"><i class="icon-arrows-ccw"></i> Update</a> -->
+	  {{#if cart.products}}
+    	{{#if cart.products.length}}	
+		    {{#each cart.products}}
+		    	{{#lastElement ../cart.products.length @index}}
+      			<a href="/" id="lastContinuelink" class="cont-shopping lastContinuelink"><i class="icon-plus"></i> continue shopping</a>
+      			{{/lastElement}}
+      		{{/each}}
+		{{else}}
+			<a href="/" class="cont-shopping lastContinuelink"><i class="icon-plus"></i> continue shopping</a>
+		{{/if}}
+	  {{else}}
+	  	<a href="/" class="cont-shopping"><i class="icon-plus"></i> continue shopping</a>
+	  {{/if}}
+    </div>
+    <!-- cart action area ends here -->
+  </div>
+  <!-- cart area inner starts here -->
+</div>

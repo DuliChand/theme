@@ -1,0 +1,107 @@
+/* PowerTip Plugin */
+#powerTip {
+	cursor: default;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #dcdcdc inset;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #dcdcdc inset;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 1px rgba(255, 255, 255, 0.5) inset, 0 -2px 2px #dcdcdc inset;
+	
+	border-radius: 6px;
+	color: #000000;
+	display: none;
+	position: absolute;
+	white-space: nowrap;
+	z-index:9;
+}
+#powerTip:before, #powerTip:after {
+	content: "";
+	position: absolute;
+}
+#powerTip.n:before, #powerTip.s:before, #powerTip.n:after, #powerTip.s:after {
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	left: 50%;
+	margin-left: -10px;
+}
+#powerTip.e:before, #powerTip.w:before, #powerTip.e:after, #powerTip.w:after {
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	margin-top: -10px;
+	top: 50%;
+}
+#powerTip.n:before, #powerTip.n:after {
+	border-top: 10px solid #acacac;
+	border-top: 10px solid rgba(172, 172, 172, 0.8);
+	bottom: -10px;
+}
+#powerTip.e:before {
+	border-right: 10px solid #fff;
+	left: -8px;
+        z-index:2;
+}
+#powerTip.e:after{
+    border-right: 10px solid #ccc;
+	left: -10px;
+}
+#powerTip.s:before {
+	border-bottom: 10px solid #f7f7f7 ;
+	top: -8px;
+        z-index:2;
+}
+#powerTip.s:after {
+	border-bottom: 10px solid #ccc ;
+	top: -10px;
+}
+#powerTip.w:before {
+	border-left: 10px solid #fff;
+	right: -8px;
+        z-index: 2;
+}
+#powerTip.w:after {
+	border-left: 10px solid #ccc;
+	right: -10px;
+}
+
+#powerTip.ne:before, #powerTip.se:before {
+	border-right: 10px solid transparent;
+	border-left: 0;
+	left: 10px;
+}
+#powerTip.nw:before, #powerTip.sw:before {
+	border-left: 10px solid transparent;
+	border-right: 0;
+	right: 10px;
+}
+#powerTip.ne:before, #powerTip.nw:before {
+	border-top: 10px solid #acacac;
+	border-top: 10px solid rgba(172, 172, 172, 0.8);
+	bottom: -10px;
+}
+#powerTip.se:before, #powerTip.sw:before {
+	border-bottom: 10px solid #acacac;
+	border-bottom: 10px solid rgba(172, 172, 172, 0.8);
+	top: -10px;
+}
+#powerTip.nw-alt:before, #powerTip.ne-alt:before,
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+	border-top: 10px solid #acacac;
+	border-top: 10px solid rgba(172, 172, 172, 0.8);
+	bottom: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	left: 10px;
+}
+#powerTip.ne-alt:before {
+	left: auto;
+	right: 10px;
+}
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+	border-top: none;
+	border-bottom: 10px solid #acacac;
+	border-bottom: 10px solid rgba(172, 172, 172, 0.8);
+	bottom: auto;
+	top: -10px;
+}
+#powerTip.se-alt:before {
+	left: auto;
+	right: 10px;
+}

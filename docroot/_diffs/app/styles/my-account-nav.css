@@ -1,0 +1,167 @@
+.profile-uicon, .reward-icon, .credit-icon, .history-icon, .friend-icon, .notification-icon, .favorite-icon, .more-icon, .ordno-content a:before, .ordder-status-chkd span:after {
+	background:url( http://cdn1.fashionandyou.com/fny-static/app-images/sprite.png) no-repeat
+}
+.profile-navbar .icon {
+	float:left
+}
+.profile-navbar .profile-uicon {
+	background-position:-168px -31px;
+	height:30px;
+	width:30px
+}
+.profile-navbar .reward-icon {
+	background-position:-202px -31px;
+	height:30px;
+	width:28px
+}
+.profile-navbar .history-icon {
+	background-position:-357px -147px;
+	height:30px;
+	width:33px
+}
+.profile-navbar .friend-icon {
+	background-position:-356px -223px;
+	height:35px;
+	width:32px
+}
+.profile-navbar .notification-icon {
+	background-position:-357px -310px;
+	color:#FFF;
+	height:35px;
+	text-indent:25px;
+	height:35px;
+	width:48px
+}
+
+.profile-navbar .favorite-icon {
+	background-position:-270px -396px;
+	color:#FFF;
+	height:35px;
+	text-indent:25px;
+	height:35px;
+	width:32px
+}
+
+.profile-navbar ul > li:hover .profile-uicon,
+.profile-navbar .selected .profile-uicon {
+	background-position:-225px -136px
+}
+
+.profile-navbar ul > li:hover .reward-icon,
+.profile-navbar .selected .reward-icon {
+	background-position:-195px -137px
+}
+.profile-navbar ul > li:hover .history-icon,
+.profile-navbar .selected .history-icon {
+	background-position:-357px -184px
+}
+.profile-navbar ul > li:hover .friend-icon,
+.profile-navbar .selected .friend-icon {
+	background-position:-356px -264px
+}
+.profile-navbar ul > li:hover .notification-icon,
+.profile-navbar .selected .notification-icon {
+	background-position:-357px -352px;
+	color:#000
+}
+
+.profile-navbar ul > li:hover .favorite-icon,
+.profile-navbar .selected .favorite-icon {
+	background-position:-270px -430px;
+	color:#000
+}
+
+.profile-navbar {
+	float:left;
+	height:auto;
+	margin-top:2px;
+	position:relative;
+	width:100%
+}
+.profile-navbar .selected {
+	box-shadow:1px 2px 2px 0 #B0B0B0
+}
+.profile-navbar ul > li:hover .profile-info,
+.profile-navbar .selected .profile-info {
+	background:#d22573
+}
+.profile-info {
+	background:#FFF;
+	float:left;
+	height:53px;
+	padding:8px 10px;
+	width:100%
+}
+
+.profile-navbar ul > li:hover .profile-status,
+.profile-navbar .selected .profile-status {
+	color:#FFF
+}
+.profile-status {
+	color:#000;
+	float:left;	
+	font-size:12px;
+	height:auto;
+	line-height:17px;
+	padding:7px 0 0 10px
+}
+
+.profile-navbar ul > li:hover .profile-nav-name,
+.profile-navbar .selected .profile-nav-name {
+	background:#FFF;
+	color:#C92869
+}
+.profile-nav-name {
+	background:#d22573;
+	color:#FFF;
+	float:left;
+	display:none;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	text-indent:10px;
+	text-transform:capitalize;
+	width:100%
+}
+.profile-navbar li {
+	border:1px solid #ccc;
+	float:left;
+	/* height:85px; */
+	margin-right:6px;
+	position:relative;
+	width:183px
+}
+.profile-navbar li .notifiyOverlay{
+	/* background:url( http://cdn1.fashionandyou.com/fny-static/app-images/comingsoon-notificatoin.png) no-repeat; */
+	width:100%;
+	height:100%;	
+	 z-index:9;
+	 position:absolute;
+	 background-size:100%;
+	}
+	
+.profile-info {
+	background:#FFF;
+	float:left;
+	height:53px;
+	padding:8px 10px;
+	width:100%
+}
+.status-rewards {
+	padding:0 0 0 9px
+}
+.profile-nav-name {
+	background:none repeat scroll 0 0 #d22573;
+	color:#000;
+	float:left;
+	
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	text-indent:10px;
+	text-transform:capitalize;
+	width:100%
+}
+.profile-navbar li:last-child {
+	margin-right:0
+}

@@ -1,0 +1,15 @@
+{{#if ArrayList}}
+<div class="row events categories">
+	<h1 class="heading-style1">Featured Categories</h1>
+	<div class="category-slider">
+	{{#each ArrayList}}
+		<div class="slide">
+			<a href="/product/listing/category/{{categoryId}}">
+				<img alt="{{categoryName}}" src="{{imageRepository.0.imageUrl}}"  />
+				<h2 class="events-name">{{categoryName}}</h2>
+			</a>
+		</div>
+	{{/each}}	
+</div>	
+</div>
+{{/if}} 

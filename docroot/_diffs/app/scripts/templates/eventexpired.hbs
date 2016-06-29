@@ -1,0 +1,76 @@
+
+{{#if eventInfo}}
+<div class="event-info-panel">
+
+<div class="event-info-image">
+
+<img src="{{eventInfo.eventImage}}" alt="" title="" />
+
+<div class="expired-tag">Expired</div>
+
+</div>
+
+
+
+<div class="event-info-details">
+
+<p class="event-des">{{eventInfo.eventDescription}}</p>
+
+<div class="expired-tag event-expired">This Event is Expired on 23rd July 2013</div>
+        
+        
+        <div class="shipping-details">
+        
+        <span class="shipping-days">{{eventInfo.deliveryTime}}<a href="#">Why?</a>        
+        
+        </span>
+        
+        </div>
+
+</div>
+{{#if eventInfo.videoGallery}} 
+<div class="video-event">
+
+<span class="video-event-name">{{eventInfo.videoGallery.videoName}}</span>
+
+<div class="video-area">
+
+    <iframe src="{{eventInfo.videoGallery.relatedvideourl}}" allowfullscreen></iframe>
+    <!--object type="application/x-shockwave-flash"  width="262" height="160">
+        <param name="wmode" value="transparent" />
+        <param name="movie" value="https://www.youtube.com/v/M7lc1UVf-VE?version=3" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowScriptAccess" value="always" />
+        <embed src="https://www.youtube.com/v/M7lc1UVf-VE?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" wmode="transparent" width="262" height="160" />
+    </object-->
+
+</div>
+
+
+<div class="tag-area">
+
+<a class="tag-categ" href="#">Women</a>
+<a class="tag-categ" href="#">Men</a>
+<a class="tag-categ" href="#">Jeans</a>
+<a class="tag-categ" href="#">Tops</a>
+<a class="tag-categ" href="#">Shoes</a>
+<a class="tag-categ" href="#">Belts</a>
+<a class="tag-categ" href="#">Tag</a>
+<a class="tag-categ" href="#">Tag</a>
+<a class="toggle-icon" href="#"></a>
+<a class="tag-categ" href="#" style="display: block;">Women</a>
+<a class="tag-categ" href="#" style="display: block;">Men</a>
+<a class="tag-categ" href="#" style="display: block;">Jeans</a>
+<a class="tag-categ" href="#" style="display: block;">Tops</a>
+<a class="tag-categ" href="#" style="display: block;">Shoes</a>
+<a class="tag-categ" href="#" style="display: block;">Belts</a>
+<a class="tag-categ" href="#" style="display: block;">Tag</a>
+<a class="tag-categ" href="#" style="display: block;">Tag</a>
+
+</div>
+
+</div>
+{{/if}}
+
+</div>
+{{/if}}

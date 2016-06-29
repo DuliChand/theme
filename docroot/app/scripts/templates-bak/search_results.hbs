@@ -1,0 +1,65 @@
+{{#if hits.length}}
+<div class="row">
+  <h3 class="total-result">{{total}} Results for <span id="keyword">"Levis Jeans"</span></h3>
+      
+<!-- product listing area starts here -->
+<div class="prod-lstng-area"> 
+<!-- product listing starts here -->
+  <div class="prod-area-list">
+    <div class="row">
+      <div class="sort-by">
+        <div class="col-xs-8">
+          <div class="listing-pagination">Page 1&nbsp;/&nbsp;3</div>
+        </div>
+      </div>
+{{#each hits}}                   
+<!-- product 1 starts here -->
+      <div class="product-outer"> 
+        <a href="/product-detail/product/{{_source.eventId}}/{{_source.product.productId}}" class="prod-img"> 
+          <img src="{{_source.vendorProductInventories.0.imageView.0.detailsURL}}" alt="{{_source.product.name}}" title="{{_source.product.name}}" /> 
+        </a>
+        <div class="rolover-layer">
+            <div class="color-area">
+             <!--  <span class="red"></span>  -->
+            </div>
+            <div class="discount-tag"></div>
+            <div class="clear"></div>
+            <div class="action-area">
+              <div class="action-icons">
+                <div class="sharearea"> 
+                  <span title="Share" class="listing-share"></span>
+                  <div class="shareslide">
+                    <a href="#" class="ifacebook" title="Facebook"></a> 
+                    <a href="#" class="itwitter" title="Twitter"></a> 
+                    <a href="#" class="iemail" title="Email"></a>
+                  </div>
+                </div>
+                    <a title="Video Attached" class="listing-video" href="video-popup.html"></a> 
+              </div>
+              <div class="shipping-area"> 
+               <!--  <span class="shippingtype exclusive" title="Exclusive"></span> 
+                <span class="shippingtype international" title="International"></span>  -->
+              </div>
+            </div>
+        </div>
+        <div class="prod-detail">
+          <div class="prod-info"> 
+            <a href="#" class="ev-prod-name" title="{{_source.product.name}}">{{_source.product.name}}</a> 
+            <a href="/{{_source.eventId}}" class="event-name" title="{{_source.eventName}}">{{_source.eventName}}</a> 
+          </div>
+          <div class="prod-pricing"> 
+            <span class="old-price">Rs {{_source.vendorProductEvents.0.eventInventories.0.eventPrices.0.mrp}}</span> 
+            <span class="new-price">Rs {{_source.vendorProductEvents.0.eventInventories.0.eventPrices.0.spWithVAT}}</span> 
+          </div>
+        </div>
+      </div>
+<!-- product 1 ends here --> 
+{{/each}} 
+		<div class="row event" id="eventArea"></div>
+    </div>
+  </div>
+</div>
+<!-- product listing ends here --> 
+</div>
+{{/if}}
+      

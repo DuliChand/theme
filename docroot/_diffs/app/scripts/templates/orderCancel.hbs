@@ -1,0 +1,59 @@
+
+    <div class="trackorder-tab" data-orderno="{{orderNumber}}" data-orderlineid="{{orderLineId}}">
+        <h2 class="trackOrder">Tracking Detail -  Order No. {{orderNumber}}</h2>
+        <p class="orderDate"><span class="orderDate">Order Date:{{getDOB orderDate}}{{getTime 'hh:mm' orderDate}} </span></p>
+        <p class="ordertotal"><span class="orderTotal">Order Total : {{orderLineTotal}}</span></p>
+        <div class="shipment-detail">
+            <div class="shipment-box">
+                
+            {{#if productUrl}}
+              <img src="{{productUrl}}">
+            {{else}}
+              <img src="http://cdn1.fashionandyou.com/fny-static/app-images/order-notfound.jpg" class="product-img" alt="" title="not-found">
+            {{/if}}
+            <ol>
+                <li><span class="productName">{{productName}}</span></li>
+                <li><span class="status">Status : {{lineStatus}}</span></li>
+                <li><span class="rs">Sale Price : Rs. {{orderLineTotal}}</span></li>
+                <li>{{#if variant}}<span class="size">Size : {{variant}}</span>{{/if}}&nbsp;&nbsp;&nbsp;{{#if qty}}<span class="qty">Quantity : {{qty}}</span>{{/if}}</li>
+                <li id="seller">Sold By : {{sellerName}} </li>
+                 
+            </ol>
+          </div>
+                     
+      </div>
+
+      <div class="cancelOrderform">
+      <form method="post" id="order_cancel_form">
+        <h2>WHY ARE YOU CANCELING THIS ?</h2>
+        <select class="select span3">
+          <option value="selectreson">-- Please Select --</option>
+          {{#each reasons}}<option value="{{this}}">{{this}}</option>{{/each}}
+        </select>
+        <div class="cancelerror">Please select cancel reason.</div>
+      <textarea  maxlength="1000" class="textarea" col="5" row="5" placeholder="Fill your comment here..."></textarea>
+      </div>
+       {{#if modeOfReturn}}
+        <div class="returnOfmode">
+        <h2>REFUND MODE</h2>
+      
+          <ul>
+          <li><label class="radio">
+            <input type="radio" name="modeOfReturn" class="optionsRadios" data-key="{{modeOfReturn.SC}}" value="{{modeOfReturn.SC}}">
+            {{modeOfReturn.SC}}
+           </label>
+         </li>
+         <li> 
+          <label class="radio">
+          <input type="radio" name="modeOfReturn" class="optionsRadios" checked data-key="{{modeOfReturn.OPM}}" value="{{modeOfReturn.OPM}}">
+          {{modeOfReturn.OPM}}
+        </label>
+        </li>
+        <li class="refunderror"><p>Please select refund mode.</p></li>
+        </ul>
+
+        </div>
+       {{/if}}
+       <input type="submit" value="Confirm cancel" class="btn btn-large btn-block" id="submitCancelOrder">
+       </form>
+    </div>

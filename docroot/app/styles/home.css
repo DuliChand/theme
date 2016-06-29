@@ -1,0 +1,1210 @@
+.preload {
+	position:absolute;
+	top:-9999px;
+	display:block;
+	width:100%;
+	overflow:hidden;
+}
+.testing {
+	display:none;
+}
+.showtooltip-outer {
+	display:none;
+}
+.tw-share, .fb-share, .em-share, .gp-share, .pint-share, .linkin-share, .gplus-share, .shippingtype:before, .tooltip-timer:before, .events-name span:before, .shipping-layer a:before, .navigator-arrow, .navigator-arrow-right, .morebutton a p:after, .logos-area .express, .logos-area .international, .logos-area .exclusive, .shipping-layer .express:before, .shipping-layer .internation:before, .shipping-layer .exclusive:before, .logos-area .logocontent, .navicon {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) no-repeat;
+}
+.homepage .container {
+	width:960px;
+	max-width:960px;
+}
+.banner-carousel {
+	position:relative;
+	width:100%;
+	height:400px;
+	min-width:960px;
+	margin-top:10px;
+	overflow:hidden;
+	clear:both;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+}
+.banner-carousel > a {
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+}
+.banner-carousel > a > img {
+	cursor:pointer;
+	visibility:hidden;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+}
+.banner-carousel .navigator {
+	position:absolute;
+	right:200px;
+	bottom:10px;
+	z-index:4;
+	display:block;
+	width:auto;
+	height:auto;
+	padding:5px 10px 6px;
+	background:url(http://static.fashionandyou.com/app-images/bg_nav.png) 0 0;
+	border:1px solid #ccc;
+	border-radius:14px;
+	opacity:.7;
+}
+.banner-carousel .navigator > .navicon {
+	display:block;
+	float:left;
+	width:14px;
+	height:14px;
+	margin:0 1px;
+	background-position:-72px -18px;
+}
+.banner-carousel .navigator > .selected {
+	background-position:-72px -2px;
+}
+.navigator-arrow {
+	position:absolute;
+	top:50%;
+	left:400px;
+	z-index:4;
+	display:block;
+	width:46px;
+	height:150px;
+	margin:-75px 0 0 -300px;
+	cursor:pointer;
+	background-position:-212px -389px;
+	opacity:0;
+	filter:alpha(opacity=10);
+-webkit-transition:all .3s linear 0;
+transition:all .3s linear 0;
+}
+.navigator-arrow-right {
+	right:400px;
+	left:auto;
+	margin-right:-300px;
+	background-position:-213px -232px;
+}
+.banner-carousel:hover .navigator-arrow, .navigator-arrow:hover {
+	margin-right:10px;
+	margin-left:10px;
+	opacity:.6;
+}
+.shipping-layer {
+	width:100%;/* padding:6px; */
+	letter-spacing:0;
+	background:#efefef;
+	/*border:1px #efefef solid;*/
+	margin:0px 0px 10px 0px;
+}
+.shipping-layer > ul > li {
+	margin:2px 0;/* line-height:14px; */
+	float:left;
+}
+.shipping-layer > ul > li .express, .shipping-layer > ul > li .internation, .shipping-layer > ul > li .exclusive {
+	display:block;
+	padding:0 0 0 40px;
+	font-size:12px;
+	 font-family: 'centurygothicbold';
+	color:#5d5d5d;
+}
+.shipping-layer > ul > li .express:before, .shipping-layer > ul > li .internation:before, .shipping-layer > ul > li .exclusive:before {
+	content:'';
+	position:absolute;
+	width:34px;
+	height:34px;
+	display:block;
+	 margin: 2px 5px;
+	left:0;
+}
+.shipping-layer > ul > li .express:before {
+	background-position:-486px -384px;
+}
+.shipping-layer > ul > li .internation:before {
+	background-position:-520px -384px;
+}
+.shipping-layer > ul > li .exclusive:before {
+	background-position:-454px -384px;
+}
+.events {
+	position:relative;
+	display:block;
+	clear:both;
+}
+.events > h1 {
+	margin:10px 0 15px;
+	font-size:26px;
+	letter-spacing:normal;
+	color:#d22573;
+	text-transform:uppercase;
+}
+.events > h1.heading-style {
+	/*background: url("http://static.fashionandyou.com/app-images/transparent5.png") repeat-x scroll left center;*/
+
+     clear: both;
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 0;
+    margin: 18px 5px 9px 7px;
+    padding: 0 0 6px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.events > h1.heading-style strong {
+	/*background: #333;*/
+	color:#c62a69;
+    display: inline-block !important;
+  /*  font-family: "MyriadPro-Regular";*/
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal !important;
+    padding: 3px 10px;
+    text-transform: uppercase;	
+    border-bottom: 4px solid #c62a69;
+}
+.events > h1.heading-style1 {
+	background:#d22573;
+	clear:both;
+	font-size:14px;
+	color:#fff;
+	padding:6px;
+	text-align:center;
+}
+.events .fordesktop {
+	display:block;
+	clear:both;
+}
+
+.events .fordesktop .event-col {width:300px; min-height:173px;}
+#marketingPromoOne > .event-col:before {
+    background: none !important;
+}
+#marketingPromoTwo > .event-col:before {
+    background: none !important;
+}
+#marketingPromo > .event-col:before {
+    background: none !important;
+}
+
+.events .fordesktop .shopclip .event-col:before {display: none;}
+.events .fordesktop .shopclip .bx-wrapper .bx-next {background: none; opacity: 0.7; right: 0;}
+.events .fordesktop .shopclip .bx-prev {background: none !important; left: 0; opacity: 0.7;}
+
+
+#marketingPromo .bx-wrapper .bx-next {
+    background: none;
+    opacity: 0.7;
+    right: 0;
+}
+
+#marketingPromo .bx-wrapper .bx-prev{
+	 background: none !important;
+	left: 0;
+    opacity: 0.7;
+}
+.events .fordesktop .shopclip .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item{
+	display:none;
+}
+#marketingPromo .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item{
+	display:none;
+}
+
+.customerPromo > .event-col:before {
+    background: none !important;
+}
+
+
+/* .events .fordesktop .event-col:before {
+   background: url(http://static.fashionandyou.com/app-images/sprite.png) -590px -341px;
+height: 10px;
+width: 57px;
+display: block;
+content: "";
+right: 3px;
+position: absolute;
+top: -5px;
+line-height: 25px;
+} */
+
+.events .fordesktop .event-col a.showtooltip {width:100%;}
+
+.events .columerow {
+	float:left;
+	/* padding:0 6px 6px; */
+	padding:0 6px 0px;
+	width:33.3%;
+}
+.events .event-col {
+	display:block;
+	float:left;
+	margin:0 0 13px;
+	/* border:1px solid #cecece; */
+	/*-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+	 width:100%; */
+	position:relative;
+	min-height:130px;
+}
+.events .event-col a {
+	display:block;
+}
+.events .forresponsive {
+	display:none;
+	clear:both;
+}
+.events .forresponsive .event-col {
+	width:31%;
+	margin:1%;
+	/* min-height:234px */
+	min-height:130px;
+}
+.addbanner {
+	padding:.5%;
+}
+.addbanner img{
+	width:100%;
+}
+.forresponsive .events > div img {
+	width:100%;
+}
+.margin10 {
+	margin-top:10px;
+}
+.forresponsive  .event-col img {
+	width:100%;
+}
+.event-col a .tag-name-arrow {
+	position:absolute;
+	top:5px;
+	left:0;
+	width:auto;
+	height:24px;
+	padding:0 5px 0 10px;
+	font-size:11px;
+	line-height:24px;
+	color:#fff;
+	text-align:center;
+	background:#c92869;
+}
+.event-col a .tag-name-arrow:after {
+	position:absolute;
+	right:-12px;
+	width:0;
+	height:0;
+	border-top:12px solid transparent;
+	border-bottom:12px solid transparent;
+	border-left:12px solid #c92869;
+	content:"";
+}
+.event-col a .tag-name-arrow:before {
+	position:absolute;
+	top:-2px;
+	left:0;
+	z-index:0;
+	width:0;
+	height:28px;
+	border-top:2px solid transparent;
+	border-bottom:2px solid transparent;
+	border-left:2px solid #c92869;
+	content:"";
+}
+.event-col a .tagimage {
+	background:none;
+	position:absolute;
+	bottom:75px;
+	right:5px;
+	width:auto;
+	font-size:12px;
+	line-height:14px;
+	color:#fff;
+	text-align:center;
+}
+.event-col a .tagimage span {
+	background:none;
+	border-radius:100%;
+	float:left;
+	font-size:15px;
+	height:45px;
+	padding:6px 10px;
+	float:left;
+	width:47px;
+}
+.event-col a .tagimage-x2 {
+	top:3px;
+	height:34px;
+	line-height:16px;
+}
+.event-col a .tagimage-x2:before {
+	left:-17px;
+	border-top:17px solid transparent;
+	border-right:17px solid #f06;
+	border-bottom:17px solid transparent;
+}
+.event-col a .tagimage-x2:after {
+	position:absolute;
+	top:-3px;
+	right:0;
+	z-index:0;
+	height:40px;
+	border-top:3px solid transparent;
+	border-right:3px solid #f06;
+	border-bottom:3px solid transparent;
+}
+.ftr-1 {
+	height:440px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.ftr-1-2 {
+	height:215px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.ftr-1-3 {
+	height:140px;
+}
+.ftr-2-3 {
+	height:290px;
+}
+.ftr-1-4 {
+	height:102px;
+}
+.ftr-3-4 {
+	height:328px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.events .event-col.noshadow {
+	box-shadow:none;
+}
+
+
+ .events .morebutton a span{
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -580px -408px no-repeat; 
+	width:93px;
+	height:40px;
+	display:block;
+margin: 0 8px 9px;
+	float:right;
+	overflow:hidden;
+	text-indent:-200px;
+}
+
+
+
+/* .events .morebutton {
+	text-align:center;
+	padding:0
+}
+.events .event-col .morebutton {
+	margin:35px 0
+}
+.events .morebutton a {
+	display:block;
+	float:right;
+	padding:0 6px;
+	margin-bottom:12px
+}
+.events .morebutton a span {
+	margin:0;
+	font-size:22px;
+	text-transform:uppercase;
+	display:block;
+	position:relative;
+	background:#d22573;
+	border-radius:4px;
+	padding:2px 10px;
+	color:#FFF;
+	text-indent:0;
+	text-shadow:1px 1px 1px #333;
+	text-transform:uppercase
+} */
+.ftr-1-5 {
+	height:80px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.ftr-2-5 {
+	height:170px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.ftr-3-5 {
+	height:260px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.ftr-4-5 {
+	height:350px;
+	-moz-box-shadow:0 0 5px #a6a6a6;
+	-webkit-box-shadow:0 0 5px #a6a6a6;
+	box-shadow:0 0 5px #a6a6a6;
+}
+.events .event-bottom {
+	/* background:url(http://static.fashionandyou.com/app-images/transparent4.png); */
+	background:#fff;
+	position:absolute;
+	bottom:0;
+	z-index:2;
+	width:100%;
+	padding:8px 0;
+}
+.events .event-bottom h3 {
+	font-size:17px; 
+	color:#fff;
+	margin:0 0 0px 12px;
+	float:left;
+	width:180px;
+}
+
+.events .event-bottom h3.splitEventName
+{
+	font-size:17px;
+	font-weight: bold;
+	float:none;
+	color:#000;
+    margin: 0 0 4px 6px;
+	font-family: 'MyriadPro-Regular';
+}
+.events .event-bottom h3.categoryEventName
+{
+	font-size:14px;
+	margin: -2px 0 0 6px;
+	color:#d22573;
+	font-family: 'MyriadPro-Regular';
+}
+.events .event-bottom h4 {
+    color: #000;
+    float: right;
+    font-size: 12px;
+    margin: -18px 7px 0 0;
+    position: relative;
+    text-align: right;
+    text-transform: none;
+    width: 65px;
+    line-height:16px;
+}
+.events .event-bottom h4:before {
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) -93px -216px no-repeat;
+	content:"";
+	display:block;
+	height: 16px;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 17px;
+}
+.events .event-bottom h5 {
+	float:right;
+	display:block;
+	background:url(http://static.fashionandyou.com/app-images/transparent2.png);
+	border:2px solid #ad3a6f;
+	margin:6px 12px 0 0;
+	padding:5px 8px;
+	font-size:11px;
+	color:#ad3a6f;
+	position:relative;
+}
+.events .event-bottom .logos-area {
+	float:left;
+	position:relative;
+	/* height:34px; */
+	margin:-28px 6px 0 0;
+}
+.events .event-bottom .logos-area .logosholder {
+	 float: right;
+    height: 30px;
+    margin: -10px 0 0 0px;
+    position: relative;
+    width: 30px;
+}
+.events .event-bottom .logos-area .logocontent {
+	/* background-position:-453px -304px; */
+	background-position:-615px -265px;
+	width:90px;
+	height:30px;
+	font-size:10px;
+	color:#fff;
+	text-align:center;
+	position:absolute;
+	left:29px;
+	visibility:hidden;
+	opacity:0;
+	transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+}
+
+.events .event-bottom .logos-area .logocontent > p {
+	 font-family: "MyriadPro-Regular";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 13px;
+    padding: 2px 0 0 5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.events .event-bottom .logos-area .logocontent > p > span{
+	padding:0 0 0 5px;
+}
+.events .event-bottom .logos-area .logosholder:hover {
+	z-index:99;
+}
+.events .event-bottom .logos-area .logosholder:hover .logocontent {
+	visibility:visible;
+	opacity:1;
+transition:all .7s linear;
+-webkit-transition:all .7s linear;
+}
+.events .event-bottom .logos-area .logosholder:hover .express, .events .event-bottom .logos-area .logosholder:hover .international, .events .event-bottom .logos-area .logosholder:hover .exclusive {
+	left:0px;
+transition:all .2s linear;
+-webkit-transition:all .2s linear;
+}
+.events .event-bottom .logos-area .express {
+	/* background-position:-518px -389px; */
+	background-position: -486px -384px; 
+	width:31px;
+	height:30px;
+	position:absolute;
+	z-index:11;
+	left:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear;
+background-color:#fff;
+}
+.events .event-bottom .logos-area .international {
+	/* background-position:-498px -348px; */
+	background-position:-520px -384px;
+	width:30px;
+	height:30px;
+	position:absolute;
+	z-index:11;
+	left:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear;
+background-color:#fff;
+}
+.events .event-bottom .logos-area .exclusive {
+ 	/* background-position:-455px -387px;  */
+ 	 background-position:-454px -384px;
+	width:31px;
+	height:30px;
+	position:absolute;
+	z-index:11;
+	left:0;
+transition:all .2s linear;
+-webkit-transition:all .2s linear;
+background-color:#fff;
+}
+.events .events-name {
+	position:absolute;
+	bottom:0;
+	z-index:2;
+	width:100%;
+	height:50px;
+	font-size:14px;
+	line-height:44px;
+	color:#fff;
+	text-indent:15px;
+	text-shadow:0 0 5px #333;
+	background:-moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(51, 51, 51, 0.4)));
+	background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:-o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:-ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(51, 51, 51, 0.4) 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33000000', GradientType=0);
+}
+.endingsoon .events-name {
+	float:left;
+	min-height:50px;
+	line-height:18px;
+	background:-moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(51, 51, 51, 0.4)));
+	background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:-o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:-ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(51, 51, 51, 0.4) 100%);
+	background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(51, 51, 51, 0.4) 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33000000', GradientType=0);
+}
+.endingsoon .events-name span {
+	display:block;
+	width:100%;
+	margin-top:5px;
+	text-indent:40px;
+}
+.endingsoon .events-name span:before {
+	position:absolute;
+	left:14px;
+	width:18px;
+	height:18px;
+	background-position:-120px -147px;
+	content:'';
+}
+.events .more a {
+	display:table;
+	text-align:center;
+}
+.events .more p {
+	display:table-cell;
+	font-size:30px;
+	font-style:italic;
+	color:#333;
+	text-transform:uppercase;
+	vertical-align:middle;
+}
+.events .more a:hover p {
+	color:#ce2e78;
+}
+.events .arrow-left {
+	position:absolute;
+	top:50%;
+	right:-65px;
+	width:46px;
+	height:150px;
+	margin-top:-75px;
+	background:url(http://static.fashionandyou.com/app-images/side_arrow_33.png) no-repeat;
+}
+.events .arrow-left:hover {
+	background:url(http://static.fashionandyou.com/app-images/side_arrow_33_h.png) no-repeat;
+}
+.categories {
+	margin-bottom:10px;
+}
+.categories > div a {
+	position:relative;
+	display:block;
+}
+.categories > div a img {
+	width:100%;
+}
+.categories > div .events-name {
+	height:20px;
+	padding:0;
+	font-size:13px;
+	line-height:20px;
+	text-indent:10px;
+	background:rgba(51, 51, 51, 0.7);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#66000000', GradientType=0);
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100%;
+}
+.bottom-banner {
+	height:auto;
+	margin:15px 0 30px;
+}
+.bottom-banner .banner-inner {
+	display:block;
+	float:left;
+	width:100%;
+	min-height:170px;
+	padding:18px;
+	background:transparent;
+	box-shadow:0 0 0 1px #ececec, 2px 2px 2px 0 #ececec, inset 0 0 20px 0 #f6f6f6;
+	box-sizing:border-box;
+}
+.bottom-banner .banner {
+	float:left;
+	padding:0 4px 8px;
+	background:url(http://static.fashionandyou.com/app-images/bg_bottom.png) 0 1px no-repeat;
+	background:url(http://static.fashionandyou.com/app-images/bg_bottom.png) 0 1px no-repeat content-box;
+}
+.bottom-banner h1 {
+	font-size:14px;
+	color:#333;
+	text-transform:capitalize;
+}
+.bottom-banner p {
+	margin-top:12px;
+	font-size:11px;
+	line-height:15px;
+	letter-spacing:1.5px;
+	color:#666;
+}
+.bottom-banner a.button {
+	padding:9px;
+	margin-top:10px;
+	font-size:11px;
+	letter-spacing:2px;
+	color:#fff;
+	text-transform:capitalize;
+	background-color:#757575;
+	border:0;
+	display:inline-block;
+	outline:0;
+}
+.bottom-banner a.button:hover {
+	background:#000;
+}
+.bottom-banner button span {
+	display:block;
+	float:right;
+	width:6px;
+	height:7px;
+	margin-top:2px;
+	margin-left:5px;
+	background:url(http://static.fashionandyou.com/app-images/arrow67.png);
+}
+.banner-inner .social {
+	height:auto;
+	margin-top:10px;
+}
+.banner-inner .social > li {
+	display:inline-block;
+	float:left;
+	width:27px;
+	height:27px;
+	margin-right:3px;
+	margin-bottom:8px;
+	background:none;
+}
+.banner-inner .social a {
+	display:block;
+	width:100%;
+	height:100%;
+	background:url(http://static.fashionandyou.com/app-images/sprite.png) 0 0 no-repeat;
+}
+.banner-inner .social .footer-gp {
+	background-position:-622px -130px;
+}
+.banner-inner .social .footer-pt {
+	background-position:-622px -162px;
+}
+.banner-inner .social .footer-fb {
+	background-position:-40px -56px;
+}
+.banner-inner .social .footer-tw {
+	background-position:-39px -87px;
+}
+.banner-inner .social .footer-yt {
+	background-position:0 -240px;
+}
+.banner-inner .social .footer-bl {
+	background-position:-39px -24px;
+}
+.powertip-outer {
+	display:none;
+}
+.eventpowertip {
+	float:left;
+	width:230px;
+	height:auto;
+	padding:10px;
+	margin:0;
+	background:url(http://static.fashionandyou.com/app-images/transparent.png);
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	box-shadow:0 3px 5px 0 #ccc;
+}
+.eventpowertip .share-icons {
+	float:left;
+	width:100%;
+	height:auto;
+	margin:10px 0 0;
+}
+
+
+.shareon{
+	background: url("http://static.fashionandyou.com/app-images/sprite.png") no-repeat scroll -61px -383px;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    margin-right: 6px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-indent: 32px;
+    width: 16px;
+    z-index: 1;
+}
+.moredetail {
+	height:20px;
+	overflow:hidden;
+	clear:both;
+}
+.moredetail.active {
+	height:auto!important;
+}
+.moredetail .text1:before {
+	content:'+';
+	margin:0 4px 0 0;
+}
+.moredetail.active .text1:before {
+	content:'-';
+	margin:0 4px 0 0;
+}
+.share-icons .fb-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	background-position:-1px -2px;
+}
+.share-icons .em-share {
+	display:block;
+	float:left;
+	width:27px;
+	height:24px;
+	background-position:-399px -154px;
+	margin-left:6px;
+}
+
+.share-icons .gp-share {
+	display:block;
+	float:left;
+	width:27px;
+	height:24px;
+	background-position: -0px -97px;
+	margin-left:6px;
+}
+.share-icons .pint-share {
+	display:block;
+	float:left;
+	width:27px;
+	height:24px;
+	background-position: -25px -416px;
+	margin-left:6px;
+}
+.share-icons .fb-share:hover, .share-icons .tw-share:hover, .share-icons .em-share:hover {
+	opacity:.8
+}
+.share-icons .tw-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background-position:0 -33px;
+}
+.share-icons .gplus-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background-position:0 -98px;
+}
+.share-icons .linkin-share {
+	display:block;
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:5px;
+	background-position:0 -67px;
+}
+.event-name {
+	display:block;
+	float:left;
+	font-size:14px;
+	line-height:14px;
+	letter-spacing:normal;
+	color:#333;
+}
+.catg-name {
+	display:block;
+	float:left;
+	padding-top:5px;
+	padding-right:5px;
+	font-size:12px;
+	line-height:20px;
+	color:#333;
+}
+.catg-name:hover {
+	text-decoration:underline
+}
+.disc-tip {
+	float:right;
+	margin:0 0 0 5px;
+	font-size:14px;
+	font-style:italic;
+	line-height:14px;
+	letter-spacing:normal;
+	color:#c36;
+}
+.tooltip-timer {
+	position:relative;
+	float:left;
+	padding:7px 0 2px;
+	font-size:12px;
+	color:#666;
+	text-indent:23px;
+}
+.tooltip-timer:before {
+	position:absolute;
+	display:block;
+	width:16px;
+	height:16px;
+	background-position:-93px -216px;
+	content:'';
+}
+.prod-no {
+	display:block;
+	float:left;
+	padding:3px 0 5px 5px;
+	font-family: 'centurygothicbold';
+	font-size:12px;
+	line-height:12px;
+	color:#333;
+}
+.tip-sep {
+	float:left;
+	width:100%;
+	height:0;
+	border-top:1px solid #eee;
+}
+.eventpowertip .text {
+	display:block;
+	float:left;
+	width:210px;
+	height:auto;
+	padding:2px 5px;
+	font-size:12px;
+	line-height:16px;
+	letter-spacing:normal;
+	color:#333;
+	word-break:normal;
+	white-space:normal;
+}
+.eventpowertip .text1 {
+	cursor:pointer;
+	color:#d22573;
+}
+.shippingtype {
+	position:relative;
+	display:none;
+	float:left;
+	width:auto;
+	height:auto;
+	padding:0 0 5px;
+	margin:3px 0 0;
+	font-size:11px;
+	color:#666;
+	text-indent:20px;
+}
+.shippingtype:before {
+	position:absolute;
+	left:0;
+	content:'';
+}
+.shippingtype strong {
+	padding-left:10px;
+	margin-left:7px;
+	border-left:1px solid #ccc;
+	font-weight:400;
+}
+.shippingtype.international:before {
+	background-position:-92px -301px;
+	width:16px;
+	height:16px;
+}
+.shippingtype.express {
+	text-indent:30px;
+}
+.shippingtype.express:before {
+	background-position:-269px -190px;
+	width:30px;
+	height:16px;
+	top:2px;
+}
+.shippingtype.regular:before {
+	background-position:-280px -252px;
+	width:16px;
+	height:16px;
+	top:2px;
+}
+.pre-order {
+	float:left;
+	width:180px!important;
+	padding:5px 0 5px 5px;
+	font-size:12px;
+	font-weight:700;
+	line-height:20px;
+	color:#333;
+	word-break:break-all;
+	word-wrap:break-word!important;
+	word-wrap:break-word;
+	white-space:-moz-pre-wrap!important;
+	white-space:-pre-wrap;
+	white-space:-o-pre-wrap;
+	white-space:pre-wrap;
+	white-space:normal;
+}
+.specification-heading {
+	float:left;
+	padding:17px 0 6px;
+	font-size:16px;
+	line-height:19px;
+	letter-spacing:normal;
+	color:#333;
+	text-transform:capitalize;
+}
+.specification-heading-alt {
+	padding:0 0 6px
+}
+.w-slider img {
+	max-width:100%;
+	vertical-align:middle;
+	display:inline-block;
+}
+.w-slider {
+	position:relative;
+	height:400px;
+	text-align:center;
+	background:rgba(153, 153, 153, 0.5);
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.w-slider-mask {
+	position:relative;
+	display:block;
+	overflow:hidden;
+	z-index:1;
+	left:0;
+	right:0;
+	height:100%;
+	white-space:nowrap;
+}
+.w-slide {
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	width:100%;
+	height:100%;
+	white-space:normal;
+	text-align:left;
+}
+.w-slider-nav {
+	position:absolute;
+	z-index:2;
+	top:auto;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	padding-top:10px;
+	height:40px;
+	text-align:center;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.w-slider-nav.w-round > div {
+	-webkit-border-radius:100%;
+	-webkit-background-clip:padding-box;
+	-moz-border-radius:100%;
+	-moz-background-clip:padding;
+	border-radius:100%;
+	background-clip:padding-box;
+}
+.w-slider-nav.w-num > div {
+	width:auto;
+	height:auto;
+	padding:.2em .5em;
+	font-size:inherit;
+	line-height:inherit;
+}
+.w-slider-nav.w-shadow > div {
+	-webkit-box-shadow:0 0 3px rgba(51, 51, 51, 0.4);
+	-moz-box-shadow:0 0 3px rgba(51, 51, 51, 0.4);
+	box-shadow:0 0 3px rgba(51, 51, 51, 0.4);
+}
+.w-slider-dot {
+	position:relative;
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background-color:#333;
+	cursor:pointer;
+	margin:0 3px .5em;
+	-webkit-transition:background-color 100ms, color 100ms;
+	-moz-transition:background-color 100ms, color 100ms;
+	-o-transition:background-color 100ms, color 100ms;
+	transition:background-color 100ms, color 100ms;
+	border:2px solid #fff;
+}
+.w-slider-dot.w-active {
+	background-color:#b81a4d;
+}
+.w-slider-arrow-left {
+	-moz-user-select:none;
+	bottom:0;
+	width:44px;
+	height:72px;
+	color:#FFF;
+	cursor:pointer;
+	left:2%;
+	margin:auto;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	z-index:3;
+	background:url(http://static.fashionandyou.com/app-images/arrow-left.png) no-repeat;
+}
+.w-slider-arrow-right {
+	-moz-user-select:none;
+	bottom:0;
+	width:44px;
+	height:72px;
+	color:#FFF;
+	cursor:pointer;
+	right:2%;
+	margin:auto;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	z-index:3;
+	background:url(http://static.fashionandyou.com/app-images/arrow-right.png) no-repeat;
+}
+.hero-slider {
+	height:390px;
+	width:940px;
+	margin:0px auto;
+	overflow:hidden;
+}
+.hero-heading {
+	margin-top:120px;
+	color:#fff;
+	font-size:75px;
+	line-height:75px;
+	text-align:center;
+	text-transform:none;
+	text-shadow:rgba(0, 0, 0, 0.2) 0 2px 6px;
+}
+.subhead {
+	color:rgba(255, 255, 255, 0.89);
+	font-size:16px;
+	text-align:center;
+	text-shadow:rgba(0, 0, 0, 0.27) 1px 1px 3px;
+}
+
+.eventscols{ width:100%; float:left}
+.eventscols ul{ margin:0;}
+.eventscols ul li{ display:inline-block; font-size:0; padding:0 29px;  }
+.eventscols ul li img {    padding: 0 25px;    text-align: center; }
+.eventscols ul li > p{ display:block; color:#000; line-height:20px; text-transform:uppercase; font-family: 'MyriadPro-Regular';  font-size:14px; text-align:center;}
+
+#promoCatContentOne .event-col:before, #promoCatContentTwo .event-col:before {display: none;}
+#marketingPromoOne .event-col:before, #marketingPromoTwo .event-col:before{display:none}
+#marketingMediumPromo .event-col:before, #marketingMediumPromoOne .event-col:before{ display:none;}

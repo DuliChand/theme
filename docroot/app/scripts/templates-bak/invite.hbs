@@ -1,0 +1,129 @@
+<!-- invite breadcrumb area starts here -->
+<div class="col-xs-12 col-md-12 col-sm-12">
+	<div id="breadcrumb-container">
+		<ul class="breadcrumb">
+			<li><a href="/home">Home</a></li>
+			<li><a href="/profile">Profile</a></li>
+			<li class="active">Invite</li>
+		</ul>
+	</div>
+</div>
+<!-- invite breadcrumb area ends here -->
+
+<!-- invite area starts here -->
+<section class="midddle-area">
+	<div id="invitearea" class="col-xs-12">
+    	<div id="inviteleft">
+      		<img src="/fny-theme/images/invite-friends.jpg" alt="invite friends" class="img-responsive"/>
+    	</div>
+    	<div id="inviteright">
+      		<div class="invitebox">
+        		<h3 class="heading1">Invite Your Friends</h3>
+        		<form>
+        			<div class="errormsg1">
+		      			<img src="/fny-theme/images/caution1.png" />
+		      			<span>Please add a valid invitee</span>
+		      		</div> 
+            		<div class="control-group">
+						<div class="controls">
+							<label>To :</label> <input type="text" name="recipeintList" id="recipeintList" data-error-style="inline" class="text-field" placeholder="Enter a friend's email address" />
+						</div>
+					</div>
+          			<label>Message :</label> <textarea id="messageText" placeholder="Come shop with me at Fashion and You ! They have new things every day-it's like a treasure chest of really great stuff. Membership is free and I think you'll really like it."></textarea>
+          			<label>&nbsp;</label> 
+
+          			<div id="importarea">
+			           <!--  <strong>+ Import Contacts</strong> -->
+			           <!--  <a href="#import-popup" class="fancybox" id="gmail"></a>
+			            <a href="#" id="window"></a>
+			            <a href="#" id="yahoo"></a> -->
+          			</div>
+
+          			<input type="submit" id="sendInvite" value="Send Invite" class="go" />
+        		</form>
+
+        		<div id="import-popup" class="popup-outer">
+          			<h2>Choose Your Address Book</h2>   
+          			<div class="row">
+			            <ul>
+			              <li><a href="#" class="yahoo_icon">Yahoo</a></li>
+			              <li><a href="#" class="gmail_icon">Gmail</a></li>
+			              <li><a href="#" class="outlook_icon">Outlook</a></li>
+			            </ul>
+		          </div>
+		      </div>
+    		</div>
+	    	<!-- 
+	    	<div class="invitebox">
+		      <h3 class="heading2">Post Invite on Facebook</h3>
+		      <p align="center"><a href="#"><img src="/fny-theme/images/invitefriend.png" /></a></p>
+		      <form>
+		        <p>+ Copy & Paste Your Personal Invitation Link:</p>
+		        <input type="text" value="" class="small" placeholder="http://user.fashionandyou.com" /> <input type="submit" value="Copy Link" class="go" />
+		      </form>
+		
+		      <div id="sharethis">
+		        <strong>Share this :</strong>
+		        <a title="Facebook" class="fb-icon" href="#"></a>
+		        <a title="Twitter" class="tw-icon" href="#"></a>
+		        <a title="Pinterest" class="pt-icon" href="#"></a>
+		        <a title="Google Plus" class="gplus-share" href="#"></a>
+		        <a title="Linkedin" class="linkin-share" href="#"></a>
+		        <div class="clear"></div>
+		      </div>
+		    </div> 
+		    --> 
+	    	<div class="invitebox">
+      			<h3 class="heading3">Post Items You Love</h3>
+      			<a href="/home" class="continueshop">Continue Shopping</a>
+      			<p>Express your style! Share your favorite gift items using Facebook, Twitter and Pinterest links. When your friends join through your posts and make an order, you'll earn INR 500 after the order ships.</p>
+    		</div>
+  	</div>
+		<div id="yourinvitation">
+		  <h2>Your Invitations</h2>
+		    <div id="invitation-tabs">
+		      <ul>
+		        <li><a href="#" class="active" id="invitetab1">Open Invitations</a></li>
+		        <li><a href="#" id="invitetab2">Accepted Invitations</a></li>
+		        <li><a href="#" id="invitetab3">Credits Earned</a></li>
+		      </ul>
+		      <div class="clear"></div>
+		  	</div>
+		    <div id="invitationdata">
+		
+		    <div id="openinvitation" style="display:block;">
+		    {{#if domainResponse.entitiesResponse}}
+		      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		        <tr>
+		          <th>Friends</th>
+		          <th>Last Invitation Sent</th>
+		          <th>No. of Invites Sent</th>
+		        </tr>
+		        {{#if domainResponse.entitiesResponse.length}}
+		        {{#each domainResponse.entitiesResponse}}
+		        <tr>
+		          <td>{{baseDTO.invitedEmailId}}</td>
+		          <td>{{getDate 'DDMMYYYY' baseDTO.dateInvited}}</td>
+		          <td>{{baseDTO.inviteCount}}</td>
+		        </tr>
+		        {{/each}}
+		        {{else}}
+		       	<tr>
+		          <td>{{domainResponse.entitiesResponse.baseDTO.invitedEmailId}}</td>
+		          <td>{{getDate 'DDMMYYYY' domainResponse.entitiesResponse.baseDTO.dateInvited}}</td>
+		          <td>{{domainResponse.entitiesResponse.baseDTO.inviteCount}}</td>
+		        </tr>
+		        {{/if}}
+		      </table>
+		      {{/if}}
+		    </div>
+		
+		    <div id="acceptinvitation"></div>
+		
+		    <div id="creditsearn"></div>
+		
+		  </div>
+	  	</div>
+  	</div>
+</section>
+<!-- invite area ends here -->

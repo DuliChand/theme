@@ -1,0 +1,15 @@
+<ul>
+	{{#if searchTermsWrapper.searchTerms.length}}
+	{{#each searchTermsWrapper.searchTerms}}
+	<li>
+		<input type="checkbox" value="{{text}}" name="topKeywords" class="choose-option" id="{{text}}">
+		<label for="{{text}}"> {{text}} ({{searched}}) </label>
+	</li>
+	{{/each}}
+	{{else}}
+	<li>
+		<input type="checkbox" name="topKeywords" value="{{searchTermsWrapper.searchTerms.text}}" class="choose-option" id="{{searchTermsWrapper.searchTerms.text}}">
+		<label for="{{searchTermsWrapper.searchTerms.text}}">{{searchTermsWrapper.searchTerms.text}} ({{searchTermsWrapper.searchTerms.searched}}) </label>
+	</li>
+	{{/if}}
+</ul>    

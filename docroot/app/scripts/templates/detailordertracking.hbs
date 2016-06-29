@@ -1,0 +1,46 @@
+<div class="trackorder-tab">
+{{#if shipmentTrackWrapper.shipmentTrackGroupDTOs.length}}
+     <h2>Tracking Detail -  Order No. <span id="orderId"></span></h2>
+     {{#each shipmentTrackWrapper.shipmentTrackGroupDTOs}}
+     <div class="shipment-detail">
+         <div class="shipment-box">
+	         <h3>Shipment #{{@index}} ({{orderLine.length}} Items)  Delivered</h3>
+	         <ol>
+	         {{#if orderLine.length}}
+		         {{#each orderLine}}
+			         {{#if productName}}
+			            <li>{{@index}} {{productName}}<span>/ QTY : {{quantity}}</span></li>
+			         {{/if}}
+		         {{/each}}
+	         {{else}}
+	         	 <li>1. {{orderLine.productName}}<span>/ QTY : {{orderLine.quantity}}</span></li>
+	         {{/if}}
+	         </ol>
+         </div>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+             <tr>
+                 <th>Date & Time</th>
+                 <th>Remarks</th>
+                 <th>Location</th>
+              </tr>
+              {{#if shipmentTrack.length}}
+              {{#each shipmentTrack}}
+              <tr>
+                  <td>{{getDate 'DDMMYYYY' dispatchDate}}<br>{{getTime 'hh:mm' dispatchDate}}</td>
+                  <td>{{deliveryStatus}}</td>
+                  <td>{{packetLocation}}</td>
+               </tr>
+               {{/each}}
+               {{else}}
+               <tr>
+                  <td>{{getDate 'DDMMYYYY' shipmentTrack.dispatchDate}}<br>{{getTime 'hh:mm' shipmentTrack.dispatchDate}}</td>
+                  <td>{{shipmentTrack.deliveryStatus}}</td>
+                  <td>{{shipmentTrack.packetLocation}}</td>
+               </tr>
+               {{/if}}
+         </table>
+      </div>
+      {{/each}}
+ {{/if}}
+</div>
+                       

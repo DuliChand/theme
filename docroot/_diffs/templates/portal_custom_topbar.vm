@@ -1,0 +1,37 @@
+<!-- top tabs starts here -->
+<div class="top-bar clearfix hidden-xs visible-sm visible-md">
+  <div class="top-bar-inn">
+    <div class="row"> 
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <!--ul class="top-tabs-inn">
+            <li id="uname"><a href="/register">Become a member</a></li> 
+            <li class="loginholder">$theme.runtime("user-section-header_WAR_user-section-headerportlet")</li>  
+            <li><a href="/invite">Invite</a></li>
+            <li><a href="/contactus">Customer Support</a></li>
+            
+        </ul-->
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+      <!--  <div class="mailus"><span><a href="mailto:support@fashionandyou.com">support@fashionandyou.com</a></span></div>
+      <div class="callus"><span>0124-4225000</span></div> -->
+     
+      <ul class="top-area">
+        <form id="searchForm">            
+          <li class="search-field" id="searchForm">
+       
+          	<input type="text" placeholder="What are you Looking For?" class="searchInputBox" />
+			<!-- <a href="#" class="search-icon" style="visibility:hidden;"></a>  -->
+			<input type="submit" class="search-icon">
+			<div class="search-popup" id="autoSuggestBox">
+			<ul>
+			</ul>
+			</div>
+			
+          </li>
+          </form> 
+               </ul>
+     </div>
+    </div>
+  </div>
+</div>
+<!-- top tabs ends here -->
